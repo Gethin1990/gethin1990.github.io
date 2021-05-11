@@ -776,11 +776,11 @@ ECharts 提供了常规的 [折线图](https://echarts.apache.org/zh/option.html
 一个使用自定义音乐 URL 的 `music` 示例:
 
 ```markdown
-{{</* music url="music/wind.mp3" name=起风了 artist=买辣椒也用券 cover="images/wind.jpg" */>}}
+{{</* music url="music/wind.mp3" name=起风了 artist=买辣椒也用券 cover="images/wind.png" */>}}
 ```
 
 呈现的输出效果如下:
-{{< music url="music/wind.mp3" name=起风了 artist=买辣椒也用券 cover="images/wind.jpg" >}}
+{{< music url="music/wind.mp3" name=起风了 artist=买辣椒也用券 cover="images/wind.png" >}}
 
 #### 音乐平台 URL 的自动识别 {#automatic-identification}
 
