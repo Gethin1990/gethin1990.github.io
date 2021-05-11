@@ -1,4 +1,4 @@
-# 测试文章
+# 一篇关于主题功能测试的文章
 
 
 了解如何在 **LoveIt** 主题中快速, 直观地创建和组织内容。
@@ -639,6 +639,13 @@ pie
     "Rats" : 15
 {{< /mermaid >}}
 
+### echarts
+
+[ECharts](https://echarts.apache.org/) 是一个帮助你生成交互式数据可视化的库.
+ECharts 提供了常规的 [折线图](https://echarts.apache.org/zh/option.html#series-line), [柱状图](https://echarts.apache.org/zh/option.html#series-line), [散点图](https://echarts.apache.org/zh/option.html#series-scatter), [饼图](https://echarts.apache.org/zh/option.html#series-pie), [K线图](https://echarts.apache.org/zh/option.html#series-candlestick), 用于统计的 [盒形图](https://echarts.apache.org/zh/option.html#series-boxplot), 用于地理数据可视化的 [地图](https://echarts.apache.org/zh/option.html#series-map), [热力图](https://echarts.apache.org/zh/option.html#series-heatmap), [线图](https://echarts.apache.org/zh/option.html#series-lines), 用于关系数据可视化的 [关系图](https://echarts.apache.org/zh/option.html#series-graph), [treemap](https://echarts.apache.org/zh/option.html#series-treemap), [旭日图](https://echarts.apache.org/zh/option.html#series-sunburst), 多维数据可视化的 [平行坐标](https://echarts.apache.org/zh/option.html#series-parallel), 还有用于 BI 的 [漏斗图](https://echarts.apache.org/zh/option.html#series-funnel), [仪表盘](https://echarts.apache.org/zh/option.html#series-gauge), 并且支持图与图之间的混搭.
+
+只需在 `echarts` shortcode 中以 `JSON`/`YAML`/`TOML`格式插入 ECharts 选项即可.
+
 {{< echarts >}}
 {
   "title": {
@@ -709,4 +716,223 @@ pie
   ]
 }
 {{< /echarts >}}
+
+### mapbox
+
+[Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js) 是一个 JavaScript 库，它使用 WebGL, 以 [vector tiles](https://docs.mapbox.com/help/glossary/vector-tiles/) 和 [Mapbox styles](https://docs.mapbox.com/mapbox-gl-js/style-spec/) 为来源, 将它们渲染成互动式地图.
+
+* **lng** *[必需]* (**第一个**位置参数)  地图初始中心点的经度, 以度为单位.
+
+* **lat** *[必需]* (**第二个**位置参数)  地图初始中心点的纬度, 以度为单位.
+
+* **zoom** *[可选]* (**第三个**位置参数)  地图的初始缩放级别, 默认值是 `10`.
+
+* **marked** *[可选]* (**第四个**位置参数)  是否在地图的初始中心点添加图钉, 默认值是 `true`.
+
+* **light-style** *[可选]* (**第五个**位置参数)  浅色主题的地图样式, 默认值是[前置参数](../theme-documentation-content#front-matter)或者[网站配置](../theme-documentation-basics#site-configuration)中设置的值.
+
+* **dark-style** *[可选]* (**第六个**位置参数)  深色主题的地图样式, 默认值是[前置参数](../theme-documentation-content#front-matter)或者[网站配置](../theme-documentation-basics#site-configuration)中设置的值.
+
+* **navigation** *[可选]*  是否添加 [NavigationControl](https://docs.mapbox.com/mapbox-gl-js/api#navigationcontrol), 默认值是[前置参数](../theme-documentation-content#front-matter)或者[网站配置](../theme-documentation-basics#site-configuration)中设置的值.
+
+* **geolocate** *[可选]*  是否添加 [GeolocateControl](https://docs.mapbox.com/mapbox-gl-js/api#geolocatecontrol), 默认值是[前置参数](../theme-documentation-content#front-matter)或者[网站配置](../theme-documentation-basics#site-configuration)中设置的值.
+
+* **scale** *[可选]*  是否添加 [ScaleControl](https://docs.mapbox.com/mapbox-gl-js/api#scalecontrol), 默认值是[前置参数](../theme-documentation-content#front-matter)或者[网站配置](../theme-documentation-basics#site-configuration)中设置的值.
+
+* **fullscreen** *[可选]*  是否添加 [FullscreenControl](https://docs.mapbox.com/mapbox-gl-js/api#fullscreencontrol), 默认值是[前置参数](../theme-documentation-content#front-matter)或者[网站配置](../theme-documentation-basics#site-configuration)中设置的值.
+
+* **width** *[可选]*  地图的宽度, 默认值是 `100%`.
+
+* **height** *[可选]*  地图的高度, 默认值是 `20rem`.
+
+```markdown
+{{</* mapbox 121.485 31.233 12 */>}}
+或者
+{{</* mapbox lng=121.485 lat=31.233 zoom=12 */>}}
+```
+
+{{< mapbox 121.485 31.233 12 >}}
+
+### music
+
+`music` shortcode 基于 [APlayer](https://github.com/MoePlayer/APlayer) 和 [MetingJS](https://github.com/metowolf/MetingJS) 提供了一个内嵌的响应式音乐播放器.
+
+有三种方式使用 `music` shortcode.
+
+#### 自定义音乐 URL {#custom-music-url}
+
+支持[本地资源引用](../theme-documentation-content#contents-organization)的完整用法.
+
+`music` shortcode 有以下命名参数来使用自定义音乐 URL:
+
+* **server** *[必需]*  音乐的链接.
+
+* **type** *[可选]*  音乐的名称.
+
+* **artist** *[可选]*  音乐的创作者.
+
+* **cover** *[可选]*  音乐的封面链接.
+
+一个使用自定义音乐 URL 的 `music` 示例:
+
+```markdown
+{{</* music url="/music/wind.mp3" name=起风了 artist=买辣椒也用券 cover="/images/wind.jpg" */>}}
+```
+
+呈现的输出效果如下:
+{{< music url="/music/wind.mp3" name=起风了 artist=买辣椒也用券 cover="/images/wind.jpg" >}}
+
+#### 音乐平台 URL 的自动识别 {#automatic-identification}
+
+`music` shortcode 有一个命名参数来使用音乐平台 URL 的自动识别:
+
+* **auto** *[必需]]* (**第一个**位置参数)  用来自动识别的音乐平台 URL, 支持 `netease`, `tencent` 和 `xiami` 平台.
+
+一个使用音乐平台 URL 的自动识别的 `music` 示例:
+
+```markdown
+{{</* music auto="https://music.163.com/#/playlist?id=60198" */>}}
+或者
+{{</* music "https://music.163.com/#/playlist?id=60198" */>}}
+```
+
+呈现的输出效果如下:
+
+{{< music auto="https://music.163.com/#/playlist?id=60198" >}}
+
+#### 自定义音乐平台, 类型和 ID {#custom-server}
+
+`music` shortcode 有以下命名参数来使用自定义音乐平台:
+
+* **server** *[必需]* [`netease`, `tencent`, `kugou`, `xiami`, `baidu`]音乐平台.
+
+* **type** *[必需]* [`song`, `playlist`, `album`, `search`, `artist`]音乐类型.
+
+* **id** *[必需]* 歌曲 ID, 或者播放列表 ID, 或者专辑 ID, 或者搜索关键词, 或者创作者 ID.
+
+一个使用自定义音乐平台的 `music` 示例:
+
+```markdown
+{{</* music server="netease" type="song" id="1868553" */>}}
+或者
+{{</* music netease song 1868553 */>}}
+```
+
+呈现的输出效果如下:
+
+{{< music netease song 1868553 >}}
+
+#### 其它参数 {#other-parameters}
+
+`music` shortcode 有一些可以应用于以上三种方式的其它命名参数:
+
+* **theme** *[可选]*音乐播放器的主题色, 默认值是 `#448aff`.
+
+* **fixed** *[可选]*是否开启固定模式, 默认值是 `false`.
+
+* **mini** *[可选]*是否开启迷你模式, 默认值是 `false`.
+
+* **autoplay** *[可选]*是否自动播放音乐, 默认值是 `false`.
+
+* **volume** *[可选]*第一次打开播放器时的默认音量, 会被保存在浏览器缓存中, 默认值是 `0.7`.
+
+* **mutex** *[可选]*是否自动暂停其它播放器, 默认值是 `true`.
+
+`music` shortcode 还有一些只适用于音乐列表方式的其它命名参数:
+
+* **loop** *[可选]*[`all`, `one`, `none`]音乐列表的循环模式, 默认值是 `none`.
+
+* **order** *[可选]*[`list`, `random`]音乐列表的播放顺序, 默认值是 `list`.
+
+* **list-folded** *[可选]*初次打开的时候音乐列表是否折叠, 默认值是 `false`.
+
+* **list-max-height** *[可选]*音乐列表的最大高度, 默认值是 `340px`.
+  
+### bilibili
+
+```markdown
+{{</* bilibili BV1Sx411T7QQ */>}}
+或者
+{{</* bilibili id=BV1Sx411T7QQ */>}}
+```
+
+{{< bilibili id=BV1Sx411T7QQ >}}
+
+```markdown
+{{</* bilibili BV1TJ411C7An 3 */>}}
+或者
+{{</* bilibili id=BV1TJ411C7An p=3 */>}}
+```
+
+呈现的输出效果如下:
+
+{{< bilibili id=BV1TJ411C7An p=3 >}}
+
+### typeit
+
+`typeit` shortcode 基于 [TypeIt](https://typeitjs.com/) 提供了打字动画.
+
+```markdown
+{{</* typeit */>}}
+这一个带有基于 [TypeIt](https://typeitjs.com/) 的 **打字动画** 的 *段落*...
+{{</* /typeit */>}}
+```
+
+{{< typeit >}}
+这一个带有基于 [TypeIt](https://typeitjs.com/) 的 **打字动画** 的 *段落*...
+{{< /typeit >}}
+
+```markdown
+{{</* typeit tag=h4 */>}}
+这一个带有基于 [TypeIt](https://typeitjs.com/) 的 **打字动画** 的 *段落*...
+{{</* /typeit */>}}
+```
+
+{{< typeit tag=h4 >}}
+这一个带有基于 [TypeIt](https://typeitjs.com/) 的 **打字动画** 的 *段落*...
+{{< /typeit >}}
+
+```markdown
+{{</* typeit code=java */>}}
+public class HelloWorld {
+    public static void main(String []args) {
+        System.out.println("Hello World");
+    }
+}
+{{</* /typeit */>}}
+```
+
+{{< typeit code=java >}}
+public class HelloWorld {
+    public static void main(String []args) {
+        System.out.println("Hello World");
+    }
+}
+{{< /typeit >}}
+
+```markdown
+{{</* typeit group=paragraph */>}}
+**首先**, 这个段落开始
+{{</* /typeit */>}}
+
+{{</* typeit group=paragraph */>}}
+**然后**, 这个段落开始
+{{</* /typeit */>}}
+```
+
+{{< typeit group=paragraph >}}
+**首先**, 这个段落开始
+{{< /typeit >}}
+
+{{< typeit group=paragraph >}}
+**然后**, 这个段落开始
+{{< /typeit >}}
+
+### script
+
+```markdown
+{{</* script */>}}
+console.log('Hello LoveIt!');
+{{</* /script */>}}
+```
 
