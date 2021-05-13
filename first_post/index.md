@@ -312,10 +312,10 @@ This is a **right-aligned** paragraph.
 * **rel** *[可选]* HTML `a` 标签 的 `rel` 补充属性, 仅在 **linked** 属性设置成 `true` 时有效.
 
 ```markdown
-{{</* image src="/images/test.jpg" caption="Lighthouse (`image`)" src_s="/images/test-small.jpg" src_l="/images/test-large.jpg" */>}}
+{{</* image src="/images/lighthouse.jpg" caption="Lighthouse (`image`)" src_s="/images/lighthouse-small.jpg" src_l="/images/lighthouse-large.jpg" */>}}
 ```
 
-{{< image src="/images/test.jpg" caption="TEST (`image`)" src_s="/images/test.jpg" src_l="/images/test.jpg" >}}
+{{< image src="/images/lighthouse.jpg" caption="lighthouse (`image`)" src_s="/images/lighthouse-small.jpg" src_l="/images/lighthouse-large.jpg" >}}
 
 ### admonition
 
