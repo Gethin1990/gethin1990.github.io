@@ -15,7 +15,7 @@
 
 {{< /admonition >}}
 
-## 1. 内容组织
+## 1 内容组织
 
 1. 保持博客文章存放在 content/posts 目录, 例如: content/posts/我的第一篇文章.md
 2. 保持简单的静态页面存放在 content 目录, 例如: content/about.md
@@ -25,7 +25,7 @@
    2. 将本地资源放在 assets 目录中, 默认路径是 /assets. 引用资源的文件路径是相对于 assets 目录的.
    3. 将本地资源放在 static 目录中, 默认路径是 /static. 引用资源的文件路径是相对于 static 目录的
 
-## 2. 前置参数
+## 2 前置参数
 
 ```yaml
 ---
@@ -98,39 +98,39 @@ resources:
 ---
 ```
 
-## 3. 内容摘要
+## 3 内容摘要
 
 ![文章摘要预览](images/summary.zh-cn.png "文章摘要预览")
 
-### 自动摘要拆分
+### 3.1 自动摘要拆分
 
 网站设置 `summaryLength`
 
-### 手动摘要拆分
+### 3.2 手动摘要拆分
 
 添加 `<!--more-->`
 
-### 前置参数摘要
+### 3.3 前置参数摘要
 
 前置参数 `summary`
 
-### 使用文章描述作为摘要
+### 3.4 使用文章描述作为摘要
 
 前置参数 `description`
 
-## 4. Markdown 基本语法
+## 4 Markdown 基本语法
 
 ignore
 
-## 5. Markdown 扩展语法
+## 5 Markdown 扩展语法
 
-### Emoji 支持
+### 5.1 Emoji 支持
 
 <https://hugoloveit.com/zh-cn/emoji-support/>
 
 :grinning:,:smile:,:laughing:,:rofl:,:sweat_smile:,:joy:
 
-### 数学公式
+### 5.2 数学公式
 
 ``` markdown
 $$ c = \pm\sqrt{a^2 + b^2} $$
@@ -138,7 +138,7 @@ $$ c = \pm\sqrt{a^2 + b^2} $$
 
 $$ c = \pm\sqrt{a^2 + b^2} $$
 
-### 行内公式
+### 5.3 行内公式
 
 默认的行内公式分割符是 `$/$` 和 `\\(/\\)`
 
@@ -148,7 +148,7 @@ $ c = \pm\sqrt{a^2 + b^2} $ 和 \\( f(x)=\int_{-\infty}^{\infty} \hat{f}(\xi) e^
 
 $ c = \pm\sqrt{a^2 + b^2} $ 和 \\( f(x)=\int_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d \xi \\)
 
-### mhchem
+### 5.4 mhchem
 
 ``` markdown
 $$ \ce{CO2 + C -> 2 CO} $$
@@ -160,7 +160,7 @@ $$ \ce{CO2 + C -> 2 CO} $$
 
 $$ \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-} $$
 
-### 字符注音或者注释
+### 5.5 字符注音或者注释
 
 ``` markdown
 [Hugo]{?^}(一个开源的静态网站生成工具)
@@ -168,7 +168,7 @@ $$ \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-} $$
 
 [Hugo]^(一个开源的静态网站生成工具)
 
-### 分数
+### 5.6 分数
 
 ``` markdown
 [99]{?/}[100]
@@ -176,7 +176,7 @@ $$ \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-} $$
 
 [99]/[100]
 
-### Font Awesome
+### 5.7 Font Awesome
 
 ``` markdown
 真开心! {?:}(far fa-grin-tears):
@@ -184,7 +184,7 @@ $$ \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-} $$
 
 真开心! :(far fa-grin-tears):
 
-### 转义字符
+### 5.8 转义字符
 
 ``` markdown
 {{??}:}joy:
@@ -192,23 +192,23 @@ $$ \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-} $$
 
 {?:}joy:
 
-## 6. 内置 Shortcodes
+## 6 内置 Shortcodes
 
 <https://hugoloveit.com/zh-cn/theme-documentation-built-in-shortcodes/>
 
-### figure
+### 6.1 figure
 
 ```markdown
 {{</* figure src="/images/lighthouse.jpg" title="Lighthouse (figure)" */>}}
 ```
 
-### gist
+### 6.2 gist
 
 ```markdown
 {{</* gist spf13 7896402 */>}}
 ```
 
-### highlight
+### 6.3 highlight
 
 ```markdown
 {{</* highlight html */>}}
@@ -223,7 +223,7 @@ $$ \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-} $$
 {{</* /highlight */>}}
 ```
 
-### instagram
+### 6.4 instagram
 
 [`instagram` 的文档](https://gohugo.io/content-management/shortcodes#instagram)
 
@@ -231,7 +231,7 @@ $$ \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-} $$
 {{</* instagram BWNjjyYFxVx hidecaption */>}}
 ```
 
-### param
+### 6.5 param
 
 [`param` 的文档](https://gohugo.io/content-management/shortcodes#param)
 
@@ -239,11 +239,11 @@ $$ \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-} $$
 {{</* param description */>}}
 ```
 
-### ref 和 relref
+### 6.6 ref 和 relref
 
 [`ref` 和 `relref` 的文档](https://gohugo.io/content-management/shortcodes#ref-and-relref)
 
-### tweet
+### 6.7 tweet
 
 [`tweet` 的文档](https://gohugo.io/content-management/shortcodes#tweet)
 
@@ -251,7 +251,7 @@ $$ \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-} $$
 {{</* tweet 877500564405444608 */>}}
 ```
 
-### vimeo
+### 6.8 vimeo
 
 [`vimeo` 的文档](https://gohugo.io/content-management/shortcodes#vimeo)
 
@@ -259,7 +259,7 @@ $$ \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-} $$
 {{</* vimeo 146022717 */>}}
 ```
 
-### youtube
+### 6.9 youtube
 
 [`youtube` 的文档](https://gohugo.io/content-management/shortcodes#youtube)
 
@@ -267,9 +267,9 @@ $$ \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-} $$
 {{</* youtube w7Ft2ymGmfc */>}}
 ```
 
-## 7. 扩展shortcodes
+## 7 扩展shortcodes
 
-### style
+### 7.1 style
 
 ```markdown
 {{</* style "text-align:right; strong{color:#00b1ff;}" */>}}
@@ -281,7 +281,7 @@ This is a **right-aligned** paragraph.
 This is a **right-aligned** paragraph.
 {{< /style >}}
 
-### link
+### 7.2 link
 
 * **href** *[必需]*
 * **content** *[可选]*
@@ -297,7 +297,7 @@ This is a **right-aligned** paragraph.
 
 {{< link "https://github.com/upstage/" Upstage "Visit Upstage!" >}}
 
-### image
+### 7.3 image
 
 * **src** *[必需]* 图片的 URL.
 * **alt** *[可选]* 图片无法显示时的替代文本, 默认值是 **src** 参数的值.
@@ -317,7 +317,7 @@ This is a **right-aligned** paragraph.
 
 {{< image src="/images/lighthouse.jpg" caption="lighthouse (`image`)" src_s="/images/lighthouse-small.jpg" src_l="/images/lighthouse-large.jpg" >}}
 
-### admonition
+### 7.4 admonition
 
 {{< admonition >}}
 一个 **注意** 横幅
@@ -393,11 +393,11 @@ This is a **right-aligned** paragraph.
 一个 **技巧** 横幅
 {{< /admonition >}}
 
-### mermaid
+### 7.5 mermaid
 
 [mermaid](https://mermaidjs.github.io/) 是一个可以帮助你在文章中生成图表和流程图的库, 类似 Markdown 的语法.
 
-#### 流程图
+#### 7.5.1 流程图
 
 一个 **流程图** `mermaid` 示例:
 
@@ -421,7 +421,7 @@ graph LR;
     C -->|Two| E[Result two]
 {{< /mermaid >}}
 
-#### 时序图
+#### 7.5.2 时序图
 
 一个 **时序图** `mermaid` 示例:
 
@@ -457,7 +457,7 @@ sequenceDiagram
     Bob-->John: Jolly good!
 {{< /mermaid >}}
 
-#### 甘特图
+#### 7.5.3 甘特图
 
 一个 **甘特图** `mermaid` 示例:
 
@@ -501,7 +501,7 @@ gantt
     Add to mermaid                      :1d
 {{< /mermaid >}}
 
-#### 类图
+#### 7.5.4 类图
 
 一个 **类图** `mermaid` 示例:
 
@@ -543,7 +543,7 @@ classDiagram
     Class08 <--> C2: Cool label
 {{< /mermaid >}}
 
-#### 状态图
+#### 7.5.5 状态图
 
 一个 **状态图** `mermaid` 示例:
 
@@ -571,7 +571,7 @@ stateDiagram
     Crash --> [*]
 {{< /mermaid >}}
 
-#### Git 图
+#### 7.5.6 Git 图
 
 一个 **Git 图** `mermaid` 示例:
 
@@ -617,7 +617,7 @@ end
     merge newbranch
 {{< /mermaid >}}
 
-#### 饼图
+#### 7.5.7 饼图
 
 一个 **饼图** `mermaid` 示例:
 
@@ -639,7 +639,7 @@ pie
     "Rats" : 15
 {{< /mermaid >}}
 
-### echarts
+### 7.5.8 echarts
 
 [ECharts](https://echarts.apache.org/) 是一个帮助你生成交互式数据可视化的库.
 ECharts 提供了常规的 [折线图](https://echarts.apache.org/zh/option.html#series-line), [柱状图](https://echarts.apache.org/zh/option.html#series-line), [散点图](https://echarts.apache.org/zh/option.html#series-scatter), [饼图](https://echarts.apache.org/zh/option.html#series-pie), [K线图](https://echarts.apache.org/zh/option.html#series-candlestick), 用于统计的 [盒形图](https://echarts.apache.org/zh/option.html#series-boxplot), 用于地理数据可视化的 [地图](https://echarts.apache.org/zh/option.html#series-map), [热力图](https://echarts.apache.org/zh/option.html#series-heatmap), [线图](https://echarts.apache.org/zh/option.html#series-lines), 用于关系数据可视化的 [关系图](https://echarts.apache.org/zh/option.html#series-graph), [treemap](https://echarts.apache.org/zh/option.html#series-treemap), [旭日图](https://echarts.apache.org/zh/option.html#series-sunburst), 多维数据可视化的 [平行坐标](https://echarts.apache.org/zh/option.html#series-parallel), 还有用于 BI 的 [漏斗图](https://echarts.apache.org/zh/option.html#series-funnel), [仪表盘](https://echarts.apache.org/zh/option.html#series-gauge), 并且支持图与图之间的混搭.
@@ -717,7 +717,7 @@ ECharts 提供了常规的 [折线图](https://echarts.apache.org/zh/option.html
 }
 {{< /echarts >}}
 
-### mapbox
+### 7.6 mapbox
 
 [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js) 是一个 JavaScript 库，它使用 WebGL, 以 [vector tiles](https://docs.mapbox.com/help/glossary/vector-tiles/) 和 [Mapbox styles](https://docs.mapbox.com/mapbox-gl-js/style-spec/) 为来源, 将它们渲染成互动式地图.
 
@@ -753,13 +753,13 @@ ECharts 提供了常规的 [折线图](https://echarts.apache.org/zh/option.html
 
 {{< mapbox 121.485 31.233 12 >}}
 
-### music
+### 7.7 music
 
 `music` shortcode 基于 [APlayer](https://github.com/MoePlayer/APlayer) 和 [MetingJS](https://github.com/metowolf/MetingJS) 提供了一个内嵌的响应式音乐播放器.
 
 有三种方式使用 `music` shortcode.
 
-#### 自定义音乐 URL {#custom-music-url}
+#### 7.7.1 自定义音乐 URL {#custom-music-url}
 
 支持[本地资源引用](../theme-documentation-content#contents-organization)的完整用法.
 
@@ -782,7 +782,7 @@ ECharts 提供了常规的 [折线图](https://echarts.apache.org/zh/option.html
 呈现的输出效果如下:
 {{< music url="music/wind.mp3" name=起风了 artist=买辣椒也用券 cover="images/wind.png" >}}
 
-#### 音乐平台 URL 的自动识别 {#automatic-identification}
+#### 7.7.2 音乐平台 URL 的自动识别 {#automatic-identification}
 
 `music` shortcode 有一个命名参数来使用音乐平台 URL 的自动识别:
 
@@ -800,7 +800,7 @@ ECharts 提供了常规的 [折线图](https://echarts.apache.org/zh/option.html
 
 {{< music auto="https://music.163.com/#/playlist?id=60198" >}}
 
-#### 自定义音乐平台, 类型和 ID {#custom-server}
+#### 7.7.3 自定义音乐平台, 类型和 ID {#custom-server}
 
 `music` shortcode 有以下命名参数来使用自定义音乐平台:
 
@@ -822,7 +822,7 @@ ECharts 提供了常规的 [折线图](https://echarts.apache.org/zh/option.html
 
 {{< music netease song 1868553 >}}
 
-#### 其它参数 {#other-parameters}
+#### 7.7.4 其它参数 {#other-parameters}
 
 `music` shortcode 有一些可以应用于以上三种方式的其它命名参数:
 
@@ -848,7 +848,7 @@ ECharts 提供了常规的 [折线图](https://echarts.apache.org/zh/option.html
 
 * **list-max-height** *[可选]*音乐列表的最大高度, 默认值是 `340px`.
   
-### bilibili
+### 7.8 bilibili
 
 ```markdown
 {{</* bilibili BV1Sx411T7QQ */>}}
@@ -868,7 +868,7 @@ ECharts 提供了常规的 [折线图](https://echarts.apache.org/zh/option.html
 
 {{< bilibili id=BV1TJ411C7An p=3 >}}
 
-### typeit
+### 7.9 typeit
 
 `typeit` shortcode 基于 [TypeIt](https://typeitjs.com/) 提供了打字动画.
 
@@ -928,7 +928,7 @@ public class HelloWorld {
 **然后**, 这个段落开始
 {{< /typeit >}}
 
-### script
+### 7.10 script
 
 ```markdown
 {{</* script */>}}
