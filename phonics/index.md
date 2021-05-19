@@ -1,7 +1,6 @@
 # phonics
 
 
-{{< param cdnPrefix >}}/gethin_logo.png
 
 ## 自然拼读
 
