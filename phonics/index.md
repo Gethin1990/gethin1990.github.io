@@ -8,6 +8,8 @@
 
 {{< bilibili id=BV1x4411P75a p=4 >}}
 
+{{< mindmap mindid >}}
+
 - a
   - am
     - pam
@@ -202,6 +204,7 @@
     - lunch
     - munch
     - punch
+{{</ mindmap >}}
 
 ### 辅音
 
