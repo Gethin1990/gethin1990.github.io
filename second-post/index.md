@@ -5,7 +5,7 @@
 
 ### 脑图测试
 
-{{% mindmap %}}
+{{% mindmap test mindmap-md %}}
 
 - Root
   - l1
