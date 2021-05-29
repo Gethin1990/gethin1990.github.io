@@ -3,7 +3,7 @@
 
 {{% mindmap blueprint mindmap-md %}}
 
-- [个人技术图](#个人技术图)
+- [个人技术蓝图](#个人技术蓝图)
   - [计算机基础 [the-basics-of-computer-science]](#计算机基础-the-basics-of-computer-science)
     - [计算机的组成原理 [principles-of-computer-composition]](#计算机的组成原理-principles-of-computer-composition)
     - [操作系统原理 [principle-operating-system]](#操作系统原理-principle-operating-system)
@@ -26,7 +26,7 @@
     - [JS,ES,TS & Vue,React (Gatsby) [js-es-ts-vue-react]](#jsests--vuereact-gatsby-js-es-ts-vue-react)
       - [前端框架 [front-end]](#前端框架-front-end)
       - [JavaScript [js]](#javascript-js)
-  - [数据算法[data-and-algorithmic]](#数据算法data-and-algorithmic)
+  - [数据与算法[data-and-algorithmic]](#数据与算法data-and-algorithmic)
     - [数据结构 [data-structure]](#数据结构-data-structure)
     - [常用算法 [algorithm]](#常用算法-algorithm)
     - [重构 [refactoring]](#重构-refactoring)
@@ -47,7 +47,7 @@
     - [DEVOPS [devops]](#devops-devops)
 {{% /mindmap %}}
 
-# 个人技术图
+# 个人技术蓝图
 
 ## 计算机基础 [the-basics-of-computer-science]
 
@@ -104,7 +104,7 @@
 
 #### JavaScript [js]
 
-## 数据算法[data-and-algorithmic]
+## 数据与算法[data-and-algorithmic]
 
 ### 数据结构 [data-structure]
 

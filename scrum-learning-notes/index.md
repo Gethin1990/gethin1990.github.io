@@ -162,6 +162,12 @@ Sprint 回顾
     我可以忍受这样;
     我不希望这样;
 
+![20210529200313-2021-05-29-20-03-13](https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210529200313-2021-05-29-20-03-13.png)
+
+![20210529200338-2021-05-29-20-03-38](https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210529200338-2021-05-29-20-03-38.png)
+
+![20210529200359-2021-05-29-20-04-00](https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210529200359-2021-05-29-20-04-00.png)
+
 ### 分解用户故事
 
 #### 用户故事的六个特性 - INVEST
