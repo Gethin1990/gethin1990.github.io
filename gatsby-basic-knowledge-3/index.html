@@ -1,0 +1,696 @@
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><meta http-equiv=x-ua-compatible content="IE=edge, chrome=1"><title>Gatsby基础知识（下） - Gethin</title><meta name=Description content="格心"><meta property="og:title" content="Gatsby基础知识（下）"><meta property="og:description" content="这篇文章主要是翻译和记录了一些 Gateby 的基础知识，有助于开发者通过这些基础知识进行快速的开发 Refer to the Article: https://mpolinowski.github.io/gatsby-js-knowledgebase 10 添"><meta property="og:type" content="article"><meta property="og:url" content="https://gethin1990.github.io/gatsby-basic-knowledge-3/"><meta property="og:image" content="https://gethin1990.github.io/logo.png"><meta property="article:published_time" content="2020-03-17T00:00:00+00:00"><meta property="article:modified_time" content="2021-05-29T17:04:02+08:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://gethin1990.github.io/logo.png"><meta name=twitter:title content="Gatsby基础知识（下）"><meta name=twitter:description content="这篇文章主要是翻译和记录了一些 Gateby 的基础知识，有助于开发者通过这些基础知识进行快速的开发 Refer to the Article: https://mpolinowski.github.io/gatsby-js-knowledgebase 10 添"><meta name=application-name content="Gethin"><meta name=apple-mobile-web-app-title content="Gethin"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://gethin1990.github.io/gatsby-basic-knowledge-3/><link rel=prev href=https://gethin1990.github.io/gatsby-basic-knowledge-2/><link rel=next href=https://gethin1990.github.io/massive-data-optimization-notes/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Gatsby基础知识（下）","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/gethin1990.github.io\/gatsby-basic-knowledge-3\/"},"image":["https:\/\/gethin1990.github.io\/images\/Apple-Devices-Preview.png"],"genre":"posts","keywords":"前端","wordcount":3220,"url":"https:\/\/gethin1990.github.io\/gatsby-basic-knowledge-3\/","datePublished":"2020-03-17T00:00:00+00:00","dateModified":"2021-05-29T17:04:02+08:00","publisher":{"@type":"Organization","name":"gethin","logo":"https:\/\/cdn.jsdelivr.net\/gh\/Gethin1990\/PicBed\/BlogImg\/g.PNG"},"author":{"@type":"Person","name":"Gethin"},"description":""}</script></head><body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':('auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark'))&&document.body.setAttribute('theme','dark');</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title=Gethin><span class=header-title-pre><i class="fas fa-cloud-sun"></i></span><span class=header-title-post>Hi</span></a></div><div class=menu style=overflow:visible><div class=menu-inner><a class=menu-item href=/ title=首页><i class="fas fa-home fa-fw"></i>首页</a>
+<a class=menu-item href=/posts/ title=所有文章><i class="fas fa-archive fa-fw"></i>归档</a>
+<a class=menu-item href=/tags/><i class="fas fa-tags fa-fw"></i>标签</a>
+<a class=menu-item href=/categories/><i class="fas fa-th-list fa-fw"></i>分类</a><div class="dropdown menu-item" style=display:inline><a class=btn href=javascript:void(0); role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class="fas fa-fan fa-fw"></i>分享</a><div class=dropdown-menu style=display:none><a class=dropdown-item href=/memories/><i class="fas fa-database fa-fw"></i>记忆</a>
+<a class=dropdown-item href=/booklist/><i class="fas fa-file-alt fa-fw"></i>书单</a>
+<a class=dropdown-item href=https://note.youdao.com rel="noopener noreffer" target=_blank><i class="fas fa-book fa-fw"></i>笔记</a>
+<a class=dropdown-item href=/websites/><i class="fas fa-globe fa-fw"></i>网站</a></div></div><div class="dropdown menu-item" style=display:inline><a class=btn href=javascript:void(0); role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class="fas fa-door-closed fa-fw"></i>传送门</a><div class=dropdown-menu style=display:none><a class=dropdown-item href=/message-board/><i class="fas fa-comments fa-fw"></i>留言板</a>
+<a class=dropdown-item href=/milestone/><i class="fas fa-monument fa-fw"></i>里程碑</a>
+<a class=dropdown-item href=/links/><i class="fas fa-user-friends fa-fw"></i>友情链</a></div></div><a class=menu-item href=/about/><i class="fas fa-user-secret fa-fw"></i>关于</a>
+<span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop><input type=text placeholder=搜索文章标题或内容... id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索><i class="fas fa-search fa-fw"></i></a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空><i class="fas fa-times-circle fa-fw"></i></a><span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin"></i></span></span><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题><i class="fas fa-adjust fa-fw"></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title=Gethin><span class=header-title-pre><i class="fas fa-cloud-sun"></i></span><span class=header-title-post>Hi</span></a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder=搜索文章标题或内容... id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索><i class="fas fa-search fa-fw"></i></a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空><i class="fas fa-times-circle fa-fw"></i></a><span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin"></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>取消</a></div><a class=menu-item href=/ title=首页><i class="fas fa-home fa-fw"></i>首页</a>
+<a class=menu-item href=/posts/ title=所有文章><i class="fas fa-archive fa-fw"></i>归档</a>
+<a class=menu-item href=/tags/><i class="fas fa-tags fa-fw"></i>标签</a>
+<a class=menu-item href=/categories/><i class="fas fa-th-list fa-fw"></i>分类</a><div class="dropdown menu-item"><a class=btn href=javascript:void(0); role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class="fas fa-fan fa-fw"></i>分享</a><div class="dropdown-menu dropdown-menu-mobile" style=display:none><a class=dropdown-item href=/memories/><i class="fas fa-database fa-fw"></i>记忆</a>
+<a class=dropdown-item href=/booklist/><i class="fas fa-file-alt fa-fw"></i>书单</a>
+<a class=dropdown-item href=https://note.youdao.com rel="noopener noreffer" target=_blank><i class="fas fa-book fa-fw"></i>笔记</a>
+<a class=dropdown-item href=/websites/><i class="fas fa-globe fa-fw"></i>网站</a></div></div><div class="dropdown menu-item"><a class=btn href=javascript:void(0); role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class="fas fa-door-closed fa-fw"></i>传送门</a><div class="dropdown-menu dropdown-menu-mobile" style=display:none><a class=dropdown-item href=/message-board/><i class="fas fa-comments fa-fw"></i>留言板</a>
+<a class=dropdown-item href=/milestone/><i class="fas fa-monument fa-fw"></i>里程碑</a>
+<a class=dropdown-item href=/links/><i class="fas fa-user-friends fa-fw"></i>友情链</a></div></div><a class=menu-item href=/about/><i class="fas fa-user-secret fa-fw"></i>关于</a>
+<a href=javascript:void(0); class="menu-item theme-switch" title=切换主题><i class="fas fa-adjust fa-fw"></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>目录</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animated flipInX">Gatsby基础知识（下）</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=https://gethin.online/ title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Gethin</a></span>&nbsp;<span class=post-category>收录于 <a href=/categories/%E8%AF%AD%E8%A8%80%E4%B8%8E%E5%B9%B3%E5%8F%B0/><i class="far fa-folder fa-fw"></i>语言与平台</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2020-03-17>2020-03-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 3220 字&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 7 分钟&nbsp;<span id=/gatsby-basic-knowledge-3/ class=leancloud_visitors data-flag-title=Gatsby基础知识（下）>
+<i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+</span>&nbsp;</div></div><div class=featured-image><img class=lazyload src=/svg/loading.min.svg data-src=https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/mountains.jpg data-srcset="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/mountains.jpg, https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/mountains.jpg 1.5x, https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/mountains.jpg 2x" data-sizes=auto alt=https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/mountains.jpg title=https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/mountains.jpg></div><div class="details toc" id=toc-static kept><div class="details-summary toc-title"><span>目录</span>
+<span><i class="details-icon fas fa-angle-right"></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><ul><li><a href=#10-添加文件数据adding-file-data>10 添加文件数据(Adding File Data)</a></li><li><a href=#11-使用-markdownworking-with-markdown>11 使用 Markdown(Working with Markdown)</a><ul><li><a href=#111-添加-markdown-到-graphql>11.1 添加 Markdown 到 GraphQL</a></li><li><a href=#112-发布我们的-markdown-数据模板>11.2 发布我们的 Markdown 数据模板</a></li><li><a href=#113-带有-markdown-的嵌套路由>11.3 带有 Markdown 的嵌套路由</a></li><li><a href=#114-创建-index-页面>11.4 创建 Index 页面</a></li><li><a href=#115-缓存-markdown-中的链接>11.5 缓存 Markdown 中的链接</a></li></ul></li><li><a href=#12-添加-material-ui>12 添加 Material-UI</a></li><li><a href=#13-添加-elasticsearch>13 添加 Elasticsearch</a></li></ul></li></ul></nav></div></div><div class=content id=content><blockquote><p>这篇文章主要是翻译和记录了一些 Gateby 的基础知识，有助于开发者通过这些基础知识进行快速的开发<br>Refer to the Article:
+<a href=https://mpolinowski.github.io/gatsby-js-knowledgebase target=_blank rel="noopener noreffer">https://mpolinowski.github.io/gatsby-js-knowledgebase</a></p></blockquote><h2 id=10-添加文件数据adding-file-data>10 添加文件数据(Adding File Data)</h2><p>使用 Gatsby，您可以使用 GraphQL 直接从文件中查询数据。 <code>Transformer</code>插件将文件节点转换为各种其他类型的数据，例如 gatsby-transformer-json 将 将JSON 文件转换为 JSON 数据节点，而 gatsby-transformer-remark 将 将markdown 文件转换为 MarkdownRemark 节点，您可以从中查询 Markdown 的 的HTML 表示形式。
+在这里，我们将使用<a href=https://www.gatsbyjs.org/packages/gatsby-source-filesystem/ target=_blank rel="noopener noreffer">gatsby-source-filesystem</a>从我们的文件系统创建文件节点。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js>    <span class=nx>npm</span> <span class=nx>install</span> <span class=o>--</span><span class=nx>save</span> <span class=nx>gatsby</span><span class=o>-</span><span class=nx>source</span><span class=o>-</span><span class=nx>filesystem</span>
+</code></pre></td></tr></table></div></div><p>安装后，将插件添加到 gatsby-config.js。 您可以具有此插件的多个实例，以从文件系统上的不同位置读取源节点。</p><p>以下设置了 Jekyll 模式：具有 Markdown 文件的页面目录和.json，.yaml，.csv 的数据目录：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=p>{</span>
+  <span class=nx>resolve</span><span class=o>:</span> <span class=sb>`gatsby-source-filesystem`</span><span class=p>,</span>
+  <span class=nx>options</span><span class=o>:</span> <span class=p>{</span>
+    <span class=nx>name</span><span class=o>:</span> <span class=sb>`pages`</span><span class=p>,</span>
+    <span class=nx>path</span><span class=o>:</span> <span class=sb>`</span><span class=si>${</span><span class=nx>__dirname</span><span class=si>}</span><span class=sb>/src/pages/`</span><span class=p>,</span>
+  <span class=p>},</span>
+<span class=p>},</span>
+<span class=p>{</span>
+  <span class=nx>resolve</span><span class=o>:</span> <span class=sb>`gatsby-source-filesystem`</span><span class=p>,</span>
+  <span class=nx>options</span><span class=o>:</span> <span class=p>{</span>
+    <span class=nx>name</span><span class=o>:</span> <span class=sb>`data`</span><span class=p>,</span>
+    <span class=nx>path</span><span class=o>:</span> <span class=sb>`</span><span class=si>${</span><span class=nx>__dirname</span><span class=si>}</span><span class=sb>/src/data/`</span><span class=p>,</span>
+  <span class=p>},</span>
+<span class=p>}</span>
+</code></pre></td></tr></table></div></div><p>现在，您可以打开 GraphiQL 调试器-在大括号中，当你开始键入 allFiles 时，它应提供自动补全功能。 只需按 Enter 接受，然后再次按 CTRL + ENTER 填写所有页面 ID 的查询：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=p>{</span>
+    <span class=nx>allFile</span> <span class=p>{</span>
+      <span class=nx>edges</span> <span class=p>{</span>
+        <span class=nx>node</span> <span class=p>{</span>
+          <span class=nx>id</span>
+        <span class=p>}</span>
+      <span class=p>}</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></td></tr></table></div></div><p><img class=lazyload src=/svg/loading.min.svg data-src=https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_06.png data-srcset="https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_06.png, https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_06.png 1.5x, https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_06.png 2x" data-sizes=auto alt=https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_06.png title=gatsby_06></p><p>当你删除 ID 并按 CTRL + SPACE 时，将显示一个包含所有可查询选项的下拉菜单：<img class=lazyload src=/svg/loading.min.svg data-src=https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_07.png data-srcset="https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_07.png, https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_07.png 1.5x, https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_07.png 2x" data-sizes=auto alt=https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_07.png title=gatsby_07>
+你可以使用 parent，children 和 和relativePath 属性来创建， 例如 breadcrumb navigation：<img class=lazyload src=/svg/loading.min.svg data-src=https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_08.png data-srcset="https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_08.png, https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_08.png 1.5x, https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_08.png 2x" data-sizes=auto alt=https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_08.png title=gatsby_08></p><p>现在，我们可以在/src/pages/page-2.js 中添加 GraphQL 查询，以遍历我们的所有页面并显示一些数据：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=kr>export</span> <span class=kr>const</span> <span class=nx>query</span> <span class=o>=</span> <span class=nx>graphql</span><span class=sb>`
+</span><span class=sb>  query MyFilesQuery {
+</span><span class=sb>    allFile {
+</span><span class=sb>      edges {
+</span><span class=sb>          node {
+</span><span class=sb>            relativePath
+</span><span class=sb>            prettySize
+</span><span class=sb>            extension
+</span><span class=sb>            birthTime(fromNow: true)
+</span><span class=sb>        }
+</span><span class=sb>      }
+</span><span class=sb>    }
+</span><span class=sb>  }
+</span><span class=sb>`</span>
+</code></pre></td></tr></table></div></div><p>不要忘记将<code>{data}</code>注入页面组件：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=kr>const</span> <span class=nx>SecondPage</span> <span class=o>=</span> <span class=p>({</span><span class=nx>data</span><span class=p>})</span>  <span class=p>=&gt;</span>
+</code></pre></td></tr></table></div></div><p>现在，我们可以添加一些 JSX 来遍历所有文件，并在<code>&lt;table></code>中输出信息</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=o>&lt;</span><span class=nx>table</span><span class=o>&gt;</span>
+  <span class=o>&lt;</span><span class=nx>thead</span><span class=o>&gt;</span>
+    <span class=o>&lt;</span><span class=nx>tr</span><span class=o>&gt;</span>
+      <span class=o>&lt;</span><span class=nx>th</span><span class=o>&gt;</span><span class=nx>relativePath</span><span class=o>&lt;</span><span class=err>/th&gt;</span>
+      <span class=o>&lt;</span><span class=nx>th</span><span class=o>&gt;</span><span class=nx>prettySize</span><span class=o>&lt;</span><span class=err>/th&gt;</span>
+      <span class=o>&lt;</span><span class=nx>th</span><span class=o>&gt;</span><span class=nx>extension</span><span class=o>&lt;</span><span class=err>/th&gt;</span>
+      <span class=o>&lt;</span><span class=nx>th</span><span class=o>&gt;</span><span class=nx>birthTime</span><span class=o>&lt;</span><span class=err>/th&gt;</span>
+    <span class=o>&lt;</span><span class=err>/tr&gt;</span>
+  <span class=o>&lt;</span><span class=err>/thead&gt;</span>
+  <span class=o>&lt;</span><span class=nx>tbody</span><span class=o>&gt;</span>
+    <span class=p>{</span><span class=nx>data</span><span class=p>.</span><span class=nx>allFile</span><span class=p>.</span><span class=nx>edges</span><span class=p>.</span><span class=nx>map</span><span class=p>(({</span> <span class=nx>node</span> <span class=p>},</span> <span class=nx>index</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>(</span>
+      <span class=o>&lt;</span><span class=nx>tr</span> <span class=nx>key</span><span class=o>=</span><span class=p>{</span><span class=nx>index</span><span class=p>}</span><span class=o>&gt;</span>
+        <span class=o>&lt;</span><span class=nx>td</span><span class=o>&gt;</span>
+          <span class=p>{</span><span class=nx>node</span><span class=p>.</span><span class=nx>relativePath</span><span class=p>}</span>
+        <span class=o>&lt;</span><span class=err>/td&gt;</span>
+        <span class=o>&lt;</span><span class=nx>td</span><span class=o>&gt;</span>
+          <span class=p>{</span><span class=nx>node</span><span class=p>.</span><span class=nx>prettySize</span><span class=p>}</span>
+        <span class=o>&lt;</span><span class=err>/td&gt;</span>
+        <span class=o>&lt;</span><span class=nx>td</span><span class=o>&gt;</span>
+          <span class=p>{</span><span class=nx>node</span><span class=p>.</span><span class=nx>extension</span><span class=p>}</span>
+        <span class=o>&lt;</span><span class=err>/td&gt;</span>
+        <span class=o>&lt;</span><span class=nx>td</span><span class=o>&gt;</span>
+          <span class=p>{</span><span class=nx>node</span><span class=p>.</span><span class=nx>birthTime</span><span class=p>}</span>
+        <span class=o>&lt;</span><span class=err>/td&gt;</span>
+      <span class=o>&lt;</span><span class=err>/tr&gt;</span>
+    <span class=p>))}</span>
+  <span class=o>&lt;</span><span class=err>/tbody&gt;</span>
+<span class=o>&lt;</span><span class=err>/table&gt;</span>
+</code></pre></td></tr></table></div></div><p><img class=lazyload src=/svg/loading.min.svg data-src=https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_09.png data-srcset="https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_09.png, https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_09.png 1.5x, https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_09.png 2x" data-sizes=auto alt=https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_09.png title=gatsby_09></p><h2 id=11-使用-markdownworking-with-markdown>11 使用 Markdown(Working with Markdown)</h2><h3 id=111-添加-markdown-到-graphql>11.1 添加 Markdown 到 GraphQL</h3><p>现在，我们可以访问有关我们所有页面的信息。 但是如上所述，在最后一段的开头，我们还可以使用 Gatsby Transformer Plugins 来查找文件并将其内容可以通过 GraphQL 查询。
+这里，我们希望使用 Markdown 文件并对其进行转换，以便能够在我们的网站上显示其内容。
+为此所需的 Transformer Plugin 是 <a href=https://www.gatsbyjs.org/packages/gatsby-transformer-remark/ target=_blank rel="noopener noreffer">gatsby-transformer-remark</a>。 首先，我们需要安装插件：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js>    <span class=nx>npm</span> <span class=nx>install</span> <span class=o>--</span><span class=nx>save</span> <span class=nx>gatsby</span><span class=o>-</span><span class=nx>transformer</span><span class=o>-</span><span class=nx>remark</span>
+</code></pre></td></tr></table></div></div><p>在 gatsby-config.js 中添加：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=nx>plugins</span><span class=o>:</span> <span class=p>[</span>
+  <span class=sb>`gatsby-transformer-remark`</span><span class=p>,</span>
+<span class=p>]</span>
+</code></pre></td></tr></table></div></div><p>然后在/src/pages/FirstMDpost/index.md 内创建一个 markdown 页面，其中包含一些 FrontMatter（文件开头的元数据，以后可以由 GraphQL 查询）和一些文本：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=o>---</span>
+<span class=nx>path</span><span class=o>:</span> <span class=s1>&#39;/md-posts&#39;</span>
+<span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;My first Post&#39;</span>
+<span class=nx>date</span><span class=o>:</span>   <span class=s1>&#39;2017-10-05&#39;</span>
+<span class=nx>author</span><span class=o>:</span> <span class=s1>&#39;Mike Polinowski&#39;</span>
+<span class=nx>chapter</span><span class=o>:</span> <span class=s1>&#39;Index&#39;</span>
+<span class=o>---</span>
+<span class=err>#</span> <span class=nx>This</span> <span class=nx>is</span> <span class=nx>my</span> <span class=nx>first</span> <span class=nx>mardown</span> <span class=nx>Post</span><span class=o>!</span>
+</code></pre></td></tr></table></div></div><p>现在我们为 GraphQL 提供了 Markdown -与以前一样，只需开始输入 allMardownRemark（ENTER 自动完成），然后按 CTRL + ENTER 完成查询：
+![gatsby_10](<a href=https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_10.png>https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_10.png</a> =577x189)
+现在，我们可以查询 FrontMatter 以及添加到页面文件夹中的每个 MD 文件的 MD 转换为 HTML 的内容：
+<img class=lazyload src=/svg/loading.min.svg data-src=https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_11.png data-srcset="https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_11.png, https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_11.png 1.5x, https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_11.png 2x" data-sizes=auto alt=https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_11.png title=gatsby_11></p><h3 id=112-发布我们的-markdown-数据模板>11.2 发布我们的 Markdown 数据模板</h3><p>这些 Markdown 表示将要被显示的模板，但是现在我们需要创建一个用于此数据的样式模板。让我们先在/src 内添加一个称为<code>templates</code>的文件夹。 现在，向其中添加一个名为<code>post.js</code>的文件，该文件将包含每个帖子条目的结构模板。 该文件包含我们帖子的 JSX markup：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span>
+<span class=kr>export</span> <span class=k>default</span> <span class=kd>function</span> <span class=nx>Template</span><span class=p>({</span><span class=nx>data</span><span class=p>})</span> <span class=p>{</span>
+  <span class=kr>const</span> <span class=p>{</span><span class=nx>markdownRemark</span><span class=o>:</span> <span class=nx>post</span><span class=p>}</span> <span class=o>=</span> <span class=nx>data</span>
+  
+  <span class=k>return</span> <span class=p>(</span>
+    <span class=o>&lt;</span><span class=nx>div</span><span class=o>&gt;</span>
+      <span class=o>&lt;</span><span class=nx>h1</span><span class=o>&gt;</span><span class=p>{</span><span class=nx>post</span><span class=p>.</span><span class=nx>frontmatter</span><span class=p>.</span><span class=nx>title</span><span class=p>}</span><span class=o>&lt;</span><span class=err>/h1&gt;</span>
+      <span class=o>&lt;</span><span class=nx>div</span> <span class=nx>dangerouslySetInnerHTML</span><span class=o>=</span><span class=p>{{</span><span class=nx>__html</span><span class=o>:</span> <span class=nx>post</span><span class=p>.</span><span class=nx>html</span><span class=p>}}</span> <span class=o>/&gt;</span>
+    <span class=o>&lt;</span><span class=err>/div&gt;</span>
+  <span class=p>)</span>
+<span class=p>}</span>
+<span class=kr>export</span> <span class=kr>const</span> <span class=nx>postQuery</span> <span class=o>=</span> <span class=nx>graphql</span><span class=sb>`
+</span><span class=sb>  query BlogPostByPath($path: String!) {
+</span><span class=sb>    markdownRemark(frontmatter: { path: { eq: $path} }) {
+</span><span class=sb>      html
+</span><span class=sb>      frontmatter {
+</span><span class=sb>        path
+</span><span class=sb>        title
+</span><span class=sb>      }
+</span><span class=sb>    }
+</span><span class=sb>  }
+</span><span class=sb>`</span>
+</code></pre></td></tr></table></div></div><p><code>&lt;Template /></code>组件接收{data}属性，这些属性由 GraphQL 查询检索。
+该查询会查找 markdown 中 中frontmatter 里面所有 URL 等于$Path 的帖子，所以如果你在浏览器中键入的这个 URL 是/md-posts，那么路径中带有/md-posts 的文件，就会被调用。
+然后，查询使用 markdownRemark 插件将 post markdown 转换为 HTML，并在{data}中提供其前题的路径和标题，并将其传递到组件，然后渲染。
+Gatsby 已经配置为将/src/pages 中的所有页面路由为我们网站的页面。 但是现在我们必须注册来自 markdown 文件和 post.js 模板的帖子。 为此，我们必须在应用程序的根目录内创建一个名为 gatsby-node.js 的文件。 我们将使用<a href=https://www.gatsbyjs.org/docs/node-apis/#createPages target=_blank rel="noopener noreffer">createPages Gatsby API</a>从我们的帖子模板创建页面：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=kr>const</span> <span class=nx>path</span> <span class=o>=</span> <span class=nx>require</span><span class=p>(</span><span class=s1>&#39;path&#39;</span><span class=p>);</span>
+<span class=nx>exports</span><span class=p>.</span><span class=nx>createPages</span> <span class=o>=</span> <span class=p>({</span><span class=nx>boundActionCreators</span><span class=p>,</span> <span class=nx>graphql</span><span class=p>})</span> <span class=p>=&gt;</span> <span class=p>{</span>
+  <span class=kr>const</span> <span class=p>{</span><span class=nx>createPage</span><span class=p>}</span> <span class=o>=</span> <span class=nx>boundActionCreators</span><span class=p>;</span>
+  <span class=c1>// const createPage = boundActionCreators.createPage;
+</span><span class=c1></span>  <span class=kr>const</span> <span class=nx>postTemplate</span> <span class=o>=</span> <span class=nx>path</span><span class=p>.</span><span class=nx>resolve</span><span class=p>(</span><span class=s1>&#39;src/templates/post.js&#39;</span><span class=p>);</span>
+  <span class=k>return</span> <span class=nx>graphql</span><span class=p>(</span><span class=sb>`{
+</span><span class=sb>    allMarkdownRemark {
+</span><span class=sb>      edges {
+</span><span class=sb>        node {
+</span><span class=sb>          html
+</span><span class=sb>          id
+</span><span class=sb>          frontmatter {
+</span><span class=sb>            path
+</span><span class=sb>            title
+</span><span class=sb>          }
+</span><span class=sb>        }
+</span><span class=sb>      }
+</span><span class=sb>    }
+</span><span class=sb>  }`</span><span class=p>)</span>
+  <span class=p>.</span><span class=nx>then</span><span class=p>(</span><span class=nx>res</span> <span class=p>=&gt;</span> <span class=p>{</span>
+    <span class=k>if</span><span class=p>(</span><span class=nx>res</span><span class=p>.</span><span class=nx>errors</span><span class=p>)</span> <span class=p>{</span>
+      <span class=k>return</span> <span class=nb>Promise</span><span class=p>.</span><span class=nx>reject</span><span class=p>(</span><span class=nx>res</span><span class=p>.</span><span class=nx>errors</span><span class=p>);</span>
+    <span class=p>}</span>
+    <span class=nx>res</span><span class=p>.</span><span class=nx>data</span><span class=p>.</span><span class=nx>allMarkdownRemark</span><span class=p>.</span><span class=nx>edges</span><span class=p>.</span><span class=nx>forEach</span><span class=p>(({</span><span class=nx>node</span><span class=p>})</span> <span class=p>=&gt;</span> <span class=p>{</span>
+      <span class=nx>createPage</span><span class=p>({</span>
+        <span class=nx>path</span><span class=o>:</span> <span class=nx>node</span><span class=p>.</span><span class=nx>frontmatter</span><span class=p>.</span><span class=nx>path</span><span class=p>,</span>
+        <span class=nx>component</span><span class=o>:</span> <span class=nx>postTemplate</span>
+      <span class=p>})</span>
+    <span class=p>})</span>
+  <span class=p>})</span>
+<span class=p>}</span>
+</code></pre></td></tr></table></div></div><p>保存并重新启动您的应用程序，然后在浏览器中打开 <a href=http://localhost:8000/md-posts>http://localhost:8000/md-posts</a></p><h3 id=113-带有-markdown-的嵌套路由>11.3 带有 Markdown 的嵌套路由</h3><p>要为./src/pages/FirstMDpost/index.md 文件创建子帖子，我们可以简单地向文件夹中添加更多文件，并在其前题中定义嵌套路由 - e.g. <em>./src/pages/FirstMDpost/myfirstpost.md</em>:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-md data-lang=md>---
+path: &#39;/md-posts/first-post&#39;
+title: &#39;First Blog Post&#39;
+date:   &#39;2017-10-05&#39;
+author: &#39;Mike Polinowski&#39;
+chapter: &#39;Markdown Posts&#39;
+---
+<span class=gh># This is my first markdown Post!
+</span></code></pre></td></tr></table></div></div><p>和 ./src/pages/FirstMDpost/mysecondpost.md:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-md data-lang=md>---
+path: &#39;/md-posts/second-post&#39;
+title: &#39;Second Blog Post&#39;
+date:   &#39;2017-10-05&#39;
+author: &#39;Mike Polinowski&#39;
+chapter: &#39;Markdown Posts&#39;
+---
+<span class=gh># A dive into Markdown Syntax
+</span></code></pre></td></tr></table></div></div><p>它们可以分别通过<a href=http://localhost:8000/md-posts/first-post>http://localhost:8000/md-posts/first-post</a>和<a href=http://localhost:8000/md-posts/second-post>http://localhost:8000/md-posts/second-post</a> 来访问</p><h3 id=114-创建-index-页面>11.4 创建 Index 页面</h3><p>现在，我们可以使用 GraphQL 检索所有 Markdown 页面并将过滤它们。 对于此测试，我们将一个表添加到起始页面，显示最后 10 个帖子（到目前为止，我只发表了 3 3个帖子&mldr;），我们希望按日期降序排列它们，并且仅显示 chapter: &lsquo;Markdown Posts&rsquo;的页面 ，并排除我们的 index.md：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=kr>const</span> <span class=nx>IndexPage</span> <span class=o>=</span> <span class=p>({</span><span class=nx>data</span><span class=p>})</span> <span class=p>=&gt;</span> <span class=p>(</span>
+  <span class=o>&lt;</span><span class=nx>div</span><span class=o>&gt;</span>
+      <span class=o>&lt;</span><span class=nx>h2</span><span class=o>&gt;</span><span class=nx>Markdown</span> <span class=nx>Index</span><span class=o>&lt;</span><span class=err>/h2&gt;</span>
+      <span class=o>&lt;</span><span class=nx>p</span><span class=o>&gt;</span><span class=nx>The</span> <span class=nx>table</span> <span class=nx>below</span> <span class=nx>sorts</span> <span class=nx>out</span> <span class=nx>all</span> <span class=nx>Markdown</span> <span class=nx>pages</span> <span class=nx>that</span> <span class=nx>are</span> <span class=nx>not</span> <span class=nx>inside</span> <span class=nx>the</span> <span class=s2>&#34;Markdown Posts&#34;</span> <span class=nx>chapter</span> <span class=o>-</span> <span class=nx>as</span> <span class=nx>defined</span> <span class=nx>inside</span> <span class=nx>their</span> <span class=nx>frontmatter</span><span class=p>.</span> <span class=nx>It</span> <span class=nx>also</span> <span class=nx>applies</span> <span class=nx>a</span> <span class=nx>filter</span><span class=p>,</span> <span class=nx>to</span> <span class=nx>only</span> <span class=nx>display</span> <span class=nx>the</span> <span class=nx>latest</span> <span class=mi>10</span> <span class=nx>posts</span><span class=p>.</span> <span class=nx>Click</span> <span class=nx>on</span> <span class=nx>here</span> <span class=nx>to</span> <span class=nx>display</span> <span class=o>&amp;</span><span class=nx>nbsp</span><span class=p>;</span>
+      <span class=o>&lt;</span><span class=nx>Link</span> <span class=nx>to</span><span class=o>=</span><span class=s2>&#34;/md-posts/&#34;</span><span class=o>&gt;</span>
+          <span class=nx>all</span> <span class=nx>Markdown</span> <span class=nx>pages</span>
+      <span class=o>&lt;</span><span class=err>/Link&gt;</span>
+      <span class=p>.</span><span class=o>&lt;</span><span class=err>/p&gt;</span>
+      <span class=o>&lt;</span><span class=nx>table</span><span class=o>&gt;</span>
+        <span class=o>&lt;</span><span class=nx>thead</span><span class=o>&gt;</span>
+          <span class=o>&lt;</span><span class=nx>tr</span><span class=o>&gt;</span>
+            <span class=o>&lt;</span><span class=nx>th</span><span class=o>&gt;</span><span class=nb>Date</span><span class=o>&lt;</span><span class=err>/th&gt;</span>
+            <span class=o>&lt;</span><span class=nx>th</span><span class=o>&gt;</span><span class=nx>Link</span><span class=o>&lt;</span><span class=err>/th&gt;</span>
+          <span class=o>&lt;</span><span class=err>/tr&gt;</span>
+        <span class=o>&lt;</span><span class=err>/thead&gt;</span>
+        <span class=o>&lt;</span><span class=nx>tbody</span><span class=o>&gt;</span>
+        <span class=p>{</span><span class=nx>data</span><span class=p>.</span><span class=nx>allMarkdownRemark</span><span class=p>.</span><span class=nx>edges</span><span class=p>.</span><span class=nx>map</span><span class=p>(</span><span class=nx>post</span> <span class=p>=&gt;</span> <span class=p>(</span>
+          <span class=o>&lt;</span><span class=nx>tr</span> <span class=nx>key</span><span class=o>=</span><span class=p>{</span><span class=nx>post</span><span class=p>.</span><span class=nx>node</span><span class=p>.</span><span class=nx>id</span><span class=p>}</span><span class=o>&gt;</span>
+            <span class=o>&lt;</span><span class=nx>td</span><span class=o>&gt;</span>
+              <span class=p>{</span><span class=nx>post</span><span class=p>.</span><span class=nx>node</span><span class=p>.</span><span class=nx>frontmatter</span><span class=p>.</span><span class=nx>date</span><span class=p>}</span>
+            <span class=o>&lt;</span><span class=err>/td&gt;</span>
+            <span class=o>&lt;</span><span class=nx>td</span><span class=o>&gt;</span>
+              <span class=o>&lt;</span><span class=nx>Link</span>
+                <span class=nx>to</span><span class=o>=</span><span class=p>{</span><span class=nx>post</span><span class=p>.</span><span class=nx>node</span><span class=p>.</span><span class=nx>frontmatter</span><span class=p>.</span><span class=nx>path</span><span class=p>}</span><span class=o>&gt;</span>
+                <span class=p>{</span><span class=nx>post</span><span class=p>.</span><span class=nx>node</span><span class=p>.</span><span class=nx>frontmatter</span><span class=p>.</span><span class=nx>title</span><span class=p>}</span>
+              <span class=o>&lt;</span><span class=err>/Link&gt;</span>
+            <span class=o>&lt;</span><span class=err>/td&gt;</span>
+          <span class=o>&lt;</span><span class=err>/tr&gt;</span>
+        <span class=p>))}</span>
+        <span class=o>&lt;</span><span class=err>/tbody&gt;</span>
+      <span class=o>&lt;</span><span class=err>/table&gt;</span>
+  <span class=o>&lt;</span><span class=err>/div&gt;</span>
+<span class=p>)</span>
+<span class=kr>export</span> <span class=kr>const</span> <span class=nx>pageQuery</span> <span class=o>=</span> <span class=nx>graphql</span><span class=sb>`
+</span><span class=sb>  query IndexQuery {
+</span><span class=sb>      allMarkdownRemark(limit: 10
+</span><span class=sb>      sort: {fields: [frontmatter___date], order: DESC}
+</span><span class=sb>      filter: { frontmatter: { chapter: {eq: &#34;Markdown Posts&#34;} }}
+</span><span class=sb>    ) {
+</span><span class=sb>      edges {
+</span><span class=sb>        node {
+</span><span class=sb>          id
+</span><span class=sb>          frontmatter {
+</span><span class=sb>            path
+</span><span class=sb>            title
+</span><span class=sb>            date
+</span><span class=sb>          }
+</span><span class=sb>        }
+</span><span class=sb>      }
+</span><span class=sb>    }
+</span><span class=sb>  }
+</span><span class=sb>`</span>
+</code></pre></td></tr></table></div></div><h3 id=115-缓存-markdown-中的链接>11.5 缓存 Markdown 中的链接</h3><p>一旦开始在 Markdown 文件中添加链接，您会发现单击它们会重新加载您的应用程序-这不是很好 :( 但请放心，这里的<a href=https://www.gatsbyjs.org/packages/gatsby-plugin-catch-links/ target=_blank rel="noopener noreffer">gatsby-plugin-catch-links</a>可以助您一臂之力！ 它-安装后，将其添加到./gatsby-config.js 中的 Gatsby 插件中，它就可以正常工作：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-shell data-lang=shell>    npm install --save gatsby-plugin-catch-links
+</code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=c1>// In your gatsby-config.js
+</span><span class=c1></span><span class=nx>plugins</span><span class=o>:</span> <span class=p>[</span>
+  <span class=sb>`gatsby-plugin-catch-links`</span><span class=p>,</span>
+<span class=p>]</span>
+</code></pre></td></tr></table></div></div><h2 id=12-添加-material-ui>12 添加 Material-UI</h2><p>为了使我们的生活更轻松，我们希望包含来自@ Materials-UI 的即用型 material 设计组件。 我们将安装 v.1.0.0 的测试版-它也需要 Roboto Fontface 和 和Material-UI 图标：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-shell data-lang=shell>    npm install material-ui@next --save
+    npm install typeface-roboto --save
+    npm install material-ui-icons --save
+</code></pre></td></tr></table></div></div><p>现在，我们可以轻松地将 Material-UI 组件导入我们的应用程序：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span>
+<span class=kr>import</span> <span class=p>{</span> <span class=nx>render</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;react-dom&#39;</span>
+<span class=kr>import</span> <span class=nx>Button</span> <span class=nx>from</span> <span class=s1>&#39;material-ui/Button&#39;</span>
+<span class=kr>import</span> <span class=s1>&#39;typeface-roboto&#39;</span>
+<span class=kd>function</span> <span class=nx>AppWithButton</span><span class=p>()</span> <span class=p>{</span>
+  <span class=k>return</span> <span class=p>(</span>
+    <span class=o>&lt;</span><span class=nx>Button</span><span class=o>&gt;</span>
+      <span class=nx>Hello</span> <span class=nx>World</span>
+    <span class=o>&lt;</span><span class=err>/Button&gt;</span>
+  <span class=p>);</span>
+<span class=p>}</span>
+<span class=nx>render</span><span class=p>(</span><span class=o>&lt;</span><span class=nx>AppWithButton</span> <span class=o>/&gt;</span><span class=p>,</span> <span class=nb>document</span><span class=p>.</span><span class=nx>querySelector</span><span class=p>(</span><span class=s1>&#39;#app&#39;</span><span class=p>));</span>
+</code></pre></td></tr></table></div></div><h2 id=13-添加-elasticsearch>13 添加 Elasticsearch</h2><p>该项目的先决条件之一是，我们需要为我们的 ElasticSearch Index 创建一个闪电般的界面。 我们已经为其构建了<a href=https://github.com/mpolinowski/elasticsearch-react-example target=_blank rel="noopener noreffer">ES6 Class component</a>。并将其添加到 Gatsby/Material-UI 中非常简单。</p><p>首先，添加./src/pages/search/jsx 并修改 ElasticSearch 组件来配合我们的 UI.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span><span class=lnt>59
+</span><span class=lnt>60
+</span><span class=lnt>61
+</span><span class=lnt>62
+</span><span class=lnt>63
+</span><span class=lnt>64
+</span><span class=lnt>65
+</span><span class=lnt>66
+</span><span class=lnt>67
+</span><span class=lnt>68
+</span><span class=lnt>69
+</span><span class=lnt>70
+</span><span class=lnt>71
+</span><span class=lnt>72
+</span><span class=lnt>73
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=kr>import</span> <span class=nx>React</span><span class=p>,</span> <span class=p>{</span> <span class=nx>Component</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span>
+<span class=kr>import</span> <span class=nx>Link</span> <span class=nx>from</span> <span class=s1>&#39;gatsby-link&#39;</span>
+<span class=kr>import</span> <span class=nx>elasticsearch</span> <span class=nx>from</span> <span class=s1>&#39;elasticsearch&#39;</span>
+<span class=kr>import</span> <span class=p>{</span> <span class=nx>withStyles</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;material-ui/styles&#39;</span>
+<span class=kr>import</span> <span class=nx>Grid</span> <span class=nx>from</span> <span class=s1>&#39;material-ui/Grid&#39;</span>
+<span class=kr>import</span> <span class=nx>Button</span> <span class=nx>from</span> <span class=s1>&#39;material-ui/Button&#39;</span>
+<span class=kr>import</span> <span class=nx>ResultCards</span> <span class=nx>from</span> <span class=s1>&#39;../components/ResultCards&#39;</span>
+<span class=kr>const</span> <span class=nx>connectionString</span> <span class=o>=</span> <span class=s1>&#39;localhost:9200&#39;</span>
+<span class=kr>const</span> <span class=nx>_index</span> <span class=o>=</span> <span class=s1>&#39;wiki2_de_2017_09_09&#39;</span>
+<span class=kr>const</span> <span class=nx>_type</span> <span class=o>=</span> <span class=s1>&#39;article&#39;</span>
+<span class=kd>let</span> <span class=nx>client</span> <span class=o>=</span> <span class=k>new</span> <span class=nx>elasticsearch</span><span class=p>.</span><span class=nx>Client</span><span class=p>({</span>
+  <span class=nx>host</span><span class=o>:</span> <span class=nx>connectionString</span><span class=p>,</span>
+  <span class=nx>log</span><span class=o>:</span> <span class=s2>&#34;trace&#34;</span>
+<span class=p>})</span>
+<span class=kr>const</span> <span class=nx>rootStyle</span> <span class=o>=</span> <span class=p>{</span>
+    <span class=nx>flexGrow</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span>
+    <span class=nx>marginTop</span><span class=o>:</span> <span class=mi>30</span><span class=p>,</span>
+  <span class=p>}</span>
+<span class=kr>export</span> <span class=kr>class</span> <span class=nx>Search</span> <span class=kr>extends</span> <span class=nx>Component</span> <span class=p>{</span>
+  <span class=nx>constructor</span><span class=p>(</span><span class=nx>props</span><span class=p>)</span> <span class=p>{</span>
+    <span class=kr>super</span><span class=p>(</span><span class=nx>props</span><span class=p>)</span>
+      <span class=k>this</span><span class=p>.</span><span class=nx>state</span> <span class=o>=</span> <span class=p>{</span> <span class=nx>results</span><span class=o>:</span> <span class=p>[]</span> <span class=p>};</span>
+      <span class=k>this</span><span class=p>.</span><span class=nx>handleChange</span> <span class=o>=</span> <span class=k>this</span><span class=p>.</span><span class=nx>handleChange</span><span class=p>.</span><span class=nx>bind</span><span class=p>(</span><span class=k>this</span><span class=p>)</span>
+    <span class=p>}</span>
+    <span class=nx>handleChange</span><span class=p>(</span><span class=nx>event</span><span class=p>)</span> <span class=p>{</span>
+      <span class=kr>const</span> <span class=nx>search_query</span> <span class=o>=</span> <span class=nx>event</span><span class=p>.</span><span class=nx>target</span><span class=p>.</span><span class=nx>value</span><span class=p>;</span>
+      <span class=nx>client</span><span class=p>.</span><span class=nx>search</span><span class=p>({</span>
+            <span class=nx>index</span><span class=o>:</span> <span class=nx>_index</span><span class=p>,</span>
+            <span class=nx>type</span><span class=o>:</span> <span class=nx>_type</span><span class=p>,</span>
+            <span class=nx>body</span><span class=o>:</span> <span class=p>{</span>
+                <span class=nx>query</span><span class=o>:</span> <span class=p>{</span>
+                        <span class=nx>multi_match</span><span class=o>:</span> <span class=p>{</span>
+                                <span class=nx>query</span><span class=o>:</span> <span class=nx>search_query</span><span class=p>,</span>
+                                <span class=nx>fields</span><span class=o>:</span> <span class=p>[</span><span class=s1>&#39;title^100&#39;</span><span class=p>,</span> <span class=s1>&#39;tags^100&#39;</span><span class=p>,</span> <span class=s1>&#39;abstract^20&#39;</span><span class=p>,</span> <span class=s1>&#39;description^10&#39;</span><span class=p>,</span> <span class=s1>&#39;chapter^5&#39;</span><span class=p>,</span> <span class=s1>&#39;title2^10&#39;</span><span class=p>,</span> <span class=s1>&#39;description2^10&#39;</span><span class=p>],</span>
+                                <span class=nx>fuzziness</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span>
+                            <span class=p>},</span>
+                    <span class=p>},</span>
+            <span class=p>},</span>
+        <span class=p>}).</span><span class=nx>then</span><span class=p>(</span><span class=kd>function</span><span class=p>(</span><span class=nx>body</span><span class=p>)</span> <span class=p>{</span>
+            <span class=k>this</span><span class=p>.</span><span class=nx>setState</span><span class=p>({</span> <span class=nx>results</span><span class=o>:</span> <span class=nx>body</span><span class=p>.</span><span class=nx>hits</span><span class=p>.</span><span class=nx>hits</span> <span class=p>});</span>
+          <span class=p>}.</span><span class=nx>bind</span><span class=p>(</span><span class=k>this</span><span class=p>),</span>
+          <span class=kd>function</span><span class=p>(</span><span class=nx>error</span><span class=p>)</span> <span class=p>{</span>
+            <span class=nx>console</span><span class=p>.</span><span class=nx>trace</span><span class=p>(</span><span class=nx>error</span><span class=p>.</span><span class=nx>message</span><span class=p>);</span>
+          <span class=p>}</span>
+        <span class=p>);</span>
+    <span class=p>}</span>
+    <span class=nx>render</span><span class=p>()</span> <span class=p>{</span>
+      <span class=k>return</span> <span class=p>(</span>
+        <span class=o>&lt;</span><span class=nx>div</span> <span class=nx>className</span><span class=o>=</span><span class=s2>&#34;container&#34;</span><span class=o>&gt;</span>
+          <span class=o>&lt;</span><span class=nx>input</span> <span class=nx>type</span><span class=o>=</span><span class=s2>&#34;text&#34;</span> <span class=nx>onChange</span><span class=o>=</span><span class=p>{</span><span class=k>this</span><span class=p>.</span><span class=nx>handleChange</span><span class=p>}</span> <span class=o>/&gt;</span>
+          <span class=o>&lt;</span><span class=nx>SearchResults</span> <span class=nx>results</span><span class=o>=</span><span class=p>{</span><span class=k>this</span><span class=p>.</span><span class=nx>state</span><span class=p>.</span><span class=nx>results</span><span class=p>}</span> <span class=o>/&gt;</span>
+        <span class=o>&lt;</span><span class=err>/div&gt;</span>
+      <span class=p>);</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+<span class=kr>const</span> <span class=nx>SearchResults</span> <span class=o>=</span> <span class=p>({</span><span class=nx>results</span><span class=p>})</span> <span class=p>=&gt;</span> <span class=p>(</span>
+  <span class=o>&lt;</span><span class=nx>div</span> <span class=nx>className</span><span class=o>=</span><span class=s2>&#34;search_results&#34;</span><span class=o>&gt;</span>
+  <span class=o>&lt;</span><span class=nx>br</span><span class=o>/&gt;&lt;</span><span class=nx>hr</span><span class=o>/&gt;</span>
+  <span class=o>&lt;</span><span class=nx>div</span> <span class=nx>className</span><span class=o>=</span><span class=p>{</span><span class=nx>rootStyle</span><span class=p>}</span><span class=o>&gt;</span>
+    <span class=o>&lt;</span><span class=nx>Grid</span> <span class=nx>container</span> <span class=nx>spacing</span><span class=o>=</span><span class=p>{</span><span class=mi>24</span><span class=p>}</span><span class=o>&gt;</span>
+      <span class=p>{</span><span class=nx>results</span><span class=p>.</span><span class=nx>map</span><span class=p>((</span><span class=nx>result</span> <span class=p>,</span> <span class=nx>i</span><span class=p>)</span> <span class=p>=&gt;</span>
+        <span class=o>&lt;</span><span class=nx>ResultCards</span> <span class=nx>key</span><span class=o>=</span><span class=p>{</span><span class=nx>i</span><span class=p>}</span>
+                     <span class=nx>image</span><span class=o>=</span><span class=p>{</span><span class=nx>result</span><span class=p>.</span><span class=nx>_source</span><span class=p>.</span><span class=nx>image</span><span class=p>}</span>
+                     <span class=nx>title</span><span class=o>=</span><span class=p>{</span><span class=nx>result</span><span class=p>.</span><span class=nx>_source</span><span class=p>.</span><span class=nx>title2</span><span class=p>}</span>
+                     <span class=nx>link</span><span class=o>=</span><span class=p>{</span><span class=nx>result</span><span class=p>.</span><span class=nx>_source</span><span class=p>.</span><span class=nx>link</span><span class=p>}</span>
+                     <span class=kr>abstract</span><span class=o>=</span><span class=p>{</span><span class=nx>result</span><span class=p>.</span><span class=nx>_source</span><span class=p>.</span><span class=kr>abstract</span><span class=p>}</span><span class=o>/&gt;</span>
+      <span class=p>)}</span>
+      <span class=o>&lt;</span><span class=err>/Grid&gt;</span>
+    <span class=o>&lt;</span><span class=err>/div&gt;</span>
+    <span class=o>&lt;</span><span class=nx>br</span><span class=o>/&gt;&lt;</span><span class=nx>br</span><span class=o>/&gt;&lt;</span><span class=nx>Link</span> <span class=nx>to</span><span class=o>=</span><span class=s2>&#34;/&#34;</span> <span class=nx>style</span><span class=o>=</span><span class=p>{{</span> <span class=nx>textDecoration</span><span class=o>:</span> <span class=s1>&#39;none&#39;</span> <span class=p>}}</span><span class=o>&gt;&lt;</span><span class=nx>Button</span> <span class=nx>raised</span> <span class=nx>color</span><span class=o>=</span><span class=s2>&#34;primary&#34;</span><span class=o>&gt;</span><span class=nx>Go</span> <span class=nx>back</span> <span class=nx>to</span> <span class=nx>the</span> <span class=nx>homepage</span><span class=o>&lt;</span><span class=err>/Button&gt;&lt;/Link&gt;</span>
+  <span class=o>&lt;</span><span class=err>/div&gt;</span>
+<span class=p>)</span>
+<span class=kr>export</span> <span class=k>default</span> <span class=nx>Search</span>
+</code></pre></td></tr></table></div></div><p><code>&lt;SearchResults /></code>组件将遍历<code>&lt;ResultCards /></code>组件内的 Material UI Card：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-js data-lang=js><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span>
+<span class=kr>import</span> <span class=nx>Link</span> <span class=nx>from</span> <span class=s1>&#39;gatsby-link&#39;</span>
+<span class=kr>import</span> <span class=nx>Card</span><span class=p>,</span> <span class=p>{</span> <span class=nx>CardActions</span><span class=p>,</span> <span class=nx>CardContent</span><span class=p>,</span> <span class=nx>CardMedia</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;material-ui/Card&#39;</span>
+<span class=kr>import</span> <span class=nx>Button</span> <span class=nx>from</span> <span class=s1>&#39;material-ui/Button&#39;</span>
+<span class=kr>import</span> <span class=nx>Typography</span> <span class=nx>from</span> <span class=s1>&#39;material-ui/Typography&#39;</span>
+<span class=kr>import</span> <span class=nx>Grid</span> <span class=nx>from</span> <span class=s1>&#39;material-ui/Grid&#39;</span>
+<span class=kr>const</span> <span class=nx>ResultCards</span> <span class=o>=</span> <span class=p>({</span><span class=nx>image</span><span class=p>,</span> <span class=nx>title</span><span class=p>,</span> <span class=kr>abstract</span><span class=p>,</span> <span class=nx>link</span><span class=p>})</span> <span class=p>=&gt;</span> <span class=p>(</span>
+    <span class=o>&lt;</span><span class=nx>Grid</span> <span class=nx>item</span> <span class=nx>xs</span><span class=o>=</span><span class=p>{</span><span class=mi>12</span><span class=p>}</span> <span class=nx>sm</span><span class=o>=</span><span class=p>{</span><span class=mi>6</span><span class=p>}</span> <span class=nx>lg</span><span class=o>=</span><span class=p>{</span><span class=mi>4</span><span class=p>}</span><span class=o>&gt;</span>
+      <span class=o>&lt;</span><span class=nx>Card</span> <span class=nx>style</span><span class=o>=</span><span class=p>{{</span> <span class=nx>maxWidth</span><span class=o>:</span> <span class=mi>345</span> <span class=p>}}</span><span class=o>&gt;</span>
+        <span class=o>&lt;</span><span class=nx>CardMedia</span>
+          <span class=nx>style</span><span class=o>=</span><span class=p>{{</span> <span class=nx>height</span><span class=o>:</span> <span class=mi>200</span> <span class=p>}}</span>
+          <span class=nx>image</span><span class=o>=</span><span class=p>{</span><span class=nx>image</span><span class=p>}</span>
+          <span class=nx>title</span><span class=o>=</span><span class=p>{</span><span class=kr>abstract</span><span class=p>}</span>
+        <span class=o>/&gt;</span>
+        <span class=o>&lt;</span><span class=nx>CardContent</span><span class=o>&gt;</span>
+          <span class=o>&lt;</span><span class=nx>Typography</span> <span class=nx>type</span><span class=o>=</span><span class=s2>&#34;headline&#34;</span> <span class=nx>component</span><span class=o>=</span><span class=s2>&#34;h4&#34;</span> <span class=nx>style</span><span class=o>=</span><span class=p>{{</span> <span class=nx>minHeight</span><span class=o>:</span> <span class=mi>60</span><span class=p>,</span> <span class=nx>marginBottom</span><span class=o>:</span> <span class=s2>&#34;10px&#34;</span> <span class=p>}}</span><span class=o>&gt;</span>
+            <span class=p>{</span><span class=nx>title</span><span class=p>}</span>
+          <span class=o>&lt;</span><span class=err>/Typography&gt;</span>
+          <span class=o>&lt;</span><span class=nx>Typography</span> <span class=nx>component</span><span class=o>=</span><span class=s2>&#34;p&#34;</span> <span class=nx>style</span><span class=o>=</span><span class=p>{{</span> <span class=nx>minHeight</span><span class=o>:</span> <span class=mi>50</span><span class=p>,</span> <span class=nx>marginBottom</span><span class=o>:</span> <span class=s2>&#34;10px&#34;</span> <span class=p>}}</span><span class=o>&gt;</span>
+            <span class=p>{</span><span class=kr>abstract</span><span class=p>}</span>
+          <span class=o>&lt;</span><span class=err>/Typography&gt;</span>
+        <span class=o>&lt;</span><span class=err>/CardContent&gt;</span>
+        <span class=o>&lt;</span><span class=nx>CardActions</span><span class=o>&gt;</span>
+          <span class=o>&lt;</span><span class=nx>Link</span> <span class=nx>to</span><span class=o>=</span><span class=p>{</span><span class=nx>link</span><span class=p>}</span> <span class=nx>style</span><span class=o>=</span><span class=p>{{</span> <span class=nx>textDecoration</span><span class=o>:</span> <span class=s1>&#39;none&#39;</span> <span class=p>}}</span><span class=o>&gt;</span>
+            <span class=o>&lt;</span><span class=nx>Button</span> <span class=nx>dense</span> <span class=nx>color</span><span class=o>=</span><span class=s2>&#34;primary&#34;</span><span class=o>&gt;</span>
+              <span class=nx>Read</span>
+            <span class=o>&lt;</span><span class=err>/Button&gt;</span>
+          <span class=o>&lt;</span><span class=err>/Link&gt;</span>
+          <span class=o>&lt;</span><span class=nx>Button</span> <span class=nx>dense</span> <span class=nx>color</span><span class=o>=</span><span class=s2>&#34;primary&#34;</span><span class=o>&gt;</span>
+            <span class=nx>Learn</span> <span class=nx>More</span>
+          <span class=o>&lt;</span><span class=err>/Button&gt;</span>
+        <span class=o>&lt;</span><span class=err>/CardActions&gt;</span>
+      <span class=o>&lt;</span><span class=err>/Card&gt;</span>
+    <span class=o>&lt;</span><span class=err>/Grid&gt;</span>
+<span class=p>)</span>
+<span class=kr>export</span> <span class=k>default</span> <span class=nx>ResultCards</span>
+</code></pre></td></tr></table></div></div><p>组件将添加来自 ElasticSearch JSON Response 的结果，并给我们一个灵活的卡片网格。
+<img class=lazyload src=/svg/loading.min.svg data-src=https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_12.png data-srcset="https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_12.png, https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_12.png 1.5x, https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_12.png 2x" data-sizes=auto alt=https://raw.githubusercontent.com/mpolinowski/gatsby-wiki/master/gatsby_12.png title=gatsby_12></p></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>更新于 2021-05-29</span></div><div class=post-info-license></div></div><div class=post-info-line><div class=post-info-md></div><div class=post-info-share><span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://gethin1990.github.io/gatsby-basic-knowledge-3/ data-title=Gatsby基础知识（下） data-hashtags=前端><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Facebook" data-sharer=facebook data-url=https://gethin1990.github.io/gatsby-basic-knowledge-3/ data-hashtag=前端><i class="fab fa-facebook-square fa-fw"></i></a><a href=javascript:void(0); title="分享到 Hacker News" data-sharer=hackernews data-url=https://gethin1990.github.io/gatsby-basic-knowledge-3/ data-title=Gatsby基础知识（下）><i class="fab fa-hacker-news fa-fw"></i></a><a href=javascript:void(0); title="分享到 Line" data-sharer=line data-url=https://gethin1990.github.io/gatsby-basic-knowledge-3/ data-title=Gatsby基础知识（下）><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://gethin1990.github.io/gatsby-basic-knowledge-3/ data-title=Gatsby基础知识（下）><i class="fab fa-weibo fa-fw"></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E5%89%8D%E7%AB%AF/>前端</a></section><section><span><a href=javascript:void(0); onclick=window.history.back();>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主页</a></span></section></div><div class=post-nav><a href=/gatsby-basic-knowledge-2/ class=prev rel=prev title=Gatsby基础知识（中）><i class="fas fa-angle-left fa-fw"></i>Gatsby基础知识（中）</a>
+<a href=/massive-data-optimization-notes/ class=next rel=next title=海量数据优化笔记>海量数据优化笔记<i class="fas fa-angle-right fa-fw"></i></a></div></div><div id=comments><div id=valine class=comment></div><noscript>Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.</noscript></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line><span id=run-time></div><div class=footer-line>由 <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.74.3">Hugo</a> 强力驱动 | 主题 - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i>LoveIt</a></div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2021</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=https://gethin.online/ target=_blank>Gethin</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到顶部><i class="fas fa-arrow-up fa-fw"></i></a><a href=# id=view-comments class=fixed-button title=查看评论><i class="fas fa-comment fa-fw"></i></a></div><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/valine/valine.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css><link rel=stylesheet href=/css/_custom.scss><script type=text/javascript src=https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/twemoji@13.0.0/dist/twemoji.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js></script><script type=text/javascript src=/js/jquery.backstretch.min.js></script><script type=text/javascript src=/js/dayjs.min.js></script><script type=text/javascript src=/js/custom.js></script><script type=text/javascript>window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"valine":{"appId":"1VBUiSYKiwFzrfjxiAC91SxL-gzGzoHsz","appKey":"5bn6AC46BR6WSh3myVFN7yQ3","avatar":"mm","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@5.0.1/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-cn","pageSize":10,"placeholder":"你的评论 ...","recordIP":true,"visitor":true}},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"K8S9KF7M5S","algoliaIndex":"hugoblog_cn","algoliaSearchKey":"8ee76e5626e8145996a6c46fbdce0d23","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"},"twemoji":true};</script><script type=text/javascript src=/js/theme.min.js></script></body></html>

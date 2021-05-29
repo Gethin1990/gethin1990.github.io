@@ -8,6 +8,8 @@
 
 {{< bilibili id=BV1x4411P75a p=4 >}}
 
+{{% mindmap a mindmap-md %}}
+
 - a
   - am
     - pam
@@ -55,6 +57,8 @@
     - lamp
     - camp
     - ramp
+{{% /mindmap %}}
+{{% mindmap e mindmap-md %}}
 - e  
   - ed
     - Ted
@@ -98,6 +102,8 @@
     - neck
     - peck
     - deck
+{{% /mindmap %}}
+{{% mindmap i mindmap-md %}}
 - i
   - id
     - Sid
@@ -143,6 +149,8 @@
     - sick
     - tick
     - Rick
+{{% /mindmap %}}
+{{% mindmap o mindmap-md %}}
 - o
   - ox
     - fox
@@ -172,6 +180,8 @@
     - rock
     - sock
     - lock
+{{% /mindmap %}}
+{{% mindmap u mindmap-md %}}
 - u
   - ug
     - bug
@@ -202,137 +212,145 @@
     - lunch
     - munch
     - punch
+{{% /mindmap %}}
 
 ### 辅音
 
 {{< bilibili id=BV1x4411P75a p=5 >}}
 
-- bl
-  - black
-  - blink
-  - block
-  - blush
-- cl
-  - clock
-  - clap
-  - click
-  - club
-  - class
-- fl
-  - flag
-  - flex
-  - flip
-  - flop
-  - flush
-- gl
-  - glass
-  - glad
-  - glob
-- pl
-  - plan
-  - plane
-  - plant
-  - plot
-  - plum
-- br
-  - Brad
-  - brick
-  - bring
-  - brush
-- cr
-  - crab
-  - crack
-  - crash
-  - crop
-- dr
-  - dress
-  - drip
-  - drop
-  - drum
-- fr
-  - frog
-  - frank
-  - fresh
-  - Fred
-- gr
-  - grass
-  - grab
-  - grand
-  - grid
-- tr
-  - track
-  - trap
-  - trick
-  - truck
-- sk
-  - skip
-  - skin
-  - skill
-- sl
-  - sled
-  - slam
-  - slip
-  - slot
-- sp
-  - spot
-  - spell
-  - spin
-  - spill
-- st
-  - stand
-  - step
-  - stop
-  - stick
-- sw
-  - swim
-  - swing
-  - swell
+{{% mindmap consonant mindmap-md %}}
+
+- 辅音
+  - bl
+    - black
+    - blink
+    - block
+    - blush
+  - cl
+    - clock
+    - clap
+    - click
+    - club
+    - class
+  - fl
+    - flag
+    - flex
+    - flip
+    - flop
+    - flush
+  - gl
+    - glass
+    - glad
+    - glob
+  - pl
+    - plan
+    - plane
+    - plant
+    - plot
+    - plum
+  - br
+    - Brad
+    - brick
+    - bring
+    - brush
+  - cr
+    - crab
+    - crack
+    - crash
+    - crop
+  - dr
+    - dress
+    - drip
+    - drop
+    - drum
+  - fr
+    - frog
+    - frank
+    - fresh
+    - Fred
+  - gr
+    - grass
+    - grab
+    - grand
+    - grid
+  - tr
+    - track
+    - trap
+    - trick
+    - truck
+  - sk
+    - skip
+    - skin
+    - skill
+  - sl
+    - sled
+    - slam
+    - slip
+    - slot
+  - sp
+    - spot
+    - spell
+    - spin
+    - spill
+  - st
+    - stand
+    - step
+    - stop
+    - stick
+  - sw
+    - swim
+    - swing
+    - swell
+{{% /mindmap %}}
 
 ### 元音组合
 
-- ead
-  - read
-  - bead
-  - lead
-- ean
-  - jean
-  - dean
-  - lean
-  - clean
-- eat
-  - heat
-  - meat
-  - neat
-  - treat
-- eal
-  - meal
-  - seal
-  - deal
-  - real
-- oa
-  - goat
-  - toad
-- oat
-  - coat
-  - goat
-  - boat
-  - moat
-- oad
-  - road
-  - toad
-  - load
-- oap
-  - soap
-- oak
-  - soak
-- oast
-  - toast
-  - roast
-  - coast
-  - boast
-- oal
-  - goal
-- oaf
-  - loaf
+{{% mindmap vowel-combinations mindmap-md %}}
 
+- 元音组合
+  - ead
+    - read
+    - bead
+    - lead
+  - ean
+    - jean
+    - dean
+    - lean
+    - clean
+  - eat
+    - heat
+    - meat
+    - neat
+    - treat
+  - eal
+    - meal
+    - seal
+    - deal
+    - real
+  - oa
+    - goat
+    - toad
+  - oat
+    - coat
+    - goat
+    - boat
+    - moat
+  - oad
+    - road
+    - toad
+    - load
+  - oap
+    - soap
+  - oak
+    - soak
+  - oast
+    - toast
+    - roast
+    - coast
+    - boast
+  - oal
+    - goal
+  - oaf
+    - loaf
+{{% /mindmap %}}
 

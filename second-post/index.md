@@ -22,3 +22,12 @@
       - l323
 {{% /mindmap %}}
 
+{{< timeline >}}
+{{% event title="Test1" from="2021-05-01" to="2021-05-05"%}}
+ABC
+{{% /event %}}
+{{% event title="Test" from="2020-05-01" to="2021-05-01"%}}
+ABC
+{{% /event %}}
+{{</ timeline >}}
+
