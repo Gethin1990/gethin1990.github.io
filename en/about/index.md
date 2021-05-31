@@ -30,9 +30,9 @@
 
 {{% /event %}}
 
-{{% event title="Honwell - Software Engineer" from="2018-05-31" to="2019-06-01" %}}
+{{% event title="Honeywell - Software Engineer" from="2018-05-31" to="2019-06-01" %}}
 
-#### Software Engineer in Honwell, major in mobile app development,like SRS IOS app, ADS Project etc
+#### Software Engineer in Honeywell, major in mobile app development,like SRS IOS app, ADS Project etc
 
 #### Main development language is SWIFT,JS. Main Technology is Cordova, Vue, IOS, Hybird, etc
 

@@ -31,7 +31,7 @@
 
 {{% /event %}}
 
-{{% event title="Honwell - Software Engineer" from="2018-05-31" to="2019-06-01" %}}
+{{% event title="Honeywell - Software Engineer" from="2018-05-31" to="2019-06-01" %}}
 
 #### 在 霍尼韦尔 担任 移动端软件工程师，主要负责开发项目手机端应用，如SRS IOS手机端， 工业报警混合应用端 等
 
