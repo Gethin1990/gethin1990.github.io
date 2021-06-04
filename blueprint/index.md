@@ -71,7 +71,7 @@
 
 #### .NET 本质论 [dotnet-essentialism]
 
-[dotnet-essentialism](https://gethin.online/blog/dotnet-essentialism)
+[dotnet-essentialism](https://blog.gethin.online/dotnet-essentialism)
 
 #### C# 基础语法 [csharp-basic-syntax]
 
@@ -85,22 +85,22 @@
 
 #### Python 基础语法 [python-basic-syntax]
 
-[python-learning-notes](https://gethin.online/blog/python-learning-notes)\
-[python-learning-intermediate-notes](https://gethin.online/blog/python-learning-intermediate-notes)
+[python-learning-notes](https://blog.gethin.online/python-learning-notes)\
+[python-learning-intermediate-notes](https://blog.gethin.online/python-learning-intermediate-notes)
 
 #### Python 高级语法 [professional-python]
 
-[python-quick-grammar](https://gethin.online/blog/python-quick-grammar)
+[python-quick-grammar](https://blog.gethin.online/python-quick-grammar)
 
 #### Python 的应用 [python-application]
 
-[jupyter-notebook-shortcuts](https://gethin.online/blog/jupyter-notebook-shortcuts)
+[jupyter-notebook-shortcuts](https://blog.gethin.online/jupyter-notebook-shortcuts)
 
 ### JS,ES,TS & Vue,React (Gatsby) [js-es-ts-vue-react]
 
 #### 前端框架 [front-end]
 
-[Gatsby](https://gethin.online/tag/Gatsby)
+[Gatsby](https://blog.gethin.online/tag/Gatsby)
 
 #### JavaScript [js]
 
@@ -116,7 +116,7 @@
 
 ### 开发方法 [software-development-methodologies]
 
-  [software-development-methodologies](https://gethin.online/blog/software-development-methodologies)
+  [software-development-methodologies](https://blog.gethin.online/software-development-methodologies)
 
 ### 系统分析与设计 [system-analysis-and-design]
 
@@ -132,7 +132,11 @@
 
 #### Redis [redis]
 
+[[转载]Redis面试题](https://blog.gethin.online/redis-reprinted)
+
 #### RabbitMQ [rabbitmq]
+
+[[转载][转载]消息中间件MQ与RabbitMQ面试题](https://blog.gethin.online/rabbitmq-reprinted)
 
 #### Elastic Search [elastic-search]
 
@@ -140,8 +144,8 @@
 
 ### 基础架构篇 [cloud-infrastructure]
 
-[introduce-microservice-infrastructure-on-cloud](https://gethin.online/blog/introduce-microservice-infrastructure-on-cloud)  
-[how-to-setup-kubernetes-on-azure](https://gethin.online/blog/how-to-setup-kubernetes-on-azure)
+[introduce-microservice-infrastructure-on-cloud](https://blog.gethin.online/en/introduce-microservice-infrastructure-on-cloud)  
+[how-to-setup-kubernetes-on-azure](https://blog.gethin.online/en/how-to-setup-kubernetes-on-azure)
 
 ### 软件架构篇 [cloud-software-architecture]
 

@@ -388,5 +388,6 @@ mq消息队列块满了：如果消息积压在 mq 里，你很长时间都没�
 
 能不能支持数据 0 丢失啊？可以的，参考我们之前说的那个 kafka 数据零丢失方案。
 
-> 本文转自 [https://blog.csdn.net/ThinkWon/article/details/104588612](https://blog.csdn.net/ThinkWon/article/details/104588612)，如有侵权，请联系删除。
+>版权声明：本文为CSDN博主「ThinkWon」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。  
+>原文链接：<https://blog.csdn.net/ThinkWon/article/details/104588612>
 
