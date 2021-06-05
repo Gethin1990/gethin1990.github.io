@@ -112,11 +112,13 @@
 
 ### 重构 [refactoring]
 
+[[转载]C#重构经典全面汇总](https://blog.gethin.online/refactoring-reprinted)
+
 ## 软件工程 [software-engineering]
 
 ### 开发方法 [software-development-methodologies]
 
-  [software-development-methodologies](https://blog.gethin.online/software-development-methodologies)
+[软件开发方法笔记](https://blog.gethin.online/software-development-methodologies)
 
 ### 系统分析与设计 [system-analysis-and-design]
 
