@@ -247,6 +247,36 @@ select b.name, a.text from syscomments a left join sysobjects b on b.id=a.id
 where b.xtype='V' and a.text like '%abc%'
 ```
 
+### 查询表结构
+
+```sql
+ SELECT     
+  table_name=case   when   a.colorder=1   then   d.name   else   ''   end,   
+  table_remarks=case   when   a.colorder=1   then   isnull(f.value,'')   else   ''   end,   
+  field_no=a.colorder,   
+  field_name=a.name,   
+  identification=case   when   COLUMNPROPERTY(   a.id,a.name,'IsIdentity')=1   then   '√'else   ''   end,   
+  primary_key=case   when   exists(SELECT   1   FROM   sysobjects   where   xtype='PK'   and   name   in   (   
+  SELECT   name   FROM   sysindexes   WHERE   indid   in(   
+  SELECT   indid   FROM   sysindexkeys   WHERE   id   =   a.id   AND   colid=a.colid   
+  )))   then   '√'   else   ''   end,   
+  field_type=b.name,   
+  bytes=a.length,   
+  field_length=COLUMNPROPERTY(a.id,a.name,'PRECISION'),   
+  decimal_places=isnull(COLUMNPROPERTY(a.id,a.name,'Scale'),0),   
+  is_allow_null=case   when   a.isnullable=1   then   '√'else   ''   end,   
+  default_value=isnull(e.text,''),   
+  field_description=isnull(g.[value],'')   
+  FROM   syscolumns   a   
+  left   join   systypes   b   on   a.xtype=b.xusertype   
+  inner   join   sysobjects   d   on   a.id=d.id     and   d.xtype='U'   and     d.name<>'dtproperties'   
+  left   join   syscomments   e   on   a.cdefault=e.id   
+  left   join   sys.extended_properties g   on   a.id=g.major_id   and   a.colid=g.minor_id          
+  left   join   sys.extended_properties f   on   d.id=f.major_id   and   f.minor_id   =0   
+  where   d.name='table_name' 
+  order   by   a.id desc,a.colorder   ;
+```
+
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
