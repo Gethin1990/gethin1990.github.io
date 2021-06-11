@@ -4,19 +4,19 @@
 Responses are grouped in five classes:
  Informational responses (100–199) Successful responses (200–299) Redirects (300–399) Client errors (400–499) Server errors (500–599)  The below status codes are defined by section 10 of RFC 2616. You can find an updated specification in RFC 7231.
 If you receive a response that is not in this list, it is a non-standard response, possibly custom to the server&rsquo;s software.]]></description></item><item><title>First_post</title><link>https://blog.gethin.online/en/first-post/</link><pubDate>Thu, 06 May 2021 20:40:14 +0800</pubDate><author>Author</author><guid>https://blog.gethin.online/en/first-post/</guid><description>&lt;div class="featured-image">
-&lt;img src="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/mountains.jpg" referrerpolicy="no-referrer">
+&lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
 &lt;/div>First Post some test content</description></item><item><title>Third Wedding Anniversary (Museum)</title><link>https://blog.gethin.online/en/third-wedding-anniversary-museum/</link><pubDate>Tue, 07 Jul 2020 00:00:00 +0000</pubDate><author>Author</author><guid>https://blog.gethin.online/en/third-wedding-anniversary-museum/</guid><description>&lt;div class="featured-image">
-&lt;img src="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/mountains.jpg" referrerpolicy="no-referrer">
+&lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
 &lt;/div>Third Wedding Anniversary (Museum)
 Time fly, this is a special day because it is my 3rd wedding anniversary. Last sunday，we went to Shanghai Center Town. Lucky, it is no rain that day. As you know, it is alway rain in Rainy Season in Shanghai.
 My wife found a funny place in dazhong dianping (大众点评) app. The place is in 38 floor of Shanghai Center Tower named 宝库匠心馆(3A). Awesome, there are a lot of beautful things.</description></item><item><title>Introduce Microservice &amp; Infrastructure on Cloud</title><link>https://blog.gethin.online/en/introduce-microservice-infrastructure-on-cloud/</link><pubDate>Fri, 17 Apr 2020 07:46:49 +0000</pubDate><author>Author</author><guid>https://blog.gethin.online/en/introduce-microservice-infrastructure-on-cloud/</guid><description><![CDATA[<div class="featured-image">
-                <img src="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/mountains.jpg" referrerpolicy="no-referrer">
+                <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div>This article will introduce Microservice &amp; Infrastructure on Cloud.
   Iaas &amp; Paas &amp; Saas Virtual Machine &amp; Container Docker &amp; Kubernetes Most Basic Architecture Azure Kubernets Service -AKS  Iaas &amp; Paas &amp; Saas  Infrastructure-as-a-service Platform-as-a-service Software-as-a-service  https://www.sherweb.com/blog/cloud-server/what-is-azure-paas/
 Virtual Machine &amp; Container Virtual Machine: Traditional development &amp; deployment，such as IIS &amp; tomcat
 Container:
  Platform independence: Build it once, run it anywhere Resource efficiency and density Effective isolation and resource sharing Speed: Start, create, replicate or destroy containers in seconds Immense and smooth scaling Operational simplicity Improved developer productivity and development pipeline Language independence  Docker &amp; Kubernetes Docker is the popular way which implement container.]]></description></item><item><title>How to setup kubernetes on Azure</title><link>https://blog.gethin.online/en/how-to-setup-kubernetes-on-azure/</link><pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate><author>Author</author><guid>https://blog.gethin.online/en/how-to-setup-kubernetes-on-azure/</guid><description>&lt;div class="featured-image">
-&lt;img src="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/mountains.jpg" referrerpolicy="no-referrer">
+&lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
 &lt;/div>Step 1. How to set AKS Cluster in Azure This step could reference the official documents as below, https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough-portal
 Step 2 Open the could shell )
 The link as https://shell.azure.com/
