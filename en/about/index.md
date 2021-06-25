@@ -1,6 +1,6 @@
 # About Me
 
-### self-introduction
+### Self Introduction
 
 **Hi, My name is Gethin, a software engineer which has majored in computer science and 8 years working experience in foreign fen-tech enterprises and famous internet companies like Honeywell, Tencent, etc.**
 

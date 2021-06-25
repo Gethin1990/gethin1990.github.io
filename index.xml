@@ -1,21 +1,98 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Gethin</title><link>https://blog.gethin.online/</link><description>格心</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>gexu1990@hotmail.com (Gethin)</managingEditor><webMaster>gexu1990@hotmail.com (Gethin)</webMaster><lastBuildDate>Thu, 24 Jun 2021 15:12:06 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/index.xml" rel="self" type="application/rss+xml"/><item><title>CSS 基础</title><link>https://blog.gethin.online/css_basic/</link><pubDate>Thu, 24 Jun 2021 15:12:06 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/css_basic/</guid><description>&lt;div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Gethin</title><link>https://blog.gethin.online/</link><description>Gethin</description><generator>Hugo -- gohugo.io</generator><managingEditor>gexu1990@hotmail.com (Gethin)</managingEditor><webMaster>gexu1990@hotmail.com (Gethin)</webMaster><lastBuildDate>Thu, 24 Jun 2021 15:12:06 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/index.xml" rel="self" type="application/rss+xml"/><item><title>CSS 基础</title><link>https://blog.gethin.online/css_basic/</link><pubDate>Thu, 24 Jun 2021 15:12:06 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/css_basic/</guid><description>&lt;div class="featured-image">
 &lt;img src="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210625132354-2021-06-25-13-23-55.png" referrerpolicy="no-referrer">
 &lt;/div>本文总结了CSS的基础知识</description></item><item><title>HTML 基础</title><link>https://blog.gethin.online/html_basic/</link><pubDate>Thu, 24 Jun 2021 09:37:57 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/html_basic/</guid><description>&lt;div class="featured-image">
 &lt;img src="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210625132949-2021-06-25-13-29-50.png" referrerpolicy="no-referrer">
-&lt;/div>本文主要是总结了HTML的相关基础知识和常用标签。</description></item><item><title>UML设计与基本概念</title><link>https://blog.gethin.online/uml-design/</link><pubDate>Wed, 23 Jun 2021 20:18:17 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/uml-design/</guid><description>&lt;div class="featured-image">
-&lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
-&lt;/div>UML 的各种图 UML 又称为统一建模语言，是为面向对象开发系统进行说明、可视化的一种标准语言。 UML 的分类如下： UML 用例视图 用例图 设计视图 类图 对象图 进程视图 时序图 协作图 状态图 活动图 实现视图 构件图 拓扑视图 部署图 用例图 类</description></item><item><title>HTTP 响应代码</title><link>https://blog.gethin.online/http-status-code/</link><pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate><author>作者</author><guid>https://blog.gethin.online/http-status-code/</guid><description>&lt;div class="featured-image">
+&lt;/div>本文主要是总结了HTML的相关基础知识和常用标签。</description></item><item><title>UML设计与基本概念</title><link>https://blog.gethin.online/uml-design/</link><pubDate>Wed, 23 Jun 2021 20:18:17 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/uml-design/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/images/content.jpg" referrerpolicy="no-referrer">
+            </div>UML 的各种图 UML 又称为统一建模语言，是为面向对象开发系统进行说明、可视化的一种标准语言。
+UML 的分类如下：
+ UML  用例视图  用例图   设计视图  类图 对象图   进程视图  时序图 协作图 状态图 活动图   实现视图  构件图   拓扑视图  部署图       用例图 类图 类图是描述类与类之间的关系，在类图里有常见的六种关系。分别是泛化（Generalization）, 实现（Realization），关联（Association)，聚合（Aggregation），组合(Composition)，依赖(Dependency)
+各种关系的强弱顺序： 泛化 = 实现 &gt; 组合 &gt; 聚合 &gt; 关联 &gt; 依赖
+ 泛化（一种继承关系）
+例如：动物 -&gt; 老虎
+ 实现（类与接口的关系，表示接口的实现）
+例如：鸟 -&gt; 燕子
+ 聚合（部分和整体的关系，但部分可以脱离整体单独存在）]]></description></item><item><title>HTTP 响应代码</title><link>https://blog.gethin.online/http-status-code/</link><pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate><author>作者</author><guid>https://blog.gethin.online/http-status-code/</guid><description>&lt;div class="featured-image">
 &lt;img src="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/web-3967926_1280-2021-06-10-16-37-50.jpg" referrerpolicy="no-referrer">
-&lt;/div>HTTP 响应代码 HTTP 响应状态代码指示特定 HTTP 请求是否已成功完成。 响应分为五类： 信息响应(100–199) 成功响应(200–299) 重定向(300–399) 客户端错误(400–499) 服务器错误 (500–599)</description></item><item><title>[转载]C#重构经典全面汇总</title><link>https://blog.gethin.online/refactoring-reprinted/</link><pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate><author>作者</author><guid>https://blog.gethin.online/refactoring-reprinted/</guid><description>&lt;div class="featured-image">
-&lt;img src="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/refactoring-reprinted-2021-06-05-19-34-07.jpg" referrerpolicy="no-referrer">
-&lt;/div>1. 封装集合 概念：本文所讲的封装集合就是把集合进行封装，只提供调用端需要的接口。 正文：在很多时候，我们都不希望把一些不必要的操作暴露给调用端，只需要给它所需要的操作或数据就行，那么做法就是封装。这个重构</description></item><item><title>[转载]Redis面试题</title><link>https://blog.gethin.online/redis-reprinted/</link><pubDate>Fri, 04 Jun 2021 21:06:39 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/redis-reprinted/</guid><description>&lt;div class="featured-image">
+&lt;/div>HTTP 响应代码 HTTP 响应状态代码指示特定 HTTP 请求是否已成功完成。
+响应分为五类：
+信息响应(100–199) 成功响应(200–299) 重定向(300–399) 客户端错误(400–499) 服务器错误 (500–599) 状态代码由 section 10 of RFC 2616定义
+信息响应 100 Continue 这个临时响应表明，迄今为止的所有内容都是可行的，客户端应该继续请求，如果已经完成，则忽略它。
+101 Switching Protocol 该代码是响应客户端的 Upgrade (en-US) 标头发送的，并且指示服务器也正在切换的协议。
+102 Processing (WebDAV (en-US)) 此代码表示服务器已收到并正在处理该请求，但没有响应可用。
+103 Early Hints 此状态代码主要用于与Link 链接头一起使用，以允许用户代理在服务器仍在准备响应时开始预加载资源。
+成功响应 200 OK 请求成功。成功的含义取决于HTTP方法：
+GET：资源已被提取并在消息正文中传输。 HEAD：实体标头位于消息正文中。 POST：描述动作结果的资源在消息体中传输。 TRACE：消息正文包含服务器收到的请求消息 201 Created 该请求已成功，并因此创建了一个新的资源。这通常是在POST请求，或是某些PUT请求之后返回的响应。
+202 Accepted 请求已经接收到，但还未响应，没有结果。意味着不会有一个异步的响应去表明当前请求的结果，预期另外的进程和服务去处理请求，或者批处理。
+203 Non-Authoritative Information 服务器已成功处理了请求，但返回的实体头部元信息不是在原始服务器上有效的确定集合，而是来自本地或者第三方的拷贝。当前的信息可能是原始版本的子集或者超集。例如，包含资源的元数据可能导致原始服务器知道元信息的超集。使用此状态码不是必须的，而且只有在响应不使用此状态码便会返回200 OK的情况下才是合适的。
+204 No Content 服务器成功处理了请求，但不需要返回任何实体内容，并且希望返回更新了的元信息。响应可能通过实体头部的形式，返回新的或更新后的元信息。如果存在这些头部信息，则应当与所请求的变量相呼应。如果客户端是浏览器的话，那么用户浏览器应保留发送了该请求的页面，而不产生任何文档视图上的变化，即使按照规范新的或更新后的元信息应当被应用到用户浏览器活动视图中的文档。由于204响应被禁止包含任何消息体，因此它始终以消息头后的第一个空行结尾。
+205 Reset Content 服务器成功处理了请求，且没有返回任何内容。但是与204响应不同，返回此状态码的响应要求请求者重置文档视图。该响应主要是被用于接受用户输入后，立即重置表单，以便用户能够轻松地开始另一次输入。与204响应一样，该响应也被禁止包含任何消息体，且以消息头后的第一个空行结束。</description></item><item><title>[转载]C#重构经典全面汇总</title><link>https://blog.gethin.online/refactoring-reprinted/</link><pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate><author>作者</author><guid>https://blog.gethin.online/refactoring-reprinted/</guid><description><![CDATA[<div class="featured-image">
+                <img src="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/refactoring-reprinted-2021-06-05-19-34-07.jpg" referrerpolicy="no-referrer">
+            </div>1. 封装集合  概念：本文所讲的封装集合就是把集合进行封装，只提供调用端需要的接口。
+正文：在很多时候，我们都不希望把一些不必要的操作暴露给调用端，只需要给它所需要的操作或数据就行，那么做法就是封装。这个重构在微软的代码库也经常遇到。比如最经典的属性对字段的封装就是一个很好的例子，那么下面我们将看到对集合的封装，如下代码所示，调用端只需要一个集合的信息，而我们则提供了一个IList的集合，大家都知道IList具有对集合的所有操作，所以这会带来很多隐患，最好的做法就是对它进行重构。
+那么重构之后，我们把IList换成了IEnumerable，大家都知道只包括一个返回值为IEnumerator的GetEnumerator()方法，所以这样只能遍历取出它的值，而不能对这个集合做出改变，这正是我们所需要的结果，具体代码如下：
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35  using System.Collections.Generic; namespace LosTechies.DaysOfRefactoring.EncapsulateCollection.Before { public class Order { private List&lt;OrderLine&gt; _orderLines; private double _orderTotal; public IList&lt;OrderLine&gt; OrderLines { get { return _orderLines; } } public void AddOrderLine(OrderLine orderLine) { _orderTotal += orderLine.]]></description></item><item><title>[转载]Redis面试题</title><link>https://blog.gethin.online/redis-reprinted/</link><pubDate>Fri, 04 Jun 2021 21:06:39 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/redis-reprinted/</guid><description>&lt;div class="featured-image">
 &lt;img src="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/redis-2021-06-04-21-41-23.jpg" referrerpolicy="no-referrer">
-&lt;/div>概述 什么是Redis Redis(Remote Dictionary Server) 是一个使用 C 语言编写的，开源的（BSD许可）高性能非关系型（NoSQL）的键值对数据库。 Redis 可以存储键和五种不同类型的值之间的映射。键的类型只能为字符串，值支持五种数据类型：字</description></item><item><title>[转载]消息中间件MQ与RabbitMQ面试题</title><link>https://blog.gethin.online/rabbitmq-reprinted/</link><pubDate>Fri, 04 Jun 2021 10:58:43 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/rabbitmq-reprinted/</guid><description>&lt;div class="featured-image">
+&lt;/div>概述 什么是Redis Redis(Remote Dictionary Server) 是一个使用 C 语言编写的，开源的（BSD许可）高性能非关系型（NoSQL）的键值对数据库。
+Redis 可以存储键和五种不同类型的值之间的映射。键的类型只能为字符串，值支持五种数据类型：字符串、列表、集合、散列表、有序集合。
+与传统数据库不同的是 Redis 的数据是存在内存中的，所以读写速度非常快，因此 redis 被广泛应用于缓存方向，每秒可以处理超过 10万次读写操作，是已知性能最快的Key-Value DB。另外，Redis 也经常用来做分布式锁。除此之外，Redis 支持事务 、持久化、LUA脚本、LRU驱动事件、多种集群方案。
+Redis有哪些优缺点 优点
+读写性能优异， Redis能读的速度是110000次/s，写的速度是81000次/s。 支持数据持久化，支持AOF和RDB两种持久化方式。 支持事务，Redis的所有操作都是原子性的，同时Redis还支持对几个操作合并后的原子性执行。 数据结构丰富，除了支持string类型的value外还支持hash、set、zset、list等数据结构。 支持主从复制，主机会自动将数据同步到从机，可以进行读写分离。 缺点
+数据库容量受到物理内存的限制，不能用作海量数据的高性能读写，因此Redis适合的场景主要局限在较小数据量的高性能操作和运算上。 Redis 不具备自动容错和恢复功能，主机从机的宕机都会导致前端部分读写请求失败，需要等待机器重启或者手动切换前端的IP才能恢复。 主机宕机，宕机前有部分数据未能及时同步到从机，切换IP后还会引入数据不一致的问题，降低了系统的可用性。 Redis 较难支持在线扩容，在集群容量达到上限时在线扩容会变得很复杂。为避免这一问题，运维人员在系统上线时必须确保有足够的空间，这对资源造成了很大的浪费。 为什么要用 Redis /为什么要用缓存 主要从“高性能”和“高并发”这两点来看待这个问题。
+高性能：
+假如用户第一次访问数据库中的某些数据。这个过程会比较慢，因为是从硬盘上读取的。将该用户访问的数据存在数缓存中，这样下一次再访问这些数据的时候就可以直接从缓存中获取了。操作缓存就是直接操作内存，所以速度相当快。如果数据库中的对应数据改变的之后，同步改变缓存中相应的数据即可！
+高并发：
+直接操作缓存能够承受的请求是远远大于直接访问数据库的，所以我们可以考虑把数据库中的部分数据转移到缓存中去，这样用户的一部分请求会直接到缓存这里而不用经过数据库。
+为什么要用 Redis 而不用 map/guava 做缓存? 缓存分为本地缓存和分布式缓存。以 Java 为例，使用自带的 map 或者 guava 实现的是本地缓存，最主要的特点是轻量以及快速，生命周期随着 jvm 的销毁而结束，并且在多实例的情况下，每个实例都需要各自保存一份缓存，缓存不具有一致性。
+使用 redis 或 memcached 之类的称为分布式缓存，在多实例的情况下，各实例共用一份缓存数据，缓存具有一致性。缺点是需要保持 redis 或 memcached服务的高可用，整个程序架构上较为复杂。</description></item><item><title>[转载]消息中间件MQ与RabbitMQ面试题</title><link>https://blog.gethin.online/rabbitmq-reprinted/</link><pubDate>Fri, 04 Jun 2021 10:58:43 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/rabbitmq-reprinted/</guid><description>&lt;div class="featured-image">
 &lt;img src="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/RabbitMQ-2021-06-04-13-49-43.jpg" referrerpolicy="no-referrer">
-&lt;/div>为什么使用MQ？MQ的优点 简答 异步处理 - 相比于传统的串行、并行方式，提高了系统吞吐量。 应用解耦 - 系统间通过消息通信，不用关心其他系统的处理。 流量削锋 - 可以通过消息队列长度控制请求量；可以缓解短时间内的</description></item><item><title>软件架构设计</title><link>https://blog.gethin.online/software-architecture-design/</link><pubDate>Sat, 29 May 2021 21:01:34 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/software-architecture-design/</guid><description>&lt;div class="featured-image">
+&lt;/div>为什么使用MQ？MQ的优点 简答
+异步处理 - 相比于传统的串行、并行方式，提高了系统吞吐量。 应用解耦 - 系统间通过消息通信，不用关心其他系统的处理。 流量削锋 - 可以通过消息队列长度控制请求量；可以缓解短时间内的高并发请求。 日志处理 - 解决大量日志传输。 消息通讯 - 消息队列一般都内置了高效的通信机制，因此也可以用在纯的消息通讯。比如实现点对点消息队列，或者聊天室等。 详答
+主要是：解耦、异步、削峰。
+解耦：A 系统发送数据到 BCD 三个系统，通过接口调用发送。如果 E 系统也要这个数据呢？那如果 C 系统现在不需要了呢？A 系统负责人几乎崩溃…A 系统跟其它各种乱七八糟的系统严重耦合，A 系统产生一条比较关键的数据，很多系统都需要 A 系统将这个数据发送过来。如果使用 MQ，A 系统产生一条数据，发送到 MQ 里面去，哪个系统需要数据自己去 MQ 里面消费。如果新系统需要数据，直接从 MQ 里消费即可；如果某个系统不需要这条数据了，就取消对 MQ 消息的消费即可。这样下来，A 系统压根儿不需要去考虑要给谁发送数据，不需要维护这个代码，也不需要考虑人家是否调用成功、失败超时等情况。
+就是一个系统或者一个模块，调用了多个系统或者模块，互相之间的调用很复杂，维护起来很麻烦。但是其实这个调用是不需要直接同步调用接口的，如果用 MQ 给它异步化解耦。
+异步：A 系统接收一个请求，需要在自己本地写库，还需要在 BCD 三个系统写库，自己本地写库要 3ms，BCD 三个系统分别写库要 300ms、450ms、200ms。最终请求总延时是 3 + 300 + 450 + 200 = 953ms，接近 1s，用户感觉搞个什么东西，慢死了慢死了。用户通过浏览器发起请求。如果使用 MQ，那么 A 系统连续发送 3 条消息到 MQ 队列中，假如耗时 5ms，A 系统从接受一个请求到返回响应给用户，总时长是 3 + 5 = 8ms。</description></item><item><title>软件架构设计</title><link>https://blog.gethin.online/software-architecture-design/</link><pubDate>Sat, 29 May 2021 21:01:34 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/software-architecture-design/</guid><description>&lt;div class="featured-image">
 &lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
-&lt;/div>1 软件架构概述 1.1 软件架构的定义 架构是对系统的抽象，由多个架构组成，任何软件都存在架构，元素与其行为的集合构成架构内容，架构具有“基础性”，架构隐含有“决策”。 1.2 软件架构重要性 项目关系人之间交流平台； 早</description></item><item><title>自定义扩展功能测试</title><link>https://blog.gethin.online/second-post/</link><pubDate>Wed, 26 May 2021 10:00:39 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/second-post/</guid><description>&lt;div class="featured-image">
+&lt;/div>1 软件架构概述 1.1 软件架构的定义 架构是对系统的抽象，由多个架构组成，任何软件都存在架构，元素与其行为的集合构成架构内容，架构具有“基础性”，架构隐含有“决策”。
+1.2 软件架构重要性 项目关系人之间交流平台；
+早期设计决策；
+在较高层面上实现软件复用；
+架构对开发的指导与规范意义不容忽略。
+1.3 架构的模型 结构模型；框架模型；动态模型；过程模型；功能模型；
+逻辑视图，开发视图，进程视图，物理视图，场景。
+2 架构需求与软件质量属性 2.1 软件质量属性 功能性；可靠性；易用性；效率；可维护性；可移植性；
+1 运行期质量属性
+性能；安全性；易用性；可伸缩性；互操作性；可靠性；持续可用性；鲁棒性；
+2 开发期质量属性
+易理解性；可扩展性；可重用性；可测试性；可维护性；
+2.2 六个质量属性与实现 质量属性：可用性；可修改性；性能；安全性；可测试性；易用性；
+质量属性场景组件：刺激源；刺激；环境；制品；响应；响应度量；
+1 可用性与其实现战术
+可用性描述
+可用性战术
+错误检测：命令/响应；心跳；异常；
+错误恢复
+表决；主动冗余；被动冗余；备件；状态再同步；检查点/回滚；
+错误预防
+从服务中删除；事务；进程监视器； 2 可修改性与其实现战术
+可修改性描述
+可修改性战术
+局部化修改；(维持语义的一致性；预期期望的变更；泛化该模块；限制可能的选择)
+防止连锁反应；（信息隐藏；维持现有的接口；限制通信路径；仲裁者的使用）
+推迟绑定时间；（运行时注册；配置文件；多态；构件更换；） 3 性能与其实现技术
+性能描述
+性能战术
+资源消耗：闭锁时间；
+资源需求：减少处理事件流所需的资源；减少所处理事件的数量；控制资源的使用；
+资源管理：引入并发；维持数据或计算的多个副本；增加可用资源；
+资源仲裁：先进先出；固定优先级调度；动态优先级调度；静态调度； 4 安全性与其实现技术
+安全性描述
+安全性战术
+抵抗攻击：对用户进行身份验证；对用户进行授权；维护数据的机密性；维护完整性；限制暴露的信息；限制访问；
+检测攻击
+从攻击中恢复：恢复；识别攻击者； 5 可测试性与其实现战术</description></item><item><title>自定义扩展功能测试</title><link>https://blog.gethin.online/second-post/</link><pubDate>Wed, 26 May 2021 10:00:39 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/second-post/</guid><description>&lt;div class="featured-image">
 &lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
-&lt;/div>自定义扩展 脑图测试 Root l1 l11 l12 l2 l12 l121 l122 l13 l3 l31 l313 l323 Test1 ABC 2021 function non0plural(number, name) { if (number == 0) { return "" } if (number == 1 || number == -1) { return number + " " +name } return number + " " + name + "s" } el = document.querySelector("#moment"); function refresh() { start = dayjs("2021-05-01") now = dayjs() total_months = now.diff(start, "M", true) months = total_months % 12 let years = 0 if (months Test 11 months ABC 2020</description></item><item><title>博客代办事项</title><link>https://blog.gethin.online/blog-todo/</link><pubDate>Sat, 22 May 2021 10:13:00 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/blog-todo/</guid><description>&lt;div class="featured-image">
+&lt;/div>自定义扩展 脑图测试 Root l1 l11 l12 l2 l12 l121 l122 l13 l3 l31 l313 l323 Test1 ABC
+2021 function non0plural(number, name) { if (number == 0) { return "" } if (number == 1 || number == -1) { return number + " " +name } return number + "</description></item><item><title>博客代办事项</title><link>https://blog.gethin.online/blog-todo/</link><pubDate>Sat, 22 May 2021 10:13:00 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/blog-todo/</guid><description>&lt;div class="featured-image">
 &lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
 &lt;/div>网站功能 文章加密 自定义域名 网站分析 脑图 时间轴 评论的优化 关于页面的优化 版权声明 运行时间 赞赏 网站流量统计 编辑 新文章头部模板</description></item></channel></rss>
