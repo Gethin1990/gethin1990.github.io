@@ -325,6 +325,7 @@ ApplicationContext, Brush, Component, ComponentDesigner, Container, Context, Cur
            }
        }
   ```
+
   真正做释放工作的只是受保护的虚方法Dispose，它接收一个bool参数，主要用于区分调用者是类型的使用者还是.NET的GC机制。两者的区别在于**通过Finalize方法释放资源时不能再释放或使用对象中的托管资源，这是因为这时的对象已经处于不被使用的状态，很有可能其中的托管资源已经被释放掉了**。在Dispose方法中**GC.SuppressFinalize(this)**告诉GC此对象在被回收时不需要调用Finalize方法，这一句是改善性能的关键，记住**实现Dispose方法的本质目的就在于避免所有释放工作在Finalize方法中进行。**
 
 ## .NET中的托管堆中是否可能出现内存泄露的现象
