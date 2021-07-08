@@ -1,4 +1,15 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Gethin</title><link>https://blog.gethin.online/</link><description>Gethin</description><generator>Hugo -- gohugo.io</generator><managingEditor>gexu1990@hotmail.com (Gethin)</managingEditor><webMaster>gexu1990@hotmail.com (Gethin)</webMaster><lastBuildDate>Thu, 24 Jun 2021 15:12:06 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/index.xml" rel="self" type="application/rss+xml"/><item><title>CSS 基础</title><link>https://blog.gethin.online/css_basic/</link><pubDate>Thu, 24 Jun 2021 15:12:06 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/css_basic/</guid><description>&lt;div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Gethin</title><link>https://blog.gethin.online/</link><description>Gethin</description><generator>Hugo -- gohugo.io</generator><managingEditor>gexu1990@hotmail.com (Gethin)</managingEditor><webMaster>gexu1990@hotmail.com (Gethin)</webMaster><lastBuildDate>Thu, 08 Jul 2021 12:57:57 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/index.xml" rel="self" type="application/rss+xml"/><item><title>云上基础架构</title><link>https://blog.gethin.online/introduce-microservice-infrastructure-on-cloud/</link><pubDate>Thu, 08 Jul 2021 12:57:57 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/introduce-microservice-infrastructure-on-cloud/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/images/content.jpg" referrerpolicy="no-referrer">
+            </div>Iaas &amp; Paas &amp; Saas 虚拟机和容器 Docker &amp; Kubernetes 基础架构的关注点 Azure Kubernets Service - AKS   Iaas &amp; Paas &amp; Saas   IaaS 基础架构即服务， 硬件相关的部分由第三方运营，如服务器，存储，网卡等。其他由拥有者来维护。
+  PaaS 平台即服务，部分与应用无关的部分由第三方运营，自己的应用程序是基于第三方提供的平台来进行开发维护，但数据和应用程序由拥有者本人来进行管理。
+  SaaS 软件即服务，将所有的部分都交给第三方管理，拥有者本身只需要基于应用程序进行配置或是二次开发。
+啥是 azure-paas
+  虚拟机和容器 虚拟机，用传统开发和部署的方式来运行在服务器上，如IIS，Tomcat等 为什么要选用容器，容器有什么优势么？
+ 平台独立，一次build，可以运行在各个平台。 资源的效率和利用率比较高 有效的隔离性和可分享性 速度很快，可以在短时间内进行创建，复制和销毁 可以实现平滑的伸缩 操作便捷 改进开发人员的生产力和开发流程 语言独立性  Docker &amp; Kubernetes Docker是时下流行的来实现容器的一种方式。关于容器编排，市场上还有其他的方式，如Azure Service Fabric，Amazon Elastic Container Service
+那么我们为什么要选用K8S?
+ 容器编排 非常适合采用多云方式进行 大规模部署和更新应用程序，以加快产品上市时间（水平自动缩放，滚动更新，Canary部署） 天然支持云原生应用 降低基础设施成本 它可以在本地或混合环境中运行 您可以将Kubernetes集群从一个托管供应商移动到另一个托管供应商，而无需更改（几乎）任何部署和管理过程。 零停机时间部署，容错，高可用性，扩展，调度和自愈功能在Kubernetes中具有重要价值。  基础架构的关注点  服务注册 服务发现 监控 限流 路由 负载均衡 超时重试 熔断 服务降级 故障迁移  Azure Kubernets Service -AKS 1.]]></description></item><item><title>架构师论文摘要</title><link>https://blog.gethin.online/architecture-paper/</link><pubDate>Thu, 08 Jul 2021 12:57:57 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/architecture-paper/</guid><description>&lt;div class="featured-image">
+&lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
+&lt;/div>架构师论文摘要链接（自用）</description></item><item><title>CSS 基础</title><link>https://blog.gethin.online/css_basic/</link><pubDate>Thu, 24 Jun 2021 15:12:06 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/css_basic/</guid><description>&lt;div class="featured-image">
 &lt;img src="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210625132354-2021-06-25-13-23-55.png" referrerpolicy="no-referrer">
 &lt;/div>本文总结了CSS的基础知识</description></item><item><title>HTML 基础</title><link>https://blog.gethin.online/html_basic/</link><pubDate>Thu, 24 Jun 2021 09:37:57 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/html_basic/</guid><description>&lt;div class="featured-image">
 &lt;img src="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210625132949-2021-06-25-13-29-50.png" referrerpolicy="no-referrer">
@@ -90,9 +101,4 @@ Redis有哪些优缺点 优点
 安全性战术
 抵抗攻击：对用户进行身份验证；对用户进行授权；维护数据的机密性；维护完整性；限制暴露的信息；限制访问；
 检测攻击
-从攻击中恢复：恢复；识别攻击者； 5 可测试性与其实现战术</description></item><item><title>自定义扩展功能测试</title><link>https://blog.gethin.online/second-post/</link><pubDate>Wed, 26 May 2021 10:00:39 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/second-post/</guid><description>&lt;div class="featured-image">
-&lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
-&lt;/div>自定义扩展 脑图测试 Root l1 l11 l12 l2 l12 l121 l122 l13 l3 l31 l313 l323 Test1 ABC
-2021 function non0plural(number, name) { if (number == 0) { return "" } if (number == 1 || number == -1) { return number + " " +name } return number + "</description></item><item><title>博客代办事项</title><link>https://blog.gethin.online/blog-todo/</link><pubDate>Sat, 22 May 2021 10:13:00 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/blog-todo/</guid><description>&lt;div class="featured-image">
-&lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
-&lt;/div>网站功能 文章加密 自定义域名 网站分析 脑图 时间轴 评论的优化 关于页面的优化 版权声明 运行时间 赞赏 网站流量统计 编辑 新文章头部模板</description></item></channel></rss>
+从攻击中恢复：恢复；识别攻击者； 5 可测试性与其实现战术</description></item></channel></rss>

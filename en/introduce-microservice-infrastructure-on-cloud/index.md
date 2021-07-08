@@ -2,12 +2,15 @@
 
 
 > This article will introduce Microservice & Infrastructure on Cloud.
+{{% mindmap summary mindmap-md %}}
 
 - Iaas & Paas & Saas
 - Virtual Machine & Container
 - Docker & Kubernetes
 - Most Basic Architecture
-- Azure Kubernets Service -AKS
+- Azure Kubernets Service - AKS
+
+{{% /mindmap %}}
 
 ## Iaas & Paas & Saas
 
