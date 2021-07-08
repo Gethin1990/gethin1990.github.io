@@ -61,4 +61,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: https://blog.gethin.online/en/sitemap.xml
+Sitemap: https://blog.gethin.online/sitemap.xml

@@ -3,11 +3,12 @@
 
 {{% mindmap summary mindmap-md %}}
 
-- Iaas & Paas & Saas
-- 虚拟机和容器
-- Docker & Kubernetes
-- 基础架构的关注点
-- Azure Kubernets Service - AKS
+- 云上基础架构
+  - Iaas & Paas & Saas
+  - 虚拟机和容器
+  - Docker & Kubernetes
+  - 基础架构的关注点
+  - Azure Kubernets Service - AKS
 
 {{% /mindmap %}}
 

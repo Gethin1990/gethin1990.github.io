@@ -1,6 +1,6 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Gethin</title><link>https://blog.gethin.online/</link><description>Gethin</description><generator>Hugo -- gohugo.io</generator><managingEditor>gexu1990@hotmail.com (Gethin)</managingEditor><webMaster>gexu1990@hotmail.com (Gethin)</webMaster><lastBuildDate>Thu, 08 Jul 2021 12:57:57 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/index.xml" rel="self" type="application/rss+xml"/><item><title>云上基础架构</title><link>https://blog.gethin.online/introduce-microservice-infrastructure-on-cloud/</link><pubDate>Thu, 08 Jul 2021 12:57:57 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/introduce-microservice-infrastructure-on-cloud/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
-            </div>Iaas &amp; Paas &amp; Saas 虚拟机和容器 Docker &amp; Kubernetes 基础架构的关注点 Azure Kubernets Service - AKS   Iaas &amp; Paas &amp; Saas   IaaS 基础架构即服务， 硬件相关的部分由第三方运营，如服务器，存储，网卡等。其他由拥有者来维护。
+            </div>云上基础架构  Iaas &amp; Paas &amp; Saas 虚拟机和容器 Docker &amp; Kubernetes 基础架构的关注点 Azure Kubernets Service - AKS     Iaas &amp; Paas &amp; Saas   IaaS 基础架构即服务， 硬件相关的部分由第三方运营，如服务器，存储，网卡等。其他由拥有者来维护。
   PaaS 平台即服务，部分与应用无关的部分由第三方运营，自己的应用程序是基于第三方提供的平台来进行开发维护，但数据和应用程序由拥有者本人来进行管理。
   SaaS 软件即服务，将所有的部分都交给第三方管理，拥有者本身只需要基于应用程序进行配置或是二次开发。
 啥是 azure-paas
