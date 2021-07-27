@@ -36,6 +36,8 @@
 | **bid** | kid     | **odd** | due     | dig     | our     | hot     | **mud** | art     | zoo     |
 | leg     | his     | she     | **cab** | **rib** | add     | **rub** | **dew** |
 
+<https://blog.gethin.online/ielts-words-3-words/>
+
 ### 4字母
 
 | 0    | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    |
@@ -44,19 +46,41 @@
 | fear | bear | turn | coal | most | hour | bang | lamb | past | than |
 | tick | luck | noun | baby | wool | gate | pant | loom | joke | cube |
 | mist | shun | full | bowl | each | unit | foot | cafe | heal | zero |
-
-#### 单词联想
-
-pray|ray|beg|pray for
-sway|way|wag|
-evil|do evil|造孽
-near|dear|ear|bear
-fear|afraid
-lift|life|live|left
-lamb|lab
-gate|enter|gap
-pant|ant
-mist|fog
-shun|瞬|避开
-heal|cure
+| seem | area | dash | plug | roll | wall | mean | weep | seed | sock |
+| buzz | chip | neat | sore | poem | toss | rare | bald | whom | some |
+| foam | drop | sign | spin | sink | rail | oral | pest | twin | idea |
+| clue | feed | pear | head | tidy | crop | mend | veto | kite | move |
+| sift | hair | keen | dark | wide | fist | pink | tray | shot | thus |
+| levy | stew | mast | moan | milk | film | goat | snob | curb | song |
+| army | horn | trip | wake | yawn | folk | glow | fail | stem | duck |
+| deem | rude | bake | slit | back | push | germ | undo | loop | feud |
+| sick | calm | vein | hind | once | poet | cone | loan | edit | vain |
+| noon | amid | such | hold | tarp | link | roof | user | pore | deer |
+| hard | clap | arch | like | rest | heed | earl | ajar | body | cape |
+| snap | skin | watt | task | flow | onto | cite | zone | lace | play |
+| soap | hang | bean | moth | bird | ward | bull | gust | bank | fast |
+| tape | wild | disc | dung | sour | tyre | just | king | rain | name |
+| damp | mile | fowl | poll | rise | pork | lazy | plot | pair | thin |
+| navy | yolk | meal | pump | emit | pond | grin | upon | this | cool |
+| what | born | solo | snow | dust | spot | knob | wing | male | boss |
+| come | beef | rack | dock | left | glad | mock | help | copy | mute |
+| lawn | ever | comb | land | clip | inch | open | wine | warm | drag |
+| corn | fair | mark | reed | tail | meat | leak | miss | sack | care |
+| hush | soul | fare | bell | gram | cent | file | vest | dine | leap |
+| tame | size | self | firm | risk | plus | sure | team | diet | defy |
+| well | doom | side | hero | make | band | loud | heel | lime | limp |
+| tile | dive | chew | bent | memo | veil | cope | drip | acid | want |
+| wave | show | heat | grim | draw | hull | fish | soar | chop | cell |
+| halt | grab | flag | deal | Arab | kilo | duke | swim | knot | brow |
+| sake | cash | data | doze | mode | bark | kiss | your | wife | main |
+| vast | suck | cook | core | tell | home | hint | daze | town | look |
+| obey | week | tram | goal | coil | fork | hate | grip | drug | tent |
+| mass | pick | more | gulf | iron | calf | wrap | cage | nice | bony |
+| with | pain | drum | fool | pint | cart | hand | gown | coin | soon |
+| even | menu | over | gaze | same | nine | item | heap | edge | norm |
+| know | talk | roam | cave | shop | lend | lion | claw | hawk | lick |
+| reel | deaf | knit | deed | pool | into | quiz | pawn | cost | seek |
+| dawn | none | shut | dare | fact | crow | fort | bite | slam | boil |
+| send | puff | jump | jeep | exit | mate | blue | year | ripe | pave |
+| weak | from | pour | jack | vase | crew | tiny | fold | bend | dish |
 

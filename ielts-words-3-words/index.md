@@ -8,16 +8,16 @@
 - aim -> target
 - ash -> dust
 - bay -> baby: take baby to bay
-- bet -> beg
+- bet -> beg /have a bet
 - bid -> bed: I bid for a bed.
 - bow -> bowl: 碗比较圆，半圆就是弓
-- bud -> growth
+- bud -> growth/ tree is bud
 - cab -> car: the cab of car
 - dam -> dam up: 坝起——阻拦
 - dew -> drew:  画画要用水滴
 - dim -> dark
 - dip -> drop
-- dye -> ink
+- dye -> ink/red dye
 - era -> age
 - flu -> ill
 - fry -> dry: 炸干 fry checkin
@@ -36,7 +36,7 @@
 - jog -> dog jog
 - lag -> delay /lag behind
 - lap -> the lap of cap
-- lid -> cap
+- lid -> cap/ tge lid of bottle
 - lip -> talk
 - mat -> Matt sit in the mat
 - mop -> 抹布
@@ -46,7 +46,7 @@
 - nod -> knowed
 - nor -> not
 - oak -> 奥克tree
-- oar -> all oar/boat
+- oar -> all oar/the oar of boat
 - odd -> (even in math) 1,3,5,7,11
 - ore -> oar 船桨敲矿石
 - owl -> bowl 带枭图案的碗
@@ -63,10 +63,10 @@
 - rub -> mop /rub away =remove
 - rug -> hug/footcloth
 - sew -> saw / seam
-- sin -> gap
+- sin -> 贼
 - sly -> sly spy
 - sob -> cry
-- sow -> sow seed
+- sow -> slow/sow seed
 - tan -> brown/谈棕色
 - tin -> tin can
 - tip -> keys
