@@ -3,6 +3,15 @@
 
 ## 前缀
 
+|        |                                                                                                                                                                                                                        |
+| ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 方向:  | ad【朝向】；by【旁边】；epi【旁边】；para【旁边】；circum【周围】；dia【居中】；en;em【进入】；inter;【之间】；per【穿过】；para【旁边】；tele【远距离】；trans【穿越】；                                                         |
+|        | de【下降】；hyper【之上】；hypo【之下】；sub;suc;suf;sup【在下方】；super【在上方】；over【上方】； under【下】；up【上】；                                                                                            |
+|        | fore【前面】；pre【前】；pro【向前】；post【后面】；with【向后】；ex;e;ec;ef;exo【向外】；il;im;in;ir【向内】；intro【向内】；intra【里面】；out【外】；                                                                            |
+|        | ab【相反】；dif【分开】；dis【相反】；ob;op【反】；re【相反】；se【分开】；extra【超出】；sur【超过】；                                                                                                                |
+| 数字： | bi【二】；deca;dec;deci【十】；kilo【千】；octo;octa;octu【八】；tri【三】；twi【二】；hemi【一半】；mon;mono【单一】；multi【多】；poly【多】；uni【单一】；                                                                      |
+| 意义： | anti【反对】;arch【主要的；弧形 】；auto【自动】;be【使】；bene【好】；co【共同】；contra【对抗】； eco【生态】；geo【土地】；homo【相同】；mal【坏】；micro【微】mini【小】mis【错误】；sym;syn【共同的】；un【不】； |
+
 1. a| 加强
 2. ab;abs| 离开；相反；不 | away;from;not
    1. absent| abs+ent
@@ -10,7 +19,9 @@
    3. abstract| abs+tract
    4. abuse| ab+use
    5. abnormal| ab+norm+al
-3. ab;ac;af;ap;ar;as;at| 加强
+3. ab;ac;af;ap;ar;as;at| 加强 |to
+   1. account
+   2. accustom
 4. ad| 朝向 | to;toward
    1. admire| ad+mire
    2. adjoin| ad+join
@@ -28,7 +39,9 @@
    1. automatic| auto+matic
    2. automobile| auto+mobile
    3. autoalarm| auto+alarm
-8. be|使；加以；在
+8. be|使；加以；在| make
+   1. behave
+   2. beloved
 9. bene| 好 | good
    1. benefit| bene+fit
    2. benefactor| bene+fact+or
@@ -47,7 +60,7 @@
     3. circumscribe| circum+scribe
     4. circumspect| circum+spect
     5. circumvent| circum+vent
-13. co;com| 共同；一起 | with;together
+13. co;com;con;cor;col| 共同；一起 | with;together
     1. coherent| co+her+ent
     2. combine| com+bine
     3. compassion| com+pass+ion
@@ -65,192 +78,216 @@
     3. demeaning| de+mean+ing
     4. demerit| de+merit
     5. demolish| de+mol+ish
-16. dia| 穿越；居中 | through;between
+16. deca;dec;deci | 十 | ten
+    1. decade| deca+de
+    2. decathlete| dec+athlete
+    3. decible| deci+ble
+17. dia| 穿越；居中 | through;between
     1. diagnose| dia+gnose
     2. dialogue| dia+logue
     3. diameter| dia+meter
-17. dif| 分开；否定 |
-18. dis| 相反的 | not
+18. dif| 分开；否定 |
+    1. difference
+    2. diffident
+19. dis| 相反的 | not
     1. disagree| dis+agree
     2. discourage| dis+cour+age
     3. dishonest| dis+honest
     4. dislike| dis+like
     5. dismiss| dis+miss
-19. eco| 生态；经济 |
-20. en;em| 使进入 | in
+20. eco| 生态；经济 |lift;
+    1. ecological
+21. en;em| 使进入 | in
     1. embellish| em+bell+ish
     2. embrace| em+brace
     3. enclose| en+close
     4. enforce| en+force
     5. enhance| en+hance
-21. ex| 向外 | out
+22. epi| 在...旁边；上；后 |
+    1. epigram| epi+gram
+    2. epigraph| epi+graph
+    3. epilogue| epi+logue
+23. ex;e;ec;ef;exo| 向外 | out
     1. exclude| ex+clude
     2. exhale| ex+hale
     3. export| ex+port
     4. exposure| ex+pos+ure
     5. extend| ex+tend
-22. extra| 超过 | over;beyond
+24. extra;extro| 超过 | over;beyond
     1. extracurricular| extra+curricul+ar
     2. extraordinary| extra+ordin+ary
     3. extravagant| extra+vag+ant
-23. fore| 前面 | before
+25. fore| 前面 | before
     1. forearm| fore+arm
     2. forecast| fore+cast
     3. foredoom| fore+doom
     4. forefather| fore+father
     5. forehead| fore+head
-24. geo| 地；土地 |
-25. hemi| 一半 | half
+26. geo| 地；土地 |
+27. hemi| 一半 | half
     1. hemicycle| hemi+cycle
     2. hemisect| hemi+sect
     3. hemisphere| hemi+sphere
-26. homo| 相同 | of teh same
+28. homo| 相同 | of teh same
     1. homogenous| homo+genous
     2. homologous| homo+log+ous
-27. hyper| 在--之上；过度 | over
+29. hyper| 在--之上；过度 | over
     1. hyperactive| hyper+act+ive
     2. hyperbolize| hyper+bol+ize
     3. hypercritical| hyper+crit+ical
-28. hypo| 在--之下；低于 | under
+30. hypo| 在--之下；低于 | under
     1. hypogastric| hypo+gastr+ic
     2. hypotension| hypo+tens+ion
     3. hypothesis| hypo+thesis
-29. il;ir| 向内 |
-30. im| 入；内 | in
+31. il;im;in;ir| 向内 | in
     1. immerse| im+merse
     2. immigrate| im+migrate
     3. implant| im+plant
     4. impress| im+press
     5. imprison| im+prison
-31. in| 在--里面 | in
-    1. indoors| in+doors
-    2. insert| in+sert
-    3. insight| in+sight
-    4. insist| in+sist
-    5. invade| in+vade
+    6. indoors| in+doors
+    7. insert| in+sert
+    8. insight| in+sight
+    9. insist| in+sist
+    10. invade| in+vade
 32. inter| 在--之间 | between;among
     1. interact| inter+act
     2. interfere| inter+fere
     3. interlace| inter+lace
     4. international| inter+nation+al
     5. interrupt| inter+rupt
-33. intra| 在--里面 | in
+33. intro| 向内 | in
+    1. introduce| intro+duc+e
+    2. introvert| intro+vert
+34. intra| 在--里面 | in
     1. intracity| intra+city
     2. intragenic| intra+gene+ic
     3. intra-party| intra+party
-34. kilo| 千
+35. kilo| 千
     1. kilogram| kilo+gram
     2. kilometer| kilo+meter
     3. kilowatt| kilo+watt
-35. mal| 坏 | bad
+36. mal;male| 坏 | bad
     1. malady
     2. malfunction| mal-function
     3. maltreat| mal+treat
-36. micro| 微 | small
+37. micro| 微 | small
     1. microorganism| micro+organism
     2. microscope| micro+scope
     3. microwave| micro+wave
-37. mini| 小 | small
+38. mini| 小 | small
     1. minibike| mini+bike
     2. miniseries| mini+series
     3. miniskirt| mini+skirt
-38. mis| 错误；不 | wrong;not
+39. mis| 错误；不 | wrong;not
     1. misbehave| mis+behave
     2. misfortune| mis+fortune
     3. misunderstanding| mis+understand+ing
-39. mon;mono| 单一 | one;single
+40. mon;mono| 单一 | one;single
     1. monogamy| mono+gamy
     2. monologue| mono+logue
     3. monopoly| mono+pol+y
-40. multi| 多 | many
+41. multi| 多 | many
     1. multicultural| multi+cultur+al
     2. multi-function| multi+func+tion
     3. multiple| multi+ple
-41. ob;op| 逆；反 |
-42. octo;octa;octu| 八 | eight
+42. ob;op| 逆；反 |
+    1. obdurate
+    2. obstruct
+43. octo;octa;octu| 八 | eight
     1. octagon| octa+gon
     2. octopus| octo+pus
     3. octuplets| octu+plets
-43. out| 外；出
+44. out| 外；出
     1. outdoor| out+door
     2. outgrow| out+grow
     3. outrun| out+run
-44. over| 超过；在上方 | over;above
+45. over| 超过；在上方 | over;above
     1. overact| over+act
     2. overdue| over+due
     3. overemphasize| over+emphasize
-45. para| 旁边；保护 |
-46. per| 穿过；完全 | through;complete
+46. para| 旁边；保护 |
+    1. parallel| para+llel
+    2. paramount| para+mount
+47. per| 穿过；完全 | through;complete
     1. pertain| per+tain
     2. persist| per+sist
     3. perspective| per+spec+tive
-47. poly| 多；多数 | many
+48. poly| 多；多数 | many
     1. polyclinic| poly+clinic
     2. polygamous| poly+gam+ous
     3. polymath| poly+math
-48. post| 后面 | after;behind
+49. post| 后面 | after;behind
     1. posterity| post+er+ity
     2. postpone| post+pone
     3. postscript| post+script
-49. pre| 在--之前 | before
+50. pre| 在--之前 | before
     1. precaution| pre+cau+tion
     2. precede| pre+cede
     3. predict| pre+dict
     4. premature| pre+mat+ure
     5. preoccupy| pre+occupy
-50. pro| 向前；代理 |
-51. re| 反向；再次 | back;again
+51. pro| 向前；代理 |
+    1. proclivity
+    2. profession
+52. re| 反向；再次 | back;again
     1. rebuild| re+build
     2. recall| re+call
     3. reduce| re+duce
     4. renew| re+new
     5. return| re+turn
-52. se| 分开 | apart;away
+53. se| 分开 | apart;away
     1. secede| se+cede
     2. seduce| se+duce
     3. separate| se+par+ate
-53. sub| 在--之下 | under
+54. sub;suc;suf;sup| 在--之下 | under
     1. subdivide| sub+divide
     2. submarine| sub+marine
     3. subway| sub+way
-54. super| 在上方 | over;above
+55. super| 在上方 | over;above
     1. superficial| super+fic+ial
     2. superior| super+ior
     3. supervise| super+vise
-55. sur| 超过| over;above
+56. sur| 超过| over;above
     1. surcharge| sur+charge
     2. surmount| sur+mount
     3. survive| sur+vive
-56. sym;syn| 共同；相同 | together;at the same time
+57. sym;syn| 共同；相同 | together;at the same time
     1. synchronize| syn+chron+ize
     2. sympathize| sym+path+ize
     3. symphony| sym+phon+y
-57. tele| 远距离 | far
+58. tele| 远距离 | far
     1. telepathic| tele+path+ic
     2. telescope| tele+scope
     3. television| tele+vis+ion
-58. trans| 穿越；改变| across;change
+59. trans| 穿越；改变| across;change
     1. transform| trans+form
     2. transfer| trans+fer
     3. transparent| trans+par+ent
-59. tri| 三 | three
+60. tri| 三 | three
     1. triangle| tri+angle
     2. trilateral| tri+later+al
     3. triple| tri+ple
-60. twi| 二；两 | two
+61. twi| 二；两 | two
     1. twice| twi+ce
     2. twins| twi+ns
-61. un| 不 | not
+62. un| 不 | not
     1. undo| un+do
     2. unfair| un+fair
     3. unfriendly| un+friend+ly
-62. under| 下；不足 |
-63. uni| 单一 | one
+63. under| 下；不足 |
+    1. underground
+    2. underpin
+64. uni| 单一 | one
     1. uniform| uni+form
     2. unify| uni+fy
     3. unique| uni+que
-64. up| 上
-65. with| 向后；相反
+65. up| 上
+    1. update
+    2. upgrade
+66. with| 向后；相反|against;away;back
+    1. withdraw
+    2. withstand
 
 ## 后缀
 
