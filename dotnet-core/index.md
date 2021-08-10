@@ -1,4 +1,4 @@
-# Dotnet Core
+# .NET CORE
 
 
 ## 概述
