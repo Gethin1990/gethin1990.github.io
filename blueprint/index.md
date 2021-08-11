@@ -124,6 +124,8 @@
 
 ### 系统分析与设计 [system-analysis-and-design]
 
+[系统分析与设计](https://blog.gethin.online/system-analysis-and-design)
+
 ### 软件开发的生命周期 [software-development-lifecycle]
 
 ## 架构艺术 [architecture-art]
