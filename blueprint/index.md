@@ -79,6 +79,8 @@
 
 #### 新一代的 .NET [new-generation-dotnet]
 
+[dotnet-core](https://blog.gethin.online/dotnet-core/)
+
 ### Swift & IOS [swift-ios]
 
 ### Python [python]
