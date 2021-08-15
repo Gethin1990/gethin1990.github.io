@@ -134,6 +134,9 @@
 
 ### 设计模式 [design-pattern]
 
+[UML设计](https://blog.gethin.online/uml-design)
+[设计模式](https://blog.gethin.online/design-pattern)
+
 ### 常用组件 [common-components]
 
 #### Redis [redis]
