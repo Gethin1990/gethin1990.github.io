@@ -25,7 +25,7 @@
       - [Python 的应用 [python-application]](#python-的应用-python-application)
     - [JS,ES,TS & Vue,React (Gatsby) [js-es-ts-vue-react]](#jsests--vuereact-gatsby-js-es-ts-vue-react)
       - [前端框架 [front-end]](#前端框架-front-end)
-      - [JavaScript [js]](#javascript-js)
+      - [网页基础 [website-basic]](#网页基础-website-basic)
   - [数据与算法[data-and-algorithmic]](#数据与算法data-and-algorithmic)
     - [数据结构 [data-structure]](#数据结构-data-structure)
     - [常用算法 [algorithm]](#常用算法-algorithm)
@@ -104,7 +104,10 @@
 
 [Gatsby](https://blog.gethin.online/tag/Gatsby)
 
-#### JavaScript [js]
+#### 网页基础 [website-basic]
+
+[HTML](https://blog.gethin.online/html_basic)\
+[CSS](https://blog.gethin.online/css_basic)
 
 ## 数据与算法[data-and-algorithmic]
 
@@ -132,9 +135,11 @@
 
 ### 架构模式 [architecture-pattern]
 
+[软件架构设计](https://blog.gethin.online/software-architecture-design)
+
 ### 设计模式 [design-pattern]
 
-[UML设计](https://blog.gethin.online/uml-design)
+[UML设计](https://blog.gethin.online/uml-design)\
 [设计模式](https://blog.gethin.online/design-pattern)
 
 ### 常用组件 [common-components]
@@ -145,7 +150,7 @@
 
 #### RabbitMQ [rabbitmq]
 
-[[转载][转载]消息中间件MQ与RabbitMQ面试题](https://blog.gethin.online/rabbitmq-reprinted)
+[[转载]消息中间件MQ与RabbitMQ面试题](https://blog.gethin.online/rabbitmq-reprinted)
 
 #### Elastic Search [elastic-search]
 

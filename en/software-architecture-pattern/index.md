@@ -1,7 +1,7 @@
 # Software Architecture Pattern
 
 
-## Application Landscappace
+## Application Landscapes
 
 ### Monolith
 
@@ -115,7 +115,7 @@
 - Advantages
   - Flexibility
   - Clean sparation
-  - Separate tems possible
+  - Separate teams possible
   - Add and remove functionality at runtime
 - Disadvantages
   - Core API might not fit future plugins
