@@ -23,7 +23,7 @@
   - Tiers aren't layers
   - Technical boundaries  
 - Typical: 3 tier
-  - Prsentation Tier(UI & pure UI logic)
+  - Presentation Tier(UI & pure UI logic)
   - Business Logic Tier(business logic)
   - Data Tier
 - Advantages
@@ -37,19 +37,19 @@
 - Summary
   - Multiple services
   - Each service is a business activity
-  - Service composability
+  - Service compose-ability
   - Contract standardization
   - Enterprise Service Bus
 - Advantages
-  - Servies are loosely coupled
-  - Scalablility
+  - Services are loosely coupled
+  - Scalability
   - No duplication of functionality
 - Disadvantages
   - Reduced agility and team autonomy
   - Costly
   - Many differing views
   
-### Microservices
+### MicroServices
 
 - Summary
   - Multiple services
@@ -58,7 +58,7 @@
   - No logic-heavy enterprise service bus
   - Maximum automate
 - Advantages
-  - Services are loosely coupled and eaily scalable
+  - Services are loosely coupled and easily scalable
   - Increased agility
   - Reliability
   - Designed to handle failures
@@ -93,7 +93,7 @@
 
 - Summary
   - Presentation(UI)
-  - Application(Translation between UI & busniess)
+  - Application(Translation between UI & business)
   - Business(Business logic)
   - Persistence(Code to interact with the database)
   - Data(Data)
@@ -114,7 +114,7 @@
   - Graphic designer
 - Advantages
   - Flexibility
-  - Clean sparation
+  - Clean separation
   - Separate teams possible
   - Add and remove functionality at runtime
 - Disadvantages
@@ -213,7 +213,7 @@
   - Model
 - Advantages
   - Great for modern desktop and mobile applications
-  - Sepatation of concerns
+  - Separation of concerns
   - Testability
 - Disadvantages
   - Overkill for user interfaces

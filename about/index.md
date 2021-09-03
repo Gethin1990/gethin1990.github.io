@@ -17,6 +17,11 @@
 
 **了解SQL Server，Oracle，MySQL，存储过程，EF，Redis。**
 
+### 技术蓝图
+
+**本人对自己的技术栈做了一些总结，整理出一个六维技术蓝图。**\
+参见： <https://blog.gethin.online/blueprint/>
+
 ### 个人经历
 
 {{< timeline >}}
