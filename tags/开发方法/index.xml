@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>开发方法 - 标签 - Gethin</title><link>https://blog.gethin.online/tags/%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95/</link><description>开发方法 - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><managingEditor>gexu1990@hotmail.com (Gethin)</managingEditor><webMaster>gexu1990@hotmail.com (Gethin)</webMaster><lastBuildDate>Mon, 08 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.gethin.online/tags/%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95/" rel="self" type="application/rss+xml"/><item><title>开发方法</title><link>https://blog.gethin.online/software-development-methodologies/</link><pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate><author>作者</author><guid>https://blog.gethin.online/software-development-methodologies/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/images/content.jpg" referrerpolicy="no-referrer">
+            </div>Software Development Methodologies
+ 开发方法 软件的生命周期 可行性研究与计划-&gt;需求分析-&gt;概要设计-&gt;详细设计-&gt;实现-&gt;集成测试-&gt;确认测试-&gt;使用与维护
+软件开发模型  瀑布模型 演化模型 螺旋模型 增量模型 构建组装模型  统一过程  UP的9个核心工作流
+业务建模，需求，分析设计，实施，测试，部署，配置与变更管理，项目管理，环境 UP的生命周期
+目标里程碑，架构里程碑，能力里程碑，发布里程碑 UP的特点  UP不但给出类迭代的生命周期，还给出了生命周期每一阶段的迭代指南 采用不同迭代方式的UP可以演变为演化模型或增量模型 迭代特点使得更容易控制软件开发的风险 UP本身并不属于敏捷 实际应用中可以根据具体问题对UP进行剪裁   架构师在UP中的活动  同需求人员和项目管理人员密切协作 细化软件架构 保持整个架构的概念完整性    敏捷方法   极限编程
+  XP是一种轻量（敏捷）、高效、低风险、柔性、可预测、科学而且充满乐趣的软件开发方式。
+ 在更短的周期内，更早的提供具体、持续的反馈信息 迭代的进行计划编制 依赖自动测试程序来监控开发进度，并及早捕获缺陷 依赖口头交流、测试和源程序进行沟通 倡导持续的、演化式的设计 依赖与开发团队内部的紧密协作 尽可能达到程序员短期利益和项目长期利益的平衡    四大价值观
+沟通，简单，反馈，勇气，（尊重）
+  十二个最佳实践
+计划游戏，小型发布，隐喻，简单设计，测试先行，重构，结对编程，集体代码所有制，持续集成，每周工作40小时，现场客户，编码标准
+    特性驱动开发
+FDD也是一个迭代开发模型，FDD每一步都强调质量，不断的交付可运行的软件，并以很小的开发提供精准的项目进度报告和状态信息。
+ FDD角色定义]]></description></item></channel></rss>

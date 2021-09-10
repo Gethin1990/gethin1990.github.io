@@ -113,7 +113,12 @@
 
 ### 数据结构 [data-structure]
 
+[算法-数据结构](https://blog.gethin.online/algorithm-data-structure/)
+
 ### 常用算法 [algorithm]
+
+[算法-思想](https://blog.gethin.online/algorithm-thinking/)
+[[转载]五大算法设计思想](https://blog.gethin.online/five-algorithms-design-ideas/)
 
 ### 重构 [refactoring]
 
