@@ -47,10 +47,10 @@
 **延伸阅读**
 
 微服务模式：独享数据库  
-[https://microservices.io/patterns/data/database-per-service.html](https://links.jianshu.com/go?to=https%3A%2F%2Fmicroservices.io%2Fpatterns%2Fdata%2Fdatabase-per-service.html)
+[https://microservices.io/patterns/data/database-per-service.html](https://microservices.io/patterns/data/database-per-service.html)
 
 分布式数据存储  
-[https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/distributed-data](https://links.jianshu.com/go?to=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdotnet%2Farchitecture%2Fcloud-native%2Fdistributed-data)
+[https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/distributed-data](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/distributed-data)
 
 事件源（Event Sourcing）
 -------------------
@@ -109,13 +109,13 @@
 **延伸阅读**
 
 事件驱动  
-[https://martinfowler.com/eaaDev/EventSourcing.html](https://links.jianshu.com/go?to=https%3A%2F%2Fmartinfowler.com%2FeaaDev%2FEventSourcing.html)
+[https://martinfowler.com/eaaDev/EventSourcing.html](https://martinfowler.com/eaaDev/EventSourcing.html)
 
 事件驱动模式-云设计模式  
-[https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing](https://links.jianshu.com/go?to=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Farchitecture%2Fpatterns%2Fevent-sourcing)
+[https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing](https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing)
 
 微服务模式：事件驱动  
-[https://microservices.io/patterns/data/event-sourcing.html](https://links.jianshu.com/go?to=https%3A%2F%2Fmicroservices.io%2Fpatterns%2Fdata%2Fevent-sourcing.html)
+[https://microservices.io/patterns/data/event-sourcing.html](https://microservices.io/patterns/data/event-sourcing.html)
 
 命令和查询职责分离（CQRS）
 ---------------
@@ -185,13 +185,13 @@ _框架：_ Lagom， Akka， Spring， akkatecture， Axon， Eventuate
 **延伸阅读**
 
 bliki：CQRS  
-[https://martinfowler.com/bliki/CQRS.html](https://links.jianshu.com/go?to=https%3A%2F%2Fmartinfowler.com%2Fbliki%2FCQRS.html)
+[https://martinfowler.com/bliki/CQRS.html](https://martinfowler.com/bliki/CQRS.html)
 
 CQRS模式 - Azure 架构中心  
-[https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs](https://links.jianshu.com/go?to=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Farchitecture%2Fpatterns%2Fcqrs)
+[https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqr)
 
 微服务模式：命令和查询职责分离（CQRS）  
-[https://microservices.io/patterns/data/cqrs.html](https://links.jianshu.com/go?to=https%3A%2F%2Fmicroservices.io%2Fpatterns%2Fdata%2Fcqrs.html)
+[https://microservices.io/patterns/data/cqrs.html](https://microservices.io/patterns/data/cqrs.html)
 
 Saga
 ----
@@ -247,13 +247,13 @@ Axon， Eventuate， Narayana
 **延伸阅读**
 
 Saga分布式事务-Azure设计模式  
-[https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/saga/saga](https://links.jianshu.com/go?to=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Farchitecture%2Freference-architectures%2Fsaga%2Fsaga)
+[https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/saga/saga](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/saga/saga)
 
 微服务模式：Sagas  
-[https://microservices.io/patterns/data/saga.html](https://links.jianshu.com/go?to=https%3A%2F%2Fmicroservices.io%2Fpatterns%2Fdata%2Fsaga.html)
+[https://microservices.io/patterns/data/saga.html](https://microservices.io/patterns/data/saga.html)
 
 Saga 模式：微服务中的应用程序事务  
-[https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/](https://links.jianshu.com/go?to=https%3A%2F%2Fblog.couchbase.com%2Fsaga-pattern-implement-business-transactions-using-microservices-part%2F)
+[https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/](https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/)
 
 面向前端的后端 （BFF）
 -------------
@@ -305,13 +305,13 @@ Saga 模式：微服务中的应用程序事务
 **延伸阅读**
 
 Sam Newman - 面向前端的后端  
-[https://samnewman.io/patterns/architectural/bff/](https://links.jianshu.com/go?to=https%3A%2F%2Fsamnewman.io%2Fpatterns%2Farchitectural%2Fbff%2F)
+[https://samnewman.io/patterns/architectural/bff/](https://samnewman.io/patterns/architectural/bff/)
 
 面向前端的后端模式 - 云设计模式  
-[https://docs.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends](https://links.jianshu.com/go?to=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Farchitecture%2Fpatterns%2Fbackends-for-frontends)
+[https://docs.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends](https://docs.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends)
 
 微服务模式：API 网关模式  
-[https://microservices.io/patterns/apigateway.html](https://links.jianshu.com/go?to=https%3A%2F%2Fmicroservices.io%2Fpatterns%2Fapigateway.html)
+[https://microservices.io/patterns/apigateway.html](https://microservices.io/patterns/apigateway.html)
 
 API 网关
 ------
@@ -365,10 +365,10 @@ Amazon API 网关， Azure API 管理， Apigee， Kong， WSO2 API 管理器
 **延伸阅读**
 
 微服务模式：API 网关模式  
-[https://microservices.io/patterns/apigateway.html](https://links.jianshu.com/go?to=https%3A%2F%2Fmicroservices.io%2Fpatterns%2Fapigateway.html)
+[https://microservices.io/patterns/apigateway.html](https://microservices.io/patterns/apigateway.html)
 
 API 网关-Azure 架构中心  
-[https://docs.microsoft.com/en-us/azure/architecture/microservices/design/gateway](https://links.jianshu.com/go?to=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Farchitecture%2Fmicroservices%2Fdesign%2Fgateway)
+[https://docs.microsoft.com/en-us/azure/architecture/microservices/design/gateway](https://docs.microsoft.com/en-us/azure/architecture/microservices/design/gateway)
 
 Strangler
 ---------
@@ -418,13 +418,13 @@ API 网关后端应用框架。
 **延伸阅读**
 
 bliki：StranglerFig 应用程序  
-[https://martinfowler.com/bliki/StranglerFigApplication.html](https://links.jianshu.com/go?to=https%3A%2F%2Fmartinfowler.com%2Fbliki%2FStranglerFigApplication.html)
+[https://martinfowler.com/bliki/StranglerFigApplication.html](https://martinfowler.com/bliki/StranglerFigApplication.html)
 
 Strangler 模式 - 云设计模式  
-[https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler-fig](https://links.jianshu.com/go?to=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Farchitecture%2Fpatterns%2Fstrangler-fig)
+[https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler-fig](https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler-fig)
 
 微服务模式：Strangler 应用程序  
-[https://microservices.io/patterns/refactoring/strangler-application.html](https://links.jianshu.com/go?to=https%3A%2F%2Fmicroservices.io%2Fpatterns%2Frefactoring%2Fstrangler-application.html)
+[https://microservices.io/patterns/refactoring/strangler-application.html](https://microservices.io/patterns/refactoring/strangler-application.html])
 
 断路器
 ---
@@ -484,13 +484,13 @@ API 网关，服务网格，各种断路器库（Hystrix， Reselience4J， Poll
 **延伸阅读**
 
 bliki：断路器  
-[https://martinfowler.com/bliki/CircuitBreaker.html](https://links.jianshu.com/go?to=https%3A%2F%2Fmartinfowler.com%2Fbliki%2FCircuitBreaker.html)
+[https://martinfowler.com/bliki/CircuitBreaker.html](https://martinfowler.com/bliki/CircuitBreaker.html)
 
 断路器模式 - 云设计模式  
-[https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker](https://links.jianshu.com/go?to=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Farchitecture%2Fpatterns%2Fcircuit-breaker)
+[https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker)
 
 微型服务模式：断路器  
-[https://microservices.io/patterns/reliability/circuit-breaker.html](https://links.jianshu.com/go?to=https%3A%2F%2Fmicroservices.io%2Fpatterns%2Freliability%2Fcircuit-breaker.html)
+[https://microservices.io/patterns/reliability/circuit-breaker.html](https://microservices.io/patterns/reliability/circuit-breaker.html)
 
 外部化配置
 -----
@@ -525,10 +525,10 @@ bliki：断路器
 **延伸阅读**
 
 微服务模式：外部化配置  
-[https://microservices.io/patterns/externalized-configuration.html](https://links.jianshu.com/go?to=https%3A%2F%2Fmicroservices.io%2Fpatterns%2Fexternalized-configuration.html)
+[https://microservices.io/patterns/externalized-configuration.html](https://microservices.io/patterns/externalized-configuration.html)
 
 一次构建，到处运行：外部化你的配置  
-[https://reflectoring.io/externalize-configuration/](https://links.jianshu.com/go?to=https%3A%2F%2Freflectoring.io%2Fexternalize-configuration%2F)
+[https://reflectoring.io/externalize-configuration/](https://reflectoring.io/externalize-configuration/)
 
 消费端驱动的契约测试
 ----------
@@ -571,13 +571,13 @@ Pact， Postman， Spring Cloud Contract
 **延伸阅读**
 
 需求驱动契约：一种服务演进模式  
-[https://martinfowler.com/articles/consumerDrivenContracts.html](https://links.jianshu.com/go?to=https%3A%2F%2Fmartinfowler.com%2Farticles%2FconsumerDrivenContracts.html)
+[https://martinfowler.com/articles/consumerDrivenContracts.html](https://martinfowler.com/articles/consumerDrivenContracts.html)
 
 微服务模式：服务集成契约测试  
-[https://microservices.io/patterns/testing/service-integration-contract-test.html](https://links.jianshu.com/go?to=https%3A%2F%2Fmicroservices.io%2Fpatterns%2Ftesting%2Fservice-integration-contract-test.html)
+[https://microservices.io/patterns/testing/service-integration-contract-test.html](https://microservices.io/patterns/testing/service-integration-contract-test.html)
 
 什么是消费端驱动的契约测试？  
-[https://pactflow.io/what-is-consumer-driven-contract-testing/](https://links.jianshu.com/go?to=https%3A%2F%2Fpactflow.io%2Fwhat-is-consumer-driven-contract-testing%2F)
+[https://pactflow.io/what-is-consumer-driven-contract-testing/](https://pactflow.io/what-is-consumer-driven-contract-testing/)
 
 ## 总结
 

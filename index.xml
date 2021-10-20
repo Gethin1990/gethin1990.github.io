@@ -1,4 +1,10 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Gethin</title><link>https://blog.gethin.online/</link><description>Gethin</description><generator>Hugo -- gohugo.io</generator><managingEditor>gexu1990@hotmail.com (Gethin)</managingEditor><webMaster>gexu1990@hotmail.com (Gethin)</webMaster><lastBuildDate>Mon, 27 Sep 2021 16:14:27 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/index.xml" rel="self" type="application/rss+xml"/><item><title>[转载]微服务架构的设计模式</title><link>https://blog.gethin.online/microservice-patterns/</link><pubDate>Mon, 27 Sep 2021 16:14:27 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/microservice-patterns/</guid><description>&lt;div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Gethin</title><link>https://blog.gethin.online/</link><description>Gethin</description><generator>Hugo -- gohugo.io</generator><managingEditor>gexu1990@hotmail.com (Gethin)</managingEditor><webMaster>gexu1990@hotmail.com (Gethin)</webMaster><lastBuildDate>Thu, 30 Sep 2021 09:05:43 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/index.xml" rel="self" type="application/rss+xml"/><item><title>测试评审方法</title><link>https://blog.gethin.online/test-and-review-methodologies/</link><pubDate>Thu, 30 Sep 2021 09:05:43 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/test-and-review-methodologies/</guid><description>&lt;div class="featured-image">
+&lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
+&lt;/div>测试方法 软件测试阶段 单元测试 重点：模块接口，局部数据结构，重要的执行通路，出错处理通路，边界条件 集成测试 非渐增式，渐增式 系统测试 确认测试（需求说明书检查，软件配置复查），验收测试（alpha，beta） 白盒测试和黑盒测试 白盒测试 语句覆盖，判定覆盖，条件覆盖，判定/条件覆盖，条件组合覆盖，路径覆盖 黑盒测试 等价类划分，边值分析，错误推测，因果图 缺陷的分类和级别 分类：输入/输出错误，逻辑错误，计算错误，接口错误，数据错误 级别：轻微，中等，使人不悦，影响使用，严重，非常严重，极为严重，无法容忍，灾难性，传染性 调试 排错策略：原始类，回溯类，排除类 评审方法 软件需求评审，概要设计评审，详细设计评审，软件验证和确认评审，功能检查，物理检查，综合检查，管理评审
+注意：不应以测试代替评审，评审人员应关注产品而不应评论开发人员，评审人员应关注实质性问题，评审会议不应变为问题解决方案讨论会，评审应被安排进入项目计划，评审参与者应了解整个评审过程，评审人员事先应对评审材料充分了解，应重视评审的组织工作
+验证与确认 验证：合同验证，过程验证，需求验证，设计验证，编码验证，集成验证，文档验证 确认
+测试自动化 测试用例生成，测试执行控制，测试结果对比，测试结果分析，总测试状况的统计与报表产生
+面向对象测试 OOA测试，OOD测试，OOP测试，单元测试，集成测试，系统测试</description></item><item><title>[转载]微服务架构的设计模式</title><link>https://blog.gethin.online/microservice-patterns/</link><pubDate>Mon, 27 Sep 2021 16:14:27 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/microservice-patterns/</guid><description>&lt;div class="featured-image">
 &lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
 &lt;/div>独享数据库（Database per Microservice） 当一家公司将大型单体系统替换成一组微服务，首先要面临的最重要决策是关于数据库。单体架构会使用大型中央数据库。即使转移到微服务架构许多架构师仍倾向于保持数据库不变。虽然有一些短期收益，但它却是反模式的，特别是在大规模系统中，微服务将在数据库层严重耦合，整个迁移到微服务的目标都将面临失败（例如，团队授权、独立开发等问题）。
 更好的方法是为每个微服务提供自己的数据存储，这样服务之间在数据库层就不存在强耦合。这里我使用数据库这一术语来表示逻辑上的数据隔离，也就是说微服务可以共享物理数据库，但应该使用分开的数据结构、集合或者表，这还将有助于确保微服务是按照领域驱动设计的方法正确拆分的。
@@ -61,11 +67,4 @@ https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/distributed-da
 经证实 赞同者改善了防水屋顶 In the reaction, the fraction acts as an agent.
 在反应中 这些碎片起一种媒剂的作用 Actually the actor and actress reacted actively to the activity.
 实际上男演员和女演员对这个活动作出了积极的反应。 In the racial horse race, the white racer&rsquo;s race horse won.
-在种族赛马运动中 白人赛手的马获胜 I feel a trace of disgrace for the gracious man&rsquo;s embracing her bracelet.]]></description></item><item><title>考研词汇800句-4</title><link>https://blog.gethin.online/postgraduate-words-4/</link><pubDate>Thu, 02 Sep 2021 14:25:32 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/postgraduate-words-4/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/images/content.jpg" referrerpolicy="no-referrer">
-            </div>考研词汇800句 - Part 4 800 句（第十三天） Last summer the drummer became an amateur dramatist dramatically.
-去年夏天 鼓手戏剧性地变成了业余剧作家 Long Tongue League&rsquo;s colleagues are fatigued with cataloguing.
-长舌联合会的同僚们编目录编累了。 The bottle is hidden in the bottom of a ton of cotton the cottage.
-瓶子被藏在农舍里一吨棉花的底部 The pattern of the battery doesn&rsquo;t matter to the battle against the little brittle cattle.
-电池的式样对与脆小牛作战无关要紧。 By the biography, the biologist&rsquo;s playing the violet violin violently violated rules.
-据传记记载，生物学家猛奏紫罗兰色的小提琴违犯了规矩 In the faithful waiter&rsquo;s waist exists a list of the ten listeners.]]></description></item></channel></rss>
+在种族赛马运动中 白人赛手的马获胜 I feel a trace of disgrace for the gracious man&rsquo;s embracing her bracelet.]]></description></item></channel></rss>

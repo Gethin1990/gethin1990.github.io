@@ -9,7 +9,7 @@
 
 **熟悉OOP，SOA，AOP，MVC，MVVM，EDA，BDD，DDD，微服务架构，云架构，SPA等架构与编程思想，注重基于SOLID编码规范。熟悉常见的架构风格。熟悉各种UML的使用。**
 
-**精通C#/.NET开发，熟悉Python，精通传统.NET相关技术WCF，WEBAPI，MVC，WPF并熟练掌握现代.NET开发技术.NET Core, RabbitMQ, Azure, K8S, Docker 等。**
+**精通C#/.NET开发，熟悉Python，熟练掌握传统.NET相关技术WCF，WEBAPI，MVC，WPF，与现代.NET开发技术.NET Core, RabbitMQ, Azure, K8S, Docker 等。**
 
 **认证Scrum Master，善于发现和解决敏捷开发中的各种技术和流程问题，熟知软件开发生命周期SDLC。**
 

@@ -117,7 +117,7 @@
 
 ### 常用算法 [algorithm]
 
-[算法-思想](https://blog.gethin.online/algorithm-thinking/)
+[算法-思想](https://blog.gethin.online/algorithm-thinking/)\
 [[转载]五大算法设计思想](https://blog.gethin.online/five-algorithms-design-ideas/)
 
 ### 重构 [refactoring]
@@ -140,7 +140,8 @@
 
 ### 架构模式 [architecture-pattern]
 
-[软件架构设计](https://blog.gethin.online/software-architecture-design)
+[软件架构设计](https://blog.gethin.online/software-architecture-design)\
+[软件架构模式](https://blog.gethin.online/software-architecture-pattern/)
 
 ### 设计模式 [design-pattern]
 
@@ -167,6 +168,8 @@
 [how-to-setup-kubernetes-on-azure](https://blog.gethin.online/en/how-to-setup-kubernetes-on-azure)
 
 ### 软件架构篇 [cloud-software-architecture]
+
+[[转载]微服务架构的设计模式](https://blog.gethin.online/microservice-patterns/)
 
 ### DEVOPS [devops]
 
