@@ -3,7 +3,7 @@
 
 ### 自我评价
 
-**Hi，我叫GETHIN，是一名主修计算机，有8年工作经验的软件工程师，擅长全栈开发，主要工作语言是C#，曾就职于多家知名外企和互联网企业，如Honeywell，腾讯文学等，目前就职于GreenDot。**
+**Hi，我叫GETHIN，是一名主修计算机，有丰富工作经验的软件工程师，擅长全栈开发，主要工作语言是C#，曾就职于多家知名外企和互联网企业，如Honeywell，腾讯文学等，目前就职于GreenDot。**
 
 **擅长技术体系架构设计与重构，软件项目研究，分析设计与风险识别，爱好云原生架构设计。**
 
@@ -22,7 +22,11 @@
 **本人对自己的技术栈做了一些总结，整理出一个六维技术蓝图。**\
 参见： <https://blog.gethin.online/blueprint/>
 
-### 个人经历
+### 电子邮箱
+
+[gexu1990@hotmail.com](mailto:gexu1990@hotmail.com)
+
+### 工作经历
 
 {{< timeline >}}
 
@@ -30,7 +34,7 @@
 
 #### 在 GreenDot 担任 高级软件工程师，主要负责开发维护银行后端系统。如银行转账，信用卡自动还款 等
 
-#### 主要的开发语言是 C#，主要技术有 .NET Core, RabbitMQ, WEBAPI，K8S，SQLServer 等
+#### 主要的开发语言是 C#，主要技术有 .NET Core, RabbitMQ, WEB API，K8S，SQLServer 等
 
 #### 主要项目：Eureka 发卡，TMM，BAAS交易，信用卡自动还款 等
 
