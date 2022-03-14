@@ -22,13 +22,19 @@
 **本人对自己的技术栈做了一些总结，整理出一个六维技术蓝图。**\
 参见： <https://blog.gethin.online/blueprint/>
 
-### 电子邮箱
+### 联系方式
 
-[gexu1990@hotmail.com](mailto:gexu1990@hotmail.com)
+Github：<https://github.com/gethin1990>
 
-### github
+Email：[gexu1990@hotmail.com](mailto:gexu1990@hotmail.com)
 
-<https://github.com/gethin1990>
+微信: gexu1990
+
+### 个人简历
+
+<https://blog.gethin.online/resume>
+
+~请联系我索要密码。
 
 ### 工作经历
 

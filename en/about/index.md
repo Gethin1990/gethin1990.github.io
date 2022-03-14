@@ -16,6 +16,20 @@
 
 **I have good command of with SQL Server, Oracle, MySQL, SP, EF, Redis. Familiar with mobile IOS development, Cordova.Good to know Vue, React, JavaScript, Jquary etc.**
 
+### Contact Me
+
+Github：<https://github.com/gethin1990>
+
+Email：[gexu1990@hotmail.com](mailto:gexu1990@hotmail.com)
+
+WeChat: gexu1990
+
+### My Resume
+
+<https://blog.gethin.online/resume>
+
+Please contact me if you need the password of resume page.
+
 ### Personal Experience
 
 {{< timeline >}}
