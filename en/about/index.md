@@ -2,7 +2,7 @@
 
 ### Self Introduction
 
-**Hi, My name is Gethin, a software engineer which has majored in computer science and many working experience in foreign fin-tech enterprises and famous internet companies like Honeywell, Tencent, etc.**
+**Hi, My name is Gethin, a software engineer which has majored in computer science and a lot of working experience in foreign fin-tech enterprises and famous internet companies like Honeywell, Tencent, etc.**
 
 **My goal is to be a software architect, I'm good at System Architecture & Refactoring & Design, Technical Research & Selection, Project Risk Identification. I also like research the cloud architect design.**
 

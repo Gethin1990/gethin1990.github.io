@@ -26,6 +26,10 @@
 
 [gexu1990@hotmail.com](mailto:gexu1990@hotmail.com)
 
+### github
+
+<https://github.com/gethin1990>
+
 ### 工作经历
 
 {{< timeline >}}

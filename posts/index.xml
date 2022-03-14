@@ -1,4 +1,6 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>所有文章 - Gethin</title><link>https://blog.gethin.online/posts/</link><description>所有文章 | Gethin</description><generator>Hugo -- gohugo.io</generator><managingEditor>gexu1990@hotmail.com (Gethin)</managingEditor><webMaster>gexu1990@hotmail.com (Gethin)</webMaster><lastBuildDate>Wed, 20 Oct 2021 17:00:15 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/posts/" rel="self" type="application/rss+xml"/><item><title>云上软件架构</title><link>https://blog.gethin.online/cloud-software-architect/</link><pubDate>Wed, 20 Oct 2021 17:00:15 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/cloud-software-architect/</guid><description>&lt;div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>所有文章 - Gethin</title><link>https://blog.gethin.online/posts/</link><description>所有文章 | Gethin</description><generator>Hugo -- gohugo.io</generator><managingEditor>gexu1990@hotmail.com (Gethin)</managingEditor><webMaster>gexu1990@hotmail.com (Gethin)</webMaster><lastBuildDate>Mon, 14 Mar 2022 10:09:08 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/posts/" rel="self" type="application/rss+xml"/><item><title>Resume</title><link>https://blog.gethin.online/resume/</link><pubDate>Mon, 14 Mar 2022 10:09:08 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/resume/</guid><description>&lt;div class="featured-image">
+&lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
+&lt;/div></description></item><item><title>云上软件架构</title><link>https://blog.gethin.online/cloud-software-architect/</link><pubDate>Wed, 20 Oct 2021 17:00:15 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/cloud-software-architect/</guid><description>&lt;div class="featured-image">
 &lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
 &lt;/div>摘要 什么是云原生？ 什么是12要素 云原生应该关注什么？ 微服务架构 敏捷基础设施及公共基础服务 分布式架构设计 云原生程度的评判标准是什么？ 云服务现在如何，未来怎么走？ 什么是云原生 云原生的概念最早开始于 2010 年，在当时 Paul Fremantle 的一篇博客中被提及，他一直想用一个词表达一种架构，这种架构能描述应用程序和中间件在云环境中的良好运行状态。因此他抽象出了 Cloud Native 必须包含的属性，只有满足了这些属性才能保证良好的运行状态。当时提出云原生是为了能构建一种符合云计算特性的标准来指导云计算应用的编写。
 后来到 2013 年 Matt Stine 在推特上迅速推广云原生概念，并在 2015 年《迁移到云原生架构》一书中定义了符合云原生架构的特征：12 因素、微服务、自服务、基于 API 协作、扛脆弱性。而由于这本书的推广畅销，这也成了很多人对云原生的早期印象，同时云原生也被 12 要素变成了一个抽象的概念。Matt Stine 认为在单体架构向 Cloud Native 迁移的过程中，需要文化、组织、技术共同变革。
@@ -58,11 +60,4 @@ https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/distributed-da
 我亲耳清楚地听到原子弹的心脏的跳动。 Next year the bearded bear will bear a dear baby in the rear.
 明年 长胡子的熊将在后方产一头可爱的小崽 Early I searched through the earth for earthenware so as to research in earthquake.
 早先我在泥土中搜寻陶器以研究地震 I learn that learned earnest men earn much by learning.
-我得知有学问而认真的人 学问挣很多钱 She swears to wear the pearls that appear to be pears.</description></item><item><title>考研词汇800句-2</title><link>https://blog.gethin.online/postgraduate-words-2/</link><pubDate>Thu, 02 Sep 2021 14:25:32 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/postgraduate-words-2/</guid><description><![CDATA[<div class="featured-image">
-                <img src="/images/content.jpg" referrerpolicy="no-referrer">
-            </div>考研词汇800句 - Part 2 800 句（第五天） The loser closely enclosed himself in the closet.
-失败者将自己严密 地装入壁橱（储藏间）中。 The composer was proposed to decompose his composition into components.
-大家建议作曲家（作家）将自己的作品分解为多个部分 Suppose you were exposed in the opposite position by your opponent, &hellip;
-假设你的对手把你暴露于对立（对等 相反）的位置上 The depositor positively positioned the preposition in that position on purpose.
-存款人断然地将介词故意放置到那个位置上 In church the nurse cursed the people pursuing the purple purse.
-在教堂内，护士诅咒大家追赶（追踪 追求）那个紫色钱包 The faculty for agricultural culture isn&rsquo;t difficult to cultivate.]]></description></item></channel></rss>
+我得知有学问而认真的人 学问挣很多钱 She swears to wear the pearls that appear to be pears.</description></item></channel></rss>
