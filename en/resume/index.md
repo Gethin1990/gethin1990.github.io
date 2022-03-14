@@ -3,9 +3,9 @@
 
 ### Chinese Resume
 
-[我的简历](http://blog.gethin.online/resume/resume-cn.doc)
+[我的简历](http://blog.gethin.online/resume/resume-cn.pdf)
 
 ### English Resume
 
-[My Resume](http://blog.gethin.online/resume/resume-en.doc)
+[My Resume](http://blog.gethin.online/resume/resume-en.pdf)
 
