@@ -3,19 +3,24 @@
 
 ### 自我评价
 
-**Hi，我叫GETHIN，是一名主修计算机，有丰富工作经验的软件工程师，擅长全栈开发，主要工作语言是C#，曾就职于多家知名外企和互联网企业，如Honeywell，腾讯文学等，目前就职于GreenDot。**
+**丰富的开发经验，擅长全栈开发，工作语言是C#，同时掌握Python，Swift等，曾就职于多家知名外企和互联网企业，目前就职于GreenDot。**
 
-**擅长技术体系架构设计与重构，软件项目研究，分析设计与风险识别，爱好云原生架构设计。**
+**六年美资银行开发经验，一年移动开发经验。设计，开发，重构，维护过风控系统，发卡系统，交易系统，从0到1 构建过IOS APP。**
+
+**精通C#/.NET开发，熟悉Python，IOS，Cordova，熟悉React，Vue，Javascript，Jquary等。**
+**个人比较擅长于技术体系架构设计与重构，项目研究与风险识别，擅长全栈式开发，爱好云原生架构设计。**
+
+**学习能力强，沟通高效，执行力强，熟知软件开发生命周期SDLC。**
+
+**认证Scrum Master，善于发现和解决敏捷开发中的各种技术和流程问题。**
 
 **熟悉OOP，SOA，AOP，MVC，MVVM，EDA，BDD，DDD，微服务架构，云架构，SPA等架构与编程思想，注重基于SOLID编码规范。熟悉常见的架构风格。熟悉各种UML的使用。**
 
-**精通C#/.NET开发，熟悉Python，熟练掌握传统.NET相关技术WCF，WEBAPI，MVC，WPF，与现代.NET开发技术.NET Core, RabbitMQ, Azure, K8S, Docker 等。**
+**掌握.NET相关技术WCF，WEBAPI，MVC，WPF。掌握现代.NET开发技术.NET Core, RabbitMQ, Azure, K8S, Docker 等。**
 
-**认证Scrum Master，善于发现和解决敏捷开发中的各种技术和流程问题，熟知软件开发生命周期SDLC。**
+**个人博客地址：<https://blog.gethin.online/>**
 
-**熟悉手机IOS端开发，Cordova，熟悉react，vue，javascript，jquary等。**
-
-**了解SQL Server，Oracle，MySQL，存储过程，EF，Redis。**
+**github：<https://github.com/gethin1990>**
 
 ### 技术蓝图
 
