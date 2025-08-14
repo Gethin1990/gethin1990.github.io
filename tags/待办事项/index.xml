@@ -1,20 +1,20 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>待办事项 - 标签 - Gethin</title><link>https://blog.gethin.online/tags/%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9/</link><description>待办事项 - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 22 May 2021 10:13:00 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/tags/%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9/" rel="self" type="application/rss+xml"/><item><title>博客代办事项</title><link>https://blog.gethin.online/blog-todo/</link><pubDate>Sat, 22 May 2021 10:13:00 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/blog-todo/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>待办事项 - 标签 - Gethin</title><link>https://blog.gethin.online/tags/%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9/</link><description>待办事项 - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 22 May 2021 10:13:00 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/tags/%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9/" rel="self" type="application/rss+xml"/><item><title>博客代办事项</title><link>https://blog.gethin.online/blog-todo/</link><pubDate>Sat, 22 May 2021 10:13:00 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/blog-todo/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="网站功能">网站功能</h2>
 <ul>
-<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 文章加密</li>
-<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 自定义域名</li>
-<li><i class="far fa-square fa-fw" aria-hidden="true"></i> 网站分析</li>
-<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 脑图</li>
-<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 时间轴</li>
-<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 评论的优化</li>
-<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 关于页面的优化</li>
-<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 版权声明</li>
-<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 运行时间</li>
-<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 赞赏</li>
-<li><i class="far fa-square fa-fw" aria-hidden="true"></i> 网站流量统计</li>
+<li><i class="far fa-check-square fa-fw"></i> 文章加密</li>
+<li><i class="far fa-check-square fa-fw"></i> 自定义域名</li>
+<li><i class="far fa-square fa-fw"></i> 网站分析</li>
+<li><i class="far fa-check-square fa-fw"></i> 脑图</li>
+<li><i class="far fa-check-square fa-fw"></i> 时间轴</li>
+<li><i class="far fa-check-square fa-fw"></i> 评论的优化</li>
+<li><i class="far fa-check-square fa-fw"></i> 关于页面的优化</li>
+<li><i class="far fa-check-square fa-fw"></i> 版权声明</li>
+<li><i class="far fa-check-square fa-fw"></i> 运行时间</li>
+<li><i class="far fa-check-square fa-fw"></i> 赞赏</li>
+<li><i class="far fa-square fa-fw"></i> 网站流量统计</li>
 </ul>
 <h2 id="编辑">编辑</h2>
 <ul>
-<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 新文章头部模板</li>
+<li><i class="far fa-check-square fa-fw"></i> 新文章头部模板</li>
 </ul>]]></description></item></channel></rss>

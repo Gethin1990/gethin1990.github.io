@@ -1,16 +1,50 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>重构 - 标签 - Gethin</title><link>https://blog.gethin.online/tags/%E9%87%8D%E6%9E%84/</link><description>重构 - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 05 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.gethin.online/tags/%E9%87%8D%E6%9E%84/" rel="self" type="application/rss+xml"/><item><title>[转载]C#重构经典全面汇总</title><link>https://blog.gethin.online/refactoring-reprinted/</link><pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/refactoring-reprinted/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>重构 - 标签 - Gethin</title><link>https://blog.gethin.online/tags/%E9%87%8D%E6%9E%84/</link><description>重构 - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 05 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.gethin.online/tags/%E9%87%8D%E6%9E%84/" rel="self" type="application/rss+xml"/><item><title>[转载]C#重构经典全面汇总</title><link>https://blog.gethin.online/refactoring-reprinted/</link><pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate><author>作者</author><guid>https://blog.gethin.online/refactoring-reprinted/</guid><description><![CDATA[<div class="featured-image">
                 <img src="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/refactoring-reprinted-2021-06-05-19-34-07.jpg" referrerpolicy="no-referrer">
             </div><h2 id="1-封装集合">1. 封装集合</h2>
 <hr>
 <p><strong>概念</strong>：本文所讲的封装集合就是把集合进行封装，只提供调用端需要的接口。</p>
 <p><strong>正文</strong>：在很多时候，我们都不希望把一些不必要的操作暴露给调用端，只需要给它所需要的操作或数据就行，那么做法就是封装。这个重构在微软的代码库也经常遇到。比如最经典的属性对字段的封装就是一个很好的例子，那么下面我们将看到对集合的封装，如下代码所示，调用端只需要一个集合的信息，而我们则提供了一个IList的集合，大家都知道IList具有对集合的所有操作，所以这会带来很多隐患，最好的做法就是对它进行重构。</p>
 <p>那么重构之后，我们把IList换成了IEnumerable，大家都知道只包括一个返回值为IEnumerator的GetEnumerator()方法，所以这样只能遍历取出它的值，而不能对这个集合做出改变，这正是我们所需要的结果，具体代码如下：</p>
-<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
-    <div class="code-header language-cs">
-        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
-    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cs" data-lang="cs"><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cs" data-lang="cs"><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="k">namespace</span> <span class="nn">LosTechies.DaysOfRefactoring.EncapsulateCollection.Before</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="k">class</span> <span class="nc">Order</span>
@@ -44,13 +78,50 @@
 </span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="k">class</span> <span class="nc">OrderLine</span>
 </span></span><span class="line"><span class="cl">    <span class="p">{</span>
 </span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="kt">double</span> <span class="n">Total</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="kd">private</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span></span></span></code></pre></div></div>
-<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
-    <div class="code-header language-cs">
-        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
-    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cs" data-lang="cs"><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cs" data-lang="cs"><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="k">namespace</span> <span class="nn">LosTechies.DaysOfRefactoring.EncapsulateCollection.After</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="k">class</span> <span class="nc">Order</span>
@@ -85,5 +156,7 @@
 </span></span><span class="line"><span class="cl">    <span class="p">{</span>
 </span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="kt">double</span> <span class="n">Total</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="kd">private</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div>
-<p><strong>总结</strong>：这个例子很容易让我们想到以前系统间耦合常喜欢用数据库。每个系统都会操作数据库，并且有些系统还会对数据库的表结构或字段进行修改，那么这很容易就会造成维护的地狱，很明智的一个做法就是使用SOA来隔开这些耦合，让一些只需要数据展示的系统得到自己需要的数据即可。</p>]]></description></item></channel></rss>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>总结</strong>：这个例子很容易让我们想到以前系统间耦合常喜欢用数据库。每个系统都会操作数据库，并且有些系统还会对数据库的表结构或字段进行修改，那么这很容易就会造成维护的地狱，很明智的一个做法就是使用SOA来隔开这些耦合，让一些只需要数据展示的系统得到自己需要的数据即可。</p>]]></description></item></channel></rss>

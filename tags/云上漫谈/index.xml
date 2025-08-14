@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>云上漫谈 - 标签 - Gethin</title><link>https://blog.gethin.online/tags/%E4%BA%91%E4%B8%8A%E6%BC%AB%E8%B0%88/</link><description>云上漫谈 - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 08 Jul 2021 12:57:57 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/tags/%E4%BA%91%E4%B8%8A%E6%BC%AB%E8%B0%88/" rel="self" type="application/rss+xml"/><item><title>云上基础架构</title><link>https://blog.gethin.online/introduce-microservice-infrastructure-on-cloud/</link><pubDate>Thu, 08 Jul 2021 12:57:57 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/introduce-microservice-infrastructure-on-cloud/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>云上漫谈 - 标签 - Gethin</title><link>https://blog.gethin.online/tags/%E4%BA%91%E4%B8%8A%E6%BC%AB%E8%B0%88/</link><description>云上漫谈 - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 08 Jul 2021 12:57:57 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/tags/%E4%BA%91%E4%B8%8A%E6%BC%AB%E8%B0%88/" rel="self" type="application/rss+xml"/><item><title>云上基础架构</title><link>https://blog.gethin.online/introduce-microservice-infrastructure-on-cloud/</link><pubDate>Thu, 08 Jul 2021 12:57:57 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/introduce-microservice-infrastructure-on-cloud/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><div id="summary" class="mindmap mindmap-md">
     <ul>
@@ -24,7 +24,7 @@
 </li>
 <li>
 <p>SaaS 软件即服务，将所有的部分都交给第三方管理，拥有者本身只需要基于应用程序进行配置或是二次开发。</p>
-<p><a href="https://www.sherweb.com/blog/cloud-server/what-is-azure-paas/" target="_blank" rel="noopener noreffer ">啥是 azure-paas</a></p>
+<p><a href="https://www.sherweb.com/blog/cloud-server/what-is-azure-paas/" target="_blank" rel="noopener noreffer">啥是 azure-paas</a></p>
 <p></p>
 <p></p>
 </li>

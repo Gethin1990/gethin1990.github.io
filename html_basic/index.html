@@ -1,21 +1,75 @@
-<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><title>HTML 基础 - Gethin</title><meta name=Description content="This is my cool site"><meta property="og:url" content="https://blog.gethin.online/html_basic/"><meta property="og:site_name" content="Gethin"><meta property="og:title" content="HTML 基础"><meta property="og:description" content="本文主要是总结了HTML的相关基础知识和常用标签。"><meta property="og:locale" content="zh_cn"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2021-06-24T09:37:57+08:00"><meta property="article:modified_time" content="2025-08-14T16:54:27+08:00"><meta property="article:tag" content="前端"><meta property="og:image" content="https://blog.gethin.online/logo.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://blog.gethin.online/logo.png"><meta name=twitter:title content="HTML 基础"><meta name=twitter:description content="本文主要是总结了HTML的相关基础知识和常用标签。"><meta name=application-name content="Gethin"><meta name=apple-mobile-web-app-title content="Gethin"><meta name=referrer content="no-referrer"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://blog.gethin.online/html_basic/><link rel=prev href=https://blog.gethin.online/uml-design/><link rel=next href=https://blog.gethin.online/css_basic/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"HTML 基础","inLanguage":"zh-cn","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/blog.gethin.online\/html_basic\/"},"image":["https:\/\/blog.gethin.online\/images\/Apple-Devices-Preview.png"],"genre":"posts","keywords":"前端","wordcount":783,"url":"https:\/\/blog.gethin.online\/html_basic\/","datePublished":"2021-06-24T09:37:57+08:00","dateModified":"2025-08-14T16:54:27+08:00","publisher":{"@type":"Organization","name":"gethin","logo":"https:\/\/cdn.jsdelivr.net\/gh\/Gethin1990\/PicBed\/BlogImg\/g.PNG"},"author":{"@type":"Person","name":"xxxx"},"description":""}</script></head><body data-header-desktop=fixed data-header-mobile=auto><script>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title=Gethin><span class=header-title-pre><i class='fas fa-cloud-sun'></i></span><span class=header-title-post>Cloud & Sun</span></a></div><div class=menu><div class=menu-inner><a class=menu-item href=/ title=首页><i class='fas fa-home fa-fw'></i> 首页 </a><a class=menu-item href=/categories/><i class='fas fa-th-list fa-fw'></i> 分类 </a><a class=menu-item href=/tags/><i class='fas fa-tags fa-fw'></i> 标签 </a><a class=menu-item href=/posts/ title=所有文章><i class='fas fa-archive fa-fw'></i> 归档 </a><a class=menu-item href=/><i class='fas fa-fan fa-fw'></i> 分享 </a><a class=menu-item href=/><i class='fas fa-door-closed fa-fw'></i> 传送门 </a><a class=menu-item href=/><i class='fas fa-user-secret fa-fw'></i> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
-<input type=text placeholder=搜索文章标题或内容... id=search-input-desktop>
-<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i>
-</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i>
-</a><span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i>
-</span></span><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题><i class="fas fa-adjust fa-fw" aria-hidden=true></i>
-</a><a href=javascript:void(0); class="menu-item language" title=选择语言><i class="fa fa-globe fa-fw" aria-hidden=true></i>
-<select class=language-select id=language-select-desktop onchange="location=this.value"><option value=/html_basic/ selected></option></select></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title=Gethin><span class=header-title-pre><i class='fas fa-cloud-sun'></i></span><span class=header-title-post>Cloud & Sun</span></a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder=搜索文章标题或内容... id=search-input-mobile>
-<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i>
-</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i>
-</a><span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>取消</a></div><a class=menu-item href=/ title=首页><i class='fas fa-home fa-fw'></i>首页</a><a class=menu-item href=/categories/ title><i class='fas fa-th-list fa-fw'></i>分类</a><a class=menu-item href=/tags/ title><i class='fas fa-tags fa-fw'></i> 标签</a><a class=menu-item href=/posts/ title=所有文章><i class='fas fa-archive fa-fw'></i>归档</a><a class=menu-item href=/ title><i class='fas fa-fan fa-fw'></i>分享</a><a class=menu-item href=/ title><i class='fas fa-door-closed fa-fw'></i>传送门</a><a class=menu-item href=/ title><i class='fas fa-user-secret fa-fw'></i>关于</a><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题>
-<i class="fas fa-adjust fa-fw" aria-hidden=true></i>
-</a><a href=javascript:void(0); class=menu-item title=选择语言><i class="fa fa-globe fa-fw" aria-hidden=true></i>
-<select class=language-select onchange="location=this.value"><option value=/html_basic/ selected></option></select></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>目录</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">HTML 基础</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>xxxx</a></span>&nbsp;<span class=post-category>收录于 <a href=/categories/%E8%AF%AD%E8%A8%80%E4%B8%8E%E5%B9%B3%E5%8F%B0/><i class="far fa-folder fa-fw" aria-hidden=true></i>语言与平台</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2021-06-24>2021-06-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;约 783 字&nbsp;
-<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;预计阅读 4 分钟&nbsp;</div></div><div class=featured-image><img class=lazyload src=/svg/loading.min.svg data-src=https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210625132949-2021-06-25-13-29-50.png data-srcset="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210625132949-2021-06-25-13-29-50.png, https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210625132949-2021-06-25-13-29-50.png 1.5x, https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210625132949-2021-06-25-13-29-50.png 2x" data-sizes=auto alt=https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210625132949-2021-06-25-13-29-50.png title=https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210625132949-2021-06-25-13-29-50.png></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>目录</span>
-<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><ul><li><a href=#html的基础标签>HTML的基础标签</a><ul><li><a href=#基础标签>基础标签</a></li><li><a href=#表格列表表单框架脚本>表格、列表、表单、框架、脚本</a></li><li><a href=#常用属性>常用属性</a></li><li><a href=#文本格式化>文本格式化</a></li><li><a href=#html5-新元素>HTML5 新元素</a></li><li><a href=#html5-本地储存>HTML5 本地储存</a></li><li><a href=#html5-web-sql>HTML5 Web SQL</a></li><li><a href=#html5-web-workers>HTML5 Web Workers</a></li><li><a href=#html5-服务器发送事件server-sent-events>HTML5 服务器发送事件(Server-Sent Events)</a></li><li><a href=#html5-websocket>HTML5 WebSocket</a></li></ul></li></ul></li></ul></nav></div></div><div class=content id=content><h2 id=html的基础标签>HTML的基础标签</h2><h3 id=基础标签>基础标签</h3><div class="code-block code-line-numbers" style="counter-reset:code-block 0"><div class="code-header language-html"><span class=code-title><i class="arrow fas fa-angle-right fa-fw" aria-hidden=true></i></span>
-<span class=ellipses><i class="fas fa-ellipsis-h fa-fw" aria-hidden=true></i></span>
-<span class=copy title=复制到剪贴板><i class="far fa-copy fa-fw" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl><span class=c>&lt;!-- 定义 HTML 文档 --&gt;</span>
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><meta http-equiv=X-UA-Compatible content="IE=edge, chrome=1"><title>HTML 基础 - Gethin</title><meta name=Description content><meta property="og:url" content="https://blog.gethin.online/html_basic/"><meta property="og:site_name" content="Gethin"><meta property="og:title" content="HTML 基础"><meta property="og:description" content="本文主要是总结了HTML的相关基础知识和常用标签。"><meta property="og:locale" content="zh_cn"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2021-06-24T09:37:57+08:00"><meta property="article:modified_time" content="2025-08-14T18:49:18+08:00"><meta property="article:tag" content="前端"><meta property="og:image" content="https://blog.gethin.online/logo.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://blog.gethin.online/logo.png"><meta name=twitter:title content="HTML 基础"><meta name=twitter:description content="本文主要是总结了HTML的相关基础知识和常用标签。"><meta name=application-name content="Gethin"><meta name=apple-mobile-web-app-title content="Gethin"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://blog.gethin.online/html_basic/><link rel=prev href=https://blog.gethin.online/uml-design/><link rel=next href=https://blog.gethin.online/css_basic/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"HTML 基础","inLanguage":"zh-cn","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/blog.gethin.online\/html_basic\/"},"image":["https:\/\/blog.gethin.online\/images\/Apple-Devices-Preview.png"],"genre":"posts","keywords":"前端","wordcount":1064,"url":"https:\/\/blog.gethin.online\/html_basic\/","datePublished":"2021-06-24T09:37:57+08:00","dateModified":"2025-08-14T18:49:18+08:00","publisher":{"@type":"Organization","name":"gethin","logo":"https:\/\/cdn.jsdelivr.net\/gh\/Gethin1990\/PicBed\/BlogImg\/g.PNG"},"author":{"@type":"Person","name":"作者"},"description":""}</script></head><body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title=Gethin><span class=header-title-pre><i class='fas fa-cloud-sun'></i></span><span class=header-title-post>Cloud & Sun</span></a></div><div class=menu style=overflow:visible><div class=menu-inner><a class=menu-item href=/ title=首页><i class='fas fa-home fa-fw'></i>首页</a>
+<a class=menu-item href=/categories/><i class='fas fa-th-list fa-fw'></i>分类</a>
+<a class=menu-item href=/tags/><i class='fas fa-tags fa-fw'></i> 标签</a>
+<a class=menu-item href=/posts/ title=所有文章><i class='fas fa-archive fa-fw'></i>归档</a><div class="dropdown menu-item" style=display:inline><a class=btn href=javascript:void(0); role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class='fas fa-fan fa-fw'></i>分享</a><div class=dropdown-menu style=display:none><a class=dropdown-item href=/memories/><i class='fas fa-database fa-fw'></i> 记忆 </a><a class=dropdown-item href=/reveal/><i class='fas fa-arrow-alt-circle-right fa-fw'></i> 展示 </a><a class=dropdown-item href=/websites/><i class='fas fa-globe fa-fw'></i> 网站</a></div></div><div class="dropdown menu-item" style=display:inline><a class=btn href=javascript:void(0); role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class='fas fa-door-closed fa-fw'></i>传送门</a><div class=dropdown-menu style=display:none><a class=dropdown-item href=/message-board/><i class='fas fa-comments fa-fw'></i> 留言板 </a><a class=dropdown-item href=/milestone/><i class='fas fa-monument fa-fw'></i> 里程碑 </a><a class=dropdown-item href=/links/><i class='fas fa-user-friends fa-fw'></i> 友情链</a></div></div><div class="dropdown menu-item" style=display:inline><a class=btn href=javascript:void(0); role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class='fas fa-user-secret fa-fw'></i>关于</a><div class=dropdown-menu style=display:none><a class=dropdown-item href=/about/><i class='fas fa-address-card fa-fw'></i> 关于本人 </a><a class=dropdown-item href=/keypoint/><i class='fas fa-star fa-fw'></i> 关键信息</a></div></div><span class="menu-item delimiter"></span>
+<span class="menu-item search" id=search-desktop><input type=text placeholder=搜索文章标题或内容... id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索><i class="fas fa-search fa-fw"></i>
+</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空><i class="fas fa-times-circle fa-fw"></i>
+</a><span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin"></i>
+</span></span><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题><i class="fas fa-adjust fa-fw"></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title=Gethin><span class=header-title-pre><i class='fas fa-cloud-sun'></i></span><span class=header-title-post>Cloud & Sun</span></a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder=搜索文章标题或内容... id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索><i class="fas fa-search fa-fw"></i>
+</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空><i class="fas fa-times-circle fa-fw"></i>
+</a><span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin"></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>取消</a></div><a class=menu-item href=/ title=首页><i class='fas fa-home fa-fw'></i>首页</a>
+<a class=menu-item href=/categories/ title><i class='fas fa-th-list fa-fw'></i>分类</a>
+<a class=menu-item href=/tags/ title><i class='fas fa-tags fa-fw'></i> 标签</a>
+<a class=menu-item href=/posts/ title=所有文章><i class='fas fa-archive fa-fw'></i>归档</a><div class="dropdown menu-item"><a class=btn href=javascript:void(0); role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class='fas fa-fan fa-fw'></i>分享</a><div class="dropdown-menu dropdown-menu-mobile" style=display:none><a class=dropdown-item href=/memories/><i class='fas fa-database fa-fw'></i> 记忆 </a><a class=dropdown-item href=/reveal/><i class='fas fa-arrow-alt-circle-right fa-fw'></i> 展示 </a><a class=dropdown-item href=/websites/><i class='fas fa-globe fa-fw'></i> 网站</a></div></div><div class="dropdown menu-item"><a class=btn href=javascript:void(0); role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class='fas fa-door-closed fa-fw'></i>传送门</a><div class="dropdown-menu dropdown-menu-mobile" style=display:none><a class=dropdown-item href=/message-board/><i class='fas fa-comments fa-fw'></i> 留言板 </a><a class=dropdown-item href=/milestone/><i class='fas fa-monument fa-fw'></i> 里程碑 </a><a class=dropdown-item href=/links/><i class='fas fa-user-friends fa-fw'></i> 友情链</a></div></div><div class="dropdown menu-item"><a class=btn href=javascript:void(0); role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class='fas fa-user-secret fa-fw'></i>关于</a><div class="dropdown-menu dropdown-menu-mobile" style=display:none><a class=dropdown-item href=/about/><i class='fas fa-address-card fa-fw'></i> 关于本人 </a><a class=dropdown-item href=/keypoint/><i class='fas fa-star fa-fw'></i> 关键信息</a></div></div><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题><i class="fas fa-adjust fa-fw"></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>目录</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">HTML 基础</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>作者</a></span>&nbsp;<span class=post-category>收录于 <a href=/categories/%E8%AF%AD%E8%A8%80%E4%B8%8E%E5%B9%B3%E5%8F%B0/><i class="far fa-folder fa-fw" aria-hidden=true></i>语言与平台</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2021-06-24>2021-06-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;约 1064 字&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;预计阅读 5 分钟&nbsp;</div></div><div class=featured-image><img class=lazyload src=/svg/loading.min.svg data-src=https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210625132949-2021-06-25-13-29-50.png data-srcset="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210625132949-2021-06-25-13-29-50.png, https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210625132949-2021-06-25-13-29-50.png 1.5x, https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210625132949-2021-06-25-13-29-50.png 2x" data-sizes=auto alt=https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210625132949-2021-06-25-13-29-50.png title=https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210625132949-2021-06-25-13-29-50.png></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>目录</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><ul><li><a href=#html的基础标签>HTML的基础标签</a><ul><li><a href=#基础标签>基础标签</a></li><li><a href=#表格列表表单框架脚本>表格、列表、表单、框架、脚本</a></li><li><a href=#常用属性>常用属性</a></li><li><a href=#文本格式化>文本格式化</a></li><li><a href=#html5-新元素>HTML5 新元素</a></li><li><a href=#html5-本地储存>HTML5 本地储存</a></li><li><a href=#html5-web-sql>HTML5 Web SQL</a></li><li><a href=#html5-web-workers>HTML5 Web Workers</a></li><li><a href=#html5-服务器发送事件server-sent-events>HTML5 服务器发送事件(Server-Sent Events)</a></li><li><a href=#html5-websocket>HTML5 WebSocket</a></li></ul></li></ul></li></ul></nav></div></div><div class=content id=content><h2 id=html的基础标签>HTML的基础标签</h2><h3 id=基础标签>基础标签</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl><span class=c>&lt;!-- 定义 HTML 文档 --&gt;</span>
 </span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>html</span><span class=p>&gt;</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c>&lt;!-- 头部标签元素 --&gt;</span>
@@ -69,9 +123,56 @@
 </span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>div</span><span class=p>&gt;</span> 
 </span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>span</span><span class=p>&gt;</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=c>&lt;!-- 注释 --&gt;</span></span></span></code></pre></div></div><h3 id=表格列表表单框架脚本>表格、列表、表单、框架、脚本</h3><div class="code-block code-line-numbers" style="counter-reset:code-block 0"><div class="code-header language-html"><span class=code-title><i class="arrow fas fa-angle-right fa-fw" aria-hidden=true></i></span>
-<span class=ellipses><i class="fas fa-ellipsis-h fa-fw" aria-hidden=true></i></span>
-<span class=copy title=复制到剪贴板><i class="far fa-copy fa-fw" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c>&lt;!-- 注释 --&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=表格列表表单框架脚本>表格、列表、表单、框架、脚本</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c>&lt;!-- 表格 --&gt;</span>
 </span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>table</span> <span class=na>border</span><span class=o>=</span><span class=s>&#34;1&#34;</span><span class=p>&gt;</span>
 </span></span><span class=line><span class=cl>    <span class=p>&lt;</span><span class=nt>tr</span><span class=p>&gt;</span>
@@ -118,9 +219,21 @@
 </span></span><span class=line><span class=cl><span class=c>&lt;!-- 脚本 --&gt;</span>
 </span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>script</span><span class=p>&gt;</span>
 </span></span><span class=line><span class=cl>    <span class=nb>document</span><span class=p>.</span><span class=nx>write</span><span class=p>(</span><span class=s2>&#34;Hello World!&#34;</span><span class=p>);</span>
-</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>script</span><span class=p>&gt;</span></span></span></code></pre></div></div><h3 id=常用属性>常用属性</h3><ul><li>class： 为html元素定义一个或多个类名（classname）(类名从样式文件引入)</li><li>id： 定义元素的唯一id</li><li>style： 规定元素的行内样式（inline style）</li><li>title： 描述了元素的额外信息 (作为工具条使用)</li></ul><h3 id=文本格式化>文本格式化</h3><table><thead><tr><th>标签</th><th>描述</th></tr></thead><tbody><tr><td><strong>文本格式化标签</strong></td><td></td></tr><tr><td><code>&lt;b></code></td><td>定义粗体文本</td></tr><tr><td><code>&lt;em></code></td><td>定义着重文字</td></tr><tr><td><code>&lt;i></code></td><td>定义斜体字</td></tr><tr><td><code>&lt;small></code></td><td>定义小号字</td></tr><tr><td><code>&lt;strong></code></td><td>定义加重语气</td></tr><tr><td><code>&lt;sub</code>></td><td>定义下标字</td></tr><tr><td><code>&lt;sup></code></td><td>定义上标字</td></tr><tr><td><code>&lt;ins></code></td><td>定义插入字</td></tr><tr><td><code>&lt;del></code></td><td>定义删除字</td></tr><tr><td><strong>&ldquo;计算机输出&rdquo; 标签</strong></td><td></td></tr><tr><td><code>&lt;code></code></td><td>定义计算机代码</td></tr><tr><td><code>&lt;kbd></code></td><td>定义键盘码</td></tr><tr><td><code>&lt;samp></code></td><td>定义计算机代码样本</td></tr><tr><td><code>&lt;var></code></td><td>定义变量</td></tr><tr><td><code>&lt;pre></code></td><td>定义预格式文本</td></tr><tr><td><strong>引文, 引用, 及标签定义</strong></td><td></td></tr><tr><td><code>&lt;abbr></code></td><td>定义缩写</td></tr><tr><td><code>&lt;address></code></td><td>定义地址</td></tr><tr><td><code>&lt;bdo></code></td><td>定义文字方向</td></tr><tr><td><code>&lt;blockquote></code></td><td>定义长的引用</td></tr><tr><td><code>&lt;q></code></td><td>定义短的引用语</td></tr><tr><td><code>&lt;cite></code></td><td>定义引用、引证</td></tr><tr><td><code>&lt;dfn></code></td><td>定义一个定义项目。</td></tr></tbody></table><h3 id=html5-新元素>HTML5 新元素</h3><table><thead><tr><th>标签</th><th>描述</th></tr></thead><tbody><tr><td><strong>&lt;canvas> 新元素</strong></td><td></td></tr><tr><td><code>&lt;canvas></code></td><td>标签定义图形，比如图表和其他图像。该标签基于 JavaScript 的绘图 API</td></tr><tr><td><strong>新多媒体元素</strong></td><td></td></tr><tr><td><code>&lt;audio></code></td><td>定义音频内容</td></tr><tr><td><code>&lt;video></code></td><td>定义视频（video 或者 movie）</td></tr><tr><td><code>&lt;source></code></td><td>定义多媒体资源 <code>&lt;video></code> 和 <code>&lt;audio></code></td></tr><tr><td><code>&lt;embed></code></td><td>定义嵌入的内容，比如插件。</td></tr><tr><td><code>&lt;track></code></td><td>为诸如 <code>&lt;video></code> 和 <code>&lt;audio></code> 元素之类的媒介规定外部文本轨道。</td></tr><tr><td><strong>新表单元素</strong></td><td></td></tr><tr><td><code>&lt;datalist></code></td><td>定义选项列表。请与 input 元素配合使用该元素，来定义 input 可能的值。</td></tr><tr><td><code>&lt;keygen></code></td><td>规定用于表单的密钥对生成器字段。</td></tr><tr><td><code>&lt;output></code></td><td>定义不同类型的输出，比如脚本的输出。</td></tr><tr><td><strong>新的语义和结构元素</strong></td><td></td></tr><tr><td><code>&lt;article></code></td><td>定义页面独立的内容区域。</td></tr><tr><td><code>&lt;aside></code></td><td>定义页面的侧边栏内容。</td></tr><tr><td><code>&lt;bdi></code></td><td>允许您设置一段文本，使其脱离其父元素的文本方向设置。</td></tr><tr><td><code>&lt;command></code></td><td>定义命令按钮，比如单选按钮、复选框或按钮</td></tr><tr><td><code>&lt;details></code></td><td>用于描述文档或文档某个部分的细节</td></tr><tr><td><code>&lt;dialog></code></td><td>定义对话框，比如提示框</td></tr><tr><td><code>&lt;summary></code></td><td>标签包含 details 元素的标题</td></tr><tr><td><code>&lt;figure></code></td><td>规定独立的流内容（图像、图表、照片、代码等等）。</td></tr><tr><td><code>&lt;figcaption></code></td><td>定义 <code>&lt;figure></code> 元素的标题</td></tr><tr><td><code>&lt;footer></code></td><td>定义 section 或 document 的页脚。</td></tr><tr><td><code>&lt;header></code></td><td>定义了文档的头部区域</td></tr><tr><td><code>&lt;mark></code></td><td>定义带有记号的文本。</td></tr><tr><td><code>&lt;meter></code></td><td>定义度量衡。仅用于已知最大和最小值的度量。</td></tr><tr><td><code>&lt;nav></code></td><td>定义导航链接的部分。</td></tr><tr><td><code>&lt;progress></code></td><td>定义任何类型的任务的进度。</td></tr><tr><td><code>&lt;ruby></code></td><td>定义 ruby 注释（中文注音或字符）。</td></tr><tr><td><code>&lt;rt></code></td><td>定义字符（中文注音或字符）的解释或发音。</td></tr><tr><td><code>&lt;rp></code></td><td>在 ruby 注释中使用，定义不支持 ruby 元素的浏览器所显示的内容。</td></tr><tr><td><code>&lt;section></code></td><td>定义文档中的节（section、区段）。</td></tr><tr><td><code>&lt;time></code></td><td>定义日期或时间。</td></tr><tr><td><code>&lt;wbr></code></td><td>规定在文本中的何处适合添加换行符。</td></tr></tbody></table><h3 id=html5-本地储存>HTML5 本地储存</h3><p>客户端存储数据的两个对象为：</p><ul><li>localStorage - 用于长久保存整个网站的数据，保存的数据没有过期时间，直到手动去除。</li><li>sessionStorage - 用于临时保存同一窗口(或标签页)的数据，在关闭窗口或标签页之后将会删除这些数据。</li></ul><div class="code-block code-line-numbers" style="counter-reset:code-block 0"><div class="code-header language-js"><span class=code-title><i class="arrow fas fa-angle-right fa-fw" aria-hidden=true></i></span>
-<span class=ellipses><i class="fas fa-ellipsis-h fa-fw" aria-hidden=true></i></span>
-<span class=copy title=复制到剪贴板><i class="far fa-copy fa-fw" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>//保存数据  
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>script</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=常用属性>常用属性</h3><ul><li>class： 为html元素定义一个或多个类名（classname）(类名从样式文件引入)</li><li>id： 定义元素的唯一id</li><li>style： 规定元素的行内样式（inline style）</li><li>title： 描述了元素的额外信息 (作为工具条使用)</li></ul><h3 id=文本格式化>文本格式化</h3><table><thead><tr><th>标签</th><th>描述</th></tr></thead><tbody><tr><td><strong>文本格式化标签</strong></td><td></td></tr><tr><td><code>&lt;b></code></td><td>定义粗体文本</td></tr><tr><td><code>&lt;em></code></td><td>定义着重文字</td></tr><tr><td><code>&lt;i></code></td><td>定义斜体字</td></tr><tr><td><code>&lt;small></code></td><td>定义小号字</td></tr><tr><td><code>&lt;strong></code></td><td>定义加重语气</td></tr><tr><td><code>&lt;sub</code>></td><td>定义下标字</td></tr><tr><td><code>&lt;sup></code></td><td>定义上标字</td></tr><tr><td><code>&lt;ins></code></td><td>定义插入字</td></tr><tr><td><code>&lt;del></code></td><td>定义删除字</td></tr><tr><td><strong>&ldquo;计算机输出&rdquo; 标签</strong></td><td></td></tr><tr><td><code>&lt;code></code></td><td>定义计算机代码</td></tr><tr><td><code>&lt;kbd></code></td><td>定义键盘码</td></tr><tr><td><code>&lt;samp></code></td><td>定义计算机代码样本</td></tr><tr><td><code>&lt;var></code></td><td>定义变量</td></tr><tr><td><code>&lt;pre></code></td><td>定义预格式文本</td></tr><tr><td><strong>引文, 引用, 及标签定义</strong></td><td></td></tr><tr><td><code>&lt;abbr></code></td><td>定义缩写</td></tr><tr><td><code>&lt;address></code></td><td>定义地址</td></tr><tr><td><code>&lt;bdo></code></td><td>定义文字方向</td></tr><tr><td><code>&lt;blockquote></code></td><td>定义长的引用</td></tr><tr><td><code>&lt;q></code></td><td>定义短的引用语</td></tr><tr><td><code>&lt;cite></code></td><td>定义引用、引证</td></tr><tr><td><code>&lt;dfn></code></td><td>定义一个定义项目。</td></tr></tbody></table><h3 id=html5-新元素>HTML5 新元素</h3><table><thead><tr><th>标签</th><th>描述</th></tr></thead><tbody><tr><td><strong>&lt;canvas> 新元素</strong></td><td></td></tr><tr><td><code>&lt;canvas></code></td><td>标签定义图形，比如图表和其他图像。该标签基于 JavaScript 的绘图 API</td></tr><tr><td><strong>新多媒体元素</strong></td><td></td></tr><tr><td><code>&lt;audio></code></td><td>定义音频内容</td></tr><tr><td><code>&lt;video></code></td><td>定义视频（video 或者 movie）</td></tr><tr><td><code>&lt;source></code></td><td>定义多媒体资源 <code>&lt;video></code> 和 <code>&lt;audio></code></td></tr><tr><td><code>&lt;embed></code></td><td>定义嵌入的内容，比如插件。</td></tr><tr><td><code>&lt;track></code></td><td>为诸如 <code>&lt;video></code> 和 <code>&lt;audio></code> 元素之类的媒介规定外部文本轨道。</td></tr><tr><td><strong>新表单元素</strong></td><td></td></tr><tr><td><code>&lt;datalist></code></td><td>定义选项列表。请与 input 元素配合使用该元素，来定义 input 可能的值。</td></tr><tr><td><code>&lt;keygen></code></td><td>规定用于表单的密钥对生成器字段。</td></tr><tr><td><code>&lt;output></code></td><td>定义不同类型的输出，比如脚本的输出。</td></tr><tr><td><strong>新的语义和结构元素</strong></td><td></td></tr><tr><td><code>&lt;article></code></td><td>定义页面独立的内容区域。</td></tr><tr><td><code>&lt;aside></code></td><td>定义页面的侧边栏内容。</td></tr><tr><td><code>&lt;bdi></code></td><td>允许您设置一段文本，使其脱离其父元素的文本方向设置。</td></tr><tr><td><code>&lt;command></code></td><td>定义命令按钮，比如单选按钮、复选框或按钮</td></tr><tr><td><code>&lt;details></code></td><td>用于描述文档或文档某个部分的细节</td></tr><tr><td><code>&lt;dialog></code></td><td>定义对话框，比如提示框</td></tr><tr><td><code>&lt;summary></code></td><td>标签包含 details 元素的标题</td></tr><tr><td><code>&lt;figure></code></td><td>规定独立的流内容（图像、图表、照片、代码等等）。</td></tr><tr><td><code>&lt;figcaption></code></td><td>定义 <code>&lt;figure></code> 元素的标题</td></tr><tr><td><code>&lt;footer></code></td><td>定义 section 或 document 的页脚。</td></tr><tr><td><code>&lt;header></code></td><td>定义了文档的头部区域</td></tr><tr><td><code>&lt;mark></code></td><td>定义带有记号的文本。</td></tr><tr><td><code>&lt;meter></code></td><td>定义度量衡。仅用于已知最大和最小值的度量。</td></tr><tr><td><code>&lt;nav></code></td><td>定义导航链接的部分。</td></tr><tr><td><code>&lt;progress></code></td><td>定义任何类型的任务的进度。</td></tr><tr><td><code>&lt;ruby></code></td><td>定义 ruby 注释（中文注音或字符）。</td></tr><tr><td><code>&lt;rt></code></td><td>定义字符（中文注音或字符）的解释或发音。</td></tr><tr><td><code>&lt;rp></code></td><td>在 ruby 注释中使用，定义不支持 ruby 元素的浏览器所显示的内容。</td></tr><tr><td><code>&lt;section></code></td><td>定义文档中的节（section、区段）。</td></tr><tr><td><code>&lt;time></code></td><td>定义日期或时间。</td></tr><tr><td><code>&lt;wbr></code></td><td>规定在文本中的何处适合添加换行符。</td></tr></tbody></table><h3 id=html5-本地储存>HTML5 本地储存</h3><p>客户端存储数据的两个对象为：</p><ul><li>localStorage - 用于长久保存整个网站的数据，保存的数据没有过期时间，直到手动去除。</li><li>sessionStorage - 用于临时保存同一窗口(或标签页)的数据，在关闭窗口或标签页之后将会删除这些数据。</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>//保存数据  
 </span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>function</span> <span class=nx>save</span><span class=p>(){</span>  
 </span></span><span class=line><span class=cl>    <span class=kd>var</span> <span class=nx>siteurl</span> <span class=o>=</span> <span class=nb>document</span><span class=p>.</span><span class=nx>getElementById</span><span class=p>(</span><span class=s2>&#34;siteurl&#34;</span><span class=p>).</span><span class=nx>value</span><span class=p>;</span>  
 </span></span><span class=line><span class=cl>    <span class=kd>var</span> <span class=nx>sitename</span> <span class=o>=</span> <span class=nb>document</span><span class=p>.</span><span class=nx>getElementById</span><span class=p>(</span><span class=s2>&#34;sitename&#34;</span><span class=p>).</span><span class=nx>value</span><span class=p>;</span>  
@@ -133,9 +246,30 @@
 </span></span><span class=line><span class=cl>    <span class=kd>var</span> <span class=nx>sitename</span> <span class=o>=</span> <span class=nx>localStorage</span><span class=p>.</span><span class=nx>getItem</span><span class=p>(</span><span class=nx>search_site</span><span class=p>);</span>  
 </span></span><span class=line><span class=cl>    <span class=kd>var</span> <span class=nx>find_result</span> <span class=o>=</span> <span class=nb>document</span><span class=p>.</span><span class=nx>getElementById</span><span class=p>(</span><span class=s2>&#34;find_result&#34;</span><span class=p>);</span>  
 </span></span><span class=line><span class=cl>    <span class=nx>find_result</span><span class=p>.</span><span class=nx>innerHTML</span> <span class=o>=</span> <span class=nx>search_site</span> <span class=o>+</span> <span class=s2>&#34;的网址是：&#34;</span> <span class=o>+</span> <span class=nx>sitename</span><span class=p>;</span>  
-</span></span></code></pre></div></div><h3 id=html5-web-sql>HTML5 Web SQL</h3><p>Web SQL 数据库 API 并不是 HTML5 规范的一部分，但是它是一个独立的规范，引入了一组使用 SQL 操作客户端数据库的 APIs。</p><p>以下是规范中定义的三个核心方法：</p><ul><li>openDatabase：这个方法使用现有的数据库或者新建的数据库创建一个数据库对象。</li><li>transaction：这个方法让我们能够控制一个事务，以及基于这种情况执行提交或者回滚。</li><li>executeSql：这个方法用于执行实际的 SQL 查询。</li></ul><div class="code-block code-line-numbers" style="counter-reset:code-block 0"><div class="code-header language-js"><span class=code-title><i class="arrow fas fa-angle-right fa-fw" aria-hidden=true></i></span>
-<span class=ellipses><i class="fas fa-ellipsis-h fa-fw" aria-hidden=true></i></span>
-<span class=copy title=复制到剪贴板><i class="far fa-copy fa-fw" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=kd>var</span> <span class=nx>db</span> <span class=o>=</span> <span class=nx>openDatabase</span><span class=p>(</span><span class=s1>&#39;mydb&#39;</span><span class=p>,</span> <span class=s1>&#39;1.0&#39;</span><span class=p>,</span> <span class=s1>&#39;Test DB&#39;</span><span class=p>,</span> <span class=mi>2</span> <span class=o>*</span> <span class=mi>1024</span> <span class=o>*</span> <span class=mi>1024</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=html5-web-sql>HTML5 Web SQL</h3><p>Web SQL 数据库 API 并不是 HTML5 规范的一部分，但是它是一个独立的规范，引入了一组使用 SQL 操作客户端数据库的 APIs。</p><p>以下是规范中定义的三个核心方法：</p><ul><li>openDatabase：这个方法使用现有的数据库或者新建的数据库创建一个数据库对象。</li><li>transaction：这个方法让我们能够控制一个事务，以及基于这种情况执行提交或者回滚。</li><li>executeSql：这个方法用于执行实际的 SQL 查询。</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=kd>var</span> <span class=nx>db</span> <span class=o>=</span> <span class=nx>openDatabase</span><span class=p>(</span><span class=s1>&#39;mydb&#39;</span><span class=p>,</span> <span class=s1>&#39;1.0&#39;</span><span class=p>,</span> <span class=s1>&#39;Test DB&#39;</span><span class=p>,</span> <span class=mi>2</span> <span class=o>*</span> <span class=mi>1024</span> <span class=o>*</span> <span class=mi>1024</span><span class=p>);</span>
 </span></span><span class=line><span class=cl><span class=kd>var</span> <span class=nx>msg</span><span class=p>;</span>
 </span></span><span class=line><span class=cl> 
 </span></span><span class=line><span class=cl><span class=nx>db</span><span class=p>.</span><span class=nx>transaction</span><span class=p>(</span><span class=kd>function</span> <span class=p>(</span><span class=nx>tx</span><span class=p>)</span> <span class=p>{</span>
@@ -157,9 +291,59 @@
 </span></span><span class=line><span class=cl>        <span class=nb>document</span><span class=p>.</span><span class=nx>querySelector</span><span class=p>(</span><span class=s1>&#39;#status&#39;</span><span class=p>).</span><span class=nx>innerHTML</span> <span class=o>+=</span>  <span class=nx>msg</span><span class=p>;</span>
 </span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=p>},</span> <span class=kc>null</span><span class=p>);</span>
-</span></span><span class=line><span class=cl><span class=p>});</span></span></span></code></pre></div></div><h3 id=html5-web-workers>HTML5 Web Workers</h3><div class="code-block code-line-numbers" style="counter-reset:code-block 0"><div class="code-header language-html"><span class=code-title><i class="arrow fas fa-angle-right fa-fw" aria-hidden=true></i></span>
-<span class=ellipses><i class="fas fa-ellipsis-h fa-fw" aria-hidden=true></i></span>
-<span class=copy title=复制到剪贴板><i class="far fa-copy fa-fw" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>});</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=html5-web-workers>HTML5 Web Workers</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>// demo_workers.js 
 </span></span><span class=line><span class=cl>var i=0;
 </span></span><span class=line><span class=cl>
@@ -209,9 +393,46 @@
 </span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>script</span><span class=p>&gt;</span>
 </span></span><span class=line><span class=cl> 
 </span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>body</span><span class=p>&gt;</span>
-</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>html</span><span class=p>&gt;</span></span></span></code></pre></div></div><h3 id=html5-服务器发送事件server-sent-events>HTML5 服务器发送事件(Server-Sent Events)</h3><p>Server-Sent 事件 - 单向消息传递</p><div class="code-block code-line-numbers" style="counter-reset:code-block 0"><div class="code-header language-html"><span class=code-title><i class="arrow fas fa-angle-right fa-fw" aria-hidden=true></i></span>
-<span class=ellipses><i class="fas fa-ellipsis-h fa-fw" aria-hidden=true></i></span>
-<span class=copy title=复制到剪贴板><i class="far fa-copy fa-fw" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl><span class=c>&lt;!-- demo_sse.php --&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>html</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=html5-服务器发送事件server-sent-events>HTML5 服务器发送事件(Server-Sent Events)</h3><p>Server-Sent 事件 - 单向消息传递</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl><span class=c>&lt;!-- demo_sse.php --&gt;</span>
 </span></span><span class=line><span class=cl><span class=cp>&lt;?php
 </span></span></span><span class=line><span class=cl><span class=cp>header(&#39;Content-Type: text/event-stream&#39;);
 </span></span></span><span class=line><span class=cl><span class=cp>header(&#39;Cache-Control: no-cache&#39;);
@@ -248,9 +469,61 @@
 </span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>script</span><span class=p>&gt;</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>body</span><span class=p>&gt;</span>
-</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>html</span><span class=p>&gt;</span></span></span></code></pre></div></div><h3 id=html5-websocket>HTML5 WebSocket</h3><p>WebSocket 是 HTML5 开始提供的一种在单个 TCP 连接上进行全双工通讯的协议。</p><div class="code-block code-line-numbers" style="counter-reset:code-block 0"><div class="code-header language-html"><span class=code-title><i class="arrow fas fa-angle-right fa-fw" aria-hidden=true></i></span>
-<span class=ellipses><i class="fas fa-ellipsis-h fa-fw" aria-hidden=true></i></span>
-<span class=copy title=复制到剪贴板><i class="far fa-copy fa-fw" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl><span class=cp>&lt;!DOCTYPE HTML&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>html</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=html5-websocket>HTML5 WebSocket</h3><p>WebSocket 是 HTML5 开始提供的一种在单个 TCP 连接上进行全双工通讯的协议。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl><span class=cp>&lt;!DOCTYPE HTML&gt;</span>
 </span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>html</span><span class=p>&gt;</span>
 </span></span><span class=line><span class=cl>   <span class=p>&lt;</span><span class=nt>head</span><span class=p>&gt;</span>
 </span></span><span class=line><span class=cl>   <span class=p>&lt;</span><span class=nt>meta</span> <span class=na>charset</span><span class=o>=</span><span class=s>&#34;utf-8&#34;</span><span class=p>&gt;</span>
@@ -302,6 +575,8 @@
 </span></span><span class=line><span class=cl>      <span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
 </span></span><span class=line><span class=cl>      
 </span></span><span class=line><span class=cl>   <span class=p>&lt;/</span><span class=nt>body</span><span class=p>&gt;</span>
-</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>html</span><span class=p>&gt;</span></span></span></code></pre></div></div><blockquote><p><a href=https://www.runoob.com/tags/ref-byfunc.html target=_blank rel="noopener noreffer">HTML 参考手册</a></p></blockquote></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>更新于 2025-08-14</span></div></div><div class=post-info-line><div class=post-info-md></div><div class=post-info-share><span><a href=javascript:void(0); title="分享到 X" data-sharer=x data-url=https://blog.gethin.online/html_basic/ data-title="HTML 基础" data-hashtags=前端><i class="fab fa-x-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Threads" data-sharer=threads data-url=https://blog.gethin.online/html_basic/ data-title="HTML 基础"><i class="fab fa-threads fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Facebook" data-sharer=facebook data-url=https://blog.gethin.online/html_basic/ data-hashtag=前端><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Hacker News" data-sharer=hackernews data-url=https://blog.gethin.online/html_basic/ data-title="HTML 基础"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Line" data-sharer=line data-url=https://blog.gethin.online/html_basic/ data-title="HTML 基础"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://blog.gethin.online/html_basic/ data-title="HTML 基础" data-image=https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210625132949-2021-06-25-13-29-50.png><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Diaspora" data-sharer=diaspora data-url=https://blog.gethin.online/html_basic/ data-title="HTML 基础" data-description><i class="fab fa-diaspora fa-fw" aria-hidden=true></i></a><a href="https://t.me/share/url?url=https%3a%2f%2fblog.gethin.online%2fhtml_basic%2f&amp;text=HTML%20%e5%9f%ba%e7%a1%80" target=_blank title="分享到 Telegram"><i class="fab fa-telegram fa-fw" aria-hidden=true></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/tags/%E5%89%8D%E7%AB%AF/>前端</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主页</a></span></section></div><div class=post-nav><a href=/uml-design/ class=prev rel=prev title=UML设计与基本概念><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>UML设计与基本概念</a>
-<a href=/css_basic/ class=next rel=next title="CSS 基础">CSS 基础<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div><div id=comments><div id=gitalk class=comment></div><noscript>Please enable JavaScript to view the comments powered by <a href=https://github.com/gitalk/gitalk>Gitalk</a>.</noscript></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line><span id=timeDate>运行 time 天&nbsp;|&nbsp;</span>
-<script>var now=new Date;function createtime(){var e,t=new Date("05/05/2021 00:00:00");now.setTime(now.getTime()+250),days=(now-t)/1e3/60/60/24,dnum=Math.floor(days),e=document.getElementById("timeDate").innerHTML.replace(/time/,Math.floor(days)),document.getElementById("timeDate").innerHTML=e}createtime()</script>由 <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.148.2">Hugo</a> 强力驱动 | 主题 - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.3.1-DEV"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a></div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2021 - 2025</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>格心</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" target=_blank href=https://creativecommons.org/licenses/by-nc-sa/4.0/>知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到顶部><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i></a></div><div id=fixed-buttons-hidden><a href=# id=view-comments class=fixed-button title=查看评论><i class="fas fa-comment fa-fw" aria-hidden=true></i></a></div><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css><link rel=stylesheet href=/css/_custom.scss><script src=https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js></script><script src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js></script><script src=https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js></script><script src=https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js></script><script src=https://cdn.jsdelivr.net/npm/twemoji@13.0.0/dist/twemoji.min.js></script><script src=https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js></script><script src=https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js></script><script src=https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js></script><script src=https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js></script><script src=https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js></script><script src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js></script><script src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js></script><script src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js></script><script src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js></script><script src=https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js></script><script src=/js/jquery.backstretch.min.js></script><script src=/js/dayjs.min.js></script><script src=/js/custom.js></script><script>window.config={comment:{gitalk:{admin:["Gethin1990"],clientID:"4743974d0c1165efbf05",clientSecret:"94543d55ec4241197bf2029c5167870e9185d619",id:"2021-06-24T09:37:57+08:00",owner:"Gethin1990",repo:"gsblogtalk",title:"HTML 基础"}},lightgallery:!0,math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!0,left:"\\begin{equation}",right:"\\end{equation}"},{display:!0,left:"\\begin{equation*}",right:"\\end{equation*}"},{display:!0,left:"\\begin{align}",right:"\\end{align}"},{display:!0,left:"\\begin{align*}",right:"\\end{align*}"},{display:!0,left:"\\begin{alignat}",right:"\\end{alignat}"},{display:!0,left:"\\begin{alignat*}",right:"\\end{alignat*}"},{display:!0,left:"\\begin{gather}",right:"\\end{gather}"},{display:!0,left:"\\begin{CD}",right:"\\end{CD}"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{algoliaAppID:"MFVMILWR8Y",algoliaIndex:"gethin_blog",algoliaSearchKey:"9116370b412bf8b2f2adaf656612f599",highlightTag:"em",maxResultLength:10,noResultsFound:"没有找到结果",snippetLength:50,type:"algolia"},twemoji:!0}</script><script src=/js/theme.min.js></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-FFRV57P35K")}</script><script src="https://www.googletagmanager.com/gtag/js?id=G-FFRV57P35K" async></script></body></html>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>html</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><blockquote><p><a href=https://www.runoob.com/tags/ref-byfunc.html target=_blank rel="noopener noreffer">HTML 参考手册</a></p></blockquote></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>更新于 2025-08-14</span></div><div class=post-info-license></div></div><div class=post-info-line><div class=post-info-md></div><div class=post-info-share><span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://blog.gethin.online/html_basic/ data-title="HTML 基础" data-hashtags=前端><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Facebook" data-sharer=facebook data-url=https://blog.gethin.online/html_basic/ data-hashtag=前端><i class="fab fa-facebook-square fa-fw"></i></a><a href=javascript:void(0); title="分享到 Hacker News" data-sharer=hackernews data-url=https://blog.gethin.online/html_basic/ data-title="HTML 基础"><i class="fab fa-hacker-news fa-fw"></i></a><a href=javascript:void(0); title="分享到 Line" data-sharer=line data-url=https://blog.gethin.online/html_basic/ data-title="HTML 基础"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://blog.gethin.online/html_basic/ data-title="HTML 基础" data-image=https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210625132949-2021-06-25-13-29-50.png><i class="fab fa-weibo fa-fw"></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/%E5%89%8D%E7%AB%AF/>前端</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主页</a></span></section></div><div class=post-nav><a href=/uml-design/ class=prev rel=prev title=UML设计与基本概念><i class="fas fa-angle-left fa-fw"></i>UML设计与基本概念</a>
+<a href=/css_basic/ class=next rel=next title="CSS 基础">CSS 基础<i class="fas fa-angle-right fa-fw"></i></a></div></div><div id=comments><div id=gitalk class=comment></div><noscript>Please enable JavaScript to view the comments powered by <a href=https://github.com/gitalk/gitalk></a>Gitalk</a>.</noscript></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line><span id=timeDate>运行 time 天&nbsp;|&nbsp;</span>
+<script>var now=new Date;function createtime(){var e,t=new Date("05/05/2021 00:00:00");now.setTime(now.getTime()+250),days=(now-t)/1e3/60/60/24,dnum=Math.floor(days),e=document.getElementById("timeDate").innerHTML.replace(/time/,Math.floor(days)),document.getElementById("timeDate").innerHTML=e}createtime()</script>由 <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.148.2">Hugo</a> 强力驱动 | 主题 - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a></div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2021 - 2025</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>格心</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" target=_blank href=https://creativecommons.org/licenses/by-nc-sa/4.0/>知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到顶部><i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title=查看评论><i class="fas fa-comment fa-fw"></i></a></div><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css><link rel=stylesheet href=/css/_custom.scss><script type=text/javascript src=https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/twemoji@13.0.0/dist/twemoji.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js></script><script type=text/javascript src=/js/jquery.backstretch.min.js></script><script type=text/javascript src=/js/dayjs.min.js></script><script type=text/javascript src=/js/custom.js></script><script type=text/javascript>window.config={code:{copyTitle:"复制到剪贴板",maxShownLines:10},comment:{gitalk:{admin:["Gethin1990"],clientID:"4743974d0c1165efbf05",clientSecret:"94543d55ec4241197bf2029c5167870e9185d619",id:"2021-06-24T09:37:57+08:00",owner:"Gethin1990",repo:"gsblogtalk",title:"HTML 基础"}},lightGallery:{actualSize:!1,exThumbImage:"data-thumbnail",hideBarsDelay:2e3,selector:".lightgallery",speed:400,thumbContHeight:80,thumbWidth:80,thumbnail:!0},math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{algoliaAppID:"MFVMILWR8Y",algoliaIndex:"gethin_blog",algoliaSearchKey:"9116370b412bf8b2f2adaf656612f599",highlightTag:"em",maxResultLength:10,noResultsFound:"没有找到结果",snippetLength:50,type:"algolia"},twemoji:!0}</script><script type=text/javascript src=/js/theme.min.js></script><script type=text/javascript>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-FFRV57P35K",{anonymize_ip:!0})</script><script type=text/javascript src="https://www.googletagmanager.com/gtag/js?id=G-FFRV57P35K" async></script><script>var _hmt=_hmt||[];(function(){var e,t=document.createElement("script");t.src="https://hm.baidu.com/hm.js?67eb34015166e2e77745ce46dd823cb7",e=document.getElementsByTagName("script")[0],e.parentNode.insertBefore(t,e)})()</script></body></html>

@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>架构艺术 - 分类 - Gethin</title><link>https://blog.gethin.online/categories/%E6%9E%B6%E6%9E%84%E8%89%BA%E6%9C%AF/</link><description>架构艺术 - 分类 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 16 Aug 2021 10:52:39 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/categories/%E6%9E%B6%E6%9E%84%E8%89%BA%E6%9C%AF/" rel="self" type="application/rss+xml"/><item><title>软件架构模式</title><link>https://blog.gethin.online/software-architecture-pattern/</link><pubDate>Mon, 16 Aug 2021 10:52:39 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/software-architecture-pattern/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>架构艺术 - 分类 - Gethin</title><link>https://blog.gethin.online/categories/%E6%9E%B6%E6%9E%84%E8%89%BA%E6%9C%AF/</link><description>架构艺术 - 分类 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 16 Aug 2021 10:52:39 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/categories/%E6%9E%B6%E6%9E%84%E8%89%BA%E6%9C%AF/" rel="self" type="application/rss+xml"/><item><title>软件架构模式</title><link>https://blog.gethin.online/software-architecture-pattern/</link><pubDate>Mon, 16 Aug 2021 10:52:39 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/software-architecture-pattern/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="应用场景">应用场景</h2>
 <h3 id="单体架构">单体架构</h3>
@@ -335,7 +335,7 @@
 <li>桌面开发不流行</li>
 </ul>
 </li>
-</ul>]]></description></item><item><title>设计模式</title><link>https://blog.gethin.online/design-pattern/</link><pubDate>Sun, 15 Aug 2021 15:10:00 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/design-pattern/</guid><description><![CDATA[<div class="featured-image">
+</ul>]]></description></item><item><title>设计模式</title><link>https://blog.gethin.online/design-pattern/</link><pubDate>Sun, 15 Aug 2021 15:10:00 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/design-pattern/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="设计模式六大原则">设计模式六大原则</h2>
 <ul>
@@ -414,7 +414,7 @@
 <li>Flyweight（享元）————有相同的部分就分享，采取精简政策</li>
 <li>Proxy（代理）————要用在建立</li>
 </ol>
-<p>◎用类来表示</p>]]></description></item><item><title>UML设计与基本概念</title><link>https://blog.gethin.online/uml-design/</link><pubDate>Wed, 23 Jun 2021 20:18:17 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/uml-design/</guid><description><![CDATA[<div class="featured-image">
+<p>◎用类来表示</p>]]></description></item><item><title>UML设计与基本概念</title><link>https://blog.gethin.online/uml-design/</link><pubDate>Wed, 23 Jun 2021 20:18:17 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/uml-design/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="uml-的各种图">UML 的各种图</h2>
 <p>UML 又称为统一建模语言，是为面向对象开发系统进行说明、可视化的一种标准语言。<br>
@@ -491,7 +491,7 @@ UML 的分类如下：</p>
 </li>
 </ol>
 <h2 id="对象图">对象图</h2>
-<p>描述的是参与交互的各个对象在交互过程中某一时刻的状态。</p>]]></description></item><item><title>[转载]Redis面试题</title><link>https://blog.gethin.online/redis-reprinted/</link><pubDate>Fri, 04 Jun 2021 21:06:39 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/redis-reprinted/</guid><description><![CDATA[<div class="featured-image">
+<p>描述的是参与交互的各个对象在交互过程中某一时刻的状态。</p>]]></description></item><item><title>[转载]Redis面试题</title><link>https://blog.gethin.online/redis-reprinted/</link><pubDate>Fri, 04 Jun 2021 21:06:39 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/redis-reprinted/</guid><description><![CDATA[<div class="featured-image">
                 <img src="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/redis-2021-06-04-21-41-23.jpg" referrerpolicy="no-referrer">
             </div><p></p>
 <h2 id="概述">概述</h2>
@@ -523,7 +523,7 @@ UML 的分类如下：</p>
 <p></p>
 <p><strong>高并发：</strong></p>
 <p>直接操作缓存能够承受的请求是远远大于直接访问数据库的，所以我们可以考虑把数据库中的部分数据转移到缓存中去，这样用户的一部分请求会直接到缓存这里而不用经过数据库。</p>
-<p></p>]]></description></item><item><title>[转载]消息中间件MQ与RabbitMQ面试题</title><link>https://blog.gethin.online/rabbitmq-reprinted/</link><pubDate>Fri, 04 Jun 2021 10:58:43 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/rabbitmq-reprinted/</guid><description><![CDATA[<div class="featured-image">
+<p></p>]]></description></item><item><title>[转载]消息中间件MQ与RabbitMQ面试题</title><link>https://blog.gethin.online/rabbitmq-reprinted/</link><pubDate>Fri, 04 Jun 2021 10:58:43 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/rabbitmq-reprinted/</guid><description><![CDATA[<div class="featured-image">
                 <img src="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/RabbitMQ-2021-06-04-13-49-43.jpg" referrerpolicy="no-referrer">
             </div><h2 id="为什么使用mqmq的优点">为什么使用MQ？MQ的优点</h2>
 <hr>
@@ -539,7 +539,7 @@ UML 的分类如下：</p>
 <p>主要是：解耦、异步、削峰。</p>
 <p><strong>解耦</strong>：A 系统发送数据到 BCD 三个系统，通过接口调用发送。如果 E 系统也要这个数据呢？那如果 C 系统现在不需要了呢？A 系统负责人几乎崩溃…A 系统跟其它各种乱七八糟的系统严重耦合，A 系统产生一条比较关键的数据，很多系统都需要 A 系统将这个数据发送过来。如果使用 MQ，A 系统产生一条数据，发送到 MQ 里面去，哪个系统需要数据自己去 MQ 里面消费。如果新系统需要数据，直接从 MQ 里消费即可；如果某个系统不需要这条数据了，就取消对 MQ 消息的消费即可。这样下来，A 系统压根儿不需要去考虑要给谁发送数据，不需要维护这个代码，也不需要考虑人家是否调用成功、失败超时等情况。</p>
 <p>就是一个系统或者一个模块，调用了多个系统或者模块，互相之间的调用很复杂，维护起来很麻烦。但是其实这个调用是不需要直接同步调用接口的，如果用 MQ 给它异步化解耦。</p>
-<p><strong>异步</strong>：A 系统接收一个请求，需要在自己本地写库，还需要在 BCD 三个系统写库，自己本地写库要 3ms，BCD 三个系统分别写库要 300ms、450ms、200ms。最终请求总延时是 3 + 300 + 450 + 200 = 953ms，接近 1s，用户感觉搞个什么东西，慢死了慢死了。用户通过浏览器发起请求。如果使用 MQ，那么 A 系统连续发送 3 条消息到 MQ 队列中，假如耗时 5ms，A 系统从接受一个请求到返回响应给用户，总时长是 3 + 5 = 8ms。</p>]]></description></item><item><title>软件架构设计</title><link>https://blog.gethin.online/software-architecture-design/</link><pubDate>Sat, 29 May 2021 21:01:34 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/software-architecture-design/</guid><description><![CDATA[<div class="featured-image">
+<p><strong>异步</strong>：A 系统接收一个请求，需要在自己本地写库，还需要在 BCD 三个系统写库，自己本地写库要 3ms，BCD 三个系统分别写库要 300ms、450ms、200ms。最终请求总延时是 3 + 300 + 450 + 200 = 953ms，接近 1s，用户感觉搞个什么东西，慢死了慢死了。用户通过浏览器发起请求。如果使用 MQ，那么 A 系统连续发送 3 条消息到 MQ 队列中，假如耗时 5ms，A 系统从接受一个请求到返回响应给用户，总时长是 3 + 5 = 8ms。</p>]]></description></item><item><title>软件架构设计</title><link>https://blog.gethin.online/software-architecture-design/</link><pubDate>Sat, 29 May 2021 21:01:34 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/software-architecture-design/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="1-软件架构概述">1 软件架构概述</h2>
 <h3 id="11-软件架构的定义">1.1 软件架构的定义</h3>

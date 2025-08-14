@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>系统架构师 - 标签 - Gethin</title><link>https://blog.gethin.online/tags/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%B8%88/</link><description>系统架构师 - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 30 Sep 2021 09:05:43 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/tags/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%B8%88/" rel="self" type="application/rss+xml"/><item><title>测试评审方法</title><link>https://blog.gethin.online/test-and-review-methodologies/</link><pubDate>Thu, 30 Sep 2021 09:05:43 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/test-and-review-methodologies/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>系统架构师 - 标签 - Gethin</title><link>https://blog.gethin.online/tags/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%B8%88/</link><description>系统架构师 - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 30 Sep 2021 09:05:43 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/tags/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%B8%88/" rel="self" type="application/rss+xml"/><item><title>测试评审方法</title><link>https://blog.gethin.online/test-and-review-methodologies/</link><pubDate>Thu, 30 Sep 2021 09:05:43 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/test-and-review-methodologies/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="测试方法">测试方法</h2>
 <h3 id="软件测试阶段">软件测试阶段</h3>
@@ -31,7 +31,7 @@
 <h3 id="测试自动化">测试自动化</h3>
 <p>测试用例生成，测试执行控制，测试结果对比，测试结果分析，总测试状况的统计与报表产生</p>
 <h3 id="面向对象测试">面向对象测试</h3>
-<p>OOA测试，OOD测试，OOP测试，单元测试，集成测试，系统测试</p>]]></description></item><item><title>开发管理</title><link>https://blog.gethin.online/development-management/</link><pubDate>Tue, 14 Sep 2021 15:20:55 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/development-management/</guid><description><![CDATA[<div class="featured-image">
+<p>OOA测试，OOD测试，OOP测试，单元测试，集成测试，系统测试</p>]]></description></item><item><title>开发管理</title><link>https://blog.gethin.online/development-management/</link><pubDate>Tue, 14 Sep 2021 15:20:55 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/development-management/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="项目的范围时间与成本">项目的范围、时间与成本</h2>
 <h3 id="项目范围管理">项目范围管理</h3>
@@ -200,7 +200,7 @@
 <li>CMMI</li>
 <li>ISO 9000</li>
 <li>ITIL</li>
-</ol>]]></description></item><item><title>系统计划</title><link>https://blog.gethin.online/system-plan/</link><pubDate>Tue, 14 Sep 2021 09:54:14 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/system-plan/</guid><description><![CDATA[<div class="featured-image">
+</ol>]]></description></item><item><title>系统计划</title><link>https://blog.gethin.online/system-plan/</link><pubDate>Tue, 14 Sep 2021 09:54:14 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/system-plan/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="项目的提出与选择">项目的提出与选择</h2>
 <h3 id="项目的立项目标和动机">项目的立项目标和动机</h3>
@@ -319,7 +319,7 @@
 <li>继承策略</li>
 <li>改造策略</li>
 <li>集成策略</li>
-</ol>]]></description></item><item><title>设计模式</title><link>https://blog.gethin.online/design-pattern/</link><pubDate>Sun, 15 Aug 2021 15:10:00 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/design-pattern/</guid><description><![CDATA[<div class="featured-image">
+</ol>]]></description></item><item><title>设计模式</title><link>https://blog.gethin.online/design-pattern/</link><pubDate>Sun, 15 Aug 2021 15:10:00 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/design-pattern/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="设计模式六大原则">设计模式六大原则</h2>
 <ul>
@@ -398,7 +398,7 @@
 <li>Flyweight（享元）————有相同的部分就分享，采取精简政策</li>
 <li>Proxy（代理）————要用在建立</li>
 </ol>
-<p>◎用类来表示</p>]]></description></item><item><title>系统分析与设计</title><link>https://blog.gethin.online/system-analysis-and-design/</link><pubDate>Wed, 11 Aug 2021 21:32:28 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/system-analysis-and-design/</guid><description><![CDATA[<div class="featured-image">
+<p>◎用类来表示</p>]]></description></item><item><title>系统分析与设计</title><link>https://blog.gethin.online/system-analysis-and-design/</link><pubDate>Wed, 11 Aug 2021 21:32:28 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/system-analysis-and-design/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="1-定义问题与归结模型">1. 定义问题与归结模型</h2>
 <h3 id="11-问题分析">1.1 问题分析</h3>
@@ -474,7 +474,7 @@
 </ul>
 <p>OOSE方法</p>
 <h3 id="43-统一建模语言">4.3 统一建模语言</h3>
-<p><a href="https://blog.gethin.online/uml-design/" target="_blank" rel="noopener noreffer ">UML设计与基本概念</a></p>]]></description></item><item><title>软件架构设计</title><link>https://blog.gethin.online/software-architecture-design/</link><pubDate>Sat, 29 May 2021 21:01:34 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/software-architecture-design/</guid><description><![CDATA[<div class="featured-image">
+<p><a href="https://blog.gethin.online/uml-design/" target="_blank" rel="noopener noreffer">UML设计与基本概念</a></p>]]></description></item><item><title>软件架构设计</title><link>https://blog.gethin.online/software-architecture-design/</link><pubDate>Sat, 29 May 2021 21:01:34 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/software-architecture-design/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="1-软件架构概述">1 软件架构概述</h2>
 <h3 id="11-软件架构的定义">1.1 软件架构的定义</h3>
@@ -543,7 +543,7 @@
 设计时战术<br>
 支持用户主动操作</li>
 </ul>
-<p>常见的六个质量属性:<strong>可用性、可修改性、性能、安全性、可测试性、易用性。</strong></p>]]></description></item><item><title>开发方法</title><link>https://blog.gethin.online/development-methodologies/</link><pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/development-methodologies/</guid><description><![CDATA[<div class="featured-image">
+<p>常见的六个质量属性:<strong>可用性、可修改性、性能、安全性、可测试性、易用性。</strong></p>]]></description></item><item><title>开发方法</title><link>https://blog.gethin.online/development-methodologies/</link><pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate><author>作者</author><guid>https://blog.gethin.online/development-methodologies/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>Software Development Methodologies</p></blockquote>
