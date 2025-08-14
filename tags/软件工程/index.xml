@@ -1,31 +1,568 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>软件工程 - 标签 - Gethin</title><link>https://blog.gethin.online/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</link><description>软件工程 - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><managingEditor>gexu1990@hotmail.com (Gethin)</managingEditor><webMaster>gexu1990@hotmail.com (Gethin)</webMaster><lastBuildDate>Tue, 14 Sep 2021 15:20:55 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" rel="self" type="application/rss+xml"/><item><title>开发管理</title><link>https://blog.gethin.online/development-management/</link><pubDate>Tue, 14 Sep 2021 15:20:55 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/development-management/</guid><description>&lt;div class="featured-image">
-&lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
-&lt;/div>项目的范围、时间与成本 项目范围管理 项目启动 范围计划编制 范围定义 范围核实 范围变更 项目成本管理 资源计划编制 成本估算 成本预算 成本控制 项目时间管理 活动定义 活动排序 活动历时估算 进度计划编制 进度控制 配置管理与文档管理 软件配置管理概念 配置标识 版本控制 状态统计 审计与审查 生产 过程管理 小组协作 软件配置管理的解决方案 各种版本控制工具
-软件文档管理 软件文档的作用 管理依据 任务之间联系的凭证 质量保证 培训与参考 软件维护支持 历史档案 销售可能 文档的归类 开发文档 产品文档 管理文档 文档编制计划 列出应编制文档的目录 提示编制文档应参考的标准 指定文档管理员 提供编制文档所需要的条件 明确保证文档质量的方法 绘制进度表 对文档质量的要求 针对性 准确性 清晰性 完整性 灵活性 软件需求管理 需求变更 项目启动阶段的变更预防 项目实施阶段的需求变更 需求跟踪 确定需求变更控制过程 进行需求变更影响分析 建立需求基准版本和需求控制版本文档 维护需求变更的历史纪录 跟踪每项需求的状态 软件开发的质量与风险 软件质量管理 软件质量计划 软件质量保证 软件质量控制 软件评审 测试 项目风险管理 项目风险管理的概念 内部技术风险 内部非技术风险 公司战略变化、管理人员水平、没有在预算内完成进度 外部法律风险 外部非法律风险 经济环境变化、组织雇佣关系变化 风险管理的过程 风险管理规划 项目风险识别 定性风险分析 定量风险分析 风险应对计划 风险监督与控制 人力资源管理 组织规划 垂直团队组织 水平团队组织 混合团队组织 人员招募 领导能力 沟通技巧 人际交往能力 应付压力能力 培养员工能力 时间管理能力 团队建设 形成阶段 震荡阶段 正规阶段 表现阶段 软件的运行与评价 软件的稳定性与可靠性评价 软件是否满足了用户的需求 软件实施给用户带来的好处 软件过程改进 CMM CMMI ISO 9000 ITIL</description></item><item><title>系统计划</title><link>https://blog.gethin.online/system-plan/</link><pubDate>Tue, 14 Sep 2021 09:54:14 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/system-plan/</guid><description>&lt;div class="featured-image">
-&lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
-&lt;/div>项目的提出与选择 项目的立项目标和动机 进行基础研究并获取技术 进行应用研发并获得产品 提供技术服务 信息技术产品的使用者 项目的选择和确定 选择有核心价值的产品/项目或开发方向 评估项目风险、收益和代价 评估项目的多种实施方式 平衡的选择合适的方案 项目的提出和选择结果 项目的提出和选择的结果，最终会以“产品/项目建议书”的方式来体现。
-可行性研究与效益分析 可行性研究和内容 经济可行性 技术可行性 技术 资源 目标 法律可行性 执行可行性 方案的选择 成本效益分析 项目可能涉及的成本 基础建设支出 一次性支出 运行维护费用 项目可能涉及的收益 一次性收益 非一次性收益 不可定量的收益 效益分析的若干指标和进一步的分析 收益/投资比 投资回收周期 敏感性分析 可行性分析报告 项目背景 管理概要和建议 候选方案 系统描述 经济可行性 技术可行性 法律可行性 用户使用可行性 其他与项目有关的问题 方案的制订和改进 确定软件架构 确定实现的各种关键性要素和实现手段 归结目标到最适合的计算体系 新旧系统的分析和对比 遗留系统的评价方法 启动评价 遗留系统是否至关重要 企业的商业目标是什么 演化需求是什么 所期望的系统寿命多长 系统使用期限多久 系统技术状态如何 企业是否愿意改变 企业是否有能力承受演化 商业价值评价 咨询 评价问卷 进行评价 外部环境评价 硬件 支撑软件 企业基础设施 应用软件评价 系统级 部件级 分析评价结果 遗留系统的演化策略 淘汰策略 继承策略 改造策略 集成策略</description></item><item><title>系统分析与设计</title><link>https://blog.gethin.online/system-analysis-and-design/</link><pubDate>Wed, 11 Aug 2021 21:32:28 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/system-analysis-and-design/</guid><description>&lt;div class="featured-image">
-&lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
-&lt;/div>1. 定义问题与归结模型 1.1 问题分析 在问题定义上达成共识 问题概述，影响，结果，优点 理解问题的本质 因果鱼骨图（将问题写在右边的方框里，确定问题潜在原因的主要类别，用头脑风暴法寻找原因并归类）
-帕累托图（明确问题，找出问题原因，选择评价标准和考察期限，收集各种原因发生的频率与费用数据，将原因按照发生的频率排列，将原因横轴频率纵轴）
-确定项目干系人和用户
-定义系统边界（上下文范围图，用例模型）
-确定系统实现的约束 1.2 问题定义 目标（优势，度量，合理性，可行性，可达成性） 功能需求（注意二义性【同名异义词，代词】） 非功能需求（感官需求，易用性需求，性能需求，可操作性需求，可维护性和可移植性需求，安全性需求，文化和政策需求，法律需求，） 2 需求分析与软件设计 2.1 需求分析的任务与过程 问题识别，分析与综合，编制需求分析的文档，需求分析与评审 分类：功能需求，非功能需求，设计约束，业务需求，用户需求，系统需求 需求工程：开发，管理 分析方法：结构化分析方法，软系统方法，面向对象分析方法，面向问题分析 2.2 如何进行系统设计 2.3 软件设计的任务与活动 3 架构化分析与设计 是一种面向数据流的需求分析和设计方法，适用与分析设计大型数据处理系统
-3.1 结构化分析 结构化分析工作步骤：研究“物质环境“；建立系统逻辑模型；划清人机界限 数据流图：过程；外部实体；数据存储；数据流；实时连接； 细化几率DFD部件 3.2 结构化设计 概要设计与详细设计的主要任务； 结构图； 程序流程图和盒图； PAD和PDL 3.3 模块设计 信息隐蔽原则 模块独立性原则 4 面向对象的分析与设计 4.1 面向对象的基本概念 对象与类：实体类，控制类，边界类 继承与泛化 多态与重载 模版类 消息与消息通信 4.</description></item><item><title>开发方法</title><link>https://blog.gethin.online/development-methodologies/</link><pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate><author>作者</author><guid>https://blog.gethin.online/development-methodologies/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>软件工程 - 标签 - Gethin</title><link>https://blog.gethin.online/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</link><description>软件工程 - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 14 Sep 2021 15:20:55 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" rel="self" type="application/rss+xml"/><item><title>开发管理</title><link>https://blog.gethin.online/development-management/</link><pubDate>Tue, 14 Sep 2021 15:20:55 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/development-management/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
-            </div>Software Development Methodologies
- 开发方法 软件的生命周期 可行性研究与计划-&gt;需求分析-&gt;概要设计-&gt;详细设计-&gt;实现-&gt;集成测试-&gt;确认测试-&gt;使用与维护
-软件开发模型  瀑布模型 演化模型 螺旋模型 增量模型 构建组装模型  统一过程  UP的9个核心工作流
-业务建模，需求，分析设计，实施，测试，部署，配置与变更管理，项目管理，环境 UP的生命周期
-目标里程碑，架构里程碑，能力里程碑，发布里程碑 UP的特点  UP不但给出类迭代的生命周期，还给出了生命周期每一阶段的迭代指南 采用不同迭代方式的UP可以演变为演化模型或增量模型 迭代特点使得更容易控制软件开发的风险 UP本身并不属于敏捷 实际应用中可以根据具体问题对UP进行剪裁   架构师在UP中的活动  同需求人员和项目管理人员密切协作 细化软件架构 保持整个架构的概念完整性    敏捷方法   极限编程
-  XP是一种轻量（敏捷）、高效、低风险、柔性、可预测、科学而且充满乐趣的软件开发方式。
- 在更短的周期内，更早的提供具体、持续的反馈信息 迭代的进行计划编制 依赖自动测试程序来监控开发进度，并及早捕获缺陷 依赖口头交流、测试和源程序进行沟通 倡导持续的、演化式的设计 依赖与开发团队内部的紧密协作 尽可能达到程序员短期利益和项目长期利益的平衡    四大价值观
-沟通，简单，反馈，勇气，（尊重）
-  十二个最佳实践
-计划游戏，小型发布，隐喻，简单设计，测试先行，重构，结对编程，集体代码所有制，持续集成，每周工作40小时，现场客户，编码标准
-    特性驱动开发
-FDD也是一个迭代开发模型，FDD每一步都强调质量，不断的交付可运行的软件，并以很小的开发提供精准的项目进度报告和状态信息。
- FDD角色定义]]></description></item><item><title>Scrum 学习笔记</title><link>https://blog.gethin.online/scrum-learning-notes/</link><pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate><author>作者</author><guid>https://blog.gethin.online/scrum-learning-notes/</guid><description>&lt;div class="featured-image">
-&lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
-&lt;/div>Scrum Learning Notes
-Scrum 学习笔记 理论与价值观 敏捷宣言 5 个价值观 8 大价值观 12 个原则 3 个角色 3 个工件 5 个活动 估算与计划 计划失败的原因 估算大小的策略 为价值制定计划 确定优先级因素 确定渴望度优先级 分解用户故事 用户故事的六个特性 - INVEST 确定经济优先级 会议与实战 Product Bocklog Refinement 框架 Skeleton 备忘录 Cheat Sheet Sprint Planning PART I PART II Spint Review 框架 Sprint Retrospective 发布计划策略 迭代计划策略 估算速度策略 有效原因与指导原则 敏捷计划有效原因 敏捷估算和计划的 12 条指导原则 Scrum 学习笔记 理论与价值观 在有限的时间（TimeBox）里 团队一起合作（Work Together），我们彼此信任（Trust）并发挥自我最大的能力和优势（Do The Best），持续不断的交付（CI，CD）可用、有价值（Usable，Valuable）的软件，赢得客户的满意。</description></item></channel></rss>
+            </div><h2 id="项目的范围时间与成本">项目的范围、时间与成本</h2>
+<h3 id="项目范围管理">项目范围管理</h3>
+<ol>
+<li>项目启动</li>
+<li>范围计划编制</li>
+<li>范围定义</li>
+<li>范围核实</li>
+<li>范围变更</li>
+</ol>
+<h3 id="项目成本管理">项目成本管理</h3>
+<ol>
+<li>资源计划编制</li>
+<li>成本估算</li>
+<li>成本预算</li>
+<li>成本控制</li>
+</ol>
+<h3 id="项目时间管理">项目时间管理</h3>
+<ol>
+<li>活动定义</li>
+<li>活动排序</li>
+<li>活动历时估算</li>
+<li>进度计划编制</li>
+<li>进度控制</li>
+</ol>
+<h2 id="配置管理与文档管理">配置管理与文档管理</h2>
+<h3 id="软件配置管理概念">软件配置管理概念</h3>
+<ol>
+<li>配置标识</li>
+<li>版本控制</li>
+<li>状态统计</li>
+<li>审计与审查</li>
+<li>生产</li>
+<li>过程管理</li>
+<li>小组协作</li>
+</ol>
+<h3 id="软件配置管理的解决方案">软件配置管理的解决方案</h3>
+<p>各种版本控制工具</p>
+<h3 id="软件文档管理">软件文档管理</h3>
+<ol>
+<li>软件文档的作用
+<ol>
+<li>管理依据</li>
+<li>任务之间联系的凭证</li>
+<li>质量保证</li>
+<li>培训与参考</li>
+<li>软件维护支持</li>
+<li>历史档案</li>
+<li>销售可能</li>
+</ol>
+</li>
+<li>文档的归类
+<ol>
+<li>开发文档</li>
+<li>产品文档</li>
+<li>管理文档</li>
+</ol>
+</li>
+<li>文档编制计划
+<ol>
+<li>列出应编制文档的目录</li>
+<li>提示编制文档应参考的标准</li>
+<li>指定文档管理员</li>
+<li>提供编制文档所需要的条件</li>
+<li>明确保证文档质量的方法</li>
+<li>绘制进度表</li>
+</ol>
+</li>
+<li>对文档质量的要求
+<ol>
+<li>针对性</li>
+<li>准确性</li>
+<li>清晰性</li>
+<li>完整性</li>
+<li>灵活性</li>
+</ol>
+</li>
+</ol>
+<h2 id="软件需求管理">软件需求管理</h2>
+<h3 id="需求变更">需求变更</h3>
+<ol>
+<li>项目启动阶段的变更预防</li>
+<li>项目实施阶段的需求变更</li>
+</ol>
+<h3 id="需求跟踪">需求跟踪</h3>
+<ol>
+<li>确定需求变更控制过程</li>
+<li>进行需求变更影响分析</li>
+<li>建立需求基准版本和需求控制版本文档</li>
+<li>维护需求变更的历史纪录</li>
+<li>跟踪每项需求的状态</li>
+</ol>
+<h2 id="软件开发的质量与风险">软件开发的质量与风险</h2>
+<h3 id="软件质量管理">软件质量管理</h3>
+<ol>
+<li>软件质量计划</li>
+<li>软件质量保证</li>
+<li>软件质量控制
+<ol>
+<li>软件评审</li>
+<li>测试</li>
+</ol>
+</li>
+</ol>
+<h3 id="项目风险管理">项目风险管理</h3>
+<ol>
+<li>项目风险管理的概念
+<ol>
+<li>内部技术风险</li>
+<li>内部非技术风险
+<ol>
+<li>公司战略变化、管理人员水平、没有在预算内完成进度</li>
+</ol>
+</li>
+<li>外部法律风险</li>
+<li>外部非法律风险
+<ol>
+<li>经济环境变化、组织雇佣关系变化</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>风险管理的过程
+<ol>
+<li>风险管理规划</li>
+<li>项目风险识别</li>
+<li>定性风险分析</li>
+<li>定量风险分析</li>
+<li>风险应对计划</li>
+<li>风险监督与控制</li>
+</ol>
+</li>
+</ol>
+<h2 id="人力资源管理">人力资源管理</h2>
+<h3 id="组织规划">组织规划</h3>
+<ol>
+<li>垂直团队组织</li>
+<li>水平团队组织</li>
+<li>混合团队组织</li>
+</ol>
+<h3 id="人员招募">人员招募</h3>
+<ol>
+<li>领导能力</li>
+<li>沟通技巧</li>
+<li>人际交往能力</li>
+<li>应付压力能力</li>
+<li>培养员工能力</li>
+<li>时间管理能力</li>
+</ol>
+<h3 id="团队建设">团队建设</h3>
+<ol>
+<li>形成阶段</li>
+<li>震荡阶段</li>
+<li>正规阶段</li>
+<li>表现阶段</li>
+</ol>
+<h2 id="软件的运行与评价">软件的运行与评价</h2>
+<ol>
+<li>软件的稳定性与可靠性评价</li>
+<li>软件是否满足了用户的需求</li>
+<li>软件实施给用户带来的好处</li>
+</ol>
+<h2 id="软件过程改进">软件过程改进</h2>
+<ol>
+<li>CMM</li>
+<li>CMMI</li>
+<li>ISO 9000</li>
+<li>ITIL</li>
+</ol>]]></description></item><item><title>系统计划</title><link>https://blog.gethin.online/system-plan/</link><pubDate>Tue, 14 Sep 2021 09:54:14 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/system-plan/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/images/content.jpg" referrerpolicy="no-referrer">
+            </div><h2 id="项目的提出与选择">项目的提出与选择</h2>
+<h3 id="项目的立项目标和动机">项目的立项目标和动机</h3>
+<ul>
+<li>进行基础研究并获取技术</li>
+<li>进行应用研发并获得产品</li>
+<li>提供技术服务</li>
+<li>信息技术产品的使用者</li>
+</ul>
+<h3 id="项目的选择和确定">项目的选择和确定</h3>
+<ul>
+<li>选择有核心价值的产品/项目或开发方向</li>
+<li>评估项目风险、收益和代价</li>
+<li>评估项目的多种实施方式</li>
+<li>平衡的选择合适的方案</li>
+</ul>
+<h3 id="项目的提出和选择结果">项目的提出和选择结果</h3>
+<p>项目的提出和选择的结果，最终会以“产品/项目建议书”的方式来体现。</p>
+<h2 id="可行性研究与效益分析">可行性研究与效益分析</h2>
+<h3 id="可行性研究和内容">可行性研究和内容</h3>
+<ol>
+<li>经济可行性</li>
+<li>技术可行性
+<ol>
+<li>技术</li>
+<li>资源</li>
+<li>目标</li>
+</ol>
+</li>
+<li>法律可行性</li>
+<li>执行可行性</li>
+<li>方案的选择</li>
+</ol>
+<h3 id="成本效益分析">成本效益分析</h3>
+<ol>
+<li>项目可能涉及的成本
+<ol>
+<li>基础建设支出</li>
+<li>一次性支出</li>
+<li>运行维护费用</li>
+</ol>
+</li>
+<li>项目可能涉及的收益
+<ol>
+<li>一次性收益</li>
+<li>非一次性收益</li>
+<li>不可定量的收益</li>
+</ol>
+</li>
+<li>效益分析的若干指标和进一步的分析
+<ol>
+<li>收益/投资比</li>
+<li>投资回收周期</li>
+<li>敏感性分析</li>
+</ol>
+</li>
+</ol>
+<h3 id="可行性分析报告">可行性分析报告</h3>
+<ol>
+<li>项目背景</li>
+<li>管理概要和建议</li>
+<li>候选方案</li>
+<li>系统描述</li>
+<li>经济可行性</li>
+<li>技术可行性</li>
+<li>法律可行性</li>
+<li>用户使用可行性</li>
+<li>其他与项目有关的问题</li>
+</ol>
+<h2 id="方案的制订和改进">方案的制订和改进</h2>
+<ol>
+<li>确定软件架构</li>
+<li>确定实现的各种关键性要素和实现手段</li>
+<li>归结目标到最适合的计算体系</li>
+</ol>
+<h2 id="新旧系统的分析和对比">新旧系统的分析和对比</h2>
+<h3 id="遗留系统的评价方法">遗留系统的评价方法</h3>
+<ol>
+<li>启动评价
+<ol>
+<li>遗留系统是否至关重要</li>
+<li>企业的商业目标是什么</li>
+<li>演化需求是什么</li>
+<li>所期望的系统寿命多长</li>
+<li>系统使用期限多久</li>
+<li>系统技术状态如何</li>
+<li>企业是否愿意改变</li>
+<li>企业是否有能力承受演化</li>
+</ol>
+</li>
+<li>商业价值评价
+<ol>
+<li>咨询</li>
+<li>评价问卷</li>
+<li>进行评价</li>
+</ol>
+</li>
+<li>外部环境评价
+<ol>
+<li>硬件</li>
+<li>支撑软件</li>
+<li>企业基础设施</li>
+</ol>
+</li>
+<li>应用软件评价
+<ol>
+<li>系统级</li>
+<li>部件级</li>
+</ol>
+</li>
+<li>分析评价结果</li>
+</ol>
+<h3 id="遗留系统的演化策略">遗留系统的演化策略</h3>
+<ol>
+<li>淘汰策略</li>
+<li>继承策略</li>
+<li>改造策略</li>
+<li>集成策略</li>
+</ol>]]></description></item><item><title>系统分析与设计</title><link>https://blog.gethin.online/system-analysis-and-design/</link><pubDate>Wed, 11 Aug 2021 21:32:28 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/system-analysis-and-design/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/images/content.jpg" referrerpolicy="no-referrer">
+            </div><h2 id="1-定义问题与归结模型">1. 定义问题与归结模型</h2>
+<h3 id="11-问题分析">1.1 问题分析</h3>
+<ol>
+<li>在问题定义上达成共识
+问题概述，影响，结果，优点</li>
+<li>理解问题的本质
+因果鱼骨图（将问题写在右边的方框里，确定问题潜在原因的主要类别，用头脑风暴法寻找原因并归类）<br>
+帕累托图（明确问题，找出问题原因，选择评价标准和考察期限，收集各种原因发生的频率与费用数据，将原因按照发生的频率排列，将原因横轴频率纵轴）<br>
+确定项目干系人和用户<br>
+定义系统边界（上下文范围图，用例模型）<br>
+确定系统实现的约束</li>
+</ol>
+<h3 id="12-问题定义">1.2 问题定义</h3>
+<ul>
+<li>目标（优势，度量，合理性，可行性，可达成性）</li>
+<li>功能需求（注意二义性【同名异义词，代词】）</li>
+<li>非功能需求（感官需求，易用性需求，性能需求，可操作性需求，可维护性和可移植性需求，安全性需求，文化和政策需求，法律需求，）</li>
+</ul>
+<h2 id="2-需求分析与软件设计">2 需求分析与软件设计</h2>
+<h3 id="21-需求分析的任务与过程">2.1 需求分析的任务与过程</h3>
+<ul>
+<li>问题识别，分析与综合，编制需求分析的文档，需求分析与评审</li>
+<li>分类：功能需求，非功能需求，设计约束，业务需求，用户需求，系统需求</li>
+<li>需求工程：开发，管理</li>
+<li>分析方法：结构化分析方法，软系统方法，面向对象分析方法，面向问题分析</li>
+</ul>
+<h3 id="22-如何进行系统设计">2.2 如何进行系统设计</h3>
+<h3 id="23-软件设计的任务与活动">2.3 软件设计的任务与活动</h3>
+<h2 id="3-架构化分析与设计">3 架构化分析与设计</h2>
+<p>是一种面向数据流的需求分析和设计方法，适用与分析设计大型数据处理系统</p>
+<h3 id="31-结构化分析">3.1 结构化分析</h3>
+<ul>
+<li>结构化分析工作步骤：研究“物质环境“；建立系统逻辑模型；划清人机界限</li>
+<li>数据流图：过程；外部实体；数据存储；数据流；实时连接；</li>
+<li>细化几率DFD部件</li>
+</ul>
+<h3 id="32-结构化设计">3.2 结构化设计</h3>
+<ul>
+<li>概要设计与详细设计的主要任务；</li>
+<li>结构图；</li>
+<li>程序流程图和盒图；</li>
+<li>PAD和PDL</li>
+</ul>
+<h3 id="33-模块设计">3.3 模块设计</h3>
+<ul>
+<li>信息隐蔽原则</li>
+<li>模块独立性原则</li>
+</ul>
+<h2 id="4-面向对象的分析与设计">4 面向对象的分析与设计</h2>
+<h3 id="41-面向对象的基本概念">4.1 面向对象的基本概念</h3>
+<ul>
+<li>对象与类：实体类，控制类，边界类</li>
+<li>继承与泛化</li>
+<li>多态与重载</li>
+<li>模版类</li>
+<li>消息与消息通信</li>
+</ul>
+<h3 id="42-面向对象分析">4.2 面向对象分析</h3>
+<p>OOA/OOD方法</p>
+<ul>
+<li>5个层次：主题，对象类，结构，属性，服务</li>
+<li>5个步骤：标识对象类，标识结构与关联，划分主题，定义属性，定义服务</li>
+<li>4个部分：设计问题域部分，设计人机交互部件，设计任务管理部分，设计数据管理部分</li>
+</ul>
+<p>Booch方法</p>
+<ul>
+<li>4个步骤：标识类和对象，确定类和对象的含义，标识关系，说明类的接口和实现</li>
+</ul>
+<p>OMT方法</p>
+<ul>
+<li>三大模型：对象模型，动态模型，功能模型</li>
+</ul>
+<p>OOSE方法</p>
+<h3 id="43-统一建模语言">4.3 统一建模语言</h3>
+<p><a href="https://blog.gethin.online/uml-design/" target="_blank" rel="noopener noreffer ">UML设计与基本概念</a></p>]]></description></item><item><title>开发方法</title><link>https://blog.gethin.online/development-methodologies/</link><pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/development-methodologies/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/images/content.jpg" referrerpolicy="no-referrer">
+            </div><blockquote>
+<p>Software Development Methodologies</p></blockquote>
+<h2 id="开发方法">开发方法</h2>
+<h3 id="软件的生命周期">软件的生命周期</h3>
+<p>可行性研究与计划-&gt;需求分析-&gt;概要设计-&gt;详细设计-&gt;实现-&gt;集成测试-&gt;确认测试-&gt;使用与维护</p>
+<h3 id="软件开发模型">软件开发模型</h3>
+<ul>
+<li><strong>瀑布模型</strong></li>
+<li><strong>演化模型</strong></li>
+<li><strong>螺旋模型</strong></li>
+<li><strong>增量模型</strong></li>
+<li><strong>构建组装模型</strong></li>
+</ul>
+<h3 id="统一过程">统一过程</h3>
+<ul>
+<li><strong>UP的9个核心工作流</strong><br>
+业务建模，需求，分析设计，实施，测试，部署，配置与变更管理，项目管理，环境</li>
+<li><strong>UP的生命周期</strong><br>
+目标里程碑，架构里程碑，能力里程碑，发布里程碑</li>
+<li><strong>UP的特点</strong>
+<ul>
+<li>UP不但给出类迭代的生命周期，还给出了生命周期每一阶段的迭代指南</li>
+<li>采用不同迭代方式的UP可以演变为演化模型或增量模型</li>
+<li>迭代特点使得更容易控制软件开发的风险</li>
+<li>UP本身并不属于敏捷</li>
+<li>实际应用中可以根据具体问题对UP进行剪裁</li>
+</ul>
+</li>
+<li><strong>架构师在UP中的活动</strong>
+<ul>
+<li>同需求人员和项目管理人员密切协作</li>
+<li>细化软件架构</li>
+<li>保持整个架构的概念完整性</li>
+</ul>
+</li>
+</ul>
+<h3 id="敏捷方法">敏捷方法</h3>
+<ul>
+<li>
+<p><strong>极限编程</strong></p>
+<ul>
+<li>
+<p>XP是一种轻量（敏捷）、高效、低风险、柔性、可预测、科学而且充满乐趣的软件开发方式。</p>
+<ul>
+<li>在更短的周期内，更早的提供具体、持续的反馈信息</li>
+<li>迭代的进行计划编制</li>
+<li>依赖自动测试程序来监控开发进度，并及早捕获缺陷</li>
+<li>依赖口头交流、测试和源程序进行沟通</li>
+<li>倡导持续的、演化式的设计</li>
+<li>依赖与开发团队内部的紧密协作</li>
+<li>尽可能达到程序员短期利益和项目长期利益的平衡</li>
+</ul>
+</li>
+<li>
+<p>四大价值观<br>
+沟通，简单，反馈，勇气，（尊重）</p>
+</li>
+<li>
+<p>十二个最佳实践<br>
+计划游戏，小型发布，隐喻，简单设计，测试先行，重构，结对编程，集体代码所有制，持续集成，每周工作40小时，现场客户，编码标准</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>特性驱动开发</strong><br>
+FDD也是一个迭代开发模型，FDD每一步都强调质量，不断的交付可运行的软件，并以很小的开发提供精准的项目进度报告和状态信息。</p>
+<ol>
+<li>FDD角色定义<br>
+项目经理，首席架构设计师，开发经理，主程序员，程序员，领域专家</li>
+<li>核心过程<br>
+开发整体对象模型、构造特征列表、计划特征开发、特征设计、特征构建</li>
+<li>最佳实践<br>
+领域对象建模、根据特征进行开发、类的个体所有、组成特征小组、审查、定期构造、配置管</li>
+</ol>
+</li>
+<li>
+<p><strong>Scrum</strong><br>
+Scrum是一个用于开发和维护复杂产品的框架，是一个增量的、迭代的开发过程。</p>
+<ol>
+<li>Scrum 的五个活动<br>
+产品待办事项列表梳理、Sprint计划会议、每日Scrum会议、Sprint评审会议、Sprint回顾会议</li>
+<li>Scrum的5大价值观<br>
+承诺、专注、开放、尊重、勇气</li>
+</ol>
+</li>
+<li>
+<p><strong>水晶方法</strong><br>
+Crystal 是发展一种提倡“机动性“的方法，包括共有的核心元素，每个都含有独特的角色，过程模式，工作产品和实践。<br>
+7大体系特征：经常交付，反思改进，渗透式交流，个人安全，焦点，与专家用户建立方便的联系，配有自动测试、配置管理和经常集成功能的技术环境</p>
+</li>
+</ul>
+<h3 id="软件重用">软件重用</h3>
+<ul>
+<li><strong>软件重用</strong><br>
+源代码重用，架构重用，应用框架重用，业务建模重用，文档及过程的重用，软构件重用，软件服务重用</li>
+</ul>
+<h3 id="基于架构的软件设计">基于架构的软件设计</h3>
+<ul>
+<li><strong>ABSD方法于生命周期</strong><br>
+ABSD：分解功能，通过选择架构风格来事先质量和业务需求，软件模版的使用
+<ol>
+<li>抽象功能需求，包括变化的需求和通用的需求</li>
+<li>用例（实际功能需求）</li>
+<li>抽象的质量和业务需求</li>
+<li>架构选项</li>
+<li>质量场景</li>
+<li>约束</li>
+</ol>
+</li>
+<li><strong>基于架构的软件开发模型(ABSDM)</strong>
+<ul>
+<li>架构需求<br>
+需求获取，标识构件（生成类图，对类分组，打包构件），需求评审</li>
+<li>架构设计<br>
+提出软件架构模型，把已标识的构件映射到软件架构中，分析构件的互相作用，产生软件架构，设计评审</li>
+<li>架构文档化<br>
+输出：架构需求规格说明，测试架构需求的质量设计说明</li>
+<li>架构复审</li>
+<li>架构实现</li>
+<li>架构演化<br>
+需求变动归类，制定架构演化计划，修改、增加或删除构件，更新构件的互相作用，构件组装与测试，技术评审</li>
+</ul>
+</li>
+</ul>]]></description></item><item><title>Scrum 学习笔记</title><link>https://blog.gethin.online/scrum-learning-notes/</link><pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/scrum-learning-notes/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/images/content.jpg" referrerpolicy="no-referrer">
+            </div><blockquote>
+<p>Scrum Learning Notes</p></blockquote>
+
+
+<div id="scrum" class="mindmap mindmap-md">
+    <ul>
+<li><a href="#scrum-%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0" rel="">Scrum 学习笔记</a>
+<ul>
+<li><a href="#%e7%90%86%e8%ae%ba%e4%b8%8e%e4%bb%b7%e5%80%bc%e8%a7%82" rel="">理论与价值观</a>
+<ul>
+<li><a href="#%e6%95%8f%e6%8d%b7%e5%ae%a3%e8%a8%80" rel="">敏捷宣言</a></li>
+<li><a href="#5-%e4%b8%aa%e4%bb%b7%e5%80%bc%e8%a7%82" rel="">5 个价值观</a></li>
+<li><a href="#8-%e5%a4%a7%e4%bb%b7%e5%80%bc%e8%a7%82" rel="">8 大价值观</a></li>
+<li><a href="#12-%e4%b8%aa%e5%8e%9f%e5%88%99" rel="">12 个原则</a></li>
+<li><a href="#3-%e4%b8%aa%e8%a7%92%e8%89%b2" rel="">3 个角色</a></li>
+<li><a href="#3-%e4%b8%aa%e5%b7%a5%e4%bb%b6" rel="">3 个工件</a></li>
+<li><a href="#5-%e4%b8%aa%e6%b4%bb%e5%8a%a8" rel="">5 个活动</a></li>
+</ul>
+</li>
+<li><a href="#%e4%bc%b0%e7%ae%97%e4%b8%8e%e8%ae%a1%e5%88%92" rel="">估算与计划</a>
+<ul>
+<li><a href="#%e8%ae%a1%e5%88%92%e5%a4%b1%e8%b4%a5%e7%9a%84%e5%8e%9f%e5%9b%a0" rel="">计划失败的原因</a></li>
+<li><a href="#%e4%bc%b0%e7%ae%97%e5%a4%a7%e5%b0%8f%e7%9a%84%e7%ad%96%e7%95%a5" rel="">估算大小的策略</a></li>
+<li><a href="#%e4%b8%ba%e4%bb%b7%e5%80%bc%e5%88%b6%e5%ae%9a%e8%ae%a1%e5%88%92" rel="">为价值制定计划</a>
+<ul>
+<li><a href="#%e7%a1%ae%e5%ae%9a%e4%bc%98%e5%85%88%e7%ba%a7%e5%9b%a0%e7%b4%a0" rel="">确定优先级因素</a></li>
+<li><a href="#%e7%a1%ae%e5%ae%9a%e6%b8%b4%e6%9c%9b%e5%ba%a6%e4%bc%98%e5%85%88%e7%ba%a7" rel="">确定渴望度优先级</a></li>
+</ul>
+</li>
+<li><a href="#%e5%88%86%e8%a7%a3%e7%94%a8%e6%88%b7%e6%95%85%e4%ba%8b" rel="">分解用户故事</a>
+<ul>
+<li><a href="#%e7%94%a8%e6%88%b7%e6%95%85%e4%ba%8b%e7%9a%84%e5%85%ad%e4%b8%aa%e7%89%b9%e6%80%a7---invest" rel="">用户故事的六个特性 - INVEST</a></li>
+</ul>
+</li>
+<li><a href="#%e7%a1%ae%e5%ae%9a%e7%bb%8f%e6%b5%8e%e4%bc%98%e5%85%88%e7%ba%a7" rel="">确定经济优先级</a></li>
+</ul>
+</li>
+<li><a href="#%e4%bc%9a%e8%ae%ae%e4%b8%8e%e5%ae%9e%e6%88%98" rel="">会议与实战</a>
+<ul>
+<li><a href="#product-bocklog-refinement" rel="">Product Bocklog Refinement</a>
+<ul>
+<li><a href="#%e6%a1%86%e6%9e%b6-skeleton" rel="">框架 Skeleton</a></li>
+<li><a href="#%e5%a4%87%e5%bf%98%e5%bd%95-cheat-sheet" rel="">备忘录 Cheat Sheet</a></li>
+</ul>
+</li>
+<li><a href="#sprint-planning" rel="">Sprint Planning</a>
+<ul>
+<li><a href="#part-i" rel="">PART I</a></li>
+<li><a href="#part-ii" rel="">PART II</a></li>
+</ul>
+</li>
+<li><a href="#spint-review-%e6%a1%86%e6%9e%b6" rel="">Spint Review 框架</a></li>
+<li><a href="#sprint-retrospective" rel="">Sprint Retrospective</a></li>
+<li><a href="#%e5%8f%91%e5%b8%83%e8%ae%a1%e5%88%92%e7%ad%96%e7%95%a5" rel="">发布计划策略</a></li>
+<li><a href="#%e8%bf%ad%e4%bb%a3%e8%ae%a1%e5%88%92%e7%ad%96%e7%95%a5" rel="">迭代计划策略</a></li>
+<li><a href="#%e4%bc%b0%e7%ae%97%e9%80%9f%e5%ba%a6%e7%ad%96%e7%95%a5" rel="">估算速度策略</a></li>
+</ul>
+</li>
+<li><a href="#%e6%9c%89%e6%95%88%e5%8e%9f%e5%9b%a0%e4%b8%8e%e6%8c%87%e5%af%bc%e5%8e%9f%e5%88%99" rel="">有效原因与指导原则</a>
+<ul>
+<li><a href="#%e6%95%8f%e6%8d%b7%e8%ae%a1%e5%88%92%e6%9c%89%e6%95%88%e5%8e%9f%e5%9b%a0" rel="">敏捷计划有效原因</a></li>
+<li><a href="#%e6%95%8f%e6%8d%b7%e4%bc%b0%e7%ae%97%e5%92%8c%e8%ae%a1%e5%88%92%e7%9a%84-12-%e6%9d%a1%e6%8c%87%e5%af%bc%e5%8e%9f%e5%88%99" rel="">敏捷估算和计划的 12 条指导原则</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+<h1 id="scrum-学习笔记">Scrum 学习笔记</h1>
+<h2 id="理论与价值观">理论与价值观</h2>
+<p>在有限的时间（TimeBox）里 团队一起合作（Work Together），我们彼此信任（Trust）并发挥自我最大的能力和优势（Do The Best），持续不断的交付（CI，CD）可用、有价值（Usable，Valuable）的软件，赢得客户的满意。</p>
+<h3 id="敏捷宣言">敏捷宣言</h3>
+<p><strong>个体和互动 高于 流程和工具</strong> （合作，信赖）<br>
+<strong>工作的软件 高于 详尽的文档</strong> （产品增量）<br>
+<strong>客户合作 高于 合同谈判</strong>（同一组织）<br>
+<strong>响应变化 高于 遵循计划</strong>（公开，透明）</p>]]></description></item></channel></rss>

@@ -1,3 +1,98 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>蓝图 - 标签 - Gethin</title><link>https://blog.gethin.online/tags/%E8%93%9D%E5%9B%BE/</link><description>蓝图 - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><managingEditor>gexu1990@hotmail.com (Gethin)</managingEditor><webMaster>gexu1990@hotmail.com (Gethin)</webMaster><lastBuildDate>Thu, 18 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.gethin.online/tags/%E8%93%9D%E5%9B%BE/" rel="self" type="application/rss+xml"/><item><title>个人技术蓝图</title><link>https://blog.gethin.online/blueprint/</link><pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate><author>作者</author><guid>https://blog.gethin.online/blueprint/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>蓝图 - 标签 - Gethin</title><link>https://blog.gethin.online/tags/%E8%93%9D%E5%9B%BE/</link><description>蓝图 - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 18 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.gethin.online/tags/%E8%93%9D%E5%9B%BE/" rel="self" type="application/rss+xml"/><item><title>个人技术蓝图</title><link>https://blog.gethin.online/blueprint/</link><pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/blueprint/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
-            </div>个人技术蓝图  计算机基础 [the-basics-of-computer-science]  计算机的组成原理 [principles-of-computer-composition] 操作系统原理 [principle-operating-system] 编译原理 [principle-of-compiling] 数据库系统 [database-system] 计算机网络 [network-of-computer]  TCP HTTP     语言与平台 [language-and-platform]  C# &amp; .NET 5 [chsarp-and-dotnet5]  .NET 本质论 [dotnet-essentialism] C# 基础语法 [csharp-basic-syntax] C# 高级用法 [professional-csharp] 新一代的 .NET [new-generation-dotnet]   Swift &amp; IOS [swift-ios] Python [python]  Python 基础语法 [python-basic-syntax] Python 高级语法 [professional-python] Python 的应用 [python-application]   JS,ES,TS &amp; Vue,React (Gatsby) [js-es-ts-vue-react]  前端框架 [front-end] 网页基础 [website-basic]     数据与算法[data-and-algorithmic]  数据结构 [data-structure] 常用算法 [algorithm] 重构 [refactoring]   软件工程 [software-engineering]  开发方法 [software-development-methodologies] 系统分析与设计 [system-analysis-and-design] 软件开发的生命周期 [software-development-lifecycle]   架构艺术 [architecture-art]  架构模式 [architecture-pattern] 设计模式 [design-pattern] 常用组件 [common-components]  Redis [redis] RabbitMQ [rabbitmq] Elastic Search [elastic-search]     云上漫谈 [cloud-native]  基础架构篇 [cloud-infrastructure] 软件架构篇 [cloud-software-architecture] DEVOPS [devops]       个人技术蓝图 计算机基础 [the-basics-of-computer-science] 计算机的组成原理 [principles-of-computer-composition] 操作系统原理 [principle-operating-system] 编译原理 [principle-of-compiling] 数据库系统 [database-system] 计算机网络 [network-of-computer] TCP HTTP 语言与平台 [language-and-platform] C# &amp; .]]></description></item></channel></rss>
+            </div><div id="blueprint" class="mindmap mindmap-md">
+    <ul>
+<li><a href="#%e4%b8%aa%e4%ba%ba%e6%8a%80%e6%9c%af%e8%93%9d%e5%9b%be" rel="">个人技术蓝图</a>
+<ul>
+<li><a href="#%e8%ae%a1%e7%ae%97%e6%9c%ba%e5%9f%ba%e7%a1%80-the-basics-of-computer-science" rel="">计算机基础 [the-basics-of-computer-science]</a>
+<ul>
+<li><a href="#%e8%ae%a1%e7%ae%97%e6%9c%ba%e7%9a%84%e7%bb%84%e6%88%90%e5%8e%9f%e7%90%86-principles-of-computer-composition" rel="">计算机的组成原理 [principles-of-computer-composition]</a></li>
+<li><a href="#%e6%93%8d%e4%bd%9c%e7%b3%bb%e7%bb%9f%e5%8e%9f%e7%90%86-principle-operating-system" rel="">操作系统原理 [principle-operating-system]</a></li>
+<li><a href="#%e7%bc%96%e8%af%91%e5%8e%9f%e7%90%86-principle-of-compiling" rel="">编译原理 [principle-of-compiling]</a></li>
+<li><a href="#%e6%95%b0%e6%8d%ae%e5%ba%93%e7%b3%bb%e7%bb%9f-database-system" rel="">数据库系统 [database-system]</a></li>
+<li><a href="#%e8%ae%a1%e7%ae%97%e6%9c%ba%e7%bd%91%e7%bb%9c-network-of-computer" rel="">计算机网络 [network-of-computer]</a>
+<ul>
+<li><a href="#tcp" rel="">TCP</a></li>
+<li><a href="#http" rel="">HTTP</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%e8%af%ad%e8%a8%80%e4%b8%8e%e5%b9%b3%e5%8f%b0-language-and-platform" rel="">语言与平台 [language-and-platform]</a>
+<ul>
+<li><a href="#c--net-5-chsarp-and-dotnet5" rel="">C# &amp; .NET 5 [chsarp-and-dotnet5]</a>
+<ul>
+<li><a href="#net-%e6%9c%ac%e8%b4%a8%e8%ae%ba-dotnet-essentialism" rel="">.NET 本质论 [dotnet-essentialism]</a></li>
+<li><a href="#c-%e5%9f%ba%e7%a1%80%e8%af%ad%e6%b3%95-csharp-basic-syntax" rel="">C# 基础语法 [csharp-basic-syntax]</a></li>
+<li><a href="#c-%e9%ab%98%e7%ba%a7%e7%94%a8%e6%b3%95-professional-csharp" rel="">C# 高级用法 [professional-csharp]</a></li>
+<li><a href="#%e6%96%b0%e4%b8%80%e4%bb%a3%e7%9a%84-net-new-generation-dotnet" rel="">新一代的 .NET [new-generation-dotnet]</a></li>
+</ul>
+</li>
+<li><a href="#swift--ios-swift-ios" rel="">Swift &amp; IOS [swift-ios]</a></li>
+<li><a href="#python-python" rel="">Python [python]</a>
+<ul>
+<li><a href="#python-%e5%9f%ba%e7%a1%80%e8%af%ad%e6%b3%95-python-basic-syntax" rel="">Python 基础语法 [python-basic-syntax]</a></li>
+<li><a href="#python-%e9%ab%98%e7%ba%a7%e8%af%ad%e6%b3%95-professional-python" rel="">Python 高级语法 [professional-python]</a></li>
+<li><a href="#python-%e7%9a%84%e5%ba%94%e7%94%a8-python-application" rel="">Python 的应用 [python-application]</a></li>
+</ul>
+</li>
+<li><a href="#jsests--vuereact-gatsby-js-es-ts-vue-react" rel="">JS,ES,TS &amp; Vue,React (Gatsby) [js-es-ts-vue-react]</a>
+<ul>
+<li><a href="#%e5%89%8d%e7%ab%af%e6%a1%86%e6%9e%b6-front-end" rel="">前端框架 [front-end]</a></li>
+<li><a href="#%e7%bd%91%e9%a1%b5%e5%9f%ba%e7%a1%80-website-basic" rel="">网页基础 [website-basic]</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%e6%95%b0%e6%8d%ae%e4%b8%8e%e7%ae%97%e6%b3%95data-and-algorithmic" rel="">数据与算法[data-and-algorithmic]</a>
+<ul>
+<li><a href="#%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84-data-structure" rel="">数据结构 [data-structure]</a></li>
+<li><a href="#%e5%b8%b8%e7%94%a8%e7%ae%97%e6%b3%95-algorithm" rel="">常用算法 [algorithm]</a></li>
+<li><a href="#%e9%87%8d%e6%9e%84-refactoring" rel="">重构 [refactoring]</a></li>
+</ul>
+</li>
+<li><a href="#%e8%bd%af%e4%bb%b6%e5%b7%a5%e7%a8%8b-software-engineering" rel="">软件工程 [software-engineering]</a>
+<ul>
+<li><a href="#%e5%bc%80%e5%8f%91%e6%96%b9%e6%b3%95-software-development-methodologies" rel="">开发方法 [software-development-methodologies]</a></li>
+<li><a href="#%e7%b3%bb%e7%bb%9f%e5%88%86%e6%9e%90%e4%b8%8e%e8%ae%be%e8%ae%a1-system-analysis-and-design" rel="">系统分析与设计 [system-analysis-and-design]</a></li>
+<li><a href="#%e8%bd%af%e4%bb%b6%e5%bc%80%e5%8f%91%e7%9a%84%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f-software-development-lifecycle" rel="">软件开发的生命周期 [software-development-lifecycle]</a></li>
+</ul>
+</li>
+<li><a href="#%e6%9e%b6%e6%9e%84%e8%89%ba%e6%9c%af-architecture-art" rel="">架构艺术 [architecture-art]</a>
+<ul>
+<li><a href="#%e6%9e%b6%e6%9e%84%e6%a8%a1%e5%bc%8f-architecture-pattern" rel="">架构模式 [architecture-pattern]</a></li>
+<li><a href="#%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f-design-pattern" rel="">设计模式 [design-pattern]</a></li>
+<li><a href="#%e5%b8%b8%e7%94%a8%e7%bb%84%e4%bb%b6-common-components" rel="">常用组件 [common-components]</a>
+<ul>
+<li><a href="#redis-redis" rel="">Redis [redis]</a></li>
+<li><a href="#rabbitmq-rabbitmq" rel="">RabbitMQ [rabbitmq]</a></li>
+<li><a href="#elastic-search-elastic-search" rel="">Elastic Search [elastic-search]</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%e4%ba%91%e4%b8%8a%e6%bc%ab%e8%b0%88-cloud-native" rel="">云上漫谈 [cloud-native]</a>
+<ul>
+<li><a href="#%e5%9f%ba%e7%a1%80%e6%9e%b6%e6%9e%84%e7%af%87-cloud-infrastructure" rel="">基础架构篇 [cloud-infrastructure]</a></li>
+<li><a href="#%e8%bd%af%e4%bb%b6%e6%9e%b6%e6%9e%84%e7%af%87-cloud-software-architecture" rel="">软件架构篇 [cloud-software-architecture]</a></li>
+<li><a href="#devops-devops" rel="">DEVOPS [devops]</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+<h1 id="个人技术蓝图">个人技术蓝图</h1>
+<h2 id="计算机基础-the-basics-of-computer-science">计算机基础 [the-basics-of-computer-science]</h2>
+<h3 id="计算机的组成原理-principles-of-computer-composition">计算机的组成原理 [principles-of-computer-composition]</h3>
+<h3 id="操作系统原理-principle-operating-system">操作系统原理 [principle-operating-system]</h3>
+<h3 id="编译原理-principle-of-compiling">编译原理 [principle-of-compiling]</h3>
+<h3 id="数据库系统-database-system">数据库系统 [database-system]</h3>
+<h3 id="计算机网络-network-of-computer">计算机网络 [network-of-computer]</h3>
+<h4 id="tcp">TCP</h4>
+<h4 id="http">HTTP</h4>
+<h2 id="语言与平台-language-and-platform">语言与平台 [language-and-platform]</h2>
+<h3 id="c--net-5-chsarp-and-dotnet5">C# &amp; .NET 5 [chsarp-and-dotnet5]</h3>
+<h4 id="net-本质论-dotnet-essentialism">.NET 本质论 [dotnet-essentialism]</h4>
+<p><a href="https://blog.gethin.online/dotnet-essentialism" target="_blank" rel="noopener noreffer ">dotnet-essentialism</a></p>]]></description></item></channel></rss>

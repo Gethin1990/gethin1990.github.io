@@ -1,35 +1,32 @@
 # 关于我
 
-
 ### 自我评价
 
-**丰富的开发经验，擅长全栈开发，工作语言是C#，同时掌握Python，Swift等，曾就职于多家知名外企和互联网企业，目前就职于GreenDot。**
+**职业经历**：12年软件开发经验，3年软件管理经验，9年国际金融科技行业深耕。现任花旗金融股票衍生品（期权）软件开发经理，擅长软件架构、Gen AI工程化，AI+量化金融。从5个维度主导企业期权报价系统全生命周期管理，保障高并发场景下系统稳定性。
 
-**六年美资银行开发经验，一年移动开发经验。设计，开发，重构，维护过风控系统，发卡系统，交易系统，从0到1 构建过IOS APP。**
+**技术专长**：精通金融科技领域系统架构设计与性能优化，AI工程化能力强。曾领导大型金融报价系统全自动化基础设施及数据库迁移，通过数据可视化精准定位复杂系统性能瓶颈并完成优化，成功应对亚洲市场业务激增，系统可用性达99.99%。
 
-**精通C#/.NET开发，熟悉Python，IOS，Cordova，熟悉React，Vue，Javascript，Jquary等。**
-**个人比较擅长于技术体系架构设计与重构，项目研究与风险识别，擅长全栈式开发，爱好云原生架构设计。**
+**架构理念**：深入实践OOP, SOA, 微服务, 事件驱动架构（EDA）及DDD领域驱动设计。
 
-**学习能力强，沟通高效，执行力强，熟知软件开发生命周期SDLC。**
+**全栈能力**：Certified Scrum Master，擅长技术与管理融合，技术栈如下。
 
-**认证Scrum Master，善于发现和解决敏捷开发中的各种技术和流程问题。**
+- **AI工程化**：理解Copilot运行本质，擅长Copilot与多智能体应用。自主二次开发Copilot Agent实现数据清洗与自动化分析，通过知识图谱，UML逆向工程，多智能体结合工具调用开发，辅助代码效率提升50%以上。
+- .**NET生态**：.NET Core, WCF, API, RabbitMQ, Azure微服务与K8S云原生；
+- **Python**：numpy, panda, transformers, LangChain, LangGraph, AutoGen, GraphRAG, MCP, Fast API, vnpy, qlib；
+- **跨端开发**：Swift(ios), TS, Vue, React等Web/移动端技术。
 
-**熟悉OOP，SOA，AOP，MVC，MVVM，EDA，BDD，DDD，微服务架构，云架构，SPA等架构与编程思想，注重基于SOLID编码规范。熟悉常见的架构风格。熟悉各种UML的使用。**
+**个人博客地址：[https://blog.gethin.online/](https://blog.gethin.online/)**
 
-**掌握.NET相关技术WCF，WEBAPI，MVC，WPF。掌握现代.NET开发技术.NET Core, RabbitMQ, Azure, K8S, Docker 等。**
-
-**个人博客地址：<https://blog.gethin.online/>**
-
-**github：<https://github.com/gethin1990>**
+**github：[https://github.com/gethin1990](https://github.com/gethin1990)**
 
 ### 技术蓝图
 
-**本人对自己的技术栈做了一些总结，整理出一个六维技术蓝图。**\
-参见： <https://blog.gethin.online/blueprint/>
+**本人对自己的技术栈做了一些总结，整理出一个六维技术蓝图。**
+参见： [https://blog.gethin.online/blueprint/](https://blog.gethin.online/blueprint/)
 
 ### 联系方式
 
-Github：<https://github.com/gethin1990>
+Github：[https://github.com/gethin1990](https://github.com/gethin1990)
 
 Email：[gexu1990@hotmail.com](mailto:gexu1990@hotmail.com)
 
@@ -37,7 +34,7 @@ Email：[gexu1990@hotmail.com](mailto:gexu1990@hotmail.com)
 
 ### 个人简历
 
-<https://blog.gethin.online/resume>
+[https://blog.gethin.online/resume](https://blog.gethin.online/resume)
 
 ~请联系我索要密码。
 
@@ -45,7 +42,17 @@ Email：[gexu1990@hotmail.com](mailto:gexu1990@hotmail.com)
 
 {{< timeline >}}
 
-{{% event title="GREEN DOT - Sr. Software Engineer" from="2019-05-31"%}}
+{{% event title="Citi Bank - APP Development Manager" from="2022-07-01" to="2025-07-01" %}}
+
+#### 在 CitiBank 担任 应用开发经理，主要负责开发、架构、管理和支持投行期权报价系统。如期权报价，下单交易 等
+
+#### 主要的开发语言是 C#，python，主要技术有 .NET, Kafka, WCF, T4, AKKA，Copilot Extension, LLM 等
+
+#### 主要项目：自动Delta对冲，CQ期权报价，CQ数据源与基础架构迁移，CQ自动化部署，CQ Copilot AI 扩展 等
+
+{{% /event %}}
+
+{{% event title="GREEN DOT - Sr. Software Engineer" from="2019-05-31" to="2022-06-01" %}}
 
 #### 在 GreenDot 担任 高级软件工程师，主要负责开发维护银行后端系统。如银行转账，信用卡自动还款 等
 

@@ -2,25 +2,32 @@
 
 ### Self Introduction
 
-**Hi, my name is Gethin, a software engineer which has majored in computer science and a lot of working experience in foreign fin-tech enterprises and famous internet companies like Honeywell, Tencent, etc.**
+ **Professional Experience** :
 
-**9 years experiences for software development , 6 years experiences with Banking System Development,
-1 year for IOS Development, designed, developed, refactored, maintained the Risk System, Card Issue System, Transaction System. Having Been build the IOS APP from 0 to 1.**
+12 years of software development experience, 3 years of software management experience, and 9 years of in-depth involvement in the international fintech industry. Currently serving as the Software Development Manager for Equity Derivatives (Options) at Citigroup Financial. Proficient in software architecture, Gen AI engineering, and AI + quantitative finance. Leading the full lifecycle management of the corporate options pricing system from five dimensions to ensure system stability in high-concurrency scenarios.
 
-**My goal is to be a software architect, I'm good at System Architecture & Refactoring & Design, Technical Research & Selection, Project Risk Identification. I also like research the cloud architect design.**
+**Technical Expertise:**
 
-**Strong learning capability, efficient communication, agile project management, strong implementation capacity, rapid technology selection is my advantage.**
+Proficient in system architecture design and performance optimization in the fintech field, with strong AI engineering capabilities. Led the full automation of infrastructure and database migration for a large financial pricing system. Precisely located the performance bottlenecks of complex systems through data visualization and completed optimizations, successfully coping with the surge in Asian market business, achieving a system availability of 99.99%.
 
-**I'm familiar with OOP, SOA, AOP, MVC, MVVM, EDA, BDD, DDD, Micro Service, Cloud Architecture, SPA etc. I value coding standards based on SOLID and know the common styles of Architecture & UML.**
+**Architectural Philosophy:**
 
-**l excellent in C#/.Net Technology, Proficient in traditional .NET Technology like WCF，WEB API，MVC，WPF & .NET CORE, RabbitMQ, Azure, K8S, Docker, etc.**
+Deeply practiced in OOP, SOA, microservices, Event-Driven Architecture (EDA), and Domain-Driven Design (DDD).
 
-**My Blog: <https://blog.gethin.online/en/about/>**
+ **Full-Stack Competence** :
 
+Certified Scrum Master, excelling in integrating technology and management. The technical stack is as follows:
+
+* **AI Engineering**: Understanding the essence of Copilot operation, proficient in Copilot and multi-agent applications. Independently eveloped a secondary Copilot Agent for data cleaning and automated analysis. Through knowledge graphs, UML reverse engineering, and the development of multi-agent combined tool calls, the code efficiency was increased by more than 50%.
+* **.NET**: .NET Core, WCF, API, RabbitMQ, Azure microservices, and K8S cloud-native technologies;
+* **Python**: numpy, panda, transformers, LangChain, LangGraph, AutoGen, GraphRAG, MCP, Fast API, vnpy, qlib;
+* **Cross-Platform** Development: Swift (for iOS), TS, Vue, React, and other Web/mobile technologies.
+
+**My Blog: [https://blog.gethin.online/en/about/](https://blog.gethin.online/en/about/)**
 
 ### Contact Me
 
-Github：<https://github.com/gethin1990>
+Github：[https://github.com/gethin1990](https://github.com/gethin1990)
 
 Email：[gexu1990@hotmail.com](mailto:gexu1990@hotmail.com)
 
@@ -28,7 +35,7 @@ WeChat: gexu1990
 
 ### My Resume
 
-<https://blog.gethin.online/resume>
+[https://blog.gethin.online/resume](https://blog.gethin.online/resume)
 
 Please contact me if you need the password of resume page.
 
@@ -36,7 +43,15 @@ Please contact me if you need the password of resume page.
 
 {{< timeline >}}
 
-{{% event title="GREEN DOT - Sr. Software Engineer" from="2019-05-31"%}}
+{{% event title="Citi Bank - APP Development Manager" from="2022-07-01" to="2025-07-01" %}}
+
+#### Application Development Manager at CitiBank, mainly responsible for developing, constructing, managing and supporting the investment bank options quotation system. 
+
+#### The main programming languages are C# and python. The main technologies include.NET, Kafka, WCF, T4, AKKA, Copilot Extension, LLM, etc. 
+
+#### The main projects are: Automatic Delta hedging, CQ option quotations, CQ data source and infrastructure migration, CQ automated deployment, CQ Copilot AI expansion, etc
+{{% /event %}}
+{{% event title="GREEN DOT - Sr. Software Engineer" from="2019-05-31" to="2022-06-01" %}}
 
 #### Sr. Software Engineer in GREEN DOT,major in back-end system of bank development. like Transitions,cerdit card auto payment etc
 

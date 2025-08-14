@@ -1,10 +1,45 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>云上漫谈 - 分类 - Gethin</title><link>https://blog.gethin.online/categories/%E4%BA%91%E4%B8%8A%E6%BC%AB%E8%B0%88/</link><description>云上漫谈 - 分类 - Gethin</description><generator>Hugo -- gohugo.io</generator><managingEditor>gexu1990@hotmail.com (Gethin)</managingEditor><webMaster>gexu1990@hotmail.com (Gethin)</webMaster><lastBuildDate>Thu, 08 Jul 2021 12:57:57 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/categories/%E4%BA%91%E4%B8%8A%E6%BC%AB%E8%B0%88/" rel="self" type="application/rss+xml"/><item><title>云上基础架构</title><link>https://blog.gethin.online/introduce-microservice-infrastructure-on-cloud/</link><pubDate>Thu, 08 Jul 2021 12:57:57 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/introduce-microservice-infrastructure-on-cloud/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>云上漫谈 - 分类 - Gethin</title><link>https://blog.gethin.online/categories/%E4%BA%91%E4%B8%8A%E6%BC%AB%E8%B0%88/</link><description>云上漫谈 - 分类 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 08 Jul 2021 12:57:57 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/categories/%E4%BA%91%E4%B8%8A%E6%BC%AB%E8%B0%88/" rel="self" type="application/rss+xml"/><item><title>云上基础架构</title><link>https://blog.gethin.online/introduce-microservice-infrastructure-on-cloud/</link><pubDate>Thu, 08 Jul 2021 12:57:57 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/introduce-microservice-infrastructure-on-cloud/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
-            </div>云上基础架构  Iaas &amp; Paas &amp; Saas 虚拟机和容器 Docker &amp; Kubernetes 基础架构的关注点 Azure Kubernets Service - AKS     Iaas &amp; Paas &amp; Saas   IaaS 基础架构即服务， 硬件相关的部分由第三方运营，如服务器，存储，网卡等。其他由拥有者来维护。
-  PaaS 平台即服务，部分与应用无关的部分由第三方运营，自己的应用程序是基于第三方提供的平台来进行开发维护，但数据和应用程序由拥有者本人来进行管理。
-  SaaS 软件即服务，将所有的部分都交给第三方管理，拥有者本身只需要基于应用程序进行配置或是二次开发。
-啥是 azure-paas
-  虚拟机和容器 虚拟机，用传统开发和部署的方式来运行在服务器上，如IIS，Tomcat等 为什么要选用容器，容器有什么优势么？
- 平台独立，一次build，可以运行在各个平台。 资源的效率和利用率比较高 有效的隔离性和可分享性 速度很快，可以在短时间内进行创建，复制和销毁 可以实现平滑的伸缩 操作便捷 改进开发人员的生产力和开发流程 语言独立性  Docker &amp; Kubernetes Docker是时下流行的来实现容器的一种方式。关于容器编排，市场上还有其他的方式，如Azure Service Fabric，Amazon Elastic Container Service
-那么我们为什么要选用K8S?
- 容器编排 非常适合采用多云方式进行 大规模部署和更新应用程序，以加快产品上市时间（水平自动缩放，滚动更新，Canary部署） 天然支持云原生应用 降低基础设施成本 它可以在本地或混合环境中运行 您可以将Kubernetes集群从一个托管供应商移动到另一个托管供应商，而无需更改（几乎）任何部署和管理过程。 零停机时间部署，容错，高可用性，扩展，调度和自愈功能在Kubernetes中具有重要价值。  基础架构的关注点  服务注册 服务发现 监控 限流 路由 负载均衡 超时重试 熔断 服务降级 故障迁移  Azure Kubernets Service -AKS 1.]]></description></item></channel></rss>
+            </div><div id="summary" class="mindmap mindmap-md">
+    <ul>
+<li>云上基础架构
+<ul>
+<li>Iaas &amp; Paas &amp; Saas</li>
+<li>虚拟机和容器</li>
+<li>Docker &amp; Kubernetes</li>
+<li>基础架构的关注点</li>
+<li>Azure Kubernets Service - AKS</li>
+</ul>
+</li>
+</ul>
+
+</div>
+<h2 id="iaas--paas--saas">Iaas &amp; Paas &amp; Saas</h2>
+<ul>
+<li>
+<p>IaaS 基础架构即服务， 硬件相关的部分由第三方运营，如服务器，存储，网卡等。其他由拥有者来维护。</p>
+</li>
+<li>
+<p>PaaS 平台即服务，部分与应用无关的部分由第三方运营，自己的应用程序是基于第三方提供的平台来进行开发维护，但数据和应用程序由拥有者本人来进行管理。</p>
+</li>
+<li>
+<p>SaaS 软件即服务，将所有的部分都交给第三方管理，拥有者本身只需要基于应用程序进行配置或是二次开发。</p>
+<p><a href="https://www.sherweb.com/blog/cloud-server/what-is-azure-paas/" target="_blank" rel="noopener noreffer ">啥是 azure-paas</a></p>
+<p></p>
+<p></p>
+</li>
+</ul>
+<h2 id="虚拟机和容器">虚拟机和容器</h2>
+<p>虚拟机，用传统开发和部署的方式来运行在服务器上，如IIS，Tomcat等 为什么要选用容器，容器有什么优势么？</p>
+<ul>
+<li>平台独立，一次build，可以运行在各个平台。</li>
+<li>资源的效率和利用率比较高</li>
+<li>有效的隔离性和可分享性</li>
+<li>速度很快，可以在短时间内进行创建，复制和销毁</li>
+<li>可以实现平滑的伸缩</li>
+<li>操作便捷</li>
+<li>改进开发人员的生产力和开发流程</li>
+<li>语言独立性</li>
+</ul>
+<h2 id="docker--kubernetes">Docker &amp; Kubernetes</h2>
+<p>Docker是时下流行的来实现容器的一种方式。关于容器编排，市场上还有其他的方式，如Azure Service Fabric，Amazon Elastic Container Service</p>]]></description></item></channel></rss>

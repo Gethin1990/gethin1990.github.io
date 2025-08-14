@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>The Basics of Computer Science - Category - Gethin</title><link>https://blog.gethin.online/en/categories/the-basics-of-computer-science/</link><description>The Basics of Computer Science - Category - Gethin</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 10 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.gethin.online/en/categories/the-basics-of-computer-science/" rel="self" type="application/rss+xml"/><item><title>HTTP response status codes</title><link>https://blog.gethin.online/en/http-status-code/</link><pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/en/http-status-code/</guid><description><![CDATA[<div class="featured-image">
+                <img src="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/web-3967926_1280-2021-06-10-16-37-50.jpg" referrerpolicy="no-referrer">
+            </div><h2 id="http-response-status-codes">HTTP response status codes</h2>
+<p>HTTP response status codes indicate whether a specific HTTP request has been successfully completed.</p>
+<p>Responses are grouped in five classes:</p>
+<ul>
+<li>Informational responses (100–199)</li>
+<li>Successful responses (200–299)</li>
+<li>Redirects (300–399)</li>
+<li>Client errors (400–499)</li>
+<li>Server errors (500–599)</li>
+</ul>
+<p>The below status codes are defined by section 10 of RFC 2616. You can find an updated specification in RFC 7231.</p>
+<p>If you receive a response that is not in this list, it is a non-standard response, possibly custom to the server&rsquo;s software.</p>
+<h2 id="information-responses">Information responses</h2>
+<h3 id="100-continue">100 Continue</h3>
+<p>This interim response indicates that everything so far is OK and that the client should continue the request, or ignore the response if the request is already finished.</p>]]></description></item></channel></rss>

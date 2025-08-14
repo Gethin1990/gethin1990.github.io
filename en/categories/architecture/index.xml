@@ -1,0 +1,338 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Architecture - Category - Gethin</title><link>https://blog.gethin.online/en/categories/architecture/</link><description>Architecture - Category - Gethin</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 08 Jul 2021 10:52:39 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/en/categories/architecture/" rel="self" type="application/rss+xml"/><item><title>Software Architecture Pattern</title><link>https://blog.gethin.online/en/software-architecture-pattern/</link><pubDate>Thu, 08 Jul 2021 10:52:39 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/en/software-architecture-pattern/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/images/content.jpg" referrerpolicy="no-referrer">
+            </div><h2 id="application-landscapes">Application Landscapes</h2>
+<h3 id="monolith">Monolith</h3>
+<ul>
+<li>Advantages
+<ul>
+<li>Easy to understand,implement,and test</li>
+<li>Easy deployment</li>
+<li>Ideal for limited scope</li>
+</ul>
+</li>
+<li>Disadvantages
+<ul>
+<li>Tight coupling</li>
+<li>Easily leads to complex code</li>
+<li>One size fit all for every subdomain</li>
+</ul>
+</li>
+</ul>
+<h3 id="n-tier">N-tier</h3>
+<ul>
+<li>Summary
+<ul>
+<li>Multiple tiers</li>
+<li>Tier perform specific task</li>
+<li>Tiers can be physically separated</li>
+<li>Tiers aren&rsquo;t layers</li>
+<li>Technical boundaries</li>
+</ul>
+</li>
+<li>Typical: 3 tier
+<ul>
+<li>Presentation Tier(UI &amp; pure UI logic)</li>
+<li>Business Logic Tier(business logic)</li>
+<li>Data Tier</li>
+</ul>
+</li>
+<li>Advantages
+<ul>
+<li>Independent development</li>
+<li>Scalability</li>
+</ul>
+</li>
+<li>Disadvantages
+<ul>
+<li>Changes ripple through tiers</li>
+</ul>
+</li>
+</ul>
+<h3 id="service-oriented">Service-Oriented</h3>
+<ul>
+<li>Summary
+<ul>
+<li>Multiple services</li>
+<li>Each service is a business activity</li>
+<li>Service compose-ability</li>
+<li>Contract standardization</li>
+<li>Enterprise Service Bus</li>
+</ul>
+</li>
+<li>Advantages
+<ul>
+<li>Services are loosely coupled</li>
+<li>Scalability</li>
+<li>No duplication of functionality</li>
+</ul>
+</li>
+<li>Disadvantages
+<ul>
+<li>Reduced agility and team autonomy</li>
+<li>Costly</li>
+<li>Many differing views</li>
+</ul>
+</li>
+</ul>
+<h3 id="microservices">MicroServices</h3>
+<ul>
+<li>Summary
+<ul>
+<li>Multiple services</li>
+<li>Each service is a business activity</li>
+<li>Teams run the service</li>
+<li>No logic-heavy enterprise service bus</li>
+<li>Maximum automate</li>
+</ul>
+</li>
+<li>Advantages
+<ul>
+<li>Services are loosely coupled and easily scalable</li>
+<li>Increased agility</li>
+<li>Reliability</li>
+<li>Designed to handle failures</li>
+</ul>
+</li>
+<li>Disadvantages
+<ul>
+<li>Boundaries not always clear</li>
+<li>Communication patterns can become complex</li>
+</ul>
+</li>
+</ul>
+<h3 id="serverless">Serverless</h3>
+<ul>
+<li>Summary
+<ul>
+<li>Backend as a service</li>
+<li>Function as a service</li>
+</ul>
+</li>
+</ul>
+<h3 id="peer-to-peer">peer-to-peer</h3>
+<ul>
+<li>Summary
+<ul>
+<li>No central server</li>
+<li>No constant connection</li>
+<li>Dynamically discoverable</li>
+</ul>
+</li>
+<li>Advantages
+<ul>
+<li>Share resources</li>
+<li>Save cost</li>
+<li>Scaling</li>
+</ul>
+</li>
+<li>Disadvantages
+<ul>
+<li>possible security issues</li>
+<li>Only for specific scenarios</li>
+<li>Nontrivial to code</li>
+</ul>
+</li>
+</ul>
+<h2 id="application-structure-patterns">Application Structure Patterns</h2>
+<h3 id="layered">Layered</h3>
+<ul>
+<li>Summary
+<ul>
+<li>Presentation(UI)</li>
+<li>Application(Translation between UI &amp; business)</li>
+<li>Business(Business logic)</li>
+<li>Persistence(Code to interact with the database)</li>
+<li>Data(Data)</li>
+</ul>
+</li>
+<li>Advantages
+<ul>
+<li>well-known among developers</li>
+<li>Easy to organize</li>
+</ul>
+</li>
+<li>Disadvantages
+<ul>
+<li>Can lead to monolithic applications</li>
+<li>Need to write lots of code</li>
+</ul>
+</li>
+</ul>
+<h3 id="microkernel">Microkernel</h3>
+<ul>
+<li>Summary
+<ul>
+<li>Task scheduler</li>
+<li>Workflow</li>
+<li>Data processing</li>
+<li>Browser</li>
+<li>Graphic designer</li>
+</ul>
+</li>
+<li>Advantages
+<ul>
+<li>Flexibility</li>
+<li>Clean separation</li>
+<li>Separate teams possible</li>
+<li>Add and remove functionality at runtime</li>
+</ul>
+</li>
+<li>Disadvantages
+<ul>
+<li>Core API might not fit future plugins</li>
+<li>Can the plugins be trusted</li>
+<li>Not always clear what belongs in the core</li>
+</ul>
+</li>
+</ul>
+<h3 id="cqrs">CQRS</h3>
+<ul>
+<li>Summary
+<ul>
+<li>Command Query Responsibility Segregation</li>
+<li>2 models: read/query &amp; write/command</li>
+<li>Allows for scenario-specific queries</li>
+<li>Synchronization required</li>
+<li>Different from event sourcing</li>
+</ul>
+</li>
+<li>Advantages
+<ul>
+<li>Simpler read queries</li>
+<li>Faster and more scalable read queries</li>
+<li>Easier to communicate with stakeholders</li>
+</ul>
+</li>
+<li>Disadvantages
+<ul>
+<li>Added complexity</li>
+<li>Learning curve</li>
+<li>Possibility of data inconsistencies</li>
+<li>Eventual consistency</li>
+</ul>
+</li>
+</ul>
+<h3 id="event-sourcing">Event sourcing</h3>
+<ul>
+<li>Summary
+<ul>
+<li>Store events instead of current state</li>
+<li>Event = something that happened in the past</li>
+<li>Rehydration or replay</li>
+</ul>
+</li>
+<li>Advantages
+<ul>
+<li>Trace of events</li>
+<li>Audit trail</li>
+<li>Business language</li>
+<li>Event replay</li>
+</ul>
+</li>
+<li>Disadvantages
+<ul>
+<li>Replay and external systems</li>
+<li>Event structure changes</li>
+<li>Snapshots</li>
+</ul>
+</li>
+</ul>
+<h3 id="cqrs-and-event-sourcing-combined">CQRS and Event sourcing combined</h3>
+<ul>
+<li>Summary
+<ul>
+<li>2 different concepts</li>
+<li>Powerful combination</li>
+<li>It&rsquo;s not for simple domains, you could start with event sourcing, then add CQRS later.</li>
+</ul>
+</li>
+<li>Advantages
+<ul>
+<li>Simpler and fast queries</li>
+<li>Scalable</li>
+<li>Trace of event</li>
+<li>Audit trail</li>
+<li>Business language</li>
+</ul>
+</li>
+<li>Disadvantages
+<ul>
+<li>Added complexity</li>
+<li>Leaning curve</li>
+<li>Data inconsistencies</li>
+<li>Event structure change</li>
+</ul>
+</li>
+</ul>
+<h2 id="ui-patterns">UI Patterns</h2>
+<h3 id="mvc">MVC</h3>
+<ul>
+<li>Summary
+<ul>
+<li>Controller</li>
+<li>Model</li>
+<li>View</li>
+</ul>
+</li>
+<li>Advantages
+<ul>
+<li>Separation of concerns</li>
+<li>Parallel development</li>
+<li>Popular in web frameworks</li>
+</ul>
+</li>
+<li>Disadvantages
+<ul>
+<li>Controllers can become bloated</li>
+<li>Different definitions</li>
+</ul>
+</li>
+</ul>
+<h3 id="mvp">MVP</h3>
+<ul>
+<li>Summary
+<ul>
+<li>View</li>
+<li>Presenter</li>
+<li>Model</li>
+</ul>
+</li>
+<li>Advantages
+<ul>
+<li>Great for desktop application</li>
+<li>Separation of concerns</li>
+<li>Testability</li>
+</ul>
+</li>
+<li>Disadvantages
+<ul>
+<li>Presenter can become bloated</li>
+<li>Desktop application are less popular</li>
+<li>MVVM Pattern</li>
+</ul>
+</li>
+</ul>
+<h3 id="mvvm">MVVM</h3>
+<ul>
+<li>Summary
+<ul>
+<li>View</li>
+<li>ViewModel</li>
+<li>Model</li>
+</ul>
+</li>
+<li>Advantages
+<ul>
+<li>Great for modern desktop and mobile applications</li>
+<li>Separation of concerns</li>
+<li>Testability</li>
+</ul>
+</li>
+<li>Disadvantages
+<ul>
+<li>Overkill for user interfaces</li>
+<li>More difficult to debug</li>
+<li>Desktop applications are less popular</li>
+</ul>
+</li>
+</ul>]]></description></item></channel></rss>

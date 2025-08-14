@@ -1,6 +1,131 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>测试 - 关键信息 - Gethin</title><link>https://blog.gethin.online/keypoint/%E6%B5%8B%E8%AF%95/</link><description>测试 - 关键信息 - Gethin</description><generator>Hugo -- gohugo.io</generator><managingEditor>gexu1990@hotmail.com (Gethin)</managingEditor><webMaster>gexu1990@hotmail.com (Gethin)</webMaster><lastBuildDate>Wed, 26 May 2021 10:00:39 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/keypoint/%E6%B5%8B%E8%AF%95/" rel="self" type="application/rss+xml"/><item><title>自定义扩展功能测试</title><link>https://blog.gethin.online/second-post/</link><pubDate>Wed, 26 May 2021 10:00:39 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/second-post/</guid><description>&lt;div class="featured-image">
-&lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
-&lt;/div>自定义扩展 脑图测试 Root l1 l11 l12 l2 l12 l121 l122 l13 l3 l31 l313 l323 Test1 ABC
-2021 function non0plural(number, name) { if (number == 0) { return "" } if (number == 1 || number == -1) { return number + " " +name } return number + "</description></item><item><title>一篇关于主题功能测试的文章</title><link>https://blog.gethin.online/first-post/</link><pubDate>Thu, 06 May 2021 20:40:14 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/first-post/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>测试 - 关键信息 - Gethin</title><link>https://blog.gethin.online/keypoint/%E6%B5%8B%E8%AF%95/</link><description>测试 - 关键信息 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 26 May 2021 10:00:39 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/keypoint/%E6%B5%8B%E8%AF%95/" rel="self" type="application/rss+xml"/><item><title>自定义扩展功能测试</title><link>https://blog.gethin.online/second-post/</link><pubDate>Wed, 26 May 2021 10:00:39 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/second-post/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/images/content.jpg" referrerpolicy="no-referrer">
+            </div><h2 id="自定义扩展">自定义扩展</h2>
+<h3 id="脑图测试">脑图测试</h3>
+
+
+<div id="test" class="mindmap mindmap-md">
+    <ul>
+<li>Root
+<ul>
+<li>l1
+<ul>
+<li>l11</li>
+<li>l12</li>
+</ul>
+</li>
+<li>l2
+<ul>
+<li>l12
+<ul>
+<li>l121</li>
+<li>l122</li>
+</ul>
+</li>
+<li>l13</li>
+</ul>
+</li>
+<li>l3
+<ul>
+<li>l31
+<ul>
+<li>l313</li>
+<li>l323</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+<div class="timeline">
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="content">
+    <div class="title">Test1</div>
+    <div class="moment"  id="moment" >
+      
+    </div>
+    <div class="body"><p>ABC</p>
+</div>
+  </div>
+  <div class="date">2021</div>
+</div>
+
+<script>
+  function non0plural(number, name) {
+    if (number == 0) {
+    return ""
+    }
+    if (number == 1 || number == -1) {
+    return number + " " +name
+    }
+    return number + " " + name + "s"
+  }
+
+  el = document.querySelector("#moment");
+  function refresh() {
+    start = dayjs("2021-05-01")
+    now = dayjs()
+
+    total_months = now.diff(start, "M", true)
+    months = total_months % 12
+    let years = 0
+    if (months < 0) {
+      years = Math.ceil((total_months) / 12)
+    } else {
+      years = Math.floor((total_months) / 12)
+    }
+    el.innerHTML = non0plural(years,"year")+" "+non0plural(months.toFixed(8),"month")
+  }
+  window.setInterval(refresh, 1000);
+</script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="content">
+    <div class="title">Test</div>
+    <div class="moment" >
+        11 months 
+    </div>
+    <div class="body"><p>ABC</p>]]></description></item><item><title>一篇关于主题功能测试的文章</title><link>https://blog.gethin.online/first-post/</link><pubDate>Thu, 06 May 2021 20:40:14 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/first-post/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><p>了解如何在 <strong>LoveIt</strong> 主题中快速, 直观地创建和组织内容。</p>]]></description></item></channel></rss>

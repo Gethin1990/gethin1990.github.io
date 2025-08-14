@@ -1,91 +1,671 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>系统架构师 - 标签 - Gethin</title><link>https://blog.gethin.online/tags/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%B8%88/</link><description>系统架构师 - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><managingEditor>gexu1990@hotmail.com (Gethin)</managingEditor><webMaster>gexu1990@hotmail.com (Gethin)</webMaster><lastBuildDate>Thu, 30 Sep 2021 09:05:43 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/tags/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%B8%88/" rel="self" type="application/rss+xml"/><item><title>测试评审方法</title><link>https://blog.gethin.online/test-and-review-methodologies/</link><pubDate>Thu, 30 Sep 2021 09:05:43 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/test-and-review-methodologies/</guid><description>&lt;div class="featured-image">
-&lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
-&lt;/div>测试方法 软件测试阶段 单元测试 重点：模块接口，局部数据结构，重要的执行通路，出错处理通路，边界条件 集成测试 非渐增式，渐增式 系统测试 确认测试（需求说明书检查，软件配置复查），验收测试（alpha，beta） 白盒测试和黑盒测试 白盒测试 语句覆盖，判定覆盖，条件覆盖，判定/条件覆盖，条件组合覆盖，路径覆盖 黑盒测试 等价类划分，边值分析，错误推测，因果图 缺陷的分类和级别 分类：输入/输出错误，逻辑错误，计算错误，接口错误，数据错误 级别：轻微，中等，使人不悦，影响使用，严重，非常严重，极为严重，无法容忍，灾难性，传染性 调试 排错策略：原始类，回溯类，排除类 评审方法 软件需求评审，概要设计评审，详细设计评审，软件验证和确认评审，功能检查，物理检查，综合检查，管理评审
-注意：不应以测试代替评审，评审人员应关注产品而不应评论开发人员，评审人员应关注实质性问题，评审会议不应变为问题解决方案讨论会，评审应被安排进入项目计划，评审参与者应了解整个评审过程，评审人员事先应对评审材料充分了解，应重视评审的组织工作
-验证与确认 验证：合同验证，过程验证，需求验证，设计验证，编码验证，集成验证，文档验证 确认
-测试自动化 测试用例生成，测试执行控制，测试结果对比，测试结果分析，总测试状况的统计与报表产生
-面向对象测试 OOA测试，OOD测试，OOP测试，单元测试，集成测试，系统测试</description></item><item><title>开发管理</title><link>https://blog.gethin.online/development-management/</link><pubDate>Tue, 14 Sep 2021 15:20:55 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/development-management/</guid><description>&lt;div class="featured-image">
-&lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
-&lt;/div>项目的范围、时间与成本 项目范围管理 项目启动 范围计划编制 范围定义 范围核实 范围变更 项目成本管理 资源计划编制 成本估算 成本预算 成本控制 项目时间管理 活动定义 活动排序 活动历时估算 进度计划编制 进度控制 配置管理与文档管理 软件配置管理概念 配置标识 版本控制 状态统计 审计与审查 生产 过程管理 小组协作 软件配置管理的解决方案 各种版本控制工具
-软件文档管理 软件文档的作用 管理依据 任务之间联系的凭证 质量保证 培训与参考 软件维护支持 历史档案 销售可能 文档的归类 开发文档 产品文档 管理文档 文档编制计划 列出应编制文档的目录 提示编制文档应参考的标准 指定文档管理员 提供编制文档所需要的条件 明确保证文档质量的方法 绘制进度表 对文档质量的要求 针对性 准确性 清晰性 完整性 灵活性 软件需求管理 需求变更 项目启动阶段的变更预防 项目实施阶段的需求变更 需求跟踪 确定需求变更控制过程 进行需求变更影响分析 建立需求基准版本和需求控制版本文档 维护需求变更的历史纪录 跟踪每项需求的状态 软件开发的质量与风险 软件质量管理 软件质量计划 软件质量保证 软件质量控制 软件评审 测试 项目风险管理 项目风险管理的概念 内部技术风险 内部非技术风险 公司战略变化、管理人员水平、没有在预算内完成进度 外部法律风险 外部非法律风险 经济环境变化、组织雇佣关系变化 风险管理的过程 风险管理规划 项目风险识别 定性风险分析 定量风险分析 风险应对计划 风险监督与控制 人力资源管理 组织规划 垂直团队组织 水平团队组织 混合团队组织 人员招募 领导能力 沟通技巧 人际交往能力 应付压力能力 培养员工能力 时间管理能力 团队建设 形成阶段 震荡阶段 正规阶段 表现阶段 软件的运行与评价 软件的稳定性与可靠性评价 软件是否满足了用户的需求 软件实施给用户带来的好处 软件过程改进 CMM CMMI ISO 9000 ITIL</description></item><item><title>系统计划</title><link>https://blog.gethin.online/system-plan/</link><pubDate>Tue, 14 Sep 2021 09:54:14 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/system-plan/</guid><description>&lt;div class="featured-image">
-&lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
-&lt;/div>项目的提出与选择 项目的立项目标和动机 进行基础研究并获取技术 进行应用研发并获得产品 提供技术服务 信息技术产品的使用者 项目的选择和确定 选择有核心价值的产品/项目或开发方向 评估项目风险、收益和代价 评估项目的多种实施方式 平衡的选择合适的方案 项目的提出和选择结果 项目的提出和选择的结果，最终会以“产品/项目建议书”的方式来体现。
-可行性研究与效益分析 可行性研究和内容 经济可行性 技术可行性 技术 资源 目标 法律可行性 执行可行性 方案的选择 成本效益分析 项目可能涉及的成本 基础建设支出 一次性支出 运行维护费用 项目可能涉及的收益 一次性收益 非一次性收益 不可定量的收益 效益分析的若干指标和进一步的分析 收益/投资比 投资回收周期 敏感性分析 可行性分析报告 项目背景 管理概要和建议 候选方案 系统描述 经济可行性 技术可行性 法律可行性 用户使用可行性 其他与项目有关的问题 方案的制订和改进 确定软件架构 确定实现的各种关键性要素和实现手段 归结目标到最适合的计算体系 新旧系统的分析和对比 遗留系统的评价方法 启动评价 遗留系统是否至关重要 企业的商业目标是什么 演化需求是什么 所期望的系统寿命多长 系统使用期限多久 系统技术状态如何 企业是否愿意改变 企业是否有能力承受演化 商业价值评价 咨询 评价问卷 进行评价 外部环境评价 硬件 支撑软件 企业基础设施 应用软件评价 系统级 部件级 分析评价结果 遗留系统的演化策略 淘汰策略 继承策略 改造策略 集成策略</description></item><item><title>设计模式</title><link>https://blog.gethin.online/design-pattern/</link><pubDate>Sun, 15 Aug 2021 15:10:00 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/design-pattern/</guid><description>&lt;div class="featured-image">
-&lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
-&lt;/div>设计模式六大原则 单一职责原则 Single Responsibility Principle
-一个类只负责一个功能领域中的相应职责，或者就一个类而言，应该只有一个引起它变化的原因。
-开放封闭原则 Open-Close Priciple
-一个软件实体应当对扩展开放，对修改封闭。软件实体应该尽量在不修改原有代码的情况下进行扩展。
-里氏替换原则 Liskove Substitution Principe
-所有引用基类的地方必须能透明的使用其子类的对象。（在软件中将一个基类对象替换成它的子类对象，程序将不会产生任何错误和异常，反过来则不成立，如果一个软件实体使用的是一个子类对象的话，那么它不一定能够使用基类对象。例如：我喜欢动物，那我一定喜欢狗，因为狗是动物的子类；但是我喜欢狗，不能据此断定我喜欢动物，因为我并不喜欢老鼠，虽然它也是动物）
-依赖倒置原则 Dependency Inversion Principle
-抽象不应该依赖于细节，细节应该依赖于抽象，要针对接口编程，而不是针对实现编程。（依赖注入(DependencyInjection, DI)的方式注入到其他对象中，依赖注入是指当一个对象要与其他对象发生依赖关系时，通过抽象来注入所依赖的对象。常用的注入方式有三种，分别是：构造注入，设值注入（Setter注入）和接口注入。构造注入是指通过构造函数来传入具体类的对象，设值注入是指通过Setter方法来传入具体类的对象，而接口注入是指通过在接口中声明的业务方法来传入具体类的对象。这些方法在定义时使用的是抽象类型，在运行时再传入具体类型的对象，由子类对象来覆盖父类对象）
-接口隔离原则 Interface Segregation Principle
-使用多个专用接口，而不是使用单一的总接口，客户端不应该依赖于那些它不需要的接口。
-迪米特法则 Law of Demeter
-一个软件实体应当尽可能少的与其他实体发生互相作用（高内聚，低耦合）。
-为什么要多用组合，少用继承 变化部分取出并封装起来，便于以后扩展，而不影响其他部分。要针对接口编程而不是针对实现编程。
-一句话常用设计模式 Iterator——迭代器 Adapter（适配器）————换个包装再度利用 ◎ 万事交给子类：
-Template Method（模板方法）————实际处理就交给子类 Factory Method（工厂方法）————建立对象实例交给子类 ◎建立对象实例
-Singleton（单件）————唯一的对象实例 Prototype（原型）————复制建立对象实例 Builder（生成器）————组合复杂的对象实例 Abstract Factory（抽象工厂）————把相关零件组合成产品 ◎切割性思考
-Bridge（桥接）————分成功能层次和实现层次 Strategy（策略）————把算法整个换掉 ◎一视同仁</description></item><item><title>系统分析与设计</title><link>https://blog.gethin.online/system-analysis-and-design/</link><pubDate>Wed, 11 Aug 2021 21:32:28 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/system-analysis-and-design/</guid><description>&lt;div class="featured-image">
-&lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
-&lt;/div>1. 定义问题与归结模型 1.1 问题分析 在问题定义上达成共识 问题概述，影响，结果，优点 理解问题的本质 因果鱼骨图（将问题写在右边的方框里，确定问题潜在原因的主要类别，用头脑风暴法寻找原因并归类）
-帕累托图（明确问题，找出问题原因，选择评价标准和考察期限，收集各种原因发生的频率与费用数据，将原因按照发生的频率排列，将原因横轴频率纵轴）
-确定项目干系人和用户
-定义系统边界（上下文范围图，用例模型）
-确定系统实现的约束 1.2 问题定义 目标（优势，度量，合理性，可行性，可达成性） 功能需求（注意二义性【同名异义词，代词】） 非功能需求（感官需求，易用性需求，性能需求，可操作性需求，可维护性和可移植性需求，安全性需求，文化和政策需求，法律需求，） 2 需求分析与软件设计 2.1 需求分析的任务与过程 问题识别，分析与综合，编制需求分析的文档，需求分析与评审 分类：功能需求，非功能需求，设计约束，业务需求，用户需求，系统需求 需求工程：开发，管理 分析方法：结构化分析方法，软系统方法，面向对象分析方法，面向问题分析 2.2 如何进行系统设计 2.3 软件设计的任务与活动 3 架构化分析与设计 是一种面向数据流的需求分析和设计方法，适用与分析设计大型数据处理系统
-3.1 结构化分析 结构化分析工作步骤：研究“物质环境“；建立系统逻辑模型；划清人机界限 数据流图：过程；外部实体；数据存储；数据流；实时连接； 细化几率DFD部件 3.2 结构化设计 概要设计与详细设计的主要任务； 结构图； 程序流程图和盒图； PAD和PDL 3.3 模块设计 信息隐蔽原则 模块独立性原则 4 面向对象的分析与设计 4.1 面向对象的基本概念 对象与类：实体类，控制类，边界类 继承与泛化 多态与重载 模版类 消息与消息通信 4.</description></item><item><title>软件架构设计</title><link>https://blog.gethin.online/software-architecture-design/</link><pubDate>Sat, 29 May 2021 21:01:34 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/software-architecture-design/</guid><description>&lt;div class="featured-image">
-&lt;img src="/images/content.jpg" referrerpolicy="no-referrer">
-&lt;/div>1 软件架构概述 1.1 软件架构的定义 架构是对系统的抽象，由多个架构组成，任何软件都存在架构，元素与其行为的集合构成架构内容，架构具有“基础性”，架构隐含有“决策”。
-1.2 软件架构重要性 项目关系人之间交流平台；
-早期设计决策；
-在较高层面上实现软件复用；
-架构对开发的指导与规范意义不容忽略。
-1.3 架构的模型 结构模型；框架模型；动态模型；过程模型；功能模型；
-逻辑视图，开发视图，进程视图，物理视图，场景。
-2 架构需求与软件质量属性 2.1 软件质量属性 功能性；可靠性；易用性；效率；可维护性；可移植性；
-1 运行期质量属性
-性能；安全性；易用性；可伸缩性；互操作性；可靠性；持续可用性；鲁棒性；
-2 开发期质量属性
-易理解性；可扩展性；可重用性；可测试性；可维护性；
-2.2 六个质量属性与实现 质量属性：可用性；可修改性；性能；安全性；可测试性；易用性；
-质量属性场景组件：刺激源；刺激；环境；制品；响应；响应度量；
-1 可用性与其实现战术
-可用性描述
-可用性战术
-错误检测：命令/响应；心跳；异常；
-错误恢复
-表决；主动冗余；被动冗余；备件；状态再同步；检查点/回滚；
-错误预防
-从服务中删除；事务；进程监视器； 2 可修改性与其实现战术
-可修改性描述
-可修改性战术
-局部化修改；(维持语义的一致性；预期期望的变更；泛化该模块；限制可能的选择)
-防止连锁反应；（信息隐藏；维持现有的接口；限制通信路径；仲裁者的使用）
-推迟绑定时间；（运行时注册；配置文件；多态；构件更换；） 3 性能与其实现技术
-性能描述
-性能战术
-资源消耗：闭锁时间；
-资源需求：减少处理事件流所需的资源；减少所处理事件的数量；控制资源的使用；
-资源管理：引入并发；维持数据或计算的多个副本；增加可用资源；
-资源仲裁：先进先出；固定优先级调度；动态优先级调度；静态调度； 4 安全性与其实现技术
-安全性描述
-安全性战术
-抵抗攻击：对用户进行身份验证；对用户进行授权；维护数据的机密性；维护完整性；限制暴露的信息；限制访问；
-检测攻击
-从攻击中恢复：恢复；识别攻击者； 5 可测试性与其实现战术</description></item><item><title>开发方法</title><link>https://blog.gethin.online/development-methodologies/</link><pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate><author>作者</author><guid>https://blog.gethin.online/development-methodologies/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>系统架构师 - 标签 - Gethin</title><link>https://blog.gethin.online/tags/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%B8%88/</link><description>系统架构师 - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 30 Sep 2021 09:05:43 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/tags/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%B8%88/" rel="self" type="application/rss+xml"/><item><title>测试评审方法</title><link>https://blog.gethin.online/test-and-review-methodologies/</link><pubDate>Thu, 30 Sep 2021 09:05:43 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/test-and-review-methodologies/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
-            </div>Software Development Methodologies
- 开发方法 软件的生命周期 可行性研究与计划-&gt;需求分析-&gt;概要设计-&gt;详细设计-&gt;实现-&gt;集成测试-&gt;确认测试-&gt;使用与维护
-软件开发模型  瀑布模型 演化模型 螺旋模型 增量模型 构建组装模型  统一过程  UP的9个核心工作流
-业务建模，需求，分析设计，实施，测试，部署，配置与变更管理，项目管理，环境 UP的生命周期
-目标里程碑，架构里程碑，能力里程碑，发布里程碑 UP的特点  UP不但给出类迭代的生命周期，还给出了生命周期每一阶段的迭代指南 采用不同迭代方式的UP可以演变为演化模型或增量模型 迭代特点使得更容易控制软件开发的风险 UP本身并不属于敏捷 实际应用中可以根据具体问题对UP进行剪裁   架构师在UP中的活动  同需求人员和项目管理人员密切协作 细化软件架构 保持整个架构的概念完整性    敏捷方法   极限编程
-  XP是一种轻量（敏捷）、高效、低风险、柔性、可预测、科学而且充满乐趣的软件开发方式。
- 在更短的周期内，更早的提供具体、持续的反馈信息 迭代的进行计划编制 依赖自动测试程序来监控开发进度，并及早捕获缺陷 依赖口头交流、测试和源程序进行沟通 倡导持续的、演化式的设计 依赖与开发团队内部的紧密协作 尽可能达到程序员短期利益和项目长期利益的平衡    四大价值观
-沟通，简单，反馈，勇气，（尊重）
-  十二个最佳实践
-计划游戏，小型发布，隐喻，简单设计，测试先行，重构，结对编程，集体代码所有制，持续集成，每周工作40小时，现场客户，编码标准
-    特性驱动开发
-FDD也是一个迭代开发模型，FDD每一步都强调质量，不断的交付可运行的软件，并以很小的开发提供精准的项目进度报告和状态信息。
- FDD角色定义]]></description></item></channel></rss>
+            </div><h2 id="测试方法">测试方法</h2>
+<h3 id="软件测试阶段">软件测试阶段</h3>
+<ol>
+<li>单元测试
+重点：模块接口，局部数据结构，重要的执行通路，出错处理通路，边界条件</li>
+<li>集成测试
+非渐增式，渐增式</li>
+<li>系统测试
+确认测试（需求说明书检查，软件配置复查），验收测试（alpha，beta）</li>
+</ol>
+<h3 id="白盒测试和黑盒测试">白盒测试和黑盒测试</h3>
+<ol>
+<li>白盒测试
+语句覆盖，判定覆盖，条件覆盖，判定/条件覆盖，条件组合覆盖，路径覆盖</li>
+<li>黑盒测试
+等价类划分，边值分析，错误推测，因果图</li>
+<li>缺陷的分类和级别
+分类：输入/输出错误，逻辑错误，计算错误，接口错误，数据错误
+级别：轻微，中等，使人不悦，影响使用，严重，非常严重，极为严重，无法容忍，灾难性，传染性</li>
+<li>调试
+排错策略：原始类，回溯类，排除类</li>
+</ol>
+<h3 id="评审方法">评审方法</h3>
+<p>软件需求评审，概要设计评审，详细设计评审，软件验证和确认评审，功能检查，物理检查，综合检查，管理评审</p>
+<p>注意：不应以测试代替评审，评审人员应关注产品而不应评论开发人员，评审人员应关注实质性问题，评审会议不应变为问题解决方案讨论会，评审应被安排进入项目计划，评审参与者应了解整个评审过程，评审人员事先应对评审材料充分了解，应重视评审的组织工作</p>
+<h3 id="验证与确认">验证与确认</h3>
+<p>验证：合同验证，过程验证，需求验证，设计验证，编码验证，集成验证，文档验证
+确认</p>
+<h3 id="测试自动化">测试自动化</h3>
+<p>测试用例生成，测试执行控制，测试结果对比，测试结果分析，总测试状况的统计与报表产生</p>
+<h3 id="面向对象测试">面向对象测试</h3>
+<p>OOA测试，OOD测试，OOP测试，单元测试，集成测试，系统测试</p>]]></description></item><item><title>开发管理</title><link>https://blog.gethin.online/development-management/</link><pubDate>Tue, 14 Sep 2021 15:20:55 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/development-management/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/images/content.jpg" referrerpolicy="no-referrer">
+            </div><h2 id="项目的范围时间与成本">项目的范围、时间与成本</h2>
+<h3 id="项目范围管理">项目范围管理</h3>
+<ol>
+<li>项目启动</li>
+<li>范围计划编制</li>
+<li>范围定义</li>
+<li>范围核实</li>
+<li>范围变更</li>
+</ol>
+<h3 id="项目成本管理">项目成本管理</h3>
+<ol>
+<li>资源计划编制</li>
+<li>成本估算</li>
+<li>成本预算</li>
+<li>成本控制</li>
+</ol>
+<h3 id="项目时间管理">项目时间管理</h3>
+<ol>
+<li>活动定义</li>
+<li>活动排序</li>
+<li>活动历时估算</li>
+<li>进度计划编制</li>
+<li>进度控制</li>
+</ol>
+<h2 id="配置管理与文档管理">配置管理与文档管理</h2>
+<h3 id="软件配置管理概念">软件配置管理概念</h3>
+<ol>
+<li>配置标识</li>
+<li>版本控制</li>
+<li>状态统计</li>
+<li>审计与审查</li>
+<li>生产</li>
+<li>过程管理</li>
+<li>小组协作</li>
+</ol>
+<h3 id="软件配置管理的解决方案">软件配置管理的解决方案</h3>
+<p>各种版本控制工具</p>
+<h3 id="软件文档管理">软件文档管理</h3>
+<ol>
+<li>软件文档的作用
+<ol>
+<li>管理依据</li>
+<li>任务之间联系的凭证</li>
+<li>质量保证</li>
+<li>培训与参考</li>
+<li>软件维护支持</li>
+<li>历史档案</li>
+<li>销售可能</li>
+</ol>
+</li>
+<li>文档的归类
+<ol>
+<li>开发文档</li>
+<li>产品文档</li>
+<li>管理文档</li>
+</ol>
+</li>
+<li>文档编制计划
+<ol>
+<li>列出应编制文档的目录</li>
+<li>提示编制文档应参考的标准</li>
+<li>指定文档管理员</li>
+<li>提供编制文档所需要的条件</li>
+<li>明确保证文档质量的方法</li>
+<li>绘制进度表</li>
+</ol>
+</li>
+<li>对文档质量的要求
+<ol>
+<li>针对性</li>
+<li>准确性</li>
+<li>清晰性</li>
+<li>完整性</li>
+<li>灵活性</li>
+</ol>
+</li>
+</ol>
+<h2 id="软件需求管理">软件需求管理</h2>
+<h3 id="需求变更">需求变更</h3>
+<ol>
+<li>项目启动阶段的变更预防</li>
+<li>项目实施阶段的需求变更</li>
+</ol>
+<h3 id="需求跟踪">需求跟踪</h3>
+<ol>
+<li>确定需求变更控制过程</li>
+<li>进行需求变更影响分析</li>
+<li>建立需求基准版本和需求控制版本文档</li>
+<li>维护需求变更的历史纪录</li>
+<li>跟踪每项需求的状态</li>
+</ol>
+<h2 id="软件开发的质量与风险">软件开发的质量与风险</h2>
+<h3 id="软件质量管理">软件质量管理</h3>
+<ol>
+<li>软件质量计划</li>
+<li>软件质量保证</li>
+<li>软件质量控制
+<ol>
+<li>软件评审</li>
+<li>测试</li>
+</ol>
+</li>
+</ol>
+<h3 id="项目风险管理">项目风险管理</h3>
+<ol>
+<li>项目风险管理的概念
+<ol>
+<li>内部技术风险</li>
+<li>内部非技术风险
+<ol>
+<li>公司战略变化、管理人员水平、没有在预算内完成进度</li>
+</ol>
+</li>
+<li>外部法律风险</li>
+<li>外部非法律风险
+<ol>
+<li>经济环境变化、组织雇佣关系变化</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>风险管理的过程
+<ol>
+<li>风险管理规划</li>
+<li>项目风险识别</li>
+<li>定性风险分析</li>
+<li>定量风险分析</li>
+<li>风险应对计划</li>
+<li>风险监督与控制</li>
+</ol>
+</li>
+</ol>
+<h2 id="人力资源管理">人力资源管理</h2>
+<h3 id="组织规划">组织规划</h3>
+<ol>
+<li>垂直团队组织</li>
+<li>水平团队组织</li>
+<li>混合团队组织</li>
+</ol>
+<h3 id="人员招募">人员招募</h3>
+<ol>
+<li>领导能力</li>
+<li>沟通技巧</li>
+<li>人际交往能力</li>
+<li>应付压力能力</li>
+<li>培养员工能力</li>
+<li>时间管理能力</li>
+</ol>
+<h3 id="团队建设">团队建设</h3>
+<ol>
+<li>形成阶段</li>
+<li>震荡阶段</li>
+<li>正规阶段</li>
+<li>表现阶段</li>
+</ol>
+<h2 id="软件的运行与评价">软件的运行与评价</h2>
+<ol>
+<li>软件的稳定性与可靠性评价</li>
+<li>软件是否满足了用户的需求</li>
+<li>软件实施给用户带来的好处</li>
+</ol>
+<h2 id="软件过程改进">软件过程改进</h2>
+<ol>
+<li>CMM</li>
+<li>CMMI</li>
+<li>ISO 9000</li>
+<li>ITIL</li>
+</ol>]]></description></item><item><title>系统计划</title><link>https://blog.gethin.online/system-plan/</link><pubDate>Tue, 14 Sep 2021 09:54:14 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/system-plan/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/images/content.jpg" referrerpolicy="no-referrer">
+            </div><h2 id="项目的提出与选择">项目的提出与选择</h2>
+<h3 id="项目的立项目标和动机">项目的立项目标和动机</h3>
+<ul>
+<li>进行基础研究并获取技术</li>
+<li>进行应用研发并获得产品</li>
+<li>提供技术服务</li>
+<li>信息技术产品的使用者</li>
+</ul>
+<h3 id="项目的选择和确定">项目的选择和确定</h3>
+<ul>
+<li>选择有核心价值的产品/项目或开发方向</li>
+<li>评估项目风险、收益和代价</li>
+<li>评估项目的多种实施方式</li>
+<li>平衡的选择合适的方案</li>
+</ul>
+<h3 id="项目的提出和选择结果">项目的提出和选择结果</h3>
+<p>项目的提出和选择的结果，最终会以“产品/项目建议书”的方式来体现。</p>
+<h2 id="可行性研究与效益分析">可行性研究与效益分析</h2>
+<h3 id="可行性研究和内容">可行性研究和内容</h3>
+<ol>
+<li>经济可行性</li>
+<li>技术可行性
+<ol>
+<li>技术</li>
+<li>资源</li>
+<li>目标</li>
+</ol>
+</li>
+<li>法律可行性</li>
+<li>执行可行性</li>
+<li>方案的选择</li>
+</ol>
+<h3 id="成本效益分析">成本效益分析</h3>
+<ol>
+<li>项目可能涉及的成本
+<ol>
+<li>基础建设支出</li>
+<li>一次性支出</li>
+<li>运行维护费用</li>
+</ol>
+</li>
+<li>项目可能涉及的收益
+<ol>
+<li>一次性收益</li>
+<li>非一次性收益</li>
+<li>不可定量的收益</li>
+</ol>
+</li>
+<li>效益分析的若干指标和进一步的分析
+<ol>
+<li>收益/投资比</li>
+<li>投资回收周期</li>
+<li>敏感性分析</li>
+</ol>
+</li>
+</ol>
+<h3 id="可行性分析报告">可行性分析报告</h3>
+<ol>
+<li>项目背景</li>
+<li>管理概要和建议</li>
+<li>候选方案</li>
+<li>系统描述</li>
+<li>经济可行性</li>
+<li>技术可行性</li>
+<li>法律可行性</li>
+<li>用户使用可行性</li>
+<li>其他与项目有关的问题</li>
+</ol>
+<h2 id="方案的制订和改进">方案的制订和改进</h2>
+<ol>
+<li>确定软件架构</li>
+<li>确定实现的各种关键性要素和实现手段</li>
+<li>归结目标到最适合的计算体系</li>
+</ol>
+<h2 id="新旧系统的分析和对比">新旧系统的分析和对比</h2>
+<h3 id="遗留系统的评价方法">遗留系统的评价方法</h3>
+<ol>
+<li>启动评价
+<ol>
+<li>遗留系统是否至关重要</li>
+<li>企业的商业目标是什么</li>
+<li>演化需求是什么</li>
+<li>所期望的系统寿命多长</li>
+<li>系统使用期限多久</li>
+<li>系统技术状态如何</li>
+<li>企业是否愿意改变</li>
+<li>企业是否有能力承受演化</li>
+</ol>
+</li>
+<li>商业价值评价
+<ol>
+<li>咨询</li>
+<li>评价问卷</li>
+<li>进行评价</li>
+</ol>
+</li>
+<li>外部环境评价
+<ol>
+<li>硬件</li>
+<li>支撑软件</li>
+<li>企业基础设施</li>
+</ol>
+</li>
+<li>应用软件评价
+<ol>
+<li>系统级</li>
+<li>部件级</li>
+</ol>
+</li>
+<li>分析评价结果</li>
+</ol>
+<h3 id="遗留系统的演化策略">遗留系统的演化策略</h3>
+<ol>
+<li>淘汰策略</li>
+<li>继承策略</li>
+<li>改造策略</li>
+<li>集成策略</li>
+</ol>]]></description></item><item><title>设计模式</title><link>https://blog.gethin.online/design-pattern/</link><pubDate>Sun, 15 Aug 2021 15:10:00 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/design-pattern/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/images/content.jpg" referrerpolicy="no-referrer">
+            </div><h2 id="设计模式六大原则">设计模式六大原则</h2>
+<ul>
+<li>
+<p><strong>单一职责原则</strong> Single Responsibility Principle</p>
+<p>一个类只负责一个功能领域中的相应职责，或者就一个类而言，应该只有一个引起它变化的原因。</p>
+</li>
+<li>
+<p><strong>开放封闭原则</strong> Open-Close Priciple</p>
+<p>一个软件实体应当对扩展开放，对修改封闭。软件实体应该尽量在不修改原有代码的情况下进行扩展。</p>
+</li>
+<li>
+<p><strong>里氏替换原则</strong> Liskove Substitution Principe</p>
+<p>所有引用基类的地方必须能透明的使用其子类的对象。（在软件中将一个基类对象替换成它的子类对象，程序将不会产生任何错误和异常，反过来则不成立，如果一个软件实体使用的是一个子类对象的话，那么它不一定能够使用基类对象。例如：我喜欢动物，那我一定喜欢狗，因为狗是动物的子类；但是我喜欢狗，不能据此断定我喜欢动物，因为我并不喜欢老鼠，虽然它也是动物）</p>
+</li>
+<li>
+<p><strong>依赖倒置原则</strong> Dependency Inversion Principle</p>
+<p>抽象不应该依赖于细节，细节应该依赖于抽象，要针对接口编程，而不是针对实现编程。（依赖注入(DependencyInjection, DI)的方式注入到其他对象中，依赖注入是指当一个对象要与其他对象发生依赖关系时，通过抽象来注入所依赖的对象。常用的注入方式有三种，分别是：构造注入，设值注入（Setter注入）和接口注入。构造注入是指通过构造函数来传入具体类的对象，设值注入是指通过Setter方法来传入具体类的对象，而接口注入是指通过在接口中声明的业务方法来传入具体类的对象。这些方法在定义时使用的是抽象类型，在运行时再传入具体类型的对象，由子类对象来覆盖父类对象）</p>
+</li>
+<li>
+<p><strong>接口隔离原则</strong> Interface Segregation Principle</p>
+<p>使用多个专用接口，而不是使用单一的总接口，客户端不应该依赖于那些它不需要的接口。</p>
+</li>
+<li>
+<p><strong>迪米特法则</strong> Law of Demeter</p>
+<p>一个软件实体应当尽可能少的与其他实体发生互相作用（<em>高内聚，低耦合</em>）。</p>
+</li>
+</ul>
+<h2 id="为什么要多用组合少用继承">为什么要多用组合，少用继承</h2>
+<p>变化部分取出并封装起来，便于以后扩展，而不影响其他部分。要针对接口编程而不是针对实现编程。</p>
+<h2 id="一句话常用设计模式">一句话常用设计模式</h2>
+<ol>
+<li>Iterator——迭代器</li>
+<li>Adapter（适配器）————换个包装再度利用</li>
+</ol>
+<p>◎ 万事交给子类：</p>
+<ol>
+<li>Template Method（模板方法）————实际处理就交给子类</li>
+<li>Factory Method（工厂方法）————建立对象实例交给子类</li>
+</ol>
+<p>◎建立对象实例</p>
+<ol>
+<li>Singleton（单件）————唯一的对象实例</li>
+<li>Prototype（原型）————复制建立对象实例</li>
+<li>Builder（生成器）————组合复杂的对象实例</li>
+<li>Abstract Factory（抽象工厂）————把相关零件组合成产品</li>
+</ol>
+<p>◎切割性思考</p>
+<ol>
+<li>Bridge（桥接）————分成功能层次和实现层次</li>
+<li>Strategy（策略）————把算法整个换掉</li>
+</ol>
+<p>◎一视同仁</p>
+<ol>
+<li>Composite（组成）————对容器和内容一视同仁</li>
+<li>Decorator（装饰）————对装饰和内容一视同仁</li>
+</ol>
+<p>◎在结构中穿梭来去</p>
+<ol>
+<li>Visitor（访问者）————在结构中穿梭还同时做事</li>
+<li>Chain of Responsibility（职责链）————责任转送</li>
+</ol>
+<p>◎简单最好</p>
+<ol>
+<li>Facade（外观）————单一窗口</li>
+<li>Mediator（中介者）————只要面对一个顾问</li>
+</ol>
+<p>◎管理状态</p>
+<ol>
+<li>Observer（观察者）————通知状态变化</li>
+<li>Memento（备忘录）————存储状态</li>
+<li>State（状态）————以类表示状态</li>
+</ol>
+<p>◎精简不浪费</p>
+<ol>
+<li>Flyweight（享元）————有相同的部分就分享，采取精简政策</li>
+<li>Proxy（代理）————要用在建立</li>
+</ol>
+<p>◎用类来表示</p>]]></description></item><item><title>系统分析与设计</title><link>https://blog.gethin.online/system-analysis-and-design/</link><pubDate>Wed, 11 Aug 2021 21:32:28 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/system-analysis-and-design/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/images/content.jpg" referrerpolicy="no-referrer">
+            </div><h2 id="1-定义问题与归结模型">1. 定义问题与归结模型</h2>
+<h3 id="11-问题分析">1.1 问题分析</h3>
+<ol>
+<li>在问题定义上达成共识
+问题概述，影响，结果，优点</li>
+<li>理解问题的本质
+因果鱼骨图（将问题写在右边的方框里，确定问题潜在原因的主要类别，用头脑风暴法寻找原因并归类）<br>
+帕累托图（明确问题，找出问题原因，选择评价标准和考察期限，收集各种原因发生的频率与费用数据，将原因按照发生的频率排列，将原因横轴频率纵轴）<br>
+确定项目干系人和用户<br>
+定义系统边界（上下文范围图，用例模型）<br>
+确定系统实现的约束</li>
+</ol>
+<h3 id="12-问题定义">1.2 问题定义</h3>
+<ul>
+<li>目标（优势，度量，合理性，可行性，可达成性）</li>
+<li>功能需求（注意二义性【同名异义词，代词】）</li>
+<li>非功能需求（感官需求，易用性需求，性能需求，可操作性需求，可维护性和可移植性需求，安全性需求，文化和政策需求，法律需求，）</li>
+</ul>
+<h2 id="2-需求分析与软件设计">2 需求分析与软件设计</h2>
+<h3 id="21-需求分析的任务与过程">2.1 需求分析的任务与过程</h3>
+<ul>
+<li>问题识别，分析与综合，编制需求分析的文档，需求分析与评审</li>
+<li>分类：功能需求，非功能需求，设计约束，业务需求，用户需求，系统需求</li>
+<li>需求工程：开发，管理</li>
+<li>分析方法：结构化分析方法，软系统方法，面向对象分析方法，面向问题分析</li>
+</ul>
+<h3 id="22-如何进行系统设计">2.2 如何进行系统设计</h3>
+<h3 id="23-软件设计的任务与活动">2.3 软件设计的任务与活动</h3>
+<h2 id="3-架构化分析与设计">3 架构化分析与设计</h2>
+<p>是一种面向数据流的需求分析和设计方法，适用与分析设计大型数据处理系统</p>
+<h3 id="31-结构化分析">3.1 结构化分析</h3>
+<ul>
+<li>结构化分析工作步骤：研究“物质环境“；建立系统逻辑模型；划清人机界限</li>
+<li>数据流图：过程；外部实体；数据存储；数据流；实时连接；</li>
+<li>细化几率DFD部件</li>
+</ul>
+<h3 id="32-结构化设计">3.2 结构化设计</h3>
+<ul>
+<li>概要设计与详细设计的主要任务；</li>
+<li>结构图；</li>
+<li>程序流程图和盒图；</li>
+<li>PAD和PDL</li>
+</ul>
+<h3 id="33-模块设计">3.3 模块设计</h3>
+<ul>
+<li>信息隐蔽原则</li>
+<li>模块独立性原则</li>
+</ul>
+<h2 id="4-面向对象的分析与设计">4 面向对象的分析与设计</h2>
+<h3 id="41-面向对象的基本概念">4.1 面向对象的基本概念</h3>
+<ul>
+<li>对象与类：实体类，控制类，边界类</li>
+<li>继承与泛化</li>
+<li>多态与重载</li>
+<li>模版类</li>
+<li>消息与消息通信</li>
+</ul>
+<h3 id="42-面向对象分析">4.2 面向对象分析</h3>
+<p>OOA/OOD方法</p>
+<ul>
+<li>5个层次：主题，对象类，结构，属性，服务</li>
+<li>5个步骤：标识对象类，标识结构与关联，划分主题，定义属性，定义服务</li>
+<li>4个部分：设计问题域部分，设计人机交互部件，设计任务管理部分，设计数据管理部分</li>
+</ul>
+<p>Booch方法</p>
+<ul>
+<li>4个步骤：标识类和对象，确定类和对象的含义，标识关系，说明类的接口和实现</li>
+</ul>
+<p>OMT方法</p>
+<ul>
+<li>三大模型：对象模型，动态模型，功能模型</li>
+</ul>
+<p>OOSE方法</p>
+<h3 id="43-统一建模语言">4.3 统一建模语言</h3>
+<p><a href="https://blog.gethin.online/uml-design/" target="_blank" rel="noopener noreffer ">UML设计与基本概念</a></p>]]></description></item><item><title>软件架构设计</title><link>https://blog.gethin.online/software-architecture-design/</link><pubDate>Sat, 29 May 2021 21:01:34 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/software-architecture-design/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/images/content.jpg" referrerpolicy="no-referrer">
+            </div><h2 id="1-软件架构概述">1 软件架构概述</h2>
+<h3 id="11-软件架构的定义">1.1 软件架构的定义</h3>
+<p>架构是对系统的抽象，由多个架构组成，任何软件都存在架构，元素与其行为的集合构成架构内容，架构具有“基础性”，架构隐含有“决策”。</p>
+<h3 id="12-软件架构重要性">1.2 软件架构重要性</h3>
+<p>项目关系人之间交流平台；<br>
+早期设计决策；<br>
+在较高层面上实现软件复用；<br>
+架构对开发的指导与规范意义不容忽略。</p>
+<h3 id="13-架构的模型">1.3 架构的模型</h3>
+<p>结构模型；框架模型；动态模型；过程模型；功能模型；<br>
+逻辑视图，开发视图，进程视图，物理视图，场景。</p>
+<h2 id="2-架构需求与软件质量属性">2 架构需求与软件质量属性</h2>
+<h3 id="21-软件质量属性">2.1 软件质量属性</h3>
+<p><strong>功能性；可靠性；易用性；效率；可维护性；可移植性；</strong></p>
+<ul>
+<li>
+<p>1 运行期质量属性<br>
+<strong>性能；安全性；易用性；可伸缩性；互操作性；可靠性；持续可用性；鲁棒性；</strong></p>
+</li>
+<li>
+<p>2 开发期质量属性<br>
+<strong>易理解性；可扩展性；可重用性；可测试性；可维护性；</strong></p>
+</li>
+</ul>
+<h3 id="22-六个质量属性与实现">2.2 六个质量属性与实现</h3>
+<p>质量属性：<strong>可用性；可修改性；性能；安全性；可测试性；易用性；</strong></p>
+<p>质量属性场景组件：<strong>刺激源；刺激；环境；制品；响应；响应度量；</strong></p>
+<ul>
+<li>1 <strong>可用性与其实现战术</strong><br>
+可用性描述<br>
+可用性战术<br>
+错误检测：命令/响应；心跳；异常；<br>
+错误恢复<br>
+表决；主动冗余；被动冗余；备件；状态再同步；检查点/回滚；<br>
+错误预防<br>
+从服务中删除；事务；进程监视器；</li>
+<li>2 <strong>可修改性与其实现战术</strong><br>
+可修改性描述<br>
+可修改性战术<br>
+局部化修改；(维持语义的一致性；预期期望的变更；泛化该模块；限制可能的选择)<br>
+防止连锁反应；（信息隐藏；维持现有的接口；限制通信路径；仲裁者的使用）<br>
+推迟绑定时间；（运行时注册；配置文件；多态；构件更换；）</li>
+<li>3 <strong>性能与其实现技术</strong><br>
+性能描述<br>
+性能战术<br>
+资源消耗：闭锁时间；<br>
+资源需求：减少处理事件流所需的资源；减少所处理事件的数量；控制资源的使用；<br>
+资源管理：引入并发；维持数据或计算的多个副本；增加可用资源；<br>
+资源仲裁：先进先出；固定优先级调度；动态优先级调度；静态调度；</li>
+<li>4 <strong>安全性与其实现技术</strong><br>
+安全性描述<br>
+安全性战术<br>
+抵抗攻击：对用户进行身份验证；对用户进行授权；维护数据的机密性；维护完整性；限制暴露的信息；限制访问；<br>
+检测攻击<br>
+从攻击中恢复：恢复；识别攻击者；</li>
+<li>5 <strong>可测试性与其实现战术</strong><br>
+可测试性描述<br>
+可测试性战术<br>
+输入/输出：记录回放；将接口与现实分离；优化访问线路<br>
+内部监控</li>
+<li>6 <strong>易用性与实现战术</strong><br>
+易用性描述<br>
+易用性战术<br>
+运行时战术：任务的模型；用户的模型；系统的模型；<br>
+设计时战术<br>
+支持用户主动操作</li>
+</ul>
+<p>常见的六个质量属性:<strong>可用性、可修改性、性能、安全性、可测试性、易用性。</strong></p>]]></description></item><item><title>开发方法</title><link>https://blog.gethin.online/development-methodologies/</link><pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/development-methodologies/</guid><description><![CDATA[<div class="featured-image">
+                <img src="/images/content.jpg" referrerpolicy="no-referrer">
+            </div><blockquote>
+<p>Software Development Methodologies</p></blockquote>
+<h2 id="开发方法">开发方法</h2>
+<h3 id="软件的生命周期">软件的生命周期</h3>
+<p>可行性研究与计划-&gt;需求分析-&gt;概要设计-&gt;详细设计-&gt;实现-&gt;集成测试-&gt;确认测试-&gt;使用与维护</p>
+<h3 id="软件开发模型">软件开发模型</h3>
+<ul>
+<li><strong>瀑布模型</strong></li>
+<li><strong>演化模型</strong></li>
+<li><strong>螺旋模型</strong></li>
+<li><strong>增量模型</strong></li>
+<li><strong>构建组装模型</strong></li>
+</ul>
+<h3 id="统一过程">统一过程</h3>
+<ul>
+<li><strong>UP的9个核心工作流</strong><br>
+业务建模，需求，分析设计，实施，测试，部署，配置与变更管理，项目管理，环境</li>
+<li><strong>UP的生命周期</strong><br>
+目标里程碑，架构里程碑，能力里程碑，发布里程碑</li>
+<li><strong>UP的特点</strong>
+<ul>
+<li>UP不但给出类迭代的生命周期，还给出了生命周期每一阶段的迭代指南</li>
+<li>采用不同迭代方式的UP可以演变为演化模型或增量模型</li>
+<li>迭代特点使得更容易控制软件开发的风险</li>
+<li>UP本身并不属于敏捷</li>
+<li>实际应用中可以根据具体问题对UP进行剪裁</li>
+</ul>
+</li>
+<li><strong>架构师在UP中的活动</strong>
+<ul>
+<li>同需求人员和项目管理人员密切协作</li>
+<li>细化软件架构</li>
+<li>保持整个架构的概念完整性</li>
+</ul>
+</li>
+</ul>
+<h3 id="敏捷方法">敏捷方法</h3>
+<ul>
+<li>
+<p><strong>极限编程</strong></p>
+<ul>
+<li>
+<p>XP是一种轻量（敏捷）、高效、低风险、柔性、可预测、科学而且充满乐趣的软件开发方式。</p>
+<ul>
+<li>在更短的周期内，更早的提供具体、持续的反馈信息</li>
+<li>迭代的进行计划编制</li>
+<li>依赖自动测试程序来监控开发进度，并及早捕获缺陷</li>
+<li>依赖口头交流、测试和源程序进行沟通</li>
+<li>倡导持续的、演化式的设计</li>
+<li>依赖与开发团队内部的紧密协作</li>
+<li>尽可能达到程序员短期利益和项目长期利益的平衡</li>
+</ul>
+</li>
+<li>
+<p>四大价值观<br>
+沟通，简单，反馈，勇气，（尊重）</p>
+</li>
+<li>
+<p>十二个最佳实践<br>
+计划游戏，小型发布，隐喻，简单设计，测试先行，重构，结对编程，集体代码所有制，持续集成，每周工作40小时，现场客户，编码标准</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>特性驱动开发</strong><br>
+FDD也是一个迭代开发模型，FDD每一步都强调质量，不断的交付可运行的软件，并以很小的开发提供精准的项目进度报告和状态信息。</p>
+<ol>
+<li>FDD角色定义<br>
+项目经理，首席架构设计师，开发经理，主程序员，程序员，领域专家</li>
+<li>核心过程<br>
+开发整体对象模型、构造特征列表、计划特征开发、特征设计、特征构建</li>
+<li>最佳实践<br>
+领域对象建模、根据特征进行开发、类的个体所有、组成特征小组、审查、定期构造、配置管</li>
+</ol>
+</li>
+<li>
+<p><strong>Scrum</strong><br>
+Scrum是一个用于开发和维护复杂产品的框架，是一个增量的、迭代的开发过程。</p>
+<ol>
+<li>Scrum 的五个活动<br>
+产品待办事项列表梳理、Sprint计划会议、每日Scrum会议、Sprint评审会议、Sprint回顾会议</li>
+<li>Scrum的5大价值观<br>
+承诺、专注、开放、尊重、勇气</li>
+</ol>
+</li>
+<li>
+<p><strong>水晶方法</strong><br>
+Crystal 是发展一种提倡“机动性“的方法，包括共有的核心元素，每个都含有独特的角色，过程模式，工作产品和实践。<br>
+7大体系特征：经常交付，反思改进，渗透式交流，个人安全，焦点，与专家用户建立方便的联系，配有自动测试、配置管理和经常集成功能的技术环境</p>
+</li>
+</ul>
+<h3 id="软件重用">软件重用</h3>
+<ul>
+<li><strong>软件重用</strong><br>
+源代码重用，架构重用，应用框架重用，业务建模重用，文档及过程的重用，软构件重用，软件服务重用</li>
+</ul>
+<h3 id="基于架构的软件设计">基于架构的软件设计</h3>
+<ul>
+<li><strong>ABSD方法于生命周期</strong><br>
+ABSD：分解功能，通过选择架构风格来事先质量和业务需求，软件模版的使用
+<ol>
+<li>抽象功能需求，包括变化的需求和通用的需求</li>
+<li>用例（实际功能需求）</li>
+<li>抽象的质量和业务需求</li>
+<li>架构选项</li>
+<li>质量场景</li>
+<li>约束</li>
+</ol>
+</li>
+<li><strong>基于架构的软件开发模型(ABSDM)</strong>
+<ul>
+<li>架构需求<br>
+需求获取，标识构件（生成类图，对类分组，打包构件），需求评审</li>
+<li>架构设计<br>
+提出软件架构模型，把已标识的构件映射到软件架构中，分析构件的互相作用，产生软件架构，设计评审</li>
+<li>架构文档化<br>
+输出：架构需求规格说明，测试架构需求的质量设计说明</li>
+<li>架构复审</li>
+<li>架构实现</li>
+<li>架构演化<br>
+需求变动归类，制定架构演化计划，修改、增加或删除构件，更新构件的互相作用，构件组装与测试，技术评审</li>
+</ul>
+</li>
+</ul>]]></description></item></channel></rss>

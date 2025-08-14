@@ -1,11 +1,78 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>UML - 标签 - Gethin</title><link>https://blog.gethin.online/tags/uml/</link><description>UML - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><managingEditor>gexu1990@hotmail.com (Gethin)</managingEditor><webMaster>gexu1990@hotmail.com (Gethin)</webMaster><lastBuildDate>Wed, 23 Jun 2021 20:18:17 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/tags/uml/" rel="self" type="application/rss+xml"/><item><title>UML设计与基本概念</title><link>https://blog.gethin.online/uml-design/</link><pubDate>Wed, 23 Jun 2021 20:18:17 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/uml-design/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>UML - 标签 - Gethin</title><link>https://blog.gethin.online/tags/uml/</link><description>UML - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 23 Jun 2021 20:18:17 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/tags/uml/" rel="self" type="application/rss+xml"/><item><title>UML设计与基本概念</title><link>https://blog.gethin.online/uml-design/</link><pubDate>Wed, 23 Jun 2021 20:18:17 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/uml-design/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
-            </div>UML 的各种图 UML 又称为统一建模语言，是为面向对象开发系统进行说明、可视化的一种标准语言。
-UML 的分类如下：
- UML  用例视图  用例图   设计视图  类图 对象图   进程视图  时序图 协作图 状态图 活动图   实现视图  构件图   拓扑视图  部署图       用例图 类图 类图是描述类与类之间的关系，在类图里有常见的六种关系。分别是泛化（Generalization）, 实现（Realization），关联（Association)，聚合（Aggregation），组合(Composition)，依赖(Dependency)
-各种关系的强弱顺序： 泛化 = 实现 &gt; 组合 &gt; 聚合 &gt; 关联 &gt; 依赖
- 泛化（一种继承关系）
-例如：动物 -&gt; 老虎
- 实现（类与接口的关系，表示接口的实现）
-例如：鸟 -&gt; 燕子
- 聚合（部分和整体的关系，但部分可以脱离整体单独存在）]]></description></item></channel></rss>
+            </div><h2 id="uml-的各种图">UML 的各种图</h2>
+<p>UML 又称为统一建模语言，是为面向对象开发系统进行说明、可视化的一种标准语言。<br>
+UML 的分类如下：</p>
+
+
+<div id="blueprint" class="mindmap mindmap-md">
+    <ul>
+<li>UML
+<ul>
+<li>用例视图
+<ul>
+<li>用例图</li>
+</ul>
+</li>
+<li>设计视图
+<ul>
+<li>类图</li>
+<li>对象图</li>
+</ul>
+</li>
+<li>进程视图
+<ul>
+<li>时序图</li>
+<li>协作图</li>
+<li>状态图</li>
+<li>活动图</li>
+</ul>
+</li>
+<li>实现视图
+<ul>
+<li>构件图</li>
+</ul>
+</li>
+<li>拓扑视图
+<ul>
+<li>部署图</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+<h2 id="用例图">用例图</h2>
+<p></p>
+<h2 id="类图">类图</h2>
+<p>类图是描述类与类之间的关系，在类图里有常见的六种关系。分别是<strong>泛化</strong>（Generalization）,  <strong>实现</strong>（Realization），<strong>关联</strong>（Association)，<strong>聚合</strong>（Aggregation），<strong>组合</strong>(Composition)，<strong>依赖</strong>(Dependency)</p>
+<p>各种关系的强弱顺序： 泛化 = 实现 &gt; 组合 &gt; 聚合 &gt; 关联 &gt; 依赖</p>
+<ol>
+<li>泛化（一种继承关系）<br>
+例如：动物 -&gt; 老虎<br>
+</li>
+<li>实现（类与接口的关系，表示接口的实现）<br>
+例如：鸟 -&gt; 燕子<br>
+</li>
+<li>聚合（部分和整体的关系，但部分可以脱离整体单独存在）<br>
+【代码体现】：成员变量<br>
+例如：汽车 -&gt; 轮子<br>
+</li>
+<li>组合（部分和整体的关系，但部分不能脱离整体单独存在，整体没了部分也无法独活）<br>
+【代码体现】：成员变量<br>
+例如：公司 -&gt; 部门<br>
+</li>
+<li>关联（类和类之间知道彼此的存在【属性、方法之类】，关联可以是单项的，也可以是双向的）<br>
+【代码体现】：成员变量<br>
+例如：夫妻、师生<br>
+</li>
+<li>依赖（使用的关系，类与类独立，仅存在协助关系，并且尽量不使用双向互相依赖）<br>
+【代码表现】：局部变量、方法的参数或者对静态方法的调用<br>
+例如：人 -&gt; 锤子<br>
+</li>
+<li>各种类图的关系
+</li>
+</ol>
+<h2 id="对象图">对象图</h2>
+<p>描述的是参与交互的各个对象在交互过程中某一时刻的状态。</p>]]></description></item></channel></rss>

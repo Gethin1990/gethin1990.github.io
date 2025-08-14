@@ -1,405 +1,237 @@
-<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><meta http-equiv=x-ua-compatible content="IE=edge, chrome=1"><title>.NET CORE - Gethin</title><meta name=Description content><meta property="og:title" content=".NET CORE"><meta property="og:description" content="概述 谈一谈对DDD的理解 DDD，领域驱动设计。就是通过领域来指导软件设计，是一种十分抽象的软件设计思想，它主要分为战略设计和战术设计。
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><title>.NET CORE - Gethin</title><meta name=Description content="This is my cool site"><meta property="og:url" content="https://blog.gethin.online/dotnet-core/"><meta property="og:site_name" content="Gethin"><meta property="og:title" content=".NET CORE"><meta property="og:description" content="概述 谈一谈对DDD的理解 DDD，领域驱动设计。就是通过领域来指导软件设计，是一种十分抽象的软件设计思想，它主要分为战略设计和战术设计。
 战略方面，通过事件风暴进行领域模型的划分，划分出核心域，子域，支撑域，定义通用语言，划分出界限上下文。
 在战术设计方面，ddd将架构分层，“松耦合，高内聚”是架构设计的整体思想。按照DDD思想，可以分为领域层，基础设施层，应用层，接口层。
 接口层为前端用户提供api接口。基础设施层可以放一些第三方的服务，数据库连接等内容。
 应用层是对领域服务的编排，是很薄的一层（目前我自己的架构，应用的是cqrs，所有的相关逻辑都是放在了应用层，而领域层只是放了实体，因为暂时还不是特别理解领域层的服务和事件都应该写什么）。
 领域层包括实体，值对象，聚合根，领域服务，领域事件等内容。
-ASP.NET Core 比 ASP.NET 更具优势的地方是什么  跨平台 对框架没有依赖 处理请求效率更高 可以自我寄宿 轻量高性能 可以使用vs；vs code进行开发  ASP.NET Core 主要的特性有哪些  startup 类 依赖关系注入（服务） 中间件 主机 服务器 appsettings.json 配置 选项 环境（dev,stage,prod） Logging 路由 处理错误 发送HTTP请求 静态文件  Startup 什么是dot net core的startup class Startup class是dot net core应用的入口。
+ASP.NET Core 比 ASP.NET 更具优势的地方是什么 跨平台 对框架没有依赖 处理请求效率更高 可以自我寄宿 轻量高性能 可以使用vs；vs code进行开发 ASP.NET Core 主要的特性有哪些 startup 类 依赖关系注入（服务） 中间件 主机 服务器 appsettings.json 配置 选项 环境（dev,stage,prod） Logging 路由 处理错误 发送HTTP请求 静态文件 Startup 什么是dot net core的startup class Startup class是dot net core应用的入口。
 所有的dot net core应用必须有这个class。这个类用来配置应用。
 这个类的调用是在program main函数里面进行配置的。类的名字可以自己定义。
 如何在controller中注入service ConfigureServices 添加 Service；
-1  services.TryAddTransient<IDataAccess, DataAccess>();   在controller 添加注入
-1 2 3 4 5  private readonly ILogManager _logManager; public HomeController(ILogManager logManager) { _logManager = logManager; }   Startup 类包括哪些配置   ConfigureServices （可选择）方法以配置应用的服务。 服务是一个提供应用功能的可重用组件。 在 ConfigureServices 中注册服务，并通过依赖关系注入 (DI) 或 ApplicationServices 在整个应用中使用服务。"><meta property="og:type" content="article"><meta property="og:url" content="https://blog.gethin.online/dotnet-core/"><meta property="og:image" content="https://blog.gethin.online/logo.png"><meta property="article:published_time" content="2021-08-10T16:09:23+08:00"><meta property="article:modified_time" content="2022-05-01T15:41:28+08:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://blog.gethin.online/logo.png"><meta name=twitter:title content=".NET CORE"><meta name=twitter:description content="概述 谈一谈对DDD的理解 DDD，领域驱动设计。就是通过领域来指导软件设计，是一种十分抽象的软件设计思想，它主要分为战略设计和战术设计。
+services.TryAddTransient<IDataAccess, DataAccess>(); 在controller 添加注入"><meta property="og:locale" content="zh_cn"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2021-08-10T16:09:23+08:00"><meta property="article:modified_time" content="2025-08-14T12:43:20+08:00"><meta property="article:tag" content="Dotnet"><meta property="og:image" content="https://blog.gethin.online/logo.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://blog.gethin.online/logo.png"><meta name=twitter:title content=".NET CORE"><meta name=twitter:description content="概述 谈一谈对DDD的理解 DDD，领域驱动设计。就是通过领域来指导软件设计，是一种十分抽象的软件设计思想，它主要分为战略设计和战术设计。
 战略方面，通过事件风暴进行领域模型的划分，划分出核心域，子域，支撑域，定义通用语言，划分出界限上下文。
 在战术设计方面，ddd将架构分层，“松耦合，高内聚”是架构设计的整体思想。按照DDD思想，可以分为领域层，基础设施层，应用层，接口层。
 接口层为前端用户提供api接口。基础设施层可以放一些第三方的服务，数据库连接等内容。
 应用层是对领域服务的编排，是很薄的一层（目前我自己的架构，应用的是cqrs，所有的相关逻辑都是放在了应用层，而领域层只是放了实体，因为暂时还不是特别理解领域层的服务和事件都应该写什么）。
 领域层包括实体，值对象，聚合根，领域服务，领域事件等内容。
-ASP.NET Core 比 ASP.NET 更具优势的地方是什么  跨平台 对框架没有依赖 处理请求效率更高 可以自我寄宿 轻量高性能 可以使用vs；vs code进行开发  ASP.NET Core 主要的特性有哪些  startup 类 依赖关系注入（服务） 中间件 主机 服务器 appsettings.json 配置 选项 环境（dev,stage,prod） Logging 路由 处理错误 发送HTTP请求 静态文件  Startup 什么是dot net core的startup class Startup class是dot net core应用的入口。
+ASP.NET Core 比 ASP.NET 更具优势的地方是什么 跨平台 对框架没有依赖 处理请求效率更高 可以自我寄宿 轻量高性能 可以使用vs；vs code进行开发 ASP.NET Core 主要的特性有哪些 startup 类 依赖关系注入（服务） 中间件 主机 服务器 appsettings.json 配置 选项 环境（dev,stage,prod） Logging 路由 处理错误 发送HTTP请求 静态文件 Startup 什么是dot net core的startup class Startup class是dot net core应用的入口。
 所有的dot net core应用必须有这个class。这个类用来配置应用。
 这个类的调用是在program main函数里面进行配置的。类的名字可以自己定义。
 如何在controller中注入service ConfigureServices 添加 Service；
-1  services.TryAddTransient<IDataAccess, DataAccess>();   在controller 添加注入
-1 2 3 4 5  private readonly ILogManager _logManager; public HomeController(ILogManager logManager) { _logManager = logManager; }   Startup 类包括哪些配置   ConfigureServices （可选择）方法以配置应用的服务。 服务是一个提供应用功能的可重用组件。 在 ConfigureServices 中注册服务，并通过依赖关系注入 (DI) 或 ApplicationServices 在整个应用中使用服务。"><meta name=application-name content="Gethin"><meta name=apple-mobile-web-app-title content="Gethin"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://blog.gethin.online/dotnet-core/><link rel=prev href=https://blog.gethin.online/english-root-full/><link rel=next href=https://blog.gethin.online/system-analysis-and-design/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":".NET CORE","inLanguage":"","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/blog.gethin.online\/dotnet-core\/"},"image":["https:\/\/blog.gethin.online\/images\/Apple-Devices-Preview.png"],"genre":"posts","keywords":"dotnet","wordcount":854,"url":"https:\/\/blog.gethin.online\/dotnet-core\/","datePublished":"2021-08-10T16:09:23+08:00","dateModified":"2022-05-01T15:41:28+08:00","publisher":{"@type":"Organization","name":"gethin","logo":"https:\/\/cdn.jsdelivr.net\/gh\/Gethin1990\/PicBed\/BlogImg\/g.PNG"},"author":{"@type":"Person","name":"Gethin"},"description":""}</script></head><body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':('auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark'))&&document.body.setAttribute('theme','dark');</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title=Gethin><span class=header-title-pre><i class="fas fa-cloud-sun"></i></span><span class=header-title-post>Cloud & Sun</span></a></div><div class=menu style=overflow:visible><div class=menu-inner><a class=menu-item href=/ title=首页><i class="fas fa-home fa-fw"></i>首页</a>
-<a class=menu-item href=/categories/><i class="fas fa-th-list fa-fw"></i>分类</a>
-<a class=menu-item href=/tags/><i class="fas fa-tags fa-fw"></i>标签</a>
-<a class=menu-item href=/posts/ title=所有文章><i class="fas fa-archive fa-fw"></i>归档</a><div class="dropdown menu-item" style=display:inline><a class=btn href=javascript:void(0); role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class="fas fa-fan fa-fw"></i>分享</a><div class=dropdown-menu style=display:none><a class=dropdown-item href=/memories/><i class="fas fa-database fa-fw"></i>记忆</a>
-<a class=dropdown-item href=/reveal/><i class="fas fa-arrow-alt-circle-right fa-fw"></i>展示</a>
-<a class=dropdown-item href=/websites/><i class="fas fa-globe fa-fw"></i>网站</a></div></div><div class="dropdown menu-item" style=display:inline><a class=btn href=javascript:void(0); role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class="fas fa-door-closed fa-fw"></i>传送门</a><div class=dropdown-menu style=display:none><a class=dropdown-item href=/message-board/><i class="fas fa-comments fa-fw"></i>留言板</a>
-<a class=dropdown-item href=/milestone/><i class="fas fa-monument fa-fw"></i>里程碑</a>
-<a class=dropdown-item href=/links/><i class="fas fa-user-friends fa-fw"></i>友情链</a></div></div><div class="dropdown menu-item" style=display:inline><a class=btn href=javascript:void(0); role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class="fas fa-user-secret fa-fw"></i>关于</a><div class=dropdown-menu style=display:none><a class=dropdown-item href=/about/><i class="fas fa-address-card fa-fw"></i>关于本人</a>
-<a class=dropdown-item href=/keypoint/><i class="fas fa-star fa-fw"></i>关键信息</a></div></div><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop><input type=text placeholder=搜索文章标题或内容... id=search-input-desktop>
-<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索><i class="fas fa-search fa-fw"></i></a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空><i class="fas fa-times-circle fa-fw"></i></a><span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin"></i></span></span><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题><i class="fas fa-adjust fa-fw"></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title=Gethin><span class=header-title-pre><i class="fas fa-cloud-sun"></i></span><span class=header-title-post>Cloud & Sun</span></a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder=搜索文章标题或内容... id=search-input-mobile>
-<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索><i class="fas fa-search fa-fw"></i></a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空><i class="fas fa-times-circle fa-fw"></i></a><span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin"></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>取消</a></div><a class=menu-item href=/ title=首页><i class="fas fa-home fa-fw"></i>首页</a>
-<a class=menu-item href=/categories/><i class="fas fa-th-list fa-fw"></i>分类</a>
-<a class=menu-item href=/tags/><i class="fas fa-tags fa-fw"></i>标签</a>
-<a class=menu-item href=/posts/ title=所有文章><i class="fas fa-archive fa-fw"></i>归档</a><div class="dropdown menu-item"><a class=btn href=javascript:void(0); role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class="fas fa-fan fa-fw"></i>分享</a><div class="dropdown-menu dropdown-menu-mobile" style=display:none><a class=dropdown-item href=/memories/><i class="fas fa-database fa-fw"></i>记忆</a>
-<a class=dropdown-item href=/reveal/><i class="fas fa-arrow-alt-circle-right fa-fw"></i>展示</a>
-<a class=dropdown-item href=/websites/><i class="fas fa-globe fa-fw"></i>网站</a></div></div><div class="dropdown menu-item"><a class=btn href=javascript:void(0); role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class="fas fa-door-closed fa-fw"></i>传送门</a><div class="dropdown-menu dropdown-menu-mobile" style=display:none><a class=dropdown-item href=/message-board/><i class="fas fa-comments fa-fw"></i>留言板</a>
-<a class=dropdown-item href=/milestone/><i class="fas fa-monument fa-fw"></i>里程碑</a>
-<a class=dropdown-item href=/links/><i class="fas fa-user-friends fa-fw"></i>友情链</a></div></div><div class="dropdown menu-item"><a class=btn href=javascript:void(0); role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class="fas fa-user-secret fa-fw"></i>关于</a><div class="dropdown-menu dropdown-menu-mobile" style=display:none><a class=dropdown-item href=/about/><i class="fas fa-address-card fa-fw"></i>关于本人</a>
-<a class=dropdown-item href=/keypoint/><i class="fas fa-star fa-fw"></i>关键信息</a></div></div><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题><i class="fas fa-adjust fa-fw"></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>目录</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animated flipInX">.NET CORE</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=https://blog.gethin.online/ title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw"></i>Gethin</a></span>&nbsp;<span class=post-category>收录于 <a href=/categories/%E8%AF%AD%E8%A8%80%E4%B8%8E%E5%B9%B3%E5%8F%B0/><i class="far fa-folder fa-fw"></i>语言与平台</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-08-10>2021-08-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 854 字&nbsp;
-<i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 5 分钟&nbsp;</div></div><div class=featured-image><img class=lazyload src=/svg/loading.min.svg data-src=/images/content.jpg data-srcset="/images/content.jpg, /images/content.jpg 1.5x, /images/content.jpg 2x" data-sizes=auto alt=/images/content.jpg title=/images/content.jpg></div><div class="details toc" id=toc-static kept><div class="details-summary toc-title"><span>目录</span>
-<span><i class="details-icon fas fa-angle-right"></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><ul><li><a href=#概述>概述</a><ul><li><a href=#谈一谈对ddd的理解>谈一谈对DDD的理解</a></li><li><a href=#aspnet-core-比-aspnet-更具优势的地方是什么>ASP.NET Core 比 ASP.NET 更具优势的地方是什么</a></li><li><a href=#aspnet-core-主要的特性有哪些>ASP.NET Core 主要的特性有哪些</a></li></ul></li><li><a href=#startup>Startup</a><ul><li><a href=#什么是dot-net-core的startup-class>什么是dot net core的startup class</a></li><li><a href=#如何在controller中注入service>如何在controller中注入service</a></li><li><a href=#startup-类包括哪些配置>Startup 类包括哪些配置</a></li><li><a href=#startup-class的configure方法有什么作用>startup class的configure方法有什么作用</a></li></ul></li><li><a href=#依赖注入>依赖注入</a><ul><li><a href=#aspnet-core-filter如何支持依赖注入>ASP.NET Core Filter如何支持依赖注入</a></li><li><a href=#介绍aspnet-core中服务的生命周期>介绍ASP.NET Core中服务的生命周期</a></li><li><a href=#什么是依赖注入>什么是依赖注入</a></li><li><a href=#依赖注入有哪几种方式>依赖注入有哪几种方式</a></li><li><a href=#控制反转是什么>控制反转是什么</a></li><li><a href=#依赖注入有哪些著名的框架>依赖注入有哪些著名的框架</a></li><li><a href=#依赖注入实现原理>依赖注入实现原理</a></li></ul></li><li><a href=#中间件>中间件</a><ul><li><a href=#什么是中间件middleware>什么是中间件（Middleware）</a></li><li><a href=#中间件的使用场景有哪些>中间件的使用场景有哪些</a></li><li><a href=#列举官方常用的中间件>列举官方常用的中间件</a></li><li><a href=#中间件的执行顺序>中间件的执行顺序</a></li><li><a href=#application-builder的use和run方法有什么区别>application builder的use和run方法有什么区别</a></li><li><a href=#dot-net-core-管道里面的map拓展有什么作用>dot net core 管道里面的map拓展有什么作用</a></li></ul></li><li><a href=#配置>配置</a><ul><li><a href=#configurationbinder-的常用方法>ConfigurationBinder 的常用方法</a></li></ul></li><li><a href=#日志>日志</a><ul><li><a href=#日志的级别有哪些>日志的级别有哪些</a></li></ul></li><li><a href=#路由>路由</a><ul><li><a href=#默认路由的配置和使用>默认路由的配置和使用</a></li><li><a href=#配置多个默认路由>配置多个默认路由</a></li><li><a href=#配置标签attributes为个方法或控制器指定路由>配置标签(Attributes)为个方法或控制器指定路由</a></li><li><a href=#配置restful路由>配置RESTful路由</a></li><li><a href=#配置路由器参数约束>配置路由器参数约束</a></li></ul></li><li><a href=#错误处理>错误处理</a><ul><li><a href=#aspnet-core中有哪些异常处理的方案>Asp.Net Core中有哪些异常处理的方案</a></li></ul></li></ul></li></ul></nav></div></div><div class=content id=content><h2 id=概述>概述</h2><h3 id=谈一谈对ddd的理解>谈一谈对DDD的理解</h3><p><strong>DDD，领域驱动设计</strong>。就是通过领域来指导软件设计，是一种十分抽象的软件设计思想，它主要分为战略设计和战术设计。</p><p><strong>战略方面</strong>，通过事件风暴进行领域模型的划分，划分出核心域，子域，支撑域，定义通用语言，划分出界限上下文。<br><strong>在战术设计方面</strong>，ddd将架构分层，“松耦合，高内聚”是架构设计的整体思想。按照DDD思想，可以分为领域层，基础设施层，应用层，接口层。</p><p><strong>接口层</strong>为前端用户提供api接口。基础设施层可以放一些第三方的服务，数据库连接等内容。<br><strong>应用层</strong>是对领域服务的编排，是很薄的一层（目前我自己的架构，应用的是cqrs，所有的相关逻辑都是放在了应用层，而领域层只是放了实体，因为暂时还不是特别理解领域层的服务和事件都应该写什么）。<br><strong>领域层</strong>包括实体，值对象，聚合根，领域服务，领域事件等内容。</p><h3 id=aspnet-core-比-aspnet-更具优势的地方是什么>ASP.NET Core 比 ASP.NET 更具优势的地方是什么</h3><ol><li>跨平台</li><li>对框架没有依赖</li><li>处理请求效率更高</li><li>可以自我寄宿</li><li>轻量高性能</li><li>可以使用vs；vs code进行开发</li></ol><h3 id=aspnet-core-主要的特性有哪些>ASP.NET Core 主要的特性有哪些</h3><ol><li>startup 类</li><li>依赖关系注入（服务）</li><li>中间件</li><li>主机</li><li>服务器</li><li>appsettings.json 配置</li><li>选项</li><li>环境（dev,stage,prod）</li><li>Logging</li><li>路由</li><li>处理错误</li><li>发送HTTP请求</li><li>静态文件</li></ol><h2 id=startup>Startup</h2><h3 id=什么是dot-net-core的startup-class>什么是dot net core的startup class</h3><p><strong>Startup class是dot net core应用的入口</strong>。<br>所有的dot net core应用必须有这个class。这个类用来配置应用。<br>这个类的调用是在program main函数里面进行配置的。类的名字可以自己定义。</p><h3 id=如何在controller中注入service>如何在controller中注入service</h3><p>ConfigureServices 添加 Service；</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-cs data-lang=cs><span class=n>services</span><span class=p>.</span><span class=n>TryAddTransient</span><span class=p>&lt;</span><span class=n>IDataAccess</span><span class=p>,</span> <span class=n>DataAccess</span><span class=p>&gt;();</span>
-</code></pre></td></tr></table></div></div><p>在controller 添加注入</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span><span class=lnt>3
-</span><span class=lnt>4
-</span><span class=lnt>5
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-cs data-lang=cs><span class=k>private</span> <span class=k>readonly</span> <span class=n>ILogManager</span> <span class=n>_logManager</span><span class=p>;</span>
-<span class=k>public</span> <span class=n>HomeController</span><span class=p>(</span><span class=n>ILogManager</span> <span class=n>logManager</span><span class=p>)</span>
-    <span class=p>{</span>
-        <span class=n>_logManager</span> <span class=p>=</span> <span class=n>logManager</span><span class=p>;</span>
-    <span class=p>}</span>
-</code></pre></td></tr></table></div></div><h3 id=startup-类包括哪些配置>Startup 类包括哪些配置</h3><ol><li><p>ConfigureServices （可选择）方法以配置应用的服务。 服务是一个提供应用功能的可重用组件。 在 ConfigureServices 中注册服务，并通过依赖关系注入 (DI) 或 ApplicationServices 在整个应用中使用服务。</p></li><li><p>Configure 方法用于指定应用响应 HTTP 请求的方式。 可通过将中间件组件添加到 IApplicationBuilder 实例来配置请求管道。</p></li></ol><h3 id=startup-class的configure方法有什么作用>startup class的configure方法有什么作用</h3><p>这个方法来定义整个应用如何响应HTTP请求。<br>它有几个比较重要的参数，application builder，Hosting environment, logo factory， 在这里我们可以配置一些中间件用来处理路径，验证和session等等。</p><h2 id=依赖注入>依赖注入</h2><h3 id=aspnet-core-filter如何支持依赖注入>ASP.NET Core Filter如何支持依赖注入</h3><ol><li>可以通过全局注册，支持依赖注入；</li><li>通过TypeFilter(typeof(Filter)) 标记在方法，标记在控制器</li><li>通过ServiceType(typeof(Filter))标记在方法，标记在控制器，必须要注册Filter这类；</li></ol><p>TypeFilter和ServiceType的本质是实现了一个IFilterFactory接口；</p><h3 id=介绍aspnet-core中服务的生命周期>介绍ASP.NET Core中服务的生命周期</h3><ol><li>Singleton 只有一个服务的实例被创建，这个实例，存储在内存中，可以在整个应用程序中使用。我们可以对一些初始化代价比较大的服务，使用Singleton模式。
+services.TryAddTransient<IDataAccess, DataAccess>(); 在controller 添加注入"><meta name=application-name content="Gethin"><meta name=apple-mobile-web-app-title content="Gethin"><meta name=referrer content="no-referrer"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://blog.gethin.online/dotnet-core/><link rel=prev href=https://blog.gethin.online/english-root-full/><link rel=next href=https://blog.gethin.online/system-analysis-and-design/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":".NET CORE","inLanguage":"zh-cn","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/blog.gethin.online\/dotnet-core\/"},"image":["https:\/\/blog.gethin.online\/images\/Apple-Devices-Preview.png"],"genre":"posts","keywords":"dotnet","wordcount":676,"url":"https:\/\/blog.gethin.online\/dotnet-core\/","datePublished":"2021-08-10T16:09:23+08:00","dateModified":"2025-08-14T12:43:20+08:00","publisher":{"@type":"Organization","name":"gethin","logo":"https:\/\/cdn.jsdelivr.net\/gh\/Gethin1990\/PicBed\/BlogImg\/g.PNG"},"author":{"@type":"Person","name":"xxxx"},"description":""}</script></head><body data-header-desktop=fixed data-header-mobile=auto><script>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title=Gethin><span class=header-title-pre><i class='fas fa-cloud-sun'></i></span><span class=header-title-post>Cloud & Sun</span></a></div><div class=menu style=overflow:visible><div class=menu-inner><a class=menu-item href=/ title=首页><i class='fas fa-home fa-fw'></i>首页</a>
+<a class=menu-item href=/categories/><i class='fas fa-th-list fa-fw'></i>分类</a>
+<a class=menu-item href=/tags/><i class='fas fa-tags fa-fw'></i> 标签</a>
+<a class=menu-item href=/posts/ title=所有文章><i class='fas fa-archive fa-fw'></i>归档</a><div class="dropdown menu-item" style=display:inline><a class=btn href=javascript:void(0); role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class='fas fa-fan fa-fw'></i>分享</a><div class=dropdown-menu style=display:none><a class=dropdown-item href=/memories/><i class='fas fa-database fa-fw'></i> 记忆 </a><a class=dropdown-item href=/reveal/><i class='fas fa-arrow-alt-circle-right fa-fw'></i> 展示 </a><a class=dropdown-item href=/websites/><i class='fas fa-globe fa-fw'></i> 网站</a></div></div><div class="dropdown menu-item" style=display:inline><a class=btn href=javascript:void(0); role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class='fas fa-door-closed fa-fw'></i>传送门</a><div class=dropdown-menu style=display:none><a class=dropdown-item href=/message-board/><i class='fas fa-comments fa-fw'></i> 留言板 </a><a class=dropdown-item href=/milestone/><i class='fas fa-monument fa-fw'></i> 里程碑 </a><a class=dropdown-item href=/links/><i class='fas fa-user-friends fa-fw'></i> 友情链</a></div></div><div class="dropdown menu-item" style=display:inline><a class=btn href=javascript:void(0); role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class='fas fa-user-secret fa-fw'></i>关于</a><div class=dropdown-menu style=display:none><a class=dropdown-item href=/about/><i class='fas fa-address-card fa-fw'></i> 关于本人 </a><a class=dropdown-item href=/keypoint/><i class='fas fa-star fa-fw'></i> 关键信息</a></div></div><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder=搜索文章标题或内容... id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i>
+</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i>
+</a><span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i>
+</span></span><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题><i class="fas fa-adjust fa-fw" aria-hidden=true></i>
+</a><a href=javascript:void(0); class="menu-item language" title=选择语言><i class="fa fa-globe fa-fw" aria-hidden=true></i>
+<select class=language-select id=language-select-desktop onchange="location=this.value"><option value=/dotnet-core/ selected></option></select></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title=Gethin><span class=header-title-pre><i class='fas fa-cloud-sun'></i></span><span class=header-title-post>Cloud & Sun</span></a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder=搜索文章标题或内容... id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i>
+</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i>
+</a><span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>取消</a></div><a class=menu-item href=/ title=首页><i class='fas fa-home fa-fw'></i>首页</a>
+<a class=menu-item href=/categories/ title><i class='fas fa-th-list fa-fw'></i>分类</a>
+<a class=menu-item href=/tags/ title><i class='fas fa-tags fa-fw'></i> 标签</a>
+<a class=menu-item href=/posts/ title=所有文章><i class='fas fa-archive fa-fw'></i>归档</a><div class="dropdown menu-item"><a class=btn href=javascript:void(0); role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class='fas fa-fan fa-fw'></i>分享</a><div class="dropdown-menu dropdown-menu-mobile" style=display:none><a class=dropdown-item href=/memories/><i class='fas fa-database fa-fw'></i> 记忆 </a><a class=dropdown-item href=/reveal/><i class='fas fa-arrow-alt-circle-right fa-fw'></i> 展示 </a><a class=dropdown-item href=/websites/><i class='fas fa-globe fa-fw'></i> 网站</a></div></div><div class="dropdown menu-item"><a class=btn href=javascript:void(0); role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class='fas fa-door-closed fa-fw'></i>传送门</a><div class="dropdown-menu dropdown-menu-mobile" style=display:none><a class=dropdown-item href=/message-board/><i class='fas fa-comments fa-fw'></i> 留言板 </a><a class=dropdown-item href=/milestone/><i class='fas fa-monument fa-fw'></i> 里程碑 </a><a class=dropdown-item href=/links/><i class='fas fa-user-friends fa-fw'></i> 友情链</a></div></div><div class="dropdown menu-item"><a class=btn href=javascript:void(0); role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class='fas fa-user-secret fa-fw'></i>关于</a><div class="dropdown-menu dropdown-menu-mobile" style=display:none><a class=dropdown-item href=/about/><i class='fas fa-address-card fa-fw'></i> 关于本人 </a><a class=dropdown-item href=/keypoint/><i class='fas fa-star fa-fw'></i> 关键信息</a></div></div><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题><i class="fas fa-adjust fa-fw" aria-hidden=true></i>
+</a><a href=javascript:void(0); class=menu-item title=选择语言><i class="fa fa-globe fa-fw" aria-hidden=true></i>
+<select class=language-select onchange="location=this.value"><option value=/dotnet-core/ selected></option></select>
+</a>--></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>目录</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">.NET CORE</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>xxxx</a></span>&nbsp;<span class=post-category>收录于 <a href=/categories/%E8%AF%AD%E8%A8%80%E4%B8%8E%E5%B9%B3%E5%8F%B0/><i class="far fa-folder fa-fw" aria-hidden=true></i>语言与平台</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2021-08-10>2021-08-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;约 676 字&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;预计阅读 4 分钟&nbsp;</div></div><div class=featured-image><img class=lazyload src=/svg/loading.min.svg data-src=/images/content.jpg data-srcset="/images/content.jpg, /images/content.jpg 1.5x, /images/content.jpg 2x" data-sizes=auto alt=/images/content.jpg title=/images/content.jpg width=2363 height=1269></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>目录</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><ul><li><a href=#概述>概述</a><ul><li><a href=#谈一谈对ddd的理解>谈一谈对DDD的理解</a></li><li><a href=#aspnet-core-比-aspnet-更具优势的地方是什么>ASP.NET Core 比 ASP.NET 更具优势的地方是什么</a></li><li><a href=#aspnet-core-主要的特性有哪些>ASP.NET Core 主要的特性有哪些</a></li></ul></li><li><a href=#startup>Startup</a><ul><li><a href=#什么是dot-net-core的startup-class>什么是dot net core的startup class</a></li><li><a href=#如何在controller中注入service>如何在controller中注入service</a></li><li><a href=#startup-类包括哪些配置>Startup 类包括哪些配置</a></li><li><a href=#startup-class的configure方法有什么作用>startup class的configure方法有什么作用</a></li></ul></li><li><a href=#依赖注入>依赖注入</a><ul><li><a href=#aspnet-core-filter如何支持依赖注入>ASP.NET Core Filter如何支持依赖注入</a></li><li><a href=#介绍aspnet-core中服务的生命周期>介绍ASP.NET Core中服务的生命周期</a></li><li><a href=#什么是依赖注入>什么是依赖注入</a></li><li><a href=#依赖注入有哪几种方式>依赖注入有哪几种方式</a></li><li><a href=#控制反转是什么>控制反转是什么</a></li><li><a href=#依赖注入有哪些著名的框架>依赖注入有哪些著名的框架</a></li><li><a href=#依赖注入实现原理>依赖注入实现原理</a></li></ul></li><li><a href=#中间件>中间件</a><ul><li><a href=#什么是中间件middleware>什么是中间件（Middleware）</a></li><li><a href=#中间件的使用场景有哪些>中间件的使用场景有哪些</a></li><li><a href=#列举官方常用的中间件>列举官方常用的中间件</a></li><li><a href=#中间件的执行顺序>中间件的执行顺序</a></li><li><a href=#application-builder的use和run方法有什么区别>application builder的use和run方法有什么区别</a></li><li><a href=#dot-net-core-管道里面的map拓展有什么作用>dot net core 管道里面的map拓展有什么作用</a></li></ul></li><li><a href=#配置>配置</a><ul><li><a href=#configurationbinder-的常用方法>ConfigurationBinder 的常用方法</a></li></ul></li><li><a href=#日志>日志</a><ul><li><a href=#日志的级别有哪些>日志的级别有哪些</a></li></ul></li><li><a href=#路由>路由</a><ul><li><a href=#默认路由的配置和使用>默认路由的配置和使用</a></li><li><a href=#配置多个默认路由>配置多个默认路由</a></li><li><a href=#配置标签attributes为个方法或控制器指定路由>配置标签(Attributes)为个方法或控制器指定路由</a></li><li><a href=#配置restful路由>配置RESTful路由</a></li><li><a href=#配置路由器参数约束>配置路由器参数约束</a></li></ul></li><li><a href=#错误处理>错误处理</a><ul><li><a href=#aspnet-core中有哪些异常处理的方案>Asp.Net Core中有哪些异常处理的方案</a></li></ul></li></ul></li></ul></nav></div></div><div class=content id=content><h2 id=概述>概述</h2><h3 id=谈一谈对ddd的理解>谈一谈对DDD的理解</h3><p><strong>DDD，领域驱动设计</strong>。就是通过领域来指导软件设计，是一种十分抽象的软件设计思想，它主要分为战略设计和战术设计。</p><p><strong>战略方面</strong>，通过事件风暴进行领域模型的划分，划分出核心域，子域，支撑域，定义通用语言，划分出界限上下文。<br><strong>在战术设计方面</strong>，ddd将架构分层，“松耦合，高内聚”是架构设计的整体思想。按照DDD思想，可以分为领域层，基础设施层，应用层，接口层。</p><p><strong>接口层</strong>为前端用户提供api接口。基础设施层可以放一些第三方的服务，数据库连接等内容。<br><strong>应用层</strong>是对领域服务的编排，是很薄的一层（目前我自己的架构，应用的是cqrs，所有的相关逻辑都是放在了应用层，而领域层只是放了实体，因为暂时还不是特别理解领域层的服务和事件都应该写什么）。<br><strong>领域层</strong>包括实体，值对象，聚合根，领域服务，领域事件等内容。</p><h3 id=aspnet-core-比-aspnet-更具优势的地方是什么>ASP.NET Core 比 ASP.NET 更具优势的地方是什么</h3><ol><li>跨平台</li><li>对框架没有依赖</li><li>处理请求效率更高</li><li>可以自我寄宿</li><li>轻量高性能</li><li>可以使用vs；vs code进行开发</li></ol><h3 id=aspnet-core-主要的特性有哪些>ASP.NET Core 主要的特性有哪些</h3><ol><li>startup 类</li><li>依赖关系注入（服务）</li><li>中间件</li><li>主机</li><li>服务器</li><li>appsettings.json 配置</li><li>选项</li><li>环境（dev,stage,prod）</li><li>Logging</li><li>路由</li><li>处理错误</li><li>发送HTTP请求</li><li>静态文件</li></ol><h2 id=startup>Startup</h2><h3 id=什么是dot-net-core的startup-class>什么是dot net core的startup class</h3><p><strong>Startup class是dot net core应用的入口</strong>。<br>所有的dot net core应用必须有这个class。这个类用来配置应用。<br>这个类的调用是在program main函数里面进行配置的。类的名字可以自己定义。</p><h3 id=如何在controller中注入service>如何在controller中注入service</h3><p>ConfigureServices 添加 Service；</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-cs"><span class=code-title><i class="arrow fas fa-angle-right fa-fw" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h fa-fw" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy fa-fw" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-cs data-lang=cs><span class=line><span class=cl><span class=n>services</span><span class=p>.</span><span class=n>TryAddTransient</span><span class=p>&lt;</span><span class=n>IDataAccess</span><span class=p>,</span> <span class=n>DataAccess</span><span class=p>&gt;();</span></span></span></code></pre></div></div><p>在controller 添加注入</p><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-cs"><span class=code-title><i class="arrow fas fa-angle-right fa-fw" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h fa-fw" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy fa-fw" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-cs data-lang=cs><span class=line><span class=cl><span class=kd>private</span> <span class=k>readonly</span> <span class=n>ILogManager</span> <span class=n>_logManager</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kd>public</span> <span class=n>HomeController</span><span class=p>(</span><span class=n>ILogManager</span> <span class=n>logManager</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>_logManager</span> <span class=p>=</span> <span class=n>logManager</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span></span></span></code></pre></div></div><h3 id=startup-类包括哪些配置>Startup 类包括哪些配置</h3><ol><li><p>ConfigureServices （可选择）方法以配置应用的服务。 服务是一个提供应用功能的可重用组件。 在 ConfigureServices 中注册服务，并通过依赖关系注入 (DI) 或 ApplicationServices 在整个应用中使用服务。</p></li><li><p>Configure 方法用于指定应用响应 HTTP 请求的方式。 可通过将中间件组件添加到 IApplicationBuilder 实例来配置请求管道。</p></li></ol><h3 id=startup-class的configure方法有什么作用>startup class的configure方法有什么作用</h3><p>这个方法来定义整个应用如何响应HTTP请求。<br>它有几个比较重要的参数，application builder，Hosting environment, logo factory， 在这里我们可以配置一些中间件用来处理路径，验证和session等等。</p><h2 id=依赖注入>依赖注入</h2><h3 id=aspnet-core-filter如何支持依赖注入>ASP.NET Core Filter如何支持依赖注入</h3><ol><li>可以通过全局注册，支持依赖注入；</li><li>通过TypeFilter(typeof(Filter)) 标记在方法，标记在控制器</li><li>通过ServiceType(typeof(Filter))标记在方法，标记在控制器，必须要注册Filter这类；</li></ol><p>TypeFilter和ServiceType的本质是实现了一个IFilterFactory接口；</p><h3 id=介绍aspnet-core中服务的生命周期>介绍ASP.NET Core中服务的生命周期</h3><ol><li>Singleton 只有一个服务的实例被创建，这个实例，存储在内存中，可以在整个应用程序中使用。我们可以对一些初始化代价比较大的服务，使用Singleton模式。
 <code>services.AddSingleton&lt;IProductService, ProductService>();</code></li><li>Scoped 范围内的，作用域生存期服务，以每个客户端请求(连接)一次的方式创建。可以这么理解：同一个请求中同一个IServiceProvider提供的对象是同一个。
 <code>services.AddSingleton&lt;IProductService, ProductService>();</code></li><li>Transient 服务每次被请求的时候，都会创建一个服务实例，这种模式特别适合轻量级、无状态的服务。
-<code>services.AddSingleton&lt;IProductService, ProductService>();</code></li></ol><h3 id=什么是依赖注入>什么是依赖注入</h3><p>通过控制反转（Ioc），对象A在被创建的时候，由一个IOC容器来控制依赖，把类B通过构造函数，属性或工厂模式等方法，注入到类A内，实现对类A和类B的解耦。</p><h3 id=依赖注入有哪几种方式>依赖注入有哪几种方式</h3><ol><li><p>属性注入</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span><span class=lnt>13
-</span><span class=lnt>14
-</span><span class=lnt>15
-</span><span class=lnt>16
-</span><span class=lnt>17
-</span><span class=lnt>18
-</span><span class=lnt>19
-</span><span class=lnt>20
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-cs data-lang=cs><span class=k>using</span> <span class=nn>Microsoft.Extensions.Logging</span><span class=p>;</span>
-<span class=k>using</span> <span class=nn>Microsoft.Extensions.Logging.Abstractions</span><span class=p>;</span>
-<span class=k>namespace</span> <span class=nn>MyApp</span>
-<span class=p>{</span>
-   <span class=k>public</span> <span class=k>class</span> <span class=nc>ProductService</span>
-   <span class=p>{</span>
-      <span class=k>public</span> <span class=n>ILogger</span><span class=p>&lt;</span><span class=n>ProductService</span><span class=p>&gt;</span> <span class=n>Logger</span> <span class=p>{</span> <span class=k>get</span><span class=p>;</span> <span class=k>set</span><span class=p>;</span> <span class=p>}</span>
-      <span class=k>private</span> <span class=k>readonly</span> <span class=n>IProductRepository</span> <span class=n>_productRepository</span><span class=p>;</span>
-      <span class=k>public</span> <span class=n>ProductService</span><span class=p>(</span><span class=n>IProductRepository</span> <span class=n>productRepository</span><span class=p>)</span>
-      <span class=p>{</span>
-            <span class=n>_productRepository</span> <span class=p>=</span> <span class=n>productRepository</span><span class=p>;</span>
-            <span class=n>Logger</span> <span class=p>=</span> <span class=n>NullLogger</span><span class=p>&lt;</span><span class=n>ProductService</span><span class=p>&gt;.</span><span class=n>Instance</span><span class=p>;</span>
-      <span class=p>}</span>
-      <span class=k>public</span> <span class=k>void</span> <span class=n>Delete</span><span class=p>(</span><span class=kt>int</span> <span class=n>id</span><span class=p>)</span>
-      <span class=p>{</span>
-            <span class=n>_productRepository</span><span class=p>.</span><span class=n>Delete</span><span class=p>(</span><span class=n>id</span><span class=p>);</span>
-            <span class=n>Logger</span><span class=p>.</span><span class=n>LogInformation</span><span class=p>(</span><span class=s>$&#34;Deleted a product with id = {id}&#34;</span><span class=p>);</span>
-      <span class=p>}</span>
-   <span class=p>}</span>
-<span class=p>}</span>
-</code></pre></td></tr></table></div></div></li><li><p>构造函数注入</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-cs data-lang=cs><span class=k>public</span> <span class=k>class</span> <span class=nc>ProductService</span>
-<span class=p>{</span>
-   <span class=k>private</span> <span class=k>readonly</span> <span class=n>IProductRepository</span> <span class=n>_productRepository</span><span class=p>;</span>
-   <span class=k>public</span> <span class=n>ProductService</span><span class=p>(</span><span class=n>IProductRepository</span> <span class=n>productRepository</span><span class=p>)</span>
-   <span class=p>{</span>
-      <span class=n>_productRepository</span> <span class=p>=</span> <span class=n>productRepository</span><span class=p>;</span>
-   <span class=p>}</span>
-   <span class=k>public</span> <span class=k>void</span> <span class=n>Delete</span><span class=p>(</span><span class=kt>int</span> <span class=n>id</span><span class=p>)</span>
-   <span class=p>{</span>
-      <span class=n>_productRepository</span><span class=p>.</span><span class=n>Delete</span><span class=p>(</span><span class=n>id</span><span class=p>);</span>
-   <span class=p>}</span>
-<span class=p>}</span>
-</code></pre></td></tr></table></div></div></li><li><p>接口注入</p></li></ol><h3 id=控制反转是什么>控制反转是什么</h3><p><strong>控制反转</strong>（Inversion of Control，缩写为IoC），是面向对象编程中的一种设计原则，可以用来减低计算机代码之间的耦合度。</p><h3 id=依赖注入有哪些著名的框架>依赖注入有哪些著名的框架</h3><p>Unity、autofac、spring.net、MEF、Injection、Asp.Net Core的ServiceCollection。</p><h3 id=依赖注入实现原理>依赖注入实现原理</h3><p>实现DI，核心在于依赖注入容器IContainer，该容器具有以下功能</p><ol><li>（容器）保存可用服务的集合 // 要用的特定对象、特定类、接口服务</li><li>（注册）提供一种方式将各种部件与他们依赖的服务绑定到一起；// Add&mldr;函数或containerBuilder.Register函数，</li><li>（解析点）为应用程序提供一种方式来请求已配置的对象： 构造函数注入、属性注入.</li></ol><p>运行时，框架会一层层通过反射构造实例，最终得到完整对象。</p><h2 id=中间件>中间件</h2><h3 id=什么是中间件middleware>什么是中间件（Middleware）</h3><p><strong>中间件是一种装配到应用管道以处理请求和响应的软件。</strong></p><p>每个组件：</p><ol><li>选择是否将请求传递到管道中的下一个组件。</li><li>可在管道中的下一个组件前后执行工作。</li></ol><p>请求委托用于生成请求管道。 请求委托处理每个 HTTP 请求。</p><p>使用 RunMap 和 Use 扩展方法来配置请求委托。 可将一个单独的请求委托并行指定为匿名方法（称为并行中间件），或在可重用的类中对其进行定义。 这些可重用的类和并行匿名方法即为中间件，也叫中间件组件。 请求管道中的每个中间件组件负责调用管道中的下一个组件，或使管道短路。 当中间件短路时，它被称为“终端中间件”，因为它阻止中间件进一步处理请求。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span><span class=lnt>13
-</span><span class=lnt>14
-</span><span class=lnt>15
-</span><span class=lnt>16
-</span><span class=lnt>17
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-cs data-lang=cs><span class=k>public</span> <span class=k>class</span> <span class=nc>Startup</span>
-<span class=p>{</span>
-    <span class=k>public</span> <span class=k>void</span> <span class=n>Configure</span><span class=p>(</span><span class=n>IApplicationBuilder</span> <span class=n>app</span><span class=p>)</span>
-    <span class=p>{</span>
-        <span class=n>app</span><span class=p>.</span><span class=n>Use</span><span class=p>(</span><span class=k>async</span> <span class=p>(</span><span class=n>context</span><span class=p>,</span> <span class=n>next</span><span class=p>)</span> <span class=p>=&gt;</span>
-        <span class=p>{</span>
-            <span class=c1>// Do work that doesn&#39;t write to the Response.
-</span><span class=c1></span>            <span class=k>await</span> <span class=n>next</span><span class=p>.</span><span class=n>Invoke</span><span class=p>();</span>
-            <span class=c1>// Do logging or other work that doesn&#39;t write to the Response.
-</span><span class=c1></span>        <span class=p>});</span>
-
-        <span class=n>app</span><span class=p>.</span><span class=n>Run</span><span class=p>(</span><span class=k>async</span> <span class=n>context</span> <span class=p>=&gt;</span>
-        <span class=p>{</span>
-            <span class=k>await</span> <span class=n>context</span><span class=p>.</span><span class=n>Response</span><span class=p>.</span><span class=n>WriteAsync</span><span class=p>(</span><span class=s>&#34;Hello from 2nd delegate.&#34;</span><span class=p>);</span>
-        <span class=p>});</span>
-    <span class=p>}</span>
-<span class=p>}</span>
-</code></pre></td></tr></table></div></div><h3 id=中间件的使用场景有哪些>中间件的使用场景有哪些</h3><p>身份验证，Session存储，日志记录等。</p><p>其实我们的Asp.net core项目中本身已经包含了很多个中间件。比如 身份认证中间件 UseAuthorization()等系列。</p><h3 id=列举官方常用的中间件>列举官方常用的中间件</h3><p>以下 Startup.Configure 方法将为常见应用方案添加中间件组件：</p><ol><li>异常/错误处理<ol><li>当应用在开发环境中运行时：<ol><li>开发人员异常页中间件 (UseDeveloperExceptionPage) 报告应用运行时错误。</li><li>数据库错误页中间件报告数据库运行时错误。</li></ol></li><li>当应用在生产环境中运行时：<ol><li>异常处理程序中间件 (UseExceptionHandler) 捕获以下中间件中引发的异常。</li><li>HTTP 严格传输安全协议 (HSTS) 中间件 (UseHsts) 添加 Strict-Transport-Security 标头。</li></ol></li></ol></li><li>HTTPS 重定向中间件 (UseHttpsRedirection) 将 HTTP 请求重定向到 HTTPS。</li><li>静态文件中间件 (UseStaticFiles) 返回静态文件，并简化进一步请求处理。</li><li>Cookie 策略中间件 (UseCookiePolicy) 使应用符合欧盟一般数据保护条例 (GDPR) 规定。</li><li>用于路由请求的路由中间件 (UseRouting)。</li><li>身份验证中间件 (UseAuthentication) 尝试对用户进行身份验证，然后才会允许用户访问安全资源。</li><li>用于授权用户访问安全资源的授权中间件 (UseAuthorization)。</li><li>会话中间件 (UseSession) 建立和维护会话状态。 如果应用使用会话状态，请在 Cookie 策略中间件之后和 MVC 中间件之前调用会话中间件。</li><li>用于将 Razor Pages 终结点添加到请求管道的终结点路由中间件（带有 MapRazorPages 的 UseEndpoints）。</li></ol><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span><span class=lnt>13
-</span><span class=lnt>14
-</span><span class=lnt>15
-</span><span class=lnt>16
-</span><span class=lnt>17
-</span><span class=lnt>18
-</span><span class=lnt>19
-</span><span class=lnt>20
-</span><span class=lnt>21
-</span><span class=lnt>22
-</span><span class=lnt>23
-</span><span class=lnt>24
-</span><span class=lnt>25
-</span><span class=lnt>26
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-cs data-lang=cs><span class=k>public</span> <span class=k>void</span> <span class=n>Configure</span><span class=p>(</span><span class=n>IApplicationBuilder</span> <span class=n>app</span><span class=p>,</span> <span class=n>IWebHostEnvironment</span> <span class=n>env</span><span class=p>)</span>
-<span class=p>{</span>
-    <span class=k>if</span> <span class=p>(</span><span class=n>env</span><span class=p>.</span><span class=n>IsDevelopment</span><span class=p>())</span>
-    <span class=p>{</span>
-        <span class=n>app</span><span class=p>.</span><span class=n>UseDeveloperExceptionPage</span><span class=p>();</span>
-        <span class=n>app</span><span class=p>.</span><span class=n>UseDatabaseErrorPage</span><span class=p>();</span>
-    <span class=p>}</span>
-    <span class=k>else</span>
-    <span class=p>{</span>
-        <span class=n>app</span><span class=p>.</span><span class=n>UseExceptionHandler</span><span class=p>(</span><span class=s>&#34;/Error&#34;</span><span class=p>);</span>
-        <span class=n>app</span><span class=p>.</span><span class=n>UseHsts</span><span class=p>();</span>
-    <span class=p>}</span>
-
-    <span class=n>app</span><span class=p>.</span><span class=n>UseHttpsRedirection</span><span class=p>();</span>
-    <span class=n>app</span><span class=p>.</span><span class=n>UseStaticFiles</span><span class=p>();</span>
-    <span class=n>app</span><span class=p>.</span><span class=n>UseCookiePolicy</span><span class=p>();</span>
-    <span class=n>app</span><span class=p>.</span><span class=n>UseRouting</span><span class=p>();</span>
-    <span class=n>app</span><span class=p>.</span><span class=n>UseAuthentication</span><span class=p>();</span>
-    <span class=n>app</span><span class=p>.</span><span class=n>UseAuthorization</span><span class=p>();</span>
-    <span class=n>app</span><span class=p>.</span><span class=n>UseSession</span><span class=p>();</span>
-
-    <span class=n>app</span><span class=p>.</span><span class=n>UseEndpoints</span><span class=p>(</span><span class=n>endpoints</span> <span class=p>=&gt;</span>
-    <span class=p>{</span>
-        <span class=n>endpoints</span><span class=p>.</span><span class=n>MapRazorPages</span><span class=p>();</span>
-    <span class=p>});</span>
-<span class=p>}</span>
-</code></pre></td></tr></table></div></div><h3 id=中间件的执行顺序>中间件的执行顺序</h3><ol><li>异常/错误处理</li><li>HTTP 严格传输安全协议</li><li>HTTPS 重定向</li><li>静态文件服务器</li><li>Cookie 策略实施</li><li>路由</li><li>身份验证</li><li>会话</li><li>MVC</li></ol><p><img class=lazyload src=/svg/loading.min.svg data-src=https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210810132314-2021-08-10-13-23-15.png data-srcset="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210810132314-2021-08-10-13-23-15.png, https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210810132314-2021-08-10-13-23-15.png 1.5x, https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210810132314-2021-08-10-13-23-15.png 2x" data-sizes=auto alt=https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210810132314-2021-08-10-13-23-15.png title=中间件的执行顺序></p><h3 id=application-builder的use和run方法有什么区别>application builder的use和run方法有什么区别</h3><p>这两个方法都在start up class的configure方法里面调用。都是用来向应用请求管道里面添加中间件的。</p><p>Use方法可以调用下一个中间件的添加，而run不会。</p><h3 id=dot-net-core-管道里面的map拓展有什么作用>dot net core 管道里面的map拓展有什么作用</h3><p>可以针对不同的路径添加不同的中间件。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span><span class=lnt>13
-</span><span class=lnt>14
-</span><span class=lnt>15
-</span><span class=lnt>16
-</span><span class=lnt>17
-</span><span class=lnt>18
-</span><span class=lnt>19
-</span><span class=lnt>20
-</span><span class=lnt>21
-</span><span class=lnt>22
-</span><span class=lnt>23
-</span><span class=lnt>24
-</span><span class=lnt>25
-</span><span class=lnt>26
-</span><span class=lnt>27
-</span><span class=lnt>28
-</span><span class=lnt>29
-</span><span class=lnt>30
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-cs data-lang=cs><span class=k>public</span> <span class=k>class</span> <span class=nc>Startup</span>
-<span class=p>{</span>
-    <span class=k>private</span> <span class=k>static</span> <span class=k>void</span> <span class=n>HandleMapTest1</span><span class=p>(</span><span class=n>IApplicationBuilder</span> <span class=n>app</span><span class=p>)</span>
-    <span class=p>{</span>
-        <span class=n>app</span><span class=p>.</span><span class=n>Run</span><span class=p>(</span><span class=k>async</span> <span class=n>context</span> <span class=p>=&gt;</span>
-        <span class=p>{</span>
-            <span class=k>await</span> <span class=n>context</span><span class=p>.</span><span class=n>Response</span><span class=p>.</span><span class=n>WriteAsync</span><span class=p>(</span><span class=s>&#34;Map Test 1&#34;</span><span class=p>);</span>
-        <span class=p>});</span>
-    <span class=p>}</span>
-
-    <span class=k>private</span> <span class=k>static</span> <span class=k>void</span> <span class=n>HandleMapTest2</span><span class=p>(</span><span class=n>IApplicationBuilder</span> <span class=n>app</span><span class=p>)</span>
-    <span class=p>{</span>
-        <span class=n>app</span><span class=p>.</span><span class=n>Run</span><span class=p>(</span><span class=k>async</span> <span class=n>context</span> <span class=p>=&gt;</span>
-        <span class=p>{</span>
-            <span class=k>await</span> <span class=n>context</span><span class=p>.</span><span class=n>Response</span><span class=p>.</span><span class=n>WriteAsync</span><span class=p>(</span><span class=s>&#34;Map Test 2&#34;</span><span class=p>);</span>
-        <span class=p>});</span>
-    <span class=p>}</span>
-
-    <span class=k>public</span> <span class=k>void</span> <span class=n>Configure</span><span class=p>(</span><span class=n>IApplicationBuilder</span> <span class=n>app</span><span class=p>)</span>
-    <span class=p>{</span>
-        <span class=n>app</span><span class=p>.</span><span class=n>Map</span><span class=p>(</span><span class=s>&#34;/map1&#34;</span><span class=p>,</span> <span class=n>HandleMapTest1</span><span class=p>);</span>
-
-        <span class=n>app</span><span class=p>.</span><span class=n>Map</span><span class=p>(</span><span class=s>&#34;/map2&#34;</span><span class=p>,</span> <span class=n>HandleMapTest2</span><span class=p>);</span>
-
-        <span class=n>app</span><span class=p>.</span><span class=n>Run</span><span class=p>(</span><span class=k>async</span> <span class=n>context</span> <span class=p>=&gt;</span>
-        <span class=p>{</span>
-            <span class=k>await</span> <span class=n>context</span><span class=p>.</span><span class=n>Response</span><span class=p>.</span><span class=n>WriteAsync</span><span class=p>(</span><span class=s>&#34;Hello from non-Map delegate. &lt;p&gt;&#34;</span><span class=p>);</span>
-        <span class=p>});</span>
-    <span class=p>}</span>
-<span class=p>}</span>
-</code></pre></td></tr></table></div></div><h2 id=配置>配置</h2><h3 id=configurationbinder-的常用方法>ConfigurationBinder 的常用方法</h3><ol><li>GetValue</li><li>GetSection</li><li>GetChildren</li><li>Exists</li><li>AddJsonFile</li></ol><h2 id=日志>日志</h2><h3 id=日志的级别有哪些>日志的级别有哪些</h3><table><thead><tr><th>LogLevel</th><th>“值”</th><th>方法</th><th>描述</th></tr></thead><tbody><tr><td>Trace</td><td>0</td><td>LogTrace</td><td>包含最详细的消息。 这些消息可能包含敏感的应用数据。 这些消息默认情况下处于禁用状态，并且不应在生产中启用。</td></tr><tr><td>调试</td><td>1</td><td>LogDebug</td><td>用于调试和开发。 由于量大，请在生产中小心使用。</td></tr><tr><td>信息</td><td>2</td><td>LogInformation</td><td>跟踪应用的常规流。 可能具有长期值。</td></tr><tr><td>警告</td><td>3</td><td>LogWarning</td><td>对于异常事件或意外事件。 通常包括不会导致应用失败的错误或情况。</td></tr><tr><td>错误</td><td>4</td><td>LogError</td><td>表示无法处理的错误和异常。 这些消息表示当前操作或请求失败，而不是整个应用失败。</td></tr><tr><td>严重</td><td>5</td><td>LogCritical</td><td>需要立即关注的失败。 例如数据丢失、磁盘空间不足。</td></tr><tr><td>无</td><td>6</td><td></td><td>指定日志记录类别不应写入任何消息。</td></tr></tbody></table><h2 id=路由>路由</h2><h3 id=默认路由的配置和使用>默认路由的配置和使用</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span><span class=lnt>13
-</span><span class=lnt>14
-</span><span class=lnt>15
-</span><span class=lnt>16
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-cs data-lang=cs><span class=k>public</span> <span class=k>class</span> <span class=nc>Startup</span>
-<span class=p>{</span>
-    <span class=k>public</span> <span class=k>void</span> <span class=n>ConfigureServices</span><span class=p>(</span><span class=n>IServiceCollection</span> <span class=n>services</span><span class=p>)</span>
-    <span class=p>{</span>
-        <span class=n>services</span><span class=p>.</span><span class=n>AddMvc</span><span class=p>();</span>
-    <span class=p>}</span>
-    <span class=k>public</span> <span class=k>void</span> <span class=n>Configure</span><span class=p>(</span><span class=n>IApplicationBuilder</span> <span class=n>app</span><span class=p>,</span> <span class=n>IHostingEnvironment</span> <span class=n>env</span><span class=p>,</span> <span class=n>ILoggerFactory</span> <span class=n>loggerFactory</span><span class=p>)</span>
-    <span class=p>{</span>
-        <span class=n>app</span><span class=p>.</span><span class=n>UseMvc</span><span class=p>(</span><span class=n>routes</span> <span class=p>=&gt;</span>
-        <span class=p>{</span>
-            <span class=n>routes</span><span class=p>.</span><span class=n>MapRoute</span><span class=p>(</span>
-                <span class=n>name</span><span class=p>:</span> <span class=s>&#34;default&#34;</span><span class=p>,</span>
-                <span class=n>template</span><span class=p>:</span> <span class=s>&#34;{controller=Home}/{action=Index}/{id?}&#34;</span><span class=p>);</span>
-        <span class=p>});</span>
-    <span class=p>}</span>
-<span class=p>}</span>
-</code></pre></td></tr></table></div></div><h3 id=配置多个默认路由>配置多个默认路由</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-cs data-lang=cs><span class=n>app</span><span class=p>.</span><span class=n>UseMvc</span><span class=p>(</span><span class=n>routes</span> <span class=p>=&gt;</span>
-<span class=p>{</span>
-    <span class=c1>//New Route
-</span><span class=c1></span>   <span class=n>routes</span><span class=p>.</span><span class=n>MapRoute</span><span class=p>(</span>
-      <span class=n>name</span><span class=p>:</span> <span class=s>&#34;about-route&#34;</span><span class=p>,</span>
-      <span class=n>template</span><span class=p>:</span> <span class=s>&#34;about&#34;</span><span class=p>,</span>
-      <span class=n>defaults</span><span class=p>:</span> <span class=k>new</span> <span class=p>{</span> <span class=n>controller</span> <span class=p>=</span> <span class=s>&#34;Home&#34;</span><span class=p>,</span> <span class=n>action</span> <span class=p>=</span> <span class=s>&#34;About&#34;</span> <span class=p>}</span>
-    <span class=p>);</span>
-   <span class=n>routes</span><span class=p>.</span><span class=n>MapRoute</span><span class=p>(</span>
-      <span class=n>name</span><span class=p>:</span> <span class=s>&#34;default&#34;</span><span class=p>,</span>
-      <span class=n>template</span><span class=p>:</span> <span class=s>&#34;{controller=Home}/{action=Index}/{id?}&#34;</span><span class=p>);</span>
-<span class=p>});</span>
-</code></pre></td></tr></table></div></div><h3 id=配置标签attributes为个方法或控制器指定路由>配置标签(Attributes)为个方法或控制器指定路由</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span><span class=lnt>13
-</span><span class=lnt>14
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-cs data-lang=cs><span class=na>[Route(&#34;[controller]</span><span class=s>&#34;)]
-</span><span class=s></span><span class=k>public</span> <span class=k>class</span> <span class=nc>AnalyticsController</span> <span class=p>:</span> <span class=n>Controller</span>
-<span class=p>{</span>
-<span class=na>    [Route(&#34;Dashboard&#34;)]</span>
-    <span class=k>public</span> <span class=n>IActionResult</span> <span class=n>Index</span><span class=p>()</span>
-    <span class=p>{</span>
-        <span class=k>return</span> <span class=n>View</span><span class=p>();</span>
-    <span class=p>}</span>
-<span class=na>    [Route(&#34;[action]</span><span class=s>&#34;)]
-</span><span class=s></span>    <span class=k>public</span> <span class=n>IActionResult</span> <span class=n>Charts</span><span class=p>()</span>
-    <span class=p>{</span>
-        <span class=k>return</span> <span class=n>View</span><span class=p>();</span>
-    <span class=p>}</span>
-<span class=p>}</span>
-</code></pre></td></tr></table></div></div><h3 id=配置restful路由>配置RESTful路由</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span><span class=lnt>13
-</span><span class=lnt>14
-</span><span class=lnt>15
-</span><span class=lnt>16
-</span><span class=lnt>17
-</span><span class=lnt>18
-</span><span class=lnt>19
-</span><span class=lnt>20
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-cs data-lang=cs><span class=na>[Route(&#34;api/[controller]</span><span class=s>&#34;)]
-</span><span class=s></span><span class=k>public</span> <span class=k>class</span> <span class=nc>ValuesController</span> <span class=p>:</span> <span class=n>Controller</span>
-<span class=p>{</span>
-    <span class=c1>// GET api/values
-</span><span class=c1></span><span class=na>    [HttpGet]</span>
-    <span class=k>public</span> <span class=n>IEnumerable</span><span class=p>&lt;</span><span class=kt>string</span><span class=p>&gt;</span> <span class=n>Get</span><span class=p>()</span>
-    <span class=p>{</span>
-        <span class=k>return</span> <span class=k>new</span> <span class=kt>string</span><span class=p>[]</span> <span class=p>{</span><span class=s>&#34;hello&#34;</span><span class=p>,</span> <span class=s>&#34;world!&#34;</span><span class=p>};</span>
-    <span class=p>}</span>
-    <span class=c1>// POST api/values
-</span><span class=c1></span><span class=na>    [HttpPost]</span>
-    <span class=k>public</span> <span class=k>void</span> <span class=n>PostCreate</span><span class=p>([</span><span class=n>FromBody</span><span class=p>]</span> <span class=kt>string</span> <span class=k>value</span><span class=p>)</span>
-    <span class=p>{</span>
-    <span class=p>}</span>
-   <span class=c1>// POST api/values/5
-</span><span class=c1></span><span class=na>   [HttpPost(&#34;{id}&#34;)]</span>
-   <span class=k>public</span> <span class=k>void</span> <span class=n>PostUpdate</span><span class=p>(</span><span class=kt>int</span> <span class=n>id</span><span class=p>,</span> <span class=p>[</span><span class=n>FromBody</span><span class=p>]</span> <span class=kt>string</span> <span class=k>value</span><span class=p>)</span>
-   <span class=p>{</span>
-   <span class=p>}</span>
-<span class=p>}</span>
-</code></pre></td></tr></table></div></div><h3 id=配置路由器参数约束>配置路由器参数约束</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span><span class=lnt>3
-</span><span class=lnt>4
-</span><span class=lnt>5
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-cs data-lang=cs><span class=na>[HttpGet(&#34;{id:int}&#34;)]</span>
-<span class=k>public</span> <span class=kt>string</span> <span class=n>GetById</span><span class=p>(</span><span class=kt>int</span> <span class=n>id</span><span class=p>)</span>
-<span class=p>{</span>
-    <span class=k>return</span> <span class=s>&#34;item &#34;</span> <span class=p>+</span> <span class=n>id</span><span class=p>;</span>
-<span class=p>}</span>
-</code></pre></td></tr></table></div></div><h2 id=错误处理>错误处理</h2><h3 id=aspnet-core中有哪些异常处理的方案>Asp.Net Core中有哪些异常处理的方案</h3><ol><li>继承 Controller，重写 OnActionExecuted</li><li>使用 ActionFilterAttribute</li><li>使用 IExceptionFilter</li><li>使用 ExceptionHandler</li><li>自定义 Middleare 处理</li></ol><hr><center>- 完 -</center><div id=related-article><p>相关文章</p><ul><li><a href=/dotnet-essentialism/>.NET 本质论</a></li></ul></div><div style=text-align:center;margin-bottom:30px><h5 style=font-weight:600;margin-bottom:10px>「&nbsp;感谢支持&nbsp;」</h5><button id=rewardButton><span>赞赏</span></button><div id=QR style=display:none><div id=wechat style=display:inline-block><a class=fancybox rel=group><img id=wechat_qr src=https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/wechatpay.jpg alt="WeChat Pay"></a><h5 style=font-weight:600;margin-top:5px>微信赞赏</h5></div><div id=alipay style=display:inline-block><a class=fancybox rel=group><img id=alipay_qr src=https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/alipay.jpg alt=Alipay></a><h5 style=font-weight:600;margin-top:5px>支付宝赞赏</h5></div></div></div><div id=copyright-container><ul class=post-copyright><li class=post-copyright-author><strong>文章作者：</strong><a href=https://blog.gethin.online/ target=_blank>格心</a></li><li class=post-copyright-link><strong>文章链接：</strong><a href=# target=_blank title=".NET CORE">https://blog.gethin.online/dotnet-core/</a></li><li class=post-copyright-license><strong>版权声明：</strong>本站所有文章除特别声明外，均采用 <a href=https://creativecommons.org/licenses/by-nc-sa/4.0/ target=_blank title="CC BY-NC-ND 4.0">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a> 转载请注明来自 <a href=https://blog.gethin.online/ target=_blank>格心</a></li></ul></div></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>更新于 2022-05-01</span></div><div class=post-info-license></div></div><div class=post-info-line><div class=post-info-md></div><div class=post-info-share><span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=https://blog.gethin.online/dotnet-core/ data-title=".NET CORE" data-hashtags=dotnet><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="分享到 Facebook" data-sharer=facebook data-url=https://blog.gethin.online/dotnet-core/ data-hashtag=dotnet><i class="fab fa-facebook-square fa-fw"></i></a><a href=javascript:void(0); title="分享到 Hacker News" data-sharer=hackernews data-url=https://blog.gethin.online/dotnet-core/ data-title=".NET CORE"><i class="fab fa-hacker-news fa-fw"></i></a><a href=javascript:void(0); title="分享到 Line" data-sharer=line data-url=https://blog.gethin.online/dotnet-core/ data-title=".NET CORE"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://blog.gethin.online/dotnet-core/ data-title=".NET CORE"><i class="fab fa-weibo fa-fw"></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/dotnet/>dotnet</a></section><section><span><a href=javascript:void(0); onclick=window.history.back();>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主页</a></span></section></div><div class=post-nav><a href=/english-root-full/ class=prev rel=prev title=英语词根><i class="fas fa-angle-left fa-fw"></i>英语词根</a>
-<a href=/system-analysis-and-design/ class=next rel=next title=系统分析与设计>系统分析与设计<i class="fas fa-angle-right fa-fw"></i></a></div></div><div id=comments><div id=gitalk class=comment></div><noscript>Please enable JavaScript to view the comments powered by <a href=https://github.com/gitalk/gitalk></a>Gitalk</a>.</noscript></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line><span id=timeDate>运行 time 天&nbsp;|&nbsp;</span>
-<script>var now=new Date();function createtime(){var start_time=new Date("05/05/2021 00:00:00");now.setTime(now.getTime()+250);days=(now-start_time)/1000/60/60/24;dnum=Math.floor(days);var worktime=document.getElementById("timeDate").innerHTML.replace(/time/,Math.floor(days));document.getElementById("timeDate").innerHTML=worktime;}
-createtime();</script>由 <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.74.3">Hugo</a> 强力驱动 | 主题 - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i>LoveIt</a></div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2021 - 2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=https://blog.gethin.online/ target=_blank>格心</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" target=_blank href=https://creativecommons.org/licenses/by-nc-sa/4.0/>知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到顶部><i class="fas fa-arrow-up fa-fw"></i></a><a href=# id=view-comments class=fixed-button title=查看评论><i class="fas fa-comment fa-fw"></i></a></div><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css><link rel=stylesheet href=/css/_custom.scss><script type=text/javascript src=https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/twemoji@13.0.0/dist/twemoji.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js></script><script type=text/javascript src=/js/jquery.backstretch.min.js></script><script type=text/javascript src=/js/dayjs.min.js></script><script type=text/javascript src=/js/custom.js></script><script type=text/javascript>window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"gitalk":{"admin":["Gethin1990"],"clientID":"4743974d0c1165efbf05","clientSecret":"94543d55ec4241197bf2029c5167870e9185d619","id":"2021-08-10T16:09:23+08:00","owner":"Gethin1990","repo":"gsblogtalk","title":".NET CORE"}},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"K8S9KF7M5S","algoliaIndex":"hugoblog_cn","algoliaSearchKey":"8ee76e5626e8145996a6c46fbdce0d23","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"},"twemoji":true};</script><script type=text/javascript src=/js/theme.min.js></script><script type=text/javascript>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-FFRV57P35K',{'anonymize_ip':true});</script><script type=text/javascript src="https://www.googletagmanager.com/gtag/js?id=G-FFRV57P35K" async></script><script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?67eb34015166e2e77745ce46dd823cb7";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();</script></body></html>
+<code>services.AddSingleton&lt;IProductService, ProductService>();</code></li></ol><h3 id=什么是依赖注入>什么是依赖注入</h3><p>通过控制反转（Ioc），对象A在被创建的时候，由一个IOC容器来控制依赖，把类B通过构造函数，属性或工厂模式等方法，注入到类A内，实现对类A和类B的解耦。</p><h3 id=依赖注入有哪几种方式>依赖注入有哪几种方式</h3><ol><li><p>属性注入</p><div class="code-block code-line-numbers" style="counter-reset:code-block 0"><div class="code-header language-cs"><span class=code-title><i class="arrow fas fa-angle-right fa-fw" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h fa-fw" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy fa-fw" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-cs data-lang=cs><span class=line><span class=cl><span class=k>using</span> <span class=nn>Microsoft.Extensions.Logging</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=k>using</span> <span class=nn>Microsoft.Extensions.Logging.Abstractions</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=k>namespace</span> <span class=nn>MyApp</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>   <span class=kd>public</span> <span class=k>class</span> <span class=nc>ProductService</span>
+</span></span><span class=line><span class=cl>   <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=kd>public</span> <span class=n>ILogger</span><span class=p>&lt;</span><span class=n>ProductService</span><span class=p>&gt;</span> <span class=n>Logger</span> <span class=p>{</span> <span class=k>get</span><span class=p>;</span> <span class=k>set</span><span class=p>;</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>      <span class=kd>private</span> <span class=k>readonly</span> <span class=n>IProductRepository</span> <span class=n>_productRepository</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>      <span class=kd>public</span> <span class=n>ProductService</span><span class=p>(</span><span class=n>IProductRepository</span> <span class=n>productRepository</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>      <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>_productRepository</span> <span class=p>=</span> <span class=n>productRepository</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=n>Logger</span> <span class=p>=</span> <span class=n>NullLogger</span><span class=p>&lt;</span><span class=n>ProductService</span><span class=p>&gt;.</span><span class=n>Instance</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>      <span class=p>}</span>
+</span></span><span class=line><span class=cl>      <span class=kd>public</span> <span class=k>void</span> <span class=n>Delete</span><span class=p>(</span><span class=kt>int</span> <span class=n>id</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>      <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>_productRepository</span><span class=p>.</span><span class=n>Delete</span><span class=p>(</span><span class=n>id</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>            <span class=n>Logger</span><span class=p>.</span><span class=n>LogInformation</span><span class=p>(</span><span class=s>$&#34;Deleted a product with id = {id}&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>      <span class=p>}</span>
+</span></span><span class=line><span class=cl>   <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div></li><li><p>构造函数注入</p><div class="code-block code-line-numbers" style="counter-reset:code-block 0"><div class="code-header language-cs"><span class=code-title><i class="arrow fas fa-angle-right fa-fw" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h fa-fw" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy fa-fw" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-cs data-lang=cs><span class=line><span class=cl><span class=kd>public</span> <span class=k>class</span> <span class=nc>ProductService</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>   <span class=kd>private</span> <span class=k>readonly</span> <span class=n>IProductRepository</span> <span class=n>_productRepository</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>   <span class=kd>public</span> <span class=n>ProductService</span><span class=p>(</span><span class=n>IProductRepository</span> <span class=n>productRepository</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>   <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=n>_productRepository</span> <span class=p>=</span> <span class=n>productRepository</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>   <span class=p>}</span>
+</span></span><span class=line><span class=cl>   <span class=kd>public</span> <span class=k>void</span> <span class=n>Delete</span><span class=p>(</span><span class=kt>int</span> <span class=n>id</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>   <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=n>_productRepository</span><span class=p>.</span><span class=n>Delete</span><span class=p>(</span><span class=n>id</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>   <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div></li><li><p>接口注入</p></li></ol><h3 id=控制反转是什么>控制反转是什么</h3><p><strong>控制反转</strong>（Inversion of Control，缩写为IoC），是面向对象编程中的一种设计原则，可以用来减低计算机代码之间的耦合度。</p><h3 id=依赖注入有哪些著名的框架>依赖注入有哪些著名的框架</h3><p>Unity、autofac、spring.net、MEF、Injection、Asp.Net Core的ServiceCollection。</p><h3 id=依赖注入实现原理>依赖注入实现原理</h3><p>实现DI，核心在于依赖注入容器IContainer，该容器具有以下功能</p><ol><li>（容器）保存可用服务的集合 // 要用的特定对象、特定类、接口服务</li><li>（注册）提供一种方式将各种部件与他们依赖的服务绑定到一起；// Add&mldr;函数或containerBuilder.Register函数，</li><li>（解析点）为应用程序提供一种方式来请求已配置的对象： 构造函数注入、属性注入.</li></ol><p>运行时，框架会一层层通过反射构造实例，最终得到完整对象。</p><h2 id=中间件>中间件</h2><h3 id=什么是中间件middleware>什么是中间件（Middleware）</h3><p><strong>中间件是一种装配到应用管道以处理请求和响应的软件。</strong></p><p>每个组件：</p><ol><li>选择是否将请求传递到管道中的下一个组件。</li><li>可在管道中的下一个组件前后执行工作。</li></ol><p>请求委托用于生成请求管道。 请求委托处理每个 HTTP 请求。</p><p>使用 RunMap 和 Use 扩展方法来配置请求委托。 可将一个单独的请求委托并行指定为匿名方法（称为并行中间件），或在可重用的类中对其进行定义。 这些可重用的类和并行匿名方法即为中间件，也叫中间件组件。 请求管道中的每个中间件组件负责调用管道中的下一个组件，或使管道短路。 当中间件短路时，它被称为“终端中间件”，因为它阻止中间件进一步处理请求。</p><div class="code-block code-line-numbers" style="counter-reset:code-block 0"><div class="code-header language-cs"><span class=code-title><i class="arrow fas fa-angle-right fa-fw" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h fa-fw" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy fa-fw" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-cs data-lang=cs><span class=line><span class=cl><span class=kd>public</span> <span class=k>class</span> <span class=nc>Startup</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=k>void</span> <span class=n>Configure</span><span class=p>(</span><span class=n>IApplicationBuilder</span> <span class=n>app</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>app</span><span class=p>.</span><span class=n>Use</span><span class=p>(</span><span class=kd>async</span> <span class=p>(</span><span class=n>context</span><span class=p>,</span> <span class=n>next</span><span class=p>)</span> <span class=p>=&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=c1>// Do work that doesn&#39;t write to the Response.</span>
+</span></span><span class=line><span class=cl>            <span class=k>await</span> <span class=n>next</span><span class=p>.</span><span class=n>Invoke</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>            <span class=c1>// Do logging or other work that doesn&#39;t write to the Response.</span>
+</span></span><span class=line><span class=cl>        <span class=p>});</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=n>app</span><span class=p>.</span><span class=n>Run</span><span class=p>(</span><span class=kd>async</span> <span class=n>context</span> <span class=p>=&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>await</span> <span class=n>context</span><span class=p>.</span><span class=n>Response</span><span class=p>.</span><span class=n>WriteAsync</span><span class=p>(</span><span class=s>&#34;Hello from 2nd delegate.&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=p>});</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div><h3 id=中间件的使用场景有哪些>中间件的使用场景有哪些</h3><p>身份验证，Session存储，日志记录等。</p><p>其实我们的Asp.net core项目中本身已经包含了很多个中间件。比如 身份认证中间件 UseAuthorization()等系列。</p><h3 id=列举官方常用的中间件>列举官方常用的中间件</h3><p>以下 Startup.Configure 方法将为常见应用方案添加中间件组件：</p><ol><li>异常/错误处理<ol><li>当应用在开发环境中运行时：<ol><li>开发人员异常页中间件 (UseDeveloperExceptionPage) 报告应用运行时错误。</li><li>数据库错误页中间件报告数据库运行时错误。</li></ol></li><li>当应用在生产环境中运行时：<ol><li>异常处理程序中间件 (UseExceptionHandler) 捕获以下中间件中引发的异常。</li><li>HTTP 严格传输安全协议 (HSTS) 中间件 (UseHsts) 添加 Strict-Transport-Security 标头。</li></ol></li></ol></li><li>HTTPS 重定向中间件 (UseHttpsRedirection) 将 HTTP 请求重定向到 HTTPS。</li><li>静态文件中间件 (UseStaticFiles) 返回静态文件，并简化进一步请求处理。</li><li>Cookie 策略中间件 (UseCookiePolicy) 使应用符合欧盟一般数据保护条例 (GDPR) 规定。</li><li>用于路由请求的路由中间件 (UseRouting)。</li><li>身份验证中间件 (UseAuthentication) 尝试对用户进行身份验证，然后才会允许用户访问安全资源。</li><li>用于授权用户访问安全资源的授权中间件 (UseAuthorization)。</li><li>会话中间件 (UseSession) 建立和维护会话状态。 如果应用使用会话状态，请在 Cookie 策略中间件之后和 MVC 中间件之前调用会话中间件。</li><li>用于将 Razor Pages 终结点添加到请求管道的终结点路由中间件（带有 MapRazorPages 的 UseEndpoints）。</li></ol><div class="code-block code-line-numbers" style="counter-reset:code-block 0"><div class="code-header language-cs"><span class=code-title><i class="arrow fas fa-angle-right fa-fw" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h fa-fw" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy fa-fw" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-cs data-lang=cs><span class=line><span class=cl><span class=kd>public</span> <span class=k>void</span> <span class=n>Configure</span><span class=p>(</span><span class=n>IApplicationBuilder</span> <span class=n>app</span><span class=p>,</span> <span class=n>IWebHostEnvironment</span> <span class=n>env</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>(</span><span class=n>env</span><span class=p>.</span><span class=n>IsDevelopment</span><span class=p>())</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>app</span><span class=p>.</span><span class=n>UseDeveloperExceptionPage</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>        <span class=n>app</span><span class=p>.</span><span class=n>UseDatabaseErrorPage</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=k>else</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>app</span><span class=p>.</span><span class=n>UseExceptionHandler</span><span class=p>(</span><span class=s>&#34;/Error&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=n>app</span><span class=p>.</span><span class=n>UseHsts</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>app</span><span class=p>.</span><span class=n>UseHttpsRedirection</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=n>app</span><span class=p>.</span><span class=n>UseStaticFiles</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=n>app</span><span class=p>.</span><span class=n>UseCookiePolicy</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=n>app</span><span class=p>.</span><span class=n>UseRouting</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=n>app</span><span class=p>.</span><span class=n>UseAuthentication</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=n>app</span><span class=p>.</span><span class=n>UseAuthorization</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=n>app</span><span class=p>.</span><span class=n>UseSession</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>app</span><span class=p>.</span><span class=n>UseEndpoints</span><span class=p>(</span><span class=n>endpoints</span> <span class=p>=&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>endpoints</span><span class=p>.</span><span class=n>MapRazorPages</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=p>});</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div><h3 id=中间件的执行顺序>中间件的执行顺序</h3><ol><li>异常/错误处理</li><li>HTTP 严格传输安全协议</li><li>HTTPS 重定向</li><li>静态文件服务器</li><li>Cookie 策略实施</li><li>路由</li><li>身份验证</li><li>会话</li><li>MVC</li></ol><p><img class=lazyload src=/svg/loading.min.svg data-src=https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210810132314-2021-08-10-13-23-15.png data-srcset="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210810132314-2021-08-10-13-23-15.png, https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210810132314-2021-08-10-13-23-15.png 1.5x, https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210810132314-2021-08-10-13-23-15.png 2x" data-sizes=auto alt=https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/20210810132314-2021-08-10-13-23-15.png title=中间件的执行顺序></p><h3 id=application-builder的use和run方法有什么区别>application builder的use和run方法有什么区别</h3><p>这两个方法都在start up class的configure方法里面调用。都是用来向应用请求管道里面添加中间件的。</p><p>Use方法可以调用下一个中间件的添加，而run不会。</p><h3 id=dot-net-core-管道里面的map拓展有什么作用>dot net core 管道里面的map拓展有什么作用</h3><p>可以针对不同的路径添加不同的中间件。</p><div class="code-block code-line-numbers" style="counter-reset:code-block 0"><div class="code-header language-cs"><span class=code-title><i class="arrow fas fa-angle-right fa-fw" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h fa-fw" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy fa-fw" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-cs data-lang=cs><span class=line><span class=cl><span class=kd>public</span> <span class=k>class</span> <span class=nc>Startup</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kd>private</span> <span class=kd>static</span> <span class=k>void</span> <span class=n>HandleMapTest1</span><span class=p>(</span><span class=n>IApplicationBuilder</span> <span class=n>app</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>app</span><span class=p>.</span><span class=n>Run</span><span class=p>(</span><span class=kd>async</span> <span class=n>context</span> <span class=p>=&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>await</span> <span class=n>context</span><span class=p>.</span><span class=n>Response</span><span class=p>.</span><span class=n>WriteAsync</span><span class=p>(</span><span class=s>&#34;Map Test 1&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=p>});</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>private</span> <span class=kd>static</span> <span class=k>void</span> <span class=n>HandleMapTest2</span><span class=p>(</span><span class=n>IApplicationBuilder</span> <span class=n>app</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>app</span><span class=p>.</span><span class=n>Run</span><span class=p>(</span><span class=kd>async</span> <span class=n>context</span> <span class=p>=&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>await</span> <span class=n>context</span><span class=p>.</span><span class=n>Response</span><span class=p>.</span><span class=n>WriteAsync</span><span class=p>(</span><span class=s>&#34;Map Test 2&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=p>});</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=k>void</span> <span class=n>Configure</span><span class=p>(</span><span class=n>IApplicationBuilder</span> <span class=n>app</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>app</span><span class=p>.</span><span class=n>Map</span><span class=p>(</span><span class=s>&#34;/map1&#34;</span><span class=p>,</span> <span class=n>HandleMapTest1</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=n>app</span><span class=p>.</span><span class=n>Map</span><span class=p>(</span><span class=s>&#34;/map2&#34;</span><span class=p>,</span> <span class=n>HandleMapTest2</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=n>app</span><span class=p>.</span><span class=n>Run</span><span class=p>(</span><span class=kd>async</span> <span class=n>context</span> <span class=p>=&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>await</span> <span class=n>context</span><span class=p>.</span><span class=n>Response</span><span class=p>.</span><span class=n>WriteAsync</span><span class=p>(</span><span class=s>&#34;Hello from non-Map delegate. &lt;p&gt;&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=p>});</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div><h2 id=配置>配置</h2><h3 id=configurationbinder-的常用方法>ConfigurationBinder 的常用方法</h3><ol><li>GetValue</li><li>GetSection</li><li>GetChildren</li><li>Exists</li><li>AddJsonFile</li></ol><h2 id=日志>日志</h2><h3 id=日志的级别有哪些>日志的级别有哪些</h3><table><thead><tr><th>LogLevel</th><th>“值”</th><th>方法</th><th>描述</th></tr></thead><tbody><tr><td>Trace</td><td>0</td><td>LogTrace</td><td>包含最详细的消息。 这些消息可能包含敏感的应用数据。 这些消息默认情况下处于禁用状态，并且不应在生产中启用。</td></tr><tr><td>调试</td><td>1</td><td>LogDebug</td><td>用于调试和开发。 由于量大，请在生产中小心使用。</td></tr><tr><td>信息</td><td>2</td><td>LogInformation</td><td>跟踪应用的常规流。 可能具有长期值。</td></tr><tr><td>警告</td><td>3</td><td>LogWarning</td><td>对于异常事件或意外事件。 通常包括不会导致应用失败的错误或情况。</td></tr><tr><td>错误</td><td>4</td><td>LogError</td><td>表示无法处理的错误和异常。 这些消息表示当前操作或请求失败，而不是整个应用失败。</td></tr><tr><td>严重</td><td>5</td><td>LogCritical</td><td>需要立即关注的失败。 例如数据丢失、磁盘空间不足。</td></tr><tr><td>无</td><td>6</td><td></td><td>指定日志记录类别不应写入任何消息。</td></tr></tbody></table><h2 id=路由>路由</h2><h3 id=默认路由的配置和使用>默认路由的配置和使用</h3><div class="code-block code-line-numbers" style="counter-reset:code-block 0"><div class="code-header language-cs"><span class=code-title><i class="arrow fas fa-angle-right fa-fw" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h fa-fw" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy fa-fw" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-cs data-lang=cs><span class=line><span class=cl><span class=kd>public</span> <span class=k>class</span> <span class=nc>Startup</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=k>void</span> <span class=n>ConfigureServices</span><span class=p>(</span><span class=n>IServiceCollection</span> <span class=n>services</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>services</span><span class=p>.</span><span class=n>AddMvc</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=k>void</span> <span class=n>Configure</span><span class=p>(</span><span class=n>IApplicationBuilder</span> <span class=n>app</span><span class=p>,</span> <span class=n>IHostingEnvironment</span> <span class=n>env</span><span class=p>,</span> <span class=n>ILoggerFactory</span> <span class=n>loggerFactory</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>app</span><span class=p>.</span><span class=n>UseMvc</span><span class=p>(</span><span class=n>routes</span> <span class=p>=&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>routes</span><span class=p>.</span><span class=n>MapRoute</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>                <span class=n>name</span><span class=p>:</span> <span class=s>&#34;default&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>                <span class=n>template</span><span class=p>:</span> <span class=s>&#34;{controller=Home}/{action=Index}/{id?}&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=p>});</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div><h3 id=配置多个默认路由>配置多个默认路由</h3><div class="code-block code-line-numbers" style="counter-reset:code-block 0"><div class="code-header language-cs"><span class=code-title><i class="arrow fas fa-angle-right fa-fw" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h fa-fw" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy fa-fw" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-cs data-lang=cs><span class=line><span class=cl><span class=n>app</span><span class=p>.</span><span class=n>UseMvc</span><span class=p>(</span><span class=n>routes</span> <span class=p>=&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=c1>//New Route</span>
+</span></span><span class=line><span class=cl>   <span class=n>routes</span><span class=p>.</span><span class=n>MapRoute</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>      <span class=n>name</span><span class=p>:</span> <span class=s>&#34;about-route&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=n>template</span><span class=p>:</span> <span class=s>&#34;about&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=n>defaults</span><span class=p>:</span> <span class=k>new</span> <span class=p>{</span> <span class=n>controller</span> <span class=p>=</span> <span class=s>&#34;Home&#34;</span><span class=p>,</span> <span class=n>action</span> <span class=p>=</span> <span class=s>&#34;About&#34;</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>);</span>
+</span></span><span class=line><span class=cl>   <span class=n>routes</span><span class=p>.</span><span class=n>MapRoute</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>      <span class=n>name</span><span class=p>:</span> <span class=s>&#34;default&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=n>template</span><span class=p>:</span> <span class=s>&#34;{controller=Home}/{action=Index}/{id?}&#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>});</span></span></span></code></pre></div></div><h3 id=配置标签attributes为个方法或控制器指定路由>配置标签(Attributes)为个方法或控制器指定路由</h3><div class="code-block code-line-numbers" style="counter-reset:code-block 0"><div class="code-header language-cs"><span class=code-title><i class="arrow fas fa-angle-right fa-fw" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h fa-fw" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy fa-fw" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-cs data-lang=cs><span class=line><span class=cl><span class=na>[Route(&#34;[controller]</span><span class=s>&#34;)]
+</span></span></span><span class=line><span class=cl><span class=s></span><span class=kd>public</span> <span class=k>class</span> <span class=nc>AnalyticsController</span> <span class=p>:</span> <span class=n>Controller</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=na>    [Route(&#34;Dashboard&#34;)]</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=n>IActionResult</span> <span class=n>Index</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>View</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=na>    [Route(&#34;[action]</span><span class=s>&#34;)]
+</span></span></span><span class=line><span class=cl><span class=s></span>    <span class=kd>public</span> <span class=n>IActionResult</span> <span class=n>Charts</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>View</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div><h3 id=配置restful路由>配置RESTful路由</h3><div class="code-block code-line-numbers" style="counter-reset:code-block 0"><div class="code-header language-cs"><span class=code-title><i class="arrow fas fa-angle-right fa-fw" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h fa-fw" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy fa-fw" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-cs data-lang=cs><span class=line><span class=cl><span class=na>[Route(&#34;api/[controller]</span><span class=s>&#34;)]
+</span></span></span><span class=line><span class=cl><span class=s></span><span class=kd>public</span> <span class=k>class</span> <span class=nc>ValuesController</span> <span class=p>:</span> <span class=n>Controller</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// GET api/values</span>
+</span></span><span class=line><span class=cl><span class=na>    [HttpGet]</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=n>IEnumerable</span><span class=p>&lt;</span><span class=kt>string</span><span class=p>&gt;</span> <span class=n>Get</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=k>new</span> <span class=kt>string</span><span class=p>[]</span> <span class=p>{</span><span class=s>&#34;hello&#34;</span><span class=p>,</span> <span class=s>&#34;world!&#34;</span><span class=p>};</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// POST api/values</span>
+</span></span><span class=line><span class=cl><span class=na>    [HttpPost]</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=k>void</span> <span class=n>PostCreate</span><span class=p>([</span><span class=n>FromBody</span><span class=p>]</span> <span class=kt>string</span> <span class=k>value</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>   <span class=c1>// POST api/values/5</span>
+</span></span><span class=line><span class=cl><span class=na>   [HttpPost(&#34;{id}&#34;)]</span>
+</span></span><span class=line><span class=cl>   <span class=kd>public</span> <span class=k>void</span> <span class=n>PostUpdate</span><span class=p>(</span><span class=kt>int</span> <span class=n>id</span><span class=p>,</span> <span class=p>[</span><span class=n>FromBody</span><span class=p>]</span> <span class=kt>string</span> <span class=k>value</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>   <span class=p>{</span>
+</span></span><span class=line><span class=cl>   <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div><h3 id=配置路由器参数约束>配置路由器参数约束</h3><div class="code-block code-line-numbers open" style="counter-reset:code-block 0"><div class="code-header language-cs"><span class=code-title><i class="arrow fas fa-angle-right fa-fw" aria-hidden=true></i></span>
+<span class=ellipses><i class="fas fa-ellipsis-h fa-fw" aria-hidden=true></i></span>
+<span class=copy title=复制到剪贴板><i class="far fa-copy fa-fw" aria-hidden=true></i></span></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-cs data-lang=cs><span class=line><span class=cl><span class=na>[HttpGet(&#34;{id:int}&#34;)]</span>
+</span></span><span class=line><span class=cl><span class=kd>public</span> <span class=kt>string</span> <span class=n>GetById</span><span class=p>(</span><span class=kt>int</span> <span class=n>id</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=s>&#34;item &#34;</span> <span class=p>+</span> <span class=n>id</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div></div><h2 id=错误处理>错误处理</h2><h3 id=aspnet-core中有哪些异常处理的方案>Asp.Net Core中有哪些异常处理的方案</h3><ol><li>继承 Controller，重写 OnActionExecuted</li><li>使用 ActionFilterAttribute</li><li>使用 IExceptionFilter</li><li>使用 ExceptionHandler</li><li>自定义 Middleare 处理</li></ol></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>更新于 2025-08-14</span></div></div><div class=post-info-line><div class=post-info-md></div><div class=post-info-share><span><a href=javascript:void(0); title="分享到 X" data-sharer=x data-url=https://blog.gethin.online/dotnet-core/ data-title=".NET CORE" data-hashtags=dotnet><i class="fab fa-x-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Threads" data-sharer=threads data-url=https://blog.gethin.online/dotnet-core/ data-title=".NET CORE"><i class="fab fa-threads fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Facebook" data-sharer=facebook data-url=https://blog.gethin.online/dotnet-core/ data-hashtag=dotnet><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Hacker News" data-sharer=hackernews data-url=https://blog.gethin.online/dotnet-core/ data-title=".NET CORE"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Line" data-sharer=line data-url=https://blog.gethin.online/dotnet-core/ data-title=".NET CORE"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=https://blog.gethin.online/dotnet-core/ data-title=".NET CORE"><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Diaspora" data-sharer=diaspora data-url=https://blog.gethin.online/dotnet-core/ data-title=".NET CORE" data-description><i class="fab fa-diaspora fa-fw" aria-hidden=true></i></a><a href="https://t.me/share/url?url=https%3a%2f%2fblog.gethin.online%2fdotnet-core%2f&amp;text=.NET%20CORE" target=_blank title="分享到 Telegram"><i class="fab fa-telegram fa-fw" aria-hidden=true></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/tags/dotnet/>Dotnet</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主页</a></span></section></div><div class=post-nav><a href=/english-root-full/ class=prev rel=prev title=英语词根><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>英语词根</a>
+<a href=/system-analysis-and-design/ class=next rel=next title=系统分析与设计>系统分析与设计<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div><div id=comments><div id=gitalk class=comment></div><noscript>Please enable JavaScript to view the comments powered by <a href=https://github.com/gitalk/gitalk>Gitalk</a>.</noscript></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line><span id=timeDate>运行 time 天&nbsp;|&nbsp;</span>
+<script>var now=new Date;function createtime(){var e,t=new Date("05/05/2021 00:00:00");now.setTime(now.getTime()+250),days=(now-t)/1e3/60/60/24,dnum=Math.floor(days),e=document.getElementById("timeDate").innerHTML.replace(/time/,Math.floor(days)),document.getElementById("timeDate").innerHTML=e}createtime()</script>由 <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.148.2">Hugo</a> 强力驱动 | 主题 - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.3.1-DEV"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a></div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2021 - 2025</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>格心</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" target=_blank href=https://creativecommons.org/licenses/by-nc-sa/4.0/>知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到顶部><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i></a></div><div id=fixed-buttons-hidden><a href=# id=view-comments class=fixed-button title=查看评论><i class="fas fa-comment fa-fw" aria-hidden=true></i></a></div><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css><link rel=stylesheet href=/css/_custom.scss><script src=https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js></script><script src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js></script><script src=https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js></script><script src=https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js></script><script src=https://cdn.jsdelivr.net/npm/twemoji@13.0.0/dist/twemoji.min.js></script><script src=https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js></script><script src=https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js></script><script src=https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js></script><script src=https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js></script><script src=https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js></script><script src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js></script><script src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js></script><script src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js></script><script src=https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js></script><script src=https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js></script><script src=/js/jquery.backstretch.min.js></script><script src=/js/dayjs.min.js></script><script src=/js/custom.js></script><script>window.config={comment:{gitalk:{admin:["Gethin1990"],clientID:"4743974d0c1165efbf05",clientSecret:"94543d55ec4241197bf2029c5167870e9185d619",id:"2021-08-10T16:09:23+08:00",owner:"Gethin1990",repo:"gsblogtalk",title:".NET CORE"}},lightgallery:!0,math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!0,left:"\\begin{equation}",right:"\\end{equation}"},{display:!0,left:"\\begin{equation*}",right:"\\end{equation*}"},{display:!0,left:"\\begin{align}",right:"\\end{align}"},{display:!0,left:"\\begin{align*}",right:"\\end{align*}"},{display:!0,left:"\\begin{alignat}",right:"\\end{alignat}"},{display:!0,left:"\\begin{alignat*}",right:"\\end{alignat*}"},{display:!0,left:"\\begin{gather}",right:"\\end{gather}"},{display:!0,left:"\\begin{CD}",right:"\\end{CD}"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{algoliaAppID:"MFVMILWR8Y",algoliaIndex:"gethin_blog",algoliaSearchKey:"9116370b412bf8b2f2adaf656612f599",highlightTag:"em",maxResultLength:10,noResultsFound:"没有找到结果",snippetLength:50,type:"algolia"},twemoji:!0}</script><script src=/js/theme.min.js></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-FFRV57P35K")}</script><script src="https://www.googletagmanager.com/gtag/js?id=G-FFRV57P35K" async></script></body></html>
