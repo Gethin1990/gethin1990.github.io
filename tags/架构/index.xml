@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>架构 - 标签 - Gethin</title><link>https://blog.gethin.online/tags/%E6%9E%B6%E6%9E%84/</link><description>架构 - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 16 Aug 2021 10:52:39 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/tags/%E6%9E%B6%E6%9E%84/" rel="self" type="application/rss+xml"/><item><title>软件架构模式</title><link>https://blog.gethin.online/software-architecture-pattern/</link><pubDate>Mon, 16 Aug 2021 10:52:39 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/software-architecture-pattern/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>架构 - 标签 - Gethin</title><link>https://blog.gethin.online/tags/%E6%9E%B6%E6%9E%84/</link><description>架构 - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 16 Aug 2021 10:52:39 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/tags/%E6%9E%B6%E6%9E%84/" rel="self" type="application/rss+xml"/><item><title>软件架构模式</title><link>https://blog.gethin.online/software-architecture-pattern/</link><pubDate>Mon, 16 Aug 2021 10:52:39 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/software-architecture-pattern/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="应用场景">应用场景</h2>
 <h3 id="单体架构">单体架构</h3>
@@ -335,7 +335,7 @@
 <li>桌面开发不流行</li>
 </ul>
 </li>
-</ul>]]></description></item><item><title>软件架构设计</title><link>https://blog.gethin.online/software-architecture-design/</link><pubDate>Sat, 29 May 2021 21:01:34 +0800</pubDate><author>作者</author><guid>https://blog.gethin.online/software-architecture-design/</guid><description><![CDATA[<div class="featured-image">
+</ul>]]></description></item><item><title>软件架构设计</title><link>https://blog.gethin.online/software-architecture-design/</link><pubDate>Sat, 29 May 2021 21:01:34 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/software-architecture-design/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="1-软件架构概述">1 软件架构概述</h2>
 <h3 id="11-软件架构的定义">1.1 软件架构的定义</h3>

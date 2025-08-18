@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>蓝图 - 标签 - Gethin</title><link>https://blog.gethin.online/tags/%E8%93%9D%E5%9B%BE/</link><description>蓝图 - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 18 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.gethin.online/tags/%E8%93%9D%E5%9B%BE/" rel="self" type="application/rss+xml"/><item><title>个人技术蓝图</title><link>https://blog.gethin.online/blueprint/</link><pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate><author>作者</author><guid>https://blog.gethin.online/blueprint/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>蓝图 - 标签 - Gethin</title><link>https://blog.gethin.online/tags/%E8%93%9D%E5%9B%BE/</link><description>蓝图 - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 18 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.gethin.online/tags/%E8%93%9D%E5%9B%BE/" rel="self" type="application/rss+xml"/><item><title>个人技术蓝图</title><link>https://blog.gethin.online/blueprint/</link><pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/blueprint/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><div id="blueprint" class="mindmap mindmap-md">
     <ul>
@@ -95,4 +95,4 @@
 <h2 id="语言与平台-language-and-platform">语言与平台 [language-and-platform]</h2>
 <h3 id="c--net-5-chsarp-and-dotnet5">C# &amp; .NET 5 [chsarp-and-dotnet5]</h3>
 <h4 id="net-本质论-dotnet-essentialism">.NET 本质论 [dotnet-essentialism]</h4>
-<p><a href="https://blog.gethin.online/dotnet-essentialism" target="_blank" rel="noopener noreffer">dotnet-essentialism</a></p>]]></description></item></channel></rss>
+<p><a href="https://blog.gethin.online/dotnet-essentialism" target="_blank" rel="noopener noreffer ">dotnet-essentialism</a></p>]]></description></item></channel></rss>

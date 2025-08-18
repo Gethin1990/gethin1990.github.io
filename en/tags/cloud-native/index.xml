@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Cloud Native - Tag - Gethin</title><link>https://blog.gethin.online/en/tags/cloud-native/</link><description>Cloud Native - Tag - Gethin</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 17 Apr 2020 07:46:49 +0000</lastBuildDate><atom:link href="https://blog.gethin.online/en/tags/cloud-native/" rel="self" type="application/rss+xml"/><item><title>Introduce Microservice &amp; Infrastructure on Cloud</title><link>https://blog.gethin.online/en/introduce-microservice-infrastructure-on-cloud/</link><pubDate>Fri, 17 Apr 2020 07:46:49 +0000</pubDate><author>Author</author><guid>https://blog.gethin.online/en/introduce-microservice-infrastructure-on-cloud/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Cloud Native - Tag - Gethin</title><link>https://blog.gethin.online/en/tags/cloud-native/</link><description>Cloud Native - Tag - Gethin</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 17 Apr 2020 07:46:49 +0000</lastBuildDate><atom:link href="https://blog.gethin.online/en/tags/cloud-native/" rel="self" type="application/rss+xml"/><item><title>Introduce Microservice &amp; Infrastructure on Cloud</title><link>https://blog.gethin.online/en/introduce-microservice-infrastructure-on-cloud/</link><pubDate>Fri, 17 Apr 2020 07:46:49 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/en/introduce-microservice-infrastructure-on-cloud/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>This article will introduce Microservice &amp; Infrastructure on Cloud.
@@ -24,7 +24,7 @@
 <li>Platform-as-a-service</li>
 <li>Software-as-a-service</li>
 </ul>
-<p><a href="https://www.sherweb.com/blog/cloud-server/what-is-azure-paas/" target="_blank" rel="noopener noreffer">https://www.sherweb.com/blog/cloud-server/what-is-azure-paas/</a></p>
+<p><a href="https://www.sherweb.com/blog/cloud-server/what-is-azure-paas/" target="_blank" rel="noopener noreffer ">https://www.sherweb.com/blog/cloud-server/what-is-azure-paas/</a></p>
 <p></p>
 <p></p>
 <h2 id="virtual-machine--container">Virtual Machine &amp; Container</h2>
@@ -42,44 +42,28 @@
 </ol>
 <h2 id="docker--kubernetes">Docker &amp; Kubernetes</h2>
 <p>Docker is the popular way which implement container.
-Other way ex. Azure Service Fabric, Amazon Elastic Container Service</p>]]></description></item><item><title>How to setup kubernetes on Azure</title><link>https://blog.gethin.online/en/how-to-setup-kubernetes-on-azure/</link><pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate><author>Author</author><guid>https://blog.gethin.online/en/how-to-setup-kubernetes-on-azure/</guid><description><![CDATA[<div class="featured-image">
+Other way ex. Azure Service Fabric, Amazon Elastic Container Service</p>]]></description></item><item><title>How to setup kubernetes on Azure</title><link>https://blog.gethin.online/en/how-to-setup-kubernetes-on-azure/</link><pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/en/how-to-setup-kubernetes-on-azure/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h3 id="step-1-how-to-set-aks-cluster-in-azure">Step 1. How to set AKS Cluster in Azure</h3>
 <p>This step could reference the official documents as below,
-<a href="https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough-portal" title="https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough-portal" target="_blank" rel="noopener noreffer">https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough-portal</a></p>
+<a href="https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough-portal" title="https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough-portal" target="_blank" rel="noopener noreffer ">https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough-portal</a></p>
 <h3 id="step-2-open-the-could-shell">Step 2 Open the could shell</h3>
 <p>)</p>
-<p>The link as <a href="https://shell.azure.com/" target="_blank" rel="noopener noreffer">https://shell.azure.com/</a></p>
+<p>The link as <a href="https://shell.azure.com/" target="_blank" rel="noopener noreffer ">https://shell.azure.com/</a></p>
 <p>And input the Command as below</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">az aks get-credentials --resource-group AKSGroup --name AKSCluster
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="step-3-install-prometheus">Step 3 install Prometheus</h3>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">az aks get-credentials --resource-group AKSGroup --name AKSCluster</span></span></code></pre></div></div>
+<h3 id="step-3-install-prometheus">Step 3 install Prometheus</h3>
 <p><strong>How to create change nampspace :</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">kuebctl create ns monitoring
-</span></span><span class="line"><span class="cl">kubectl config set-context --current --namespace<span class="o">=</span>monitoring
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><strong>The install command as below,</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">helm install stable/prometheus --name kube-prometheus --set rbac.create<span class="o">=</span><span class="nb">true</span> --namespace monitoring
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>If you met the issue like</p>
-<blockquote>
-<p>Error: namespaces &ldquo;monitoring&rdquo; is forbidden: User &ldquo;system:serviceaccount:kube-system:default&rdquo; cannot get resource &ldquo;namespaces&rdquo; in API group &quot;&quot; in the namespace &ldquo;monitoring&rdquo;</p>]]></description></item></channel></rss>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">kuebctl create ns monitoring
+</span></span><span class="line"><span class="cl">kubectl config set-context --current --namespace<span class="o">=</span>monitoring</span></span></code></pre></div></div>
+<p><strong>The install command as below,</strong></p>]]></description></item></channel></rss>
