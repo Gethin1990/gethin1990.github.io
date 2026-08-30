@@ -7,9 +7,9 @@
 <p>那么重构之后，我们把IList换成了IEnumerable，大家都知道只包括一个返回值为IEnumerator的GetEnumerator()方法，所以这样只能遍历取出它的值，而不能对这个集合做出改变，这正是我们所需要的结果，具体代码如下：</p>
 <div class="code-block code-line-numbers" style="counter-reset: code-block 0">
     <div class="code-header language-cs">
-        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cs" data-lang="cs"><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="k">namespace</span> <span class="nn">LosTechies.DaysOfRefactoring.EncapsulateCollection.Before</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -47,9 +47,9 @@
 </span></span><span class="line"><span class="cl">    <span class="p">}</span></span></span></code></pre></div></div>
 <div class="code-block code-line-numbers" style="counter-reset: code-block 0">
     <div class="code-header language-cs">
-        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cs" data-lang="cs"><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="k">namespace</span> <span class="nn">LosTechies.DaysOfRefactoring.EncapsulateCollection.After</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>

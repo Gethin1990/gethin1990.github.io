@@ -2,19 +2,19 @@
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="网站功能">网站功能</h2>
 <ul>
-<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 文章加密</li>
-<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 自定义域名</li>
-<li><i class="far fa-square fa-fw" aria-hidden="true"></i> 网站分析</li>
-<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 脑图</li>
-<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 时间轴</li>
-<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 评论的优化</li>
-<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 关于页面的优化</li>
-<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 版权声明</li>
-<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 运行时间</li>
-<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 赞赏</li>
-<li><i class="far fa-square fa-fw" aria-hidden="true"></i> 网站流量统计</li>
+<li><i class="far fa-check-square" aria-hidden="true"></i> 文章加密</li>
+<li><i class="far fa-check-square" aria-hidden="true"></i> 自定义域名</li>
+<li><i class="far fa-square" aria-hidden="true"></i> 网站分析</li>
+<li><i class="far fa-check-square" aria-hidden="true"></i> 脑图</li>
+<li><i class="far fa-check-square" aria-hidden="true"></i> 时间轴</li>
+<li><i class="far fa-check-square" aria-hidden="true"></i> 评论的优化</li>
+<li><i class="far fa-check-square" aria-hidden="true"></i> 关于页面的优化</li>
+<li><i class="far fa-check-square" aria-hidden="true"></i> 版权声明</li>
+<li><i class="far fa-check-square" aria-hidden="true"></i> 运行时间</li>
+<li><i class="far fa-check-square" aria-hidden="true"></i> 赞赏</li>
+<li><i class="far fa-square" aria-hidden="true"></i> 网站流量统计</li>
 </ul>
 <h2 id="编辑">编辑</h2>
 <ul>
-<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> 新文章头部模板</li>
+<li><i class="far fa-check-square" aria-hidden="true"></i> 新文章头部模板</li>
 </ul>]]></description></item></channel></rss>

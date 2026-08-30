@@ -14,17 +14,17 @@ Refer to the Article:
 在这里，我们将使用<a href="https://www.gatsbyjs.org/packages/gatsby-source-filesystem/" target="_blank" rel="noopener noreffer ">gatsby-source-filesystem</a>从我们的文件系统创建文件节点。</p>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
     <div class="code-header language-js">
-        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl">    <span class="nx">npm</span> <span class="nx">install</span> <span class="o">--</span><span class="nx">save</span> <span class="nx">gatsby</span><span class="o">-</span><span class="nx">source</span><span class="o">-</span><span class="nx">filesystem</span></span></span></code></pre></div></div>
 <p>安装后，将插件添加到 gatsby-config.js。 您可以具有此插件的多个实例，以从文件系统上的不同位置读取源节点。</p>
 <p>以下设置了 Jekyll 模式：具有 Markdown 文件的页面目录和.json，.yaml，.csv 的数据目录：</p>
 <div class="code-block code-line-numbers" style="counter-reset: code-block 0">
     <div class="code-header language-js">
-        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">resolve</span><span class="o">:</span> <span class="sb">`gatsby-source-filesystem`</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
@@ -51,16 +51,16 @@ Refer to the Article:
 <h3 id="61-更改头部">6.1 更改头部</h3>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
     <div class="code-header language-js">
-        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">Counter</span> <span class="nx">header</span><span class="o">=</span><span class="s2">&#34;This is the Index Counter&#34;</span>  <span class="o">/&gt;</span></span></span></code></pre></div></div>
 <p>这个<code>header</code>的属性现在可以用在<code>Counter</code>组件中的<code>render</code>方法。现在我们可以通过调用他的父组件来为<code>Counter</code>组件获取不同的标头了。</p>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
     <div class="code-header language-js">
-        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl">          <span class="o">&lt;</span><span class="nx">h3</span><span class="o">&gt;</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">header</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/h3&gt;</span>
@@ -73,9 +73,9 @@ Refer to the Article:
 <p>样式也是如此-如果我们希望标题与父组件的配色方案匹配，我们只需要将颜色属性传递给 Counter 组件：</p>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
     <div class="code-header language-js">
-        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">Counter</span> <span class="nx">header</span><span class="o">=</span><span class="s2">&#34;This is the Index Counter&#34;</span> <span class="nx">color</span><span class="o">=</span><span class="s2">&#34;rebeccapurple&#34;</span>  <span class="o">/&gt;</span></span></span></code></pre></div></div>
 <p>并在组件本身中添加必要的内联样式：</p>]]></description></item><item><title>Gatsby基础知识（上）</title><link>https://blog.gethin.online/gatsby-basic-knowledge-1/</link><pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/gatsby-basic-knowledge-1/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
@@ -91,17 +91,17 @@ Refer to the Article:
 <p>从您的 CLI 运行此安装程序（假设已安装 Gatsby）：</p>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
     <div class="code-header language-js">
-        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl">    <span class="nx">gatsby</span> <span class="k">new</span> <span class="nx">gatsby</span><span class="o">-</span><span class="nx">wiki</span></span></span></code></pre></div></div>
 <h2 id="01-开始你的-gatsby-开发环境start-your-gatsby-development-environment">01 开始你的 Gatsby 开发环境(Start your Gatsby development environment)</h2>
 <p>现在请转到你的站点目录中，并使用 npm 运行你的 Gatsby 开发环境如下：</p>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
     <div class="code-header language-js">
-        <span class="code-title"><i class="arrow fas fa-chevron-right fa-fw" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="复制到剪贴板"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+        <span class="code-title"><i class="arrow fas fa-angle-right" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
+        <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl">    <span class="nx">cd</span> <span class="nx">gatsby</span><span class="o">-</span><span class="nx">wiki</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">npm</span> <span class="nx">run</span> <span class="nx">development</span></span></span></code></pre></div></div>
 <p>看，你可以访问你的网站了<a href="http://localhost:8000/" target="_blank" rel="noopener noreffer ">http://localhost:8000</a></p>]]></description></item></channel></rss>
