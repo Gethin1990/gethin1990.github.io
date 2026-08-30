@@ -546,7 +546,8 @@
 <p>常见的六个质量属性:<strong>可用性、可修改性、性能、安全性、可测试性、易用性。</strong></p>]]></description></item><item><title>开发方法</title><link>https://blog.gethin.online/development-methodologies/</link><pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/development-methodologies/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><blockquote>
-<p>Software Development Methodologies</p></blockquote>
+<p>Software Development Methodologies</p>
+</blockquote>
 <h2 id="开发方法">开发方法</h2>
 <h3 id="软件的生命周期">软件的生命周期</h3>
 <p>可行性研究与计划-&gt;需求分析-&gt;概要设计-&gt;详细设计-&gt;实现-&gt;集成测试-&gt;确认测试-&gt;使用与维护</p>

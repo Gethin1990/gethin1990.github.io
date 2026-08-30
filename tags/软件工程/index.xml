@@ -365,7 +365,8 @@
 <p><a href="https://blog.gethin.online/uml-design/" target="_blank" rel="noopener noreffer ">UML设计与基本概念</a></p>]]></description></item><item><title>开发方法</title><link>https://blog.gethin.online/development-methodologies/</link><pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/development-methodologies/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><blockquote>
-<p>Software Development Methodologies</p></blockquote>
+<p>Software Development Methodologies</p>
+</blockquote>
 <h2 id="开发方法">开发方法</h2>
 <h3 id="软件的生命周期">软件的生命周期</h3>
 <p>可行性研究与计划-&gt;需求分析-&gt;概要设计-&gt;详细设计-&gt;实现-&gt;集成测试-&gt;确认测试-&gt;使用与维护</p>
@@ -490,7 +491,8 @@ ABSD：分解功能，通过选择架构风格来事先质量和业务需求，�
 </ul>]]></description></item><item><title>Scrum 学习笔记</title><link>https://blog.gethin.online/scrum-learning-notes/</link><pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/scrum-learning-notes/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><blockquote>
-<p>Scrum Learning Notes</p></blockquote>
+<p>Scrum Learning Notes</p>
+</blockquote>
 
 
 <div id="scrum" class="mindmap mindmap-md">
