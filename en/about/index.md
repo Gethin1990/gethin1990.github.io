@@ -2,28 +2,36 @@
 
 ### Self Introduction
 
- **Professional Experience** :
 
-12 years of software development experience, 3 years of software management experience, and 9 years of in-depth involvement in the international fintech industry. Currently serving as the Software Development Manager for Equity Derivatives (Options) at Citigroup Financial. Proficient in software architecture, Gen AI engineering, and AI + quantitative finance. Leading the full lifecycle management of the corporate options pricing system from five dimensions to ensure system stability in high-concurrency scenarios.
+**PROFESSIONAL SUMMARY**
 
-**Technical Expertise:**
+* Software development manage and senior engineer with 12 years of experience, including 9 years in global
+  FinTech and 3 years in technical management.
+* Led enterprise options pricing and quoting systems at Citi, covering architecture, delivery, production
+  stability, release governance and trader-facing support.
+* Strong hands-on engineering background across C#, Python, TypeScript and SQL Server, with experience in
+  distributed systems, legacy modernization and high-availability financial
+  platforms.
+* Proficient in vibe coding with over 3 years of AI coding experience; proven track record of delivering multiple AI-enabled use cases across finance, tech domains and end-to-end AI technology implementation.
+* Built AI-enabled engineering tools using GitHub Copilot extensions, Text-to-SQL, knowledge graphs, RAG,
+  MCP/function calling and multi-agent workflows, significantly improve
+  development efficiency.
 
-Proficient in system architecture design and performance optimization in the fintech field, with strong AI engineering capabilities. Led the full automation of infrastructure and database migration for a large financial pricing system. Precisely located the performance bottlenecks of complex systems through data visualization and completed optimizations, successfully coping with the surge in Asian market business, achieving a system availability of 99.99%.
+**CORE SKILLS**
 
-**Architectural Philosophy:**
+**Languages:** C#, Python, TypeScript, JavaScript, Swift, SQL, PowerShell, Java
 
-Deeply practiced in OOP, SOA, microservices, Event-Driven Architecture (EDA), and Domain-Driven Design (DDD).
+**Architecture:** Distributed systems, microservices, SOA, EDA, DDD, OOP, performance optimization, production reliability
 
- **Full-Stack Competence** :
+**FinTech:** Options quotation, pricing and booking workflows, market data analysis, risk-control systems, reconciliation, BaaS platforms
 
-Certified Scrum Master, excelling in integrating technology and management. The technical stack is as follows:
+**AI Engineering:** GitHub Copilot extension development, LangChain, RAG, knowledge graphs, MCP/function calling, multi-agent systems, LiteLLM, prompt, context, harness, loop, Pandas
 
-* **AI Engineering**: Understanding the essence of Copilot operation, proficient in Copilot and multi-agent applications. Independently eveloped a secondary Copilot Agent for data cleaning and automated analysis. Through knowledge graphs, UML reverse engineering, and the development of multi-agent combined tool calls, the code efficiency was increased by more than 50%.
-* **.NET**: .NET Core, WCF, API, RabbitMQ, Azure microservices, and K8S cloud-native technologies;
-* **Python**: numpy, panda, transformers, LangChain, LangGraph, AutoGen, GraphRAG, MCP, Fast API, vnpy, qlib;
-* **Cross-Platform** Development: Swift (for iOS), TS, Vue, React, and other Web/mobile technologies.
+**Platforms:** .NET, WCF, WPF, Web API, SQL Server, Docker, Kubernetes, UDeploy, CyberArk, TeamCity, VS Code
 
-**My Blog: [https://blog.gethin.online/en/about/](https://blog.gethin.online/en/about/)**
+**Leadership:** Agile delivery, SDLC governance, cross-region coordination, release management, production support, technical mentoring
+
+**My Blog:** [https://blog.gethin.online/en/about/](https://blog.gethin.online/en/about/)
 
 ### Contact Me
 
@@ -45,11 +53,12 @@ Please contact me if you need the password of resume page.
 
 {{% event title="Citi Bank - APP Development Manager" from="2022-07-01" to="2025-07-01" %}}
 
-#### Application Development Manager at CitiBank, mainly responsible for developing, constructing, managing and supporting the investment bank options quotation system. 
+#### Application Development Manager at CitiBank, mainly responsible for developing, constructing, managing and supporting the investment bank options quotation system.
 
-#### The main programming languages are C# and python. The main technologies include.NET, Kafka, WCF, T4, AKKA, Copilot Extension, LLM, etc. 
+#### The main programming languages are C# and python. The main technologies include.NET, Kafka, WCF, T4, AKKA, Copilot Extension, LLM, etc.
 
 #### The main projects are: Automatic Delta hedging, CQ option quotations, CQ data source and infrastructure migration, CQ automated deployment, CQ Copilot AI expansion, etc
+
 {{% /event %}}
 {{% event title="GREEN DOT - Sr. Software Engineer" from="2019-05-31" to="2022-06-01" %}}
 

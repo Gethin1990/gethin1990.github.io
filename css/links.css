@@ -1,0 +1,45 @@
+/* 友情链 / 网站页面卡片样式
+   注: 该文件曾被误删,导致 layouts/links/single.html 与
+   layouts/websites/single.html 中 resources.Get "css/links.css"
+   返回 nil,页面输出 href="<nil>" 且卡片无样式。此处按历史版本恢复。 */
+.box {
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    padding: 1rem 1rem .7rem;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.box .media {
+    display: flex;
+}
+
+.box .media-content {
+    margin-left: 20px;
+}
+
+.box p {
+    margin: .5rem 0;
+}
+
+.box a {
+    text-decoration: none;
+    color: #2d96bd;
+}
+
+.box a:hover, .box a:active {
+    color: #ef3982;
+}
+
+/* 暗黑主题适配 */
+[theme="dark"] .box {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+[theme="dark"] .box a {
+    color: #55bde2;
+}
+
+[theme="dark"] .box a:hover, [theme="dark"] .box a:active {
+    color: #ef3982;
+}

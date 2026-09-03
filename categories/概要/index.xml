@@ -63,43 +63,12 @@
 <div class="container">
   <div class="content">
     <div class="title">Test1</div>
-    <div class="moment"  id="moment" >
-      
-    </div>
+    <div class="moment"  id="moment" ></div>
     <div class="body"><p>ABC</p>
 </div>
   </div>
   <div class="date">2021</div>
 </div>
-
-<script>
-  function non0plural(number, name) {
-    if (number == 0) {
-    return ""
-    }
-    if (number == 1 || number == -1) {
-    return number + " " +name
-    }
-    return number + " " + name + "s"
-  }
-
-  el = document.querySelector("#moment");
-  function refresh() {
-    start = dayjs("2021-05-01")
-    now = dayjs()
-
-    total_months = now.diff(start, "M", true)
-    months = total_months % 12
-    let years = 0
-    if (months < 0) {
-      years = Math.ceil((total_months) / 12)
-    } else {
-      years = Math.floor((total_months) / 12)
-    }
-    el.innerHTML = non0plural(years,"year")+" "+non0plural(months.toFixed(8),"month")
-  }
-  window.setInterval(refresh, 1000);
-</script>
 
 
 
@@ -123,10 +92,14 @@
 <div class="container">
   <div class="content">
     <div class="title">Test</div>
-    <div class="moment" >
-        11 months 
-    </div>
-    <div class="body"><p>ABC</p>]]></description></item><item><title>博客代办事项</title><link>https://blog.gethin.online/blog-todo/</link><pubDate>Sat, 22 May 2021 10:13:00 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/blog-todo/</guid><description><![CDATA[<div class="featured-image">
+    <div class="moment" > 11 months</div>
+    <div class="body"><p>ABC</p>
+</div>
+  </div>
+  <div class="date">2020</div>
+</div>
+
+</div>]]></description></item><item><title>博客代办事项</title><link>https://blog.gethin.online/blog-todo/</link><pubDate>Sat, 22 May 2021 10:13:00 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/blog-todo/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="网站功能">网站功能</h2>
 <ul>

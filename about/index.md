@@ -2,22 +2,30 @@
 
 ### 自我评价
 
-**职业经历**：12年软件开发经验，3年软件管理经验，9年国际金融科技行业深耕。现任花旗金融股票衍生品（期权）软件开发经理，擅长软件架构、Gen AI工程化，AI+量化金融。从5个维度主导企业期权报价系统全生命周期管理，保障高并发场景下系统稳定性。
+* 拥有12 年软件开发从业经验，其中 9 年全球金融科技领域经验、3 年技术管理经验。
+* 曾任职花旗银行AVP，主导企业期权定价与报价系统全流程工作，涵盖架构设计、项目交付、生产稳定性保障、发布管控及交易员一线技术支持。
+* 具备扎实全栈开发能力, 熟练使用 C#、Python、TypeScript、SQL Server，熟悉分布式系统、老旧系统现代化改造、高可用金融平台搭建。
+* 熟练掌握vibe coding, 3年以上AI coding经验，多个AI+金融业务，AI+技术，AI技术落地的案例。
+* 基于 GitHub Copilot 插件、Text to SQL、知识图谱、检索增强生成（RAG）、MCP 函数调用、多智能体工作流自研 AI 研发工具，大幅提升开发效率。
 
-**技术专长**：精通金融科技领域系统架构设计与性能优化，AI工程化能力强。曾领导大型金融报价系统全自动化基础设施及数据库迁移，通过数据可视化精准定位复杂系统性能瓶颈并完成优化，成功应对亚洲市场业务激增，系统可用性达99.99%。
 
-**架构理念**：深入实践OOP, SOA, 微服务, 事件驱动架构（EDA）及DDD领域驱动设计。
+**核心技能**
 
-**全栈能力**：Certified Scrum Master，擅长技术与管理融合，技术栈如下。
+**编程语言：** C#、Python、TypeScript、JavaScript、Swift、SQL、PowerShell、Java
 
-- **AI工程化**：理解Copilot运行本质，擅长Copilot与多智能体应用。自主二次开发Copilot Agent实现数据清洗与自动化分析，通过知识图谱，UML逆向工程，多智能体结合工具调用开发，辅助代码效率提升50%以上。
-- .**NET生态**：.NET Core, WCF, API, RabbitMQ, Azure微服务与K8S云原生；
-- **Python**：numpy, panda, transformers, LangChain, LangGraph, AutoGen, GraphRAG, MCP, Fast API, vnpy, qlib；
-- **跨端开发**：Swift(ios), TS, Vue, React等Web/移动端技术。
+**架构设计：** 分布式系统、微服务、面向服务架构（SOA）、事件驱动架构（EDA）、领域驱动设计（DDD）、面向对象编程、性能调优、生产稳定性保障
 
-**个人博客地址：[https://blog.gethin.online/](https://blog.gethin.online/)**
+**金融科技：** 期权报价、定价与交易流程、市场数据分析、风控系统、对账清算、银行即服务（BaaS）平台
 
-**github：[https://github.com/gethin1990](https://github.com/gethin1990)**
+**AI 工程：** GitHub Copilot 插件开发、LangChain、RAG、知识图谱、MCP 函数调用、多智能体系统、LiteLLM、OmniRoute、prompt、context、harness、loop、Pandas 数据分析。
+
+**编程平台:** .NET, WCF, WPF, Web API, SQL Server, Docker, Kubernetes, UDeploy, CyberArk, TeamCity, VS Code
+
+**领导力：** 敏捷交付、软件开发生命周期管控、跨区域协同、版本发布管理、生产环境运维、技术指导
+
+**个人博客地址：** [https://blog.gethin.online/](https://blog.gethin.online/)
+
+**GitHub：** [https://github.com/gethin1990](https://github.com/gethin1990)
 
 ### 技术蓝图
 

@@ -196,19 +196,51 @@ $$ \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-} $$
 
 <https://hugoloveit.com/zh-cn/theme-documentation-built-in-shortcodes/>
 
+{{< admonition note "Hugo 版本说明" >}}
+本节演示基于当前 Hugo **v0.165.0**: `gist` 与 `tweet` 已在 **v0.156.0** 中被移除, 对应小节已做标注; 其余 Shortcode 均按官方文档格式实际渲染.
+{{< /admonition >}}
+
 ### 6.1 figure
 
+[`figure` 的文档](https://gohugo.io/shortcodes/figure/)
+
+一个 `figure` 示例, `src` 使用当前页面的页面资源 (Page Bundle):
+
 ```markdown
-{{</* figure src="/images/lighthouse.jpg" title="Lighthouse (figure)" */>}}
+{{</* figure
+    src="images/summary.zh-cn.png"
+    alt="主题功能测试"
+    caption="使用页面资源的 figure 演示"
+    title="Figure"
+*/>}}
 ```
+
+呈现的输出效果如下:
+
+{{< figure
+    src="images/summary.zh-cn.png"
+    alt="主题功能测试"
+    caption="使用页面资源的 figure 演示"
+    title="Figure"
+>}}
 
 ### 6.2 gist
 
-```markdown
-{{</* gist spf13 7896402 */>}}
+[`gist` 的文档](https://gohugo.io/content-management/shortcodes#gist)
+
+{{< admonition warning "Shortcode 已被移除" >}}
+`gist` shortcode 已在 **Hugo v0.156.0** 中被移除, 直接调用会导致构建失败. 如需嵌入 Gist, 可以直接使用 HTML (站点已开启 `unsafe = true`).
+{{< /admonition >}}
+
+```html
+<script src="https://gist.github.com/spf13/7896402.js"></script>
 ```
 
 ### 6.3 highlight
+
+[`highlight` 的文档](https://gohugo.io/shortcodes/highlight/)
+
+一个 `highlight` 示例:
 
 ```markdown
 {{</* highlight html */>}}
@@ -223,49 +255,102 @@ $$ \ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-} $$
 {{</* /highlight */>}}
 ```
 
+呈现的输出效果如下:
+
+{{< highlight html >}}
+<section id="main">
+    <div>
+        <h1 id="title">{{ .Title }}</h1>
+        {{ range .Pages }}
+            {{ .Render "summary"}}
+        {{ end }}
+    </div>
+</section>
+{{< /highlight >}}
+
 ### 6.4 instagram
 
-[`instagram` 的文档](https://gohugo.io/content-management/shortcodes#instagram)
+[`instagram` 的文档](https://gohugo.io/shortcodes/instagram/)
+
+一个 `instagram` 示例:
 
 ```markdown
 {{</* instagram BWNjjyYFxVx hidecaption */>}}
 ```
 
+呈现的输出效果如下:
+
+{{< instagram BWNjjyYFxVx hidecaption >}}
+
 ### 6.5 param
 
-[`param` 的文档](https://gohugo.io/content-management/shortcodes#param)
+[`param` 的文档](https://gohugo.io/shortcodes/param/)
+
+一个 `param` 示例 (读取文章前置参数中的 `title`):
 
 ```markdown
-{{</* param description */>}}
+{{</* param title */>}}
 ```
+
+呈现的输出效果如下:
+
+{{< param title >}}
 
 ### 6.6 ref 和 relref
 
-[`ref` 和 `relref` 的文档](https://gohugo.io/content-management/shortcodes#ref-and-relref)
+[`ref` 的文档](https://gohugo.io/shortcodes/ref/) / [`relref` 的文档](https://gohugo.io/shortcodes/relref/)
+
+一个 `ref` 和 `relref` 示例:
+
+```markdown
+[当前页面]({{</* relref "index.md" */>}})
+```
+
+呈现的输出效果如下:
+
+[当前页面]({{< relref "index.md" >}})
+
+`relref` 的纯文本输出: {{< relref "index.md" >}}
 
 ### 6.7 tweet
 
 [`tweet` 的文档](https://gohugo.io/content-management/shortcodes#tweet)
 
+{{< admonition warning "Shortcode 已被移除" >}}
+`tweet` shortcode 已在 **Hugo v0.156.0** 中被移除, 直接调用会导致构建失败, 请改用新的 [`x` shortcode](https://gohugo.io/shortcodes/x/). 由于 `x` 在构建时需要访问 `publish.x.com` 接口, 网络不通会导致构建长时间等待, 因此此处仅展示写法, 不做实际渲染.
+{{< /admonition >}}
+
 ```markdown
-{{</* tweet 877500564405444608 */>}}
+{{</* x user=GoHugoIO id=917359331535966209 */>}}
 ```
 
 ### 6.8 vimeo
 
-[`vimeo` 的文档](https://gohugo.io/content-management/shortcodes#vimeo)
+[`vimeo` 的文档](https://gohugo.io/shortcodes/vimeo/)
+
+一个 `vimeo` 示例:
 
 ```markdown
 {{</* vimeo 146022717 */>}}
 ```
 
+呈现的输出效果如下:
+
+{{< vimeo 146022717 >}}
+
 ### 6.9 youtube
 
-[`youtube` 的文档](https://gohugo.io/content-management/shortcodes#youtube)
+[`youtube` 的文档](https://gohugo.io/shortcodes/youtube/)
+
+一个 `youtube` 示例:
 
 ```markdown
 {{</* youtube w7Ft2ymGmfc */>}}
 ```
+
+呈现的输出效果如下:
+
+{{< youtube w7Ft2ymGmfc >}}
 
 ## 7 扩展shortcodes
 
@@ -577,19 +662,19 @@ stateDiagram
 
 ```markdown
 {{</* mermaid */>}}
+---
+config:
+  gitGraph:
+    nodeSpacing: 100
+    nodeRadius: 10
+---
 gitGraph:
-options
-{
-    "nodeSpacing": 100,
-    "nodeRadius": 10
-}
-end
     commit
     branch newbranch
     checkout newbranch
     commit
     commit
-    checkout master
+    checkout main
     commit
     commit
     merge newbranch
@@ -599,19 +684,19 @@ end
 呈现的输出效果如下:
 
 {{< mermaid >}}
+---
+config:
+  gitGraph:
+    nodeSpacing: 100
+    nodeRadius: 10
+---
 gitGraph:
-options
-{
-    "nodeSpacing": 100,
-    "nodeRadius": 10
-}
-end
     commit
     branch newbranch
     checkout newbranch
     commit
     commit
-    checkout master
+    checkout main
     commit
     commit
     merge newbranch
