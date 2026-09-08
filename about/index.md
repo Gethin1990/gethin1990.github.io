@@ -35,7 +35,7 @@
 
 Github：[https://github.com/gethin1990](https://github.com/gethin1990)
 
-Email：[gexu1990@hotmail.com](mailto:gexu1990@hotmail.com)但是只有一个。
+Email：[gexu1990@hotmail.com](mailto:gexu1990@hotmail.com)
 
 ### 工作经历
 
