@@ -8,7 +8,6 @@
 * 熟练掌握vibe coding, 3年以上AI coding经验，多个AI+金融业务，AI+技术，AI技术落地的案例。
 * 基于 GitHub Copilot 插件、Text to SQL、知识图谱、检索增强生成（RAG）、MCP 函数调用、多智能体工作流自研 AI 研发工具，大幅提升开发效率。
 
-
 **核心技能**
 
 **编程语言：** C#、Python、TypeScript、JavaScript、Swift、SQL、PowerShell、Java
@@ -36,15 +35,7 @@
 
 Github：[https://github.com/gethin1990](https://github.com/gethin1990)
 
-Email：[gexu1990@hotmail.com](mailto:gexu1990@hotmail.com)
-
-微信: gexu1990
-
-### 个人简历
-
-[https://blog.gethin.online/resume](https://blog.gethin.online/resume)
-
-~请联系我索要密码。
+Email：[gexu1990@hotmail.com](mailto:gexu1990@hotmail.com)但是只有一个。
 
 ### 工作经历
 
