@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Python - 标签 - Gethin</title><link>https://blog.gethin.online/tags/python/</link><description>Python - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 01 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.gethin.online/tags/python/" rel="self" type="application/rss+xml"/><item><title>PYTHON 技巧</title><link>https://blog.gethin.online/python-quick-grammar/</link><pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/python-quick-grammar/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Python - 标签 - Gethin</title><link>https://blog.gethin.online/tags/python/</link><description>Python - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>gexu1990@hotmail.com (Gethin)</managingEditor><webMaster>gexu1990@hotmail.com (Gethin)</webMaster><lastBuildDate>Mon, 01 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.gethin.online/tags/python/" rel="self" type="application/rss+xml"/><item><title>PYTHON 技巧</title><link>https://blog.gethin.online/python-quick-grammar/</link><pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/python-quick-grammar/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="python-quick-grammar">Python Quick Grammar</h2>
 <h3 id="1-变量互换">1. 变量互换</h3>
@@ -520,7 +520,7 @@ Mo Tu We Th Fr Sa Su
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">add</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">:</span><span class="n">a</span><span class="o">+</span><span class="n">b</span>
 </span></span><span class="line"><span class="cl"><span class="n">add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span></span></span></code></pre></div></div>
 <pre><code>3
-</code></pre>]]></description></item><item><title>PYTHON 学习笔记(Intermediate)</title><link>https://blog.gethin.online/python-learning-intermediate-notes/</link><pubDate>Wed, 16 Sep 2020 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/python-learning-intermediate-notes/</guid><description><![CDATA[<div class="featured-image">
+</code></pre>]]></description></item><item><title>PYTHON 学习笔记(Intermediate)</title><link>https://blog.gethin.online/python-learning-intermediate-notes/</link><pubDate>Wed, 16 Sep 2020 00:00:00 +0000</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/python-learning-intermediate-notes/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>Python Learning Notes - Intermediate</p>
@@ -558,7 +558,7 @@ Mo Tu We Th Fr Sa Su
         <span class="ellipses"><i class="fas fa-ellipsis-h" aria-hidden="true"></i></span>
         <span class="copy" title="复制到剪贴板"><i class="far fa-copy" aria-hidden="true"></i></span>
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">bcd</span><span class="o">*</span><span class="mi">5</span><span class="p">)</span></span></span></code></pre></div></div>
-<p>5 检查元素</p>]]></description></item><item><title>JUPYTER NOTEBOOK SHORTCUTS</title><link>https://blog.gethin.online/jupyter-notebook-shortcuts/</link><pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/jupyter-notebook-shortcuts/</guid><description><![CDATA[<div class="featured-image">
+<p>5 检查元素</p>]]></description></item><item><title>JUPYTER NOTEBOOK SHORTCUTS</title><link>https://blog.gethin.online/jupyter-notebook-shortcuts/</link><pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/jupyter-notebook-shortcuts/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>Jupyter Notebook Shortcuts</p>
@@ -913,7 +913,7 @@ Mo Tu We Th Fr Sa Su
 	</tbody>
 </table>
 <blockquote>
-<p>Written with <a href="https://stackedit.io/" target="_blank" rel="noopener noreffer ">StackEdit</a>.</p>]]></description></item><item><title>PYTHON 学习笔记(Junior)</title><link>https://blog.gethin.online/python-learning-notes/</link><pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/python-learning-notes/</guid><description><![CDATA[<div class="featured-image">
+<p>Written with <a href="https://stackedit.io/" target="_blank" rel="noopener noreffer ">StackEdit</a>.</p>]]></description></item><item><title>PYTHON 学习笔记(Junior)</title><link>https://blog.gethin.online/python-learning-notes/</link><pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/python-learning-notes/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>Python Learning Notes - Junior</p>

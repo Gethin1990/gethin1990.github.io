@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>算法 - 标签 - Gethin</title><link>https://blog.gethin.online/tags/%E7%AE%97%E6%B3%95/</link><description>算法 - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 06 Apr 2022 16:22:27 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/tags/%E7%AE%97%E6%B3%95/" rel="self" type="application/rss+xml"/><item><title>剑指Offer（python）</title><link>https://blog.gethin.online/point-offer/</link><pubDate>Wed, 06 Apr 2022 16:22:27 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/point-offer/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>算法 - 标签 - Gethin</title><link>https://blog.gethin.online/tags/%E7%AE%97%E6%B3%95/</link><description>算法 - 标签 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>gexu1990@hotmail.com (Gethin)</managingEditor><webMaster>gexu1990@hotmail.com (Gethin)</webMaster><lastBuildDate>Wed, 06 Apr 2022 16:22:27 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/tags/%E7%AE%97%E6%B3%95/" rel="self" type="application/rss+xml"/><item><title>剑指Offer（python）</title><link>https://blog.gethin.online/point-offer/</link><pubDate>Wed, 06 Apr 2022 16:22:27 +0800</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/point-offer/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h3 id="数组与矩阵">数组与矩阵</h3>
 <ul>
@@ -1855,7 +1855,7 @@
 </span></span><span class="line"><span class="cl">                <span class="n">res</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">int_max</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span> <span class="k">if</span> <span class="n">flag</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="nb">min</span><span class="p">(</span><span class="o">-</span><span class="n">int_min</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">            <span class="k">elif</span> <span class="n">cur</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">                <span class="n">flag</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="s1">&#39;+&#39;</span> <span class="k">else</span> <span class="o">-</span><span class="mi">1</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">res</span><span class="o">*</span><span class="n">flag</span> </span></span></code></pre></div></div>]]></description></item><item><title>算法-数据结构</title><link>https://blog.gethin.online/algorithm-data-structure/</link><pubDate>Fri, 10 Sep 2021 16:02:36 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/algorithm-data-structure/</guid><description><![CDATA[<div class="featured-image">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">res</span><span class="o">*</span><span class="n">flag</span> </span></span></code></pre></div></div>]]></description></item><item><title>算法-数据结构</title><link>https://blog.gethin.online/algorithm-data-structure/</link><pubDate>Fri, 10 Sep 2021 16:02:36 +0800</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/algorithm-data-structure/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><blockquote>
 <p><a href="https://github.com/Gethin1990/leetcode_101" target="_blank" rel="noopener noreffer ">https://github.com/Gethin1990/leetcode_101</a></p>
@@ -1980,7 +1980,7 @@
 </ul>
 <h3 id="链表的理论">链表的理论</h3>
 <h4 id="链表的种类">链表的种类</h4>
-<p>单链表、双链表、循环链表</p>]]></description></item><item><title>算法-思想</title><link>https://blog.gethin.online/algorithm-thinking/</link><pubDate>Fri, 10 Sep 2021 16:02:36 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/algorithm-thinking/</guid><description><![CDATA[<div class="featured-image">
+<p>单链表、双链表、循环链表</p>]]></description></item><item><title>算法-思想</title><link>https://blog.gethin.online/algorithm-thinking/</link><pubDate>Fri, 10 Sep 2021 16:02:36 +0800</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/algorithm-thinking/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><blockquote>
 <p><a href="https://github.com/Gethin1990/leetcode_101" target="_blank" rel="noopener noreffer ">https://github.com/Gethin1990/leetcode_101</a></p>
@@ -2245,7 +2245,7 @@
 <li>MinimumWindow Substring|76|</li>
 </ul>
 <h2 id="数学问题">数学问题</h2>
-<h2 id="位运算">位运算</h2>]]></description></item><item><title>[转载]五大算法设计思想</title><link>https://blog.gethin.online/five-algorithms-design-ideas/</link><pubDate>Mon, 30 Aug 2021 10:55:43 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/five-algorithms-design-ideas/</guid><description><![CDATA[<div class="featured-image">
+<h2 id="位运算">位运算</h2>]]></description></item><item><title>[转载]五大算法设计思想</title><link>https://blog.gethin.online/five-algorithms-design-ideas/</link><pubDate>Mon, 30 Aug 2021 10:55:43 +0800</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/five-algorithms-design-ideas/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="分治法">分治法</h2>
 <hr>

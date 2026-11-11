@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>概要 - 分类 - Gethin</title><link>https://blog.gethin.online/categories/%E6%A6%82%E8%A6%81/</link><description>概要 - 分类 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 26 May 2021 10:00:39 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/categories/%E6%A6%82%E8%A6%81/" rel="self" type="application/rss+xml"/><item><title>自定义扩展功能测试</title><link>https://blog.gethin.online/second-post/</link><pubDate>Wed, 26 May 2021 10:00:39 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/second-post/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>概要 - 分类 - Gethin</title><link>https://blog.gethin.online/categories/%E6%A6%82%E8%A6%81/</link><description>概要 - 分类 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>gexu1990@hotmail.com (Gethin)</managingEditor><webMaster>gexu1990@hotmail.com (Gethin)</webMaster><lastBuildDate>Wed, 26 May 2021 10:00:39 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/categories/%E6%A6%82%E8%A6%81/" rel="self" type="application/rss+xml"/><item><title>自定义扩展功能测试</title><link>https://blog.gethin.online/second-post/</link><pubDate>Wed, 26 May 2021 10:00:39 +0800</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/second-post/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="自定义扩展">自定义扩展</h2>
 <h3 id="脑图测试">脑图测试</h3>
@@ -99,7 +99,7 @@
   <div class="date">2020</div>
 </div>
 
-</div>]]></description></item><item><title>博客代办事项</title><link>https://blog.gethin.online/blog-todo/</link><pubDate>Sat, 22 May 2021 10:13:00 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/blog-todo/</guid><description><![CDATA[<div class="featured-image">
+</div>]]></description></item><item><title>博客代办事项</title><link>https://blog.gethin.online/blog-todo/</link><pubDate>Sat, 22 May 2021 10:13:00 +0800</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/blog-todo/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="网站功能">网站功能</h2>
 <ul>
@@ -118,9 +118,9 @@
 <h2 id="编辑">编辑</h2>
 <ul>
 <li><i class="far fa-check-square" aria-hidden="true"></i> 新文章头部模板</li>
-</ul>]]></description></item><item><title>一篇关于主题功能测试的文章</title><link>https://blog.gethin.online/first-post/</link><pubDate>Thu, 06 May 2021 20:40:14 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/first-post/</guid><description><![CDATA[<div class="featured-image">
+</ul>]]></description></item><item><title>一篇关于主题功能测试的文章</title><link>https://blog.gethin.online/first-post/</link><pubDate>Thu, 06 May 2021 20:40:14 +0800</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/first-post/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
-            </div><p>了解如何在 <strong>LoveIt</strong> 主题中快速, 直观地创建和组织内容。</p>]]></description></item><item><title>个人技术蓝图</title><link>https://blog.gethin.online/blueprint/</link><pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/blueprint/</guid><description><![CDATA[<div class="featured-image">
+            </div><p>了解如何在 <strong>LoveIt</strong> 主题中快速, 直观地创建和组织内容。</p>]]></description></item><item><title>个人技术蓝图</title><link>https://blog.gethin.online/blueprint/</link><pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/blueprint/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><div id="blueprint" class="mindmap mindmap-md">
     <ul>

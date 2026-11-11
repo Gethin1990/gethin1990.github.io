@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>数据与算法 - 分类 - Gethin</title><link>https://blog.gethin.online/categories/%E6%95%B0%E6%8D%AE%E4%B8%8E%E7%AE%97%E6%B3%95/</link><description>数据与算法 - 分类 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 06 Apr 2022 16:22:27 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/categories/%E6%95%B0%E6%8D%AE%E4%B8%8E%E7%AE%97%E6%B3%95/" rel="self" type="application/rss+xml"/><item><title>剑指Offer（python）</title><link>https://blog.gethin.online/point-offer/</link><pubDate>Wed, 06 Apr 2022 16:22:27 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/point-offer/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>数据与算法 - 分类 - Gethin</title><link>https://blog.gethin.online/categories/%E6%95%B0%E6%8D%AE%E4%B8%8E%E7%AE%97%E6%B3%95/</link><description>数据与算法 - 分类 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>gexu1990@hotmail.com (Gethin)</managingEditor><webMaster>gexu1990@hotmail.com (Gethin)</webMaster><lastBuildDate>Wed, 06 Apr 2022 16:22:27 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/categories/%E6%95%B0%E6%8D%AE%E4%B8%8E%E7%AE%97%E6%B3%95/" rel="self" type="application/rss+xml"/><item><title>剑指Offer（python）</title><link>https://blog.gethin.online/point-offer/</link><pubDate>Wed, 06 Apr 2022 16:22:27 +0800</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/point-offer/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h3 id="数组与矩阵">数组与矩阵</h3>
 <ul>
@@ -1855,7 +1855,7 @@
 </span></span><span class="line"><span class="cl">                <span class="n">res</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">int_max</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span> <span class="k">if</span> <span class="n">flag</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="nb">min</span><span class="p">(</span><span class="o">-</span><span class="n">int_min</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">            <span class="k">elif</span> <span class="n">cur</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">                <span class="n">flag</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="s1">&#39;+&#39;</span> <span class="k">else</span> <span class="o">-</span><span class="mi">1</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">res</span><span class="o">*</span><span class="n">flag</span> </span></span></code></pre></div></div>]]></description></item><item><title>算法-数据结构</title><link>https://blog.gethin.online/algorithm-data-structure/</link><pubDate>Fri, 10 Sep 2021 16:02:36 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/algorithm-data-structure/</guid><description><![CDATA[<div class="featured-image">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">res</span><span class="o">*</span><span class="n">flag</span> </span></span></code></pre></div></div>]]></description></item><item><title>算法-数据结构</title><link>https://blog.gethin.online/algorithm-data-structure/</link><pubDate>Fri, 10 Sep 2021 16:02:36 +0800</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/algorithm-data-structure/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><blockquote>
 <p><a href="https://github.com/Gethin1990/leetcode_101" target="_blank" rel="noopener noreffer ">https://github.com/Gethin1990/leetcode_101</a></p>
@@ -1980,7 +1980,7 @@
 </ul>
 <h3 id="链表的理论">链表的理论</h3>
 <h4 id="链表的种类">链表的种类</h4>
-<p>单链表、双链表、循环链表</p>]]></description></item><item><title>算法-思想</title><link>https://blog.gethin.online/algorithm-thinking/</link><pubDate>Fri, 10 Sep 2021 16:02:36 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/algorithm-thinking/</guid><description><![CDATA[<div class="featured-image">
+<p>单链表、双链表、循环链表</p>]]></description></item><item><title>算法-思想</title><link>https://blog.gethin.online/algorithm-thinking/</link><pubDate>Fri, 10 Sep 2021 16:02:36 +0800</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/algorithm-thinking/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><blockquote>
 <p><a href="https://github.com/Gethin1990/leetcode_101" target="_blank" rel="noopener noreffer ">https://github.com/Gethin1990/leetcode_101</a></p>
@@ -2245,7 +2245,7 @@
 <li>MinimumWindow Substring|76|</li>
 </ul>
 <h2 id="数学问题">数学问题</h2>
-<h2 id="位运算">位运算</h2>]]></description></item><item><title>[转载]五大算法设计思想</title><link>https://blog.gethin.online/five-algorithms-design-ideas/</link><pubDate>Mon, 30 Aug 2021 10:55:43 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/five-algorithms-design-ideas/</guid><description><![CDATA[<div class="featured-image">
+<h2 id="位运算">位运算</h2>]]></description></item><item><title>[转载]五大算法设计思想</title><link>https://blog.gethin.online/five-algorithms-design-ideas/</link><pubDate>Mon, 30 Aug 2021 10:55:43 +0800</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/five-algorithms-design-ideas/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="分治法">分治法</h2>
 <hr>
@@ -2318,7 +2318,7 @@
 <p>1.建立数学模型来描述问题。<br>
 2.把求解的问题分成若干个子问题。<br>
 3.对每一子问题求解，得到子问题的局部最优解。<br>
-4.把子问题的解局部最优解合成原来解问题的一个解。</p>]]></description></item><item><title>[转载]C#重构经典全面汇总</title><link>https://blog.gethin.online/refactoring-reprinted/</link><pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/refactoring-reprinted/</guid><description><![CDATA[<div class="featured-image">
+4.把子问题的解局部最优解合成原来解问题的一个解。</p>]]></description></item><item><title>[转载]C#重构经典全面汇总</title><link>https://blog.gethin.online/refactoring-reprinted/</link><pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/refactoring-reprinted/</guid><description><![CDATA[<div class="featured-image">
                 <img src="https://cdn.jsdelivr.net/gh/Gethin1990/PicBed/BlogImg/refactoring-reprinted-2021-06-05-19-34-07.jpg" referrerpolicy="no-referrer">
             </div><h2 id="1-封装集合">1. 封装集合</h2>
 <hr>
@@ -2406,7 +2406,7 @@
 </span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="kt">double</span> <span class="n">Total</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="kd">private</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div>
-<p><strong>总结</strong>：这个例子很容易让我们想到以前系统间耦合常喜欢用数据库。每个系统都会操作数据库，并且有些系统还会对数据库的表结构或字段进行修改，那么这很容易就会造成维护的地狱，很明智的一个做法就是使用SOA来隔开这些耦合，让一些只需要数据展示的系统得到自己需要的数据即可。</p>]]></description></item><item><title>海量数据优化笔记</title><link>https://blog.gethin.online/massive-data-optimization-notes/</link><pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/massive-data-optimization-notes/</guid><description><![CDATA[<div class="featured-image">
+<p><strong>总结</strong>：这个例子很容易让我们想到以前系统间耦合常喜欢用数据库。每个系统都会操作数据库，并且有些系统还会对数据库的表结构或字段进行修改，那么这很容易就会造成维护的地狱，很明智的一个做法就是使用SOA来隔开这些耦合，让一些只需要数据展示的系统得到自己需要的数据即可。</p>]]></description></item><item><title>海量数据优化笔记</title><link>https://blog.gethin.online/massive-data-optimization-notes/</link><pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/massive-data-optimization-notes/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="海量数据优化">海量数据优化</h2>
 <h3 id="1-合理使用索引">1. 合理使用索引</h3>

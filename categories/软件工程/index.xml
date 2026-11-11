@@ -1,4 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>软件工程 - 分类 - Gethin</title><link>https://blog.gethin.online/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</link><description>软件工程 - 分类 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 30 Sep 2021 09:05:43 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" rel="self" type="application/rss+xml"/><item><title>测试评审方法</title><link>https://blog.gethin.online/test-and-review-methodologies/</link><pubDate>Thu, 30 Sep 2021 09:05:43 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/test-and-review-methodologies/</guid><description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>软件工程 - 分类 - Gethin</title><link>https://blog.gethin.online/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</link><description>软件工程 - 分类 - Gethin</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>gexu1990@hotmail.com (Gethin)</managingEditor><webMaster>gexu1990@hotmail.com (Gethin)</webMaster><lastBuildDate>Thu, 30 Sep 2021 09:05:43 +0800</lastBuildDate><atom:link href="https://blog.gethin.online/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/" rel="self" type="application/rss+xml"/><item><title>测试评审方法</title><link>https://blog.gethin.online/test-and-review-methodologies/</link><pubDate>Thu, 30 Sep 2021 09:05:43 +0800</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/test-and-review-methodologies/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="测试方法">测试方法</h2>
 <h3 id="软件测试阶段">软件测试阶段</h3>
@@ -31,7 +31,7 @@
 <h3 id="测试自动化">测试自动化</h3>
 <p>测试用例生成，测试执行控制，测试结果对比，测试结果分析，总测试状况的统计与报表产生</p>
 <h3 id="面向对象测试">面向对象测试</h3>
-<p>OOA测试，OOD测试，OOP测试，单元测试，集成测试，系统测试</p>]]></description></item><item><title>开发管理</title><link>https://blog.gethin.online/development-management/</link><pubDate>Tue, 14 Sep 2021 15:20:55 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/development-management/</guid><description><![CDATA[<div class="featured-image">
+<p>OOA测试，OOD测试，OOP测试，单元测试，集成测试，系统测试</p>]]></description></item><item><title>开发管理</title><link>https://blog.gethin.online/development-management/</link><pubDate>Tue, 14 Sep 2021 15:20:55 +0800</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/development-management/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="项目的范围时间与成本">项目的范围、时间与成本</h2>
 <h3 id="项目范围管理">项目范围管理</h3>
@@ -200,7 +200,7 @@
 <li>CMMI</li>
 <li>ISO 9000</li>
 <li>ITIL</li>
-</ol>]]></description></item><item><title>系统计划</title><link>https://blog.gethin.online/system-plan/</link><pubDate>Tue, 14 Sep 2021 09:54:14 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/system-plan/</guid><description><![CDATA[<div class="featured-image">
+</ol>]]></description></item><item><title>系统计划</title><link>https://blog.gethin.online/system-plan/</link><pubDate>Tue, 14 Sep 2021 09:54:14 +0800</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/system-plan/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="项目的提出与选择">项目的提出与选择</h2>
 <h3 id="项目的立项目标和动机">项目的立项目标和动机</h3>
@@ -319,7 +319,7 @@
 <li>继承策略</li>
 <li>改造策略</li>
 <li>集成策略</li>
-</ol>]]></description></item><item><title>系统分析与设计</title><link>https://blog.gethin.online/system-analysis-and-design/</link><pubDate>Wed, 11 Aug 2021 21:32:28 +0800</pubDate><author>xxxx</author><guid>https://blog.gethin.online/system-analysis-and-design/</guid><description><![CDATA[<div class="featured-image">
+</ol>]]></description></item><item><title>系统分析与设计</title><link>https://blog.gethin.online/system-analysis-and-design/</link><pubDate>Wed, 11 Aug 2021 21:32:28 +0800</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/system-analysis-and-design/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><h2 id="1-定义问题与归结模型">1. 定义问题与归结模型</h2>
 <h3 id="11-问题分析">1.1 问题分析</h3>
@@ -395,7 +395,7 @@
 </ul>
 <p>OOSE方法</p>
 <h3 id="43-统一建模语言">4.3 统一建模语言</h3>
-<p><a href="https://blog.gethin.online/uml-design/" target="_blank" rel="noopener noreffer ">UML设计与基本概念</a></p>]]></description></item><item><title>开发方法</title><link>https://blog.gethin.online/development-methodologies/</link><pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/development-methodologies/</guid><description><![CDATA[<div class="featured-image">
+<p><a href="https://blog.gethin.online/uml-design/" target="_blank" rel="noopener noreffer ">UML设计与基本概念</a></p>]]></description></item><item><title>开发方法</title><link>https://blog.gethin.online/development-methodologies/</link><pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/development-methodologies/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>Software Development Methodologies</p>
@@ -521,7 +521,7 @@ ABSD：分解功能，通过选择架构风格来事先质量和业务需求，�
 需求变动归类，制定架构演化计划，修改、增加或删除构件，更新构件的互相作用，构件组装与测试，技术评审</li>
 </ul>
 </li>
-</ul>]]></description></item><item><title>Scrum 学习笔记</title><link>https://blog.gethin.online/scrum-learning-notes/</link><pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate><author>xxxx</author><guid>https://blog.gethin.online/scrum-learning-notes/</guid><description><![CDATA[<div class="featured-image">
+</ul>]]></description></item><item><title>Scrum 学习笔记</title><link>https://blog.gethin.online/scrum-learning-notes/</link><pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate><author>gexu1990@hotmail.com (Gethin)</author><guid>https://blog.gethin.online/scrum-learning-notes/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/images/content.jpg" referrerpolicy="no-referrer">
             </div><blockquote>
 <p>Scrum Learning Notes</p>
